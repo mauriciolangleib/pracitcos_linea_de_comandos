@@ -1,0 +1,538 @@
+---
+title: "Práctico 11\nManejo de datos I\n(Loops y funciones en R)"
+author: Introducción a la Línea de Comandos para Análisis Bioinformáticos
+date: March 22, 2005
+output: 
+  beamer_presentation:
+      keep_tex: yes
+      theme: "default"
+      colortheme: "beaver"
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage{graphicx}
+  - \usetikzlibrary{calc}
+  - \usepackage{pgfplots}
+  - \usepackage{environ}
+---
+
+
+
+# dia lunes
+
+## *Data wrangling*: ¿Cómo manejamos nuestros datos?
+
+- *Data wrangling*: es el proceso mediante el cual modificamos datos iniciales con el fin de analizarlos.
+- *"In our experience, the tasks of exploratory data mining and data cleaning constitute 80% of the effort that determines 80% of the value of the ultimate data mining results. (...)"*. **Dasu & Johnson.** *Exploratory Data Mining and Data Cleaning* (2003).
+- Incluye la edición, el filtrado, la obtención de nuevos y valores y más.
+- En términos prácticos, en R existen librerías especializadas para esto.
+
+## Obtenemos datos... ¿y luego?
+
+- Cada vez hay más datos... la cuestión es cómo se procesan esos datos.
+- Esto se divide en dos cuestiones: conceptual (*qué analizar*) y técnica (*cómo hacer el análisis*), las cuales van de la mano.
+- Una cosa es saber si tiene sentido eliminar *outliers*... la otra es cómo eliminarlos.
+- Vamos a dar apenas un vistazo en cómo hacer este análisis en R.
+
+## A modo de ejemplo
+
+- Aca va un pequeño pipe inventado en el que van pasando cosas: se loopea, se usan funciones de librerías y diseñadas por uno, se filtran, agregan y hacen cosas con columnas, y finalmente se guarda la tabla y se plotea...
+
+- La idea es separar un poco el gráfico en dos partes: algo más como partes de loops y funciones, y otra más de uso de tablas, aclarando que igual fue algo medio artificial. No tienen que ser dos bloques: simplemente marcar que en ese proceso se van mezclando cosas según el caso, y que vamos a intentar ver algunas de esas cosas.
+
+## Estructura de las clases
+
+- Teórico/práctico.
+- Práctico 11: repaso de loops y armado de funciones en R
+- Práctico 12: manejo de datos con paquetes de la librería **tidyverse**.
+
+## Funciones: una parte central de R
+
+- R tiene funciones que vienen incorporadas por defecto
+- Utilizando librerías obtenemos nuevas funciones (como las de **seqinr**, por ejemplo)
+- Nosotros podemos hacer nuestras propias funciones
+
+## Funciones: una parte central de R
+```{r, echo = TRUE, eval = TRUE, message=TRUE}
+ls
+
+```
+
+## ¿Por qué hacer una función?
+
+- 
+
+## Componentes de una funcion
+
+## En la parte practica meter funciones del stringr, glue, magrittr...
+
+- Entonces
+- En el teorico
+- Tiene que aparecer algo de ellas
+. Tambien podria ir purrr::map, para ver otra cuestion sobre como utilizar funciones
+
+## ¿Cómo hacer una función?
+```{r, echo = TRUE, eval = FALSE, message=FALSE}
+mi_funcion = function(argumento_1, argumento_2, ...){
+  # en este bloque suceden operaciones con argumento_1
+  ...
+  # en este bloque suceden operaciones con argumento_2
+  ...
+  # se devuelve algo como resultado de aplicar
+  # la funcion a los argumentos
+  return(una_variable_nueva)
+}
+
+```
+
+
+## Un ejemplo un poco más refinado
+```{r, echo = TRUE, eval = TRUE, message=TRUE, size=8}
+# se arma una función arbitraria que evalúa si un número es par
+
+evalua_par = function(numero){
+  # si la variable numero no es de clase numeric devuelvo mensaje al usuario
+  if(!is.numeric(numero)){
+    return('Ingrese un numero')
+  }
+  
+  else {
+    # evaluo si numero es par, considerando el resto de dividirlo entre 2.
+    resto = numero %% 2
+    
+    if(resto == 0){
+      return(TRUE)
+    }
+    
+    else {
+      return(FALSE)
+    }
+  }
+}
+
+# evaluamos nuestra funcion
+evalua_par("Texto")
+evalua_par(numero = 4)
+evalua_par(numero = 3)
+
+```
+
+## Llamamos a programas externos con funciones definidas por nosotros
+
+- En esta seccion muestro como podriamos llamar a FastTree desde R, para usarlo directo en un pipe.
+
+
+# Dia martes
+
+## Slide con muchos tipos de graficos
+
+## Idea de lo que lleva hacer un grafico para hacerlo bien
+
+## Que hay detras de hacer estos graficos en R? Muchas librerias, de las cuales un monton son del universo tidyverse.
+
+## Los que no son de universo tidyverse igual tienen que ser retocadas generalmente, so... its good to learn tidyverse.
+
+## Cuales son las operaciones que generalmente se hacen con los datos?
+- Cargar datos *crudos*/Guardar datos finales y tablas de interés.
+- Filtrar datos (con criterio).
+- Unir datos que vienen de diferentes fuentes, referentes a un mismo conjunto estudiado.
+- Hacer modificaciones: crear *tags*, correcciones ortográficas, filas y columnas de tablas, etc...
+- Generar nuevos datos: obtener promedios, medianas, aplicar funciones de librerías.
+- Dejar anotado y reportar lo hecho.
+
+## Una pequeña ilustración: es posible que querramos trabajar con un GFF
+- Cargo un GFF
+- Filtro para quedarme con transcriptos codificantes
+- De ahí capaz quiero hacer una tabla con datos como largo de transcripto y contenido GC
+- Entonces tengo que generarme una tabla que tenga las secuencias, y luego unir ambas
+- Subsetear por transcripto , obtener el largo, y calcular GC
+- Capaz me armo un tag que diga si son 'low GC', 'medium GC' o 'high GC'.
+- Después puedo llegar a querer plotear.
+
+Y así con todos los datos que nos vamos cruzando... nos vamos a ir encontrando cosas que vamos a tener que hacer.
+
+## Ahi recien paso a hablar del paquete
+
+## libro que vamos a usar
+```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
+library(knitr)
+knitr::include_graphics('cover_rfordatascience.png')
+
+```
+
+
+## tidy
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{tidyverse.png}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = F, message=FALSE, width = "50%"}
+library(knitr)
+knitr::include_graphics('tidyverse.png')
+
+```
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('tidyverse_packages.png')
+```
+
+## tibb
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{tibbles.png}
+  };
+\end{tikzpicture}
+
+- Tibbles are data frames, but they tweak some older behaviours to make life a little easier. 
+- Almost all of the functions that you’ll use in this book produce tibbles, as tibbles are one of the unifying features of the tidyverse
+- It’s possible for a tibble to have column names that are not valid R variable names: backtick!
+- Another way to create a tibble is with tribble(), short for transposed tibble. tribble() is customised for data entry in code: column headings are defined by formulas (i.e. they start with ~), and entries are separated by commas.
+
+## tibb
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{tibbles.png}
+  };
+\end{tikzpicture}
+```{r, echo = TRUE, eval = TRUE, message=FALSE}
+iris
+```
+
+## tibb
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{tibbles.png}
+  };
+\end{tikzpicture}
+```{r, echo = TRUE, eval = TRUE, message=FALSE}
+library(tibble)
+
+as_tibble(iris)
+```
+
+## readr
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{readr_logo.png}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = F, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('readr_logo.png')
+```
+
+- read_csv() reads comma delimited files, read_tsv() reads tab delimited files, and read_delim() reads in files with any delimiter.
+- read_fwf() reads fixed width files. You can specify fields either by their widths with fwf_widths() or their position with fwf_positions(). read_table() reads a common variation of fixed width files where columns are separated by white space.
+- **These functions all have similar syntax: once you’ve mastered one, you can use the others with ease**
+
+- Sometimes there are a few lines of metadata at the top of the file. You can use skip = n to skip the first n lines; or use comment = "#" to drop all lines that start with (e.g.) #.
+- The data might not have column names. You can use col_names = FALSE to tell read_csv() not to treat the first row as headings, and instead label them sequentially from X1 to Xn
+- Another option that commonly needs tweaking is na: this specifies the value (or values) that are used to represent missing values in your file
+
+- They are **typically much faster (~10x)** than their base equivalents.
+Long running jobs have a progress bar, so you can see what’s happening.
+If you’re looking for raw speed, try `data.table::fread()`. It doesn’t fit
+quite so well into the tidyverse, but it can be quite a bit faster.
+- They **produce tibbles**, they **don’t convert character vectors to factors**,
+use row names, or munge the column names. These are common sources of
+frustration with the base R functions.
+- **They are more reproducible.** Base R functions inherit some behaviour from
+your operating system and environment variables, so import code that works
+on your computer might not work on someone else’s.
+
+- Levantar un ejemplo aca
+
+## magrittr
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('streamlining-with-magrittr.jpg')
+```
+
+## magrittr
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{magrittr_log.jpg}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = F, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('magrittr_log.jpg')
+```
+
+- Es el *pipe* de R.
+- El uso es exactamente igual al '|' de Bash. 
+- Un único detalle: se utiliza **.** para hacer referencia a resultados intermedios en un pipe.
+
+```{r, echo = TRUE, eval = TRUE, message=FALSE}
+# hacer operaciones con una columna sin magrittr.
+
+# Forma 1
+Sepal.Width = iris$Sepal.Width
+Sepal.Width.Median = median(Sepal.Width)
+
+# Forma 2
+Sepal.Width.Median =  median(iris$Sepal.Width)
+
+```
+
+```{r, echo = TRUE, eval = TRUE, message=FALSE}
+# con magrittr
+library(magrittr)
+
+Sepal.Width.Median = iris %>% .$Sepal.Width %>% median(.) 
+```
+
+
+
+## dpl
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{dplyr.png}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('join-setup.png')
+knitr::include_graphics('join-setup2.png')
+knitr::include_graphics('join-inner.png')
+knitr::include_graphics('join-outer.png')
+knitr::include_graphics('join-venn.png')
+knitr::include_graphics('transform-logical.png')
+```
+
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('dplyr_funciones.png')
+```
+
+## tidyr
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{tidyr.png}
+  };
+\end{tikzpicture}
+
+
+```{r, echo = FALSE, eval = F, message=FALSE, fig.align='right'}
+library(knitr)
+
+knitr::include_graphics('tidyr.png')
+```
+
+## tidyr
+
+- You can represent the same underlying data in multiple ways. → ta bueno para mostrar diferentes tipos de datos **y decir por que esto es importante**.
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(tibble)
+
+as_tibble(iris) 
+```
+
+## tidyr
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(tibble)
+library(tidyr)
+
+as_tibble(iris) %>% tidyr::pivot_longer(., cols = c('Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'), names_to = 'Variable')
+```
+
+
+## tidyr
+
+- There are three interrelated rules which make a dataset tidy:
+1. Each variable must have its own column.
+2. Each observation must have its own row.
+3. Each value must have its own cell.
+
+- [**most real world data is untidy**] This means for most real analyses, you’ll need to do some tidying. The first step is always to figure out what the variables and observations are.
+
+- The second step is to resolve one of two common problems:
+    1. One variable might be spread across multiple columns.
+    2. One observation might be scattered across multiple rows.
+- Typically a dataset will only suffer from one of these problems;
+it’ll only suffer from both if you’re really unlucky! To fix these
+problems, **you’ll need the two most important functions in tidyr**: `pivot_longer()` and `pivot_wider()`.
+- A common problem is a dataset where some of the column names are not names of variables, but values of a variable. Take table4a: the column names 1999 and 2000 represent values of the year variable, the values in the 1999 and 2000 columns represent values of the cases variable, and each row represents two observations, not one.
+- To tidy a dataset like this, we need to pivot the offending columns into a new pair of variables. To describe that operation we need three parameters:
+
+        table4a %>%
+        	pivot_longer(c(`1999`, `2000`), names_to = "year", values_to = "cases")
+        	
+
+
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('tidy-1.png')
+```
+
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('tidy-9.png')
+```
+
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('tidy-8.png')
+```
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('tidy-17.png')
+```
+
+
+## gg
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{ggplot2_logo.png}
+  };
+\end{tikzpicture}
+
+- Es importante aca explicar cosas como lo de **aes()** y cosas del estilo. Para eso hay que leer bien un articulo sobre ggplot2!
+
+## Visualización de datos
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(tidyverse)
+
+iris %>%
+  ggplot(data = .,
+          aes(x = Sepal.Length, y = Sepal.Width, color = Species, fill = Species)) +
+  geom_point() + 
+  facet_wrap(~Species)
+
+```
+
+## Una ventaja: reproduclbilidad
+
+```{r, echo = TRUE, eval = FALSE, message=FALSE}
+library(tidyverse)
+
+# se utiliza el set de datos iris
+iris %>%
+  # se grafica Sepal.Length vs Sepal.Width,
+  # coloreando segun Species
+  ggplot(data = .,
+          aes(x = Sepal.Length, 
+              y = Sepal.Width, 
+              color = Species, 
+              fill = Species)) +
+  # se grafica utilizando puntos
+  geom_point() + 
+  # se separa el set de datos segun Species
+  facet_wrap(~Species)
+
+```
+
+## Otra ventaja: fácil modificación
+```{r, echo = TRUE, eval = FALSE, message=FALSE}
+library(tidyverse)
+
+# se utiliza el set de datos iris
+iris %>%
+  # se grafica Sepal.Length vs Sepal.Width,
+  # coloreando segun Species
+  ggplot(data = .,
+          aes(x = Sepal.Length, 
+              y = Sepal.Width, 
+              color = Species, 
+              fill = Species)) +
+  # se grafica utilizando puntos
+  geom_point() + 
+#  # se separa el set de datos segun Species
+#  facet_wrap(~Species)
+
+```
+
+## Otra ventaja: fácil modificación
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(tidyverse)
+
+# se utiliza el set de datos iris
+iris %>%
+  # se grafica Sepal.Length vs Sepal.Width,
+  # coloreando segun Species
+  ggplot(data = .,
+          aes(x = Sepal.Length, 
+              y = Sepal.Width, 
+              color = Species, 
+              fill = Species)) +
+  # se grafica utilizando puntos
+  geom_point() #+ 
+#  # se separa el set de datos segun Species
+#  facet_wrap(~Species)
+
+```
+
+## ¿Donde encuentro info sobre estos paquetes?
+- Cheatsheets
+- Vignettes
+
+## Otros ejemplos
+
+## Estadística: análisis multivariado
+
+## Clustering: librería pheatmap
+
+## GGally
+
+## Filogenética: librería ggtree
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(ggtree)
+
+data(iris)
+rn <- paste0(iris[,5], "_", 1:150)
+rownames(iris) <- rn
+d_iris <- dist(iris[,-5], method="man")
+
+tree_iris <- ape::bionj(d_iris)
+grp <- list(setosa     = rn[1:50],
+            versicolor = rn[51:100],
+            virginica  = rn[101:150])
+
+p_iris <- ggtree(tree_iris, layout = 'circular', branch.length='none')
+groupOTU(p_iris, grp, 'Species') + aes(color=Species) +
+  theme(legend.position="right")
+```
+
+```{r, echo = FALSE, eval = FALSE, message=FALSE}
+library(ggtree)
+
+tree <- read.tree("data/tree.nwk")
+p <- ggtree(tree) + geom_tiplab(size=3)
+msaplot(p, "data/sequence.fasta", offset=3, width=2)
+```
+
+## Genómica: BioCircos/rcirclize y gggnomics, ggbio
+
+## Biología estructural: 
+
+## Espectrometria de masas
+
+## Ecologia

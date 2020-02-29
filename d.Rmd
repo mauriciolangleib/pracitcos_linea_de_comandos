@@ -1,0 +1,25 @@
+---
+title: "Práctico 11\nManejo de datos I\n(Loops y funciones en R)"
+author: Introducción a la Línea de Comandos para Análisis Bioinformáticos
+date: March 22, 2005
+output: 
+  beamer_presentation:
+      keep_tex: yes
+      theme: "default"
+      colortheme: "beaver"
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage{graphicx}
+  - \usetikzlibrary{calc}
+  - \usepackage{pgfplots}
+  - \usepackage{environ}
+---
+
+# tidyr
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{tidyr.png}
+  };
+\end{tikzpicture}

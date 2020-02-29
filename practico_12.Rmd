@@ -1,0 +1,706 @@
+---
+title: "Practico 12"
+output: pdf_document
+---
+
+Se usaron datos sacados de [este paper](https://github.com/anecsulea/LncEvoDevo)
+
+# Introducción
+
+En este práctico (...)
+
+En particular, utilizaremos datos de la publicación ***Comparative transcriptomics analyses across species, organs, and developmental stages reveal functionally constrained lncRNAs*** (Darbellay & Necsulea, 2019).
+
+A su vez se ejemplificarán las funciones básicas a emplear con un dataset estándar empleado en muchas demostraciones: el dataset 'iris'.
+
+# Precalentamiento
+```{r, eval = F, echo = F}
+### ## prep data
+### datos_continentes = read_csv('gapminder_data.csv')
+### # saco una tabla en formato wide
+### datos_continentes %<>% mutate(., country = glue('{continent}/{country}')) 
+### datos_continentes$country %<>% as.character()
+### datos_continentes %<>% dplyr::select(-c(continent,pop,gdpPercap))
+### datos_continentes %>%
+###   pivot_wider(., names_from = country, values_from = lifeExp) -> gapminder_modif_1.tibble
+### # saco una tabla en formato long
+### datos_continentes %>% dplyr::select(country, year, pop, gdpPercap) -> gapminder_modif_2.tibble
+### 
+### gapminder_modif_1.tibble %>% write_csv('gapminder_1.csv')
+### gapminder_modif_2.tibble %>% write_tsv('gapminder_2.tsv')
+### 
+### 
+### ## divido datos del aeropuerto
+### aeropuertos = read_tsv('airports.tsv')
+### 
+### aeropuertos %>%
+###   dplyr::select(name, tzone) %>%
+###   dplyr::rename(., airport = 'name') %>%
+###   write_tsv('airports_2.tsv')
+### 
+### aeropuertos %>%
+###   dplyr::select(faa, name, lat, lon, alt) %>%
+###   mutate(., `Flight code (altitude)` = glue('{faa} ({alt})'),
+###              `Latitude/Longitude` = glue('{lat}/{lon}')) %>%
+###   dplyr::select(-c(faa, lat, lon, alt)) -> aero1
+###              
+### aero1$`Flight code (altitude)` %<>% as.character()
+### aero1$`Latitude/Longitude` %<>% as.character() 
+### 
+### aero1 %<>% pivot_wider(names_from = name, values_from = `Latitude/Longitude`)
+### 
+### aero1 %>% write_csv('airports_1.csv')
+### 
+###   tidyr::pivot_wider()
+### 
+### datos_continentes %>% 
+###   filter(continent == 'Asia') %>%
+###   ggplot(data = .,
+###           mapping = aes(x = year, y = lifeExp)) +
+###   geom_point() +
+###   facet_wrap(~country)
+```
+
+```{r, echo = F}
+# En esta sección se realizarán las siguientes funciones básicas sobre un set de datos:
+
+# 1. Cargado de los datos -> resuelto
+# 1 y 1/2. Pivoteo de los datos -> pronto
+# 3. Union de diferentes datasets. -> pronto
+# 2. Filtrado de datos -> ahora veo
+# 3. Modificacion de los datos -> 
+# 5. Uso de funciones sobre los datos
+# 4. Ploteo de los datos
+
+
+# podriamos hacer antes de esto un agrupe por continente y sacar la media.
+# creo que tengo que mostrar el tema del group_split
+# puedo hacer group_by para ver la mediana en cada pais y plotear eso por año segun los continentes, o algo asi
+# se puede intentar ver el lifeExp vs gdpPercap, con todos los paises juntos, a ver si se ve alguna tendencia al boleo.
+# hay que acordarse de hacer operaciones similares con los datos de aviones
+# podriamos hacer una clasificacion segun los gbpPercap en tres tags: paises pobres, paises de mediano ingreso, paises de alto ingreso.
+```
+
+```{r, echo = F}
+library(knitr)
+opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+```
+
+# Precalentamiento
+```{r, echo = F}
+# En la mayoría de los casos los datos con los que se trabaja suelen ser importados de archivos alojados en disco duro.
+# These functions all have similar syntax: once you’ve mastered one, you can use the others with ease
+# Para este propósito se utiliza la librería **readr**. Las funciones de la misma son capaces de leer archivos de varios formatos: CSV (*comma-separated values*), TSV (*tab-separated alues*) y otros. Las funciones alojadas en esta librería #omienzan todas con el prefijo **read_***, acompañadas del formato de texto que son capaces de leer. Así, por ejemplo, read_csv() es la función de esta librería diseñada para cargar archivos de texto con formato csv.
+# Sometimes there are a few lines of metadata at the top of the file. You can use skip = n to skip the first n lines; or use comment = "#" to drop all lines that start with (e.g.) #.
+# En general estas funciones también poseen una sintaxis similar, por lo que al aprenderse a utilizar una ya se posee el conocimiento para lograr cargar otros formatos.
+# The data might not have column names. You can use col_names = FALSE to tell read_csv() not to treat the first row as headings, and instead label them sequentially from X1 to Xn
+# 
+# Another option that commonly needs tweaking is na: this specifies the value (or values) that are used to represent missing values in your file
+# 
+# - They are **typically much faster (~10x)** than their base equivalents.
+# Long running jobs have a progress bar, so you can see what’s happening.
+# If you’re looking for raw speed, try `data.table::fread()`. It doesn’t fit
+# quite so well into the tidyverse, but it can be quite a bit faster.
+# - They **produce tibbles**, they **don’t convert character vectors to factors**,
+# use row names, or munge the column names. These are common sources of
+# frustration with the base R functions.
+# - **They are more reproducible.** Base R functions inherit some behaviour from
+# your operating system and environment variables, so import code that works
+# on your computer might not work on someone else’s.
+```
+
+```{r, eval = F, echo = F}
+En la mayoría de los casos los datos con los que se trabaja suelen ser importados de archivos alojados en disco duro.
+
+Para este propósito se utiliza la librería **readr**. Las funciones de la misma son capaces de leer archivos de varios formatos: CSV (*comma-separated values*), TSV (*tab-separated alues*) y otros. 
+
+Las funciones alojadas en esta librería comienzan todas con el prefijo **read_***, acompañadas del formato de texto que son capaces de leer. Así, por ejemplo, read_csv() es la función de esta librería diseñada para cargar archivos de texto con formato csv.
+
+En general estas funciones también poseen una sintaxis similar, por lo que al aprenderse a utilizar una ya se posee el conocimiento para lograr cargar otros formatos.
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('readr_logo.png')
+```
+
+
+
+> En la mayoría de los casos los datos con los que se trabaja suelen ser importados de archivos alojados en disco duro.
+> 
+> Para este propósito se utiliza la librería **readr**. Las funciones de la misma son capaces de leer archivos de varios formatos: CSV (*comma-separated values*), TSV (*tab-separated > alues*) y otros. 
+
+> Las funciones alojadas en esta librería comienzan todas con el prefijo **read_***, acompañadas del formato de texto que son capaces de leer. Así, por ejemplo, read_csv() es la función de esta librería diseñada para cargar archivos de texto con formato csv.
+ 
+> En general estas funciones también poseen una sintaxis similar, por lo que al aprenderse a utilizar una ya se posee el conocimiento para lograr cargar otros formatos.
+
+
+
+## cargando datos 
+```{r, eval = TRUE, echo = TRUE}
+# cargamos la librería tidyverse. 
+# Esta contiene a todas las librerias asociadas (e.g. readr, tidyr, dplyr)
+library(tidyverse)
+
+# se lee el conjunto de datos a utilizar y se los aloja en una variable
+vuelos = readr::read_csv('airports_1.csv')
+
+vuelos
+```
+
+### Ejercicio 1
+Cargue en una variable los datos alojados en el archivo 'gapminder_1.csv'. Esta tabla posee datos acerca de la evolución de diversos parámetros a lo largo de años para varios países. Los mismos son una versión modificada de aquellos disponibles en la [página de la Gapminder Foundation](https://www.gapminder.org/). 
+
+```{r, eval = TRUE, echo = TRUE}
+# cargamos la librería tidyverse. 
+# Esta contiene a todas las librerias asociadas (e.g. readr, tidyr, dplyr)
+library(tidyverse)
+
+# se lee el conjunto de datos a utilizar y se los aloja en una variable
+gapminder_1 = readr::read_csv('gapminder_1.csv')
+```
+
+## edicion
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('tidyr.png')
+```
+
+La librería tidyverse fue construída para trabajar sobre conjuntos de datos que poseen un formato en particular: estos datos son llamados *tidy data*. 
+
+Para que un set sea caracterizado como *tidy data* debe poseer tres características que están interrelacionadas:
+  - Cada variable debe estar representada en una columna
+  - Cada observación debe estar representada en una fila
+  - Cada valor debe estar alojado en una celda
+
+Esto no siempre se cumple en la vida cotidiana. Los *datos crudos* con los que solemos presentarnos suelen tener uno (o los dos) siguientes defectos que nos impiden definirlos como *tidy datasets*:
+  - Una variable puede estar siendo representada en más de una columna
+  - Una observación puede estar representada en más de una fila
+
+Estos problemas pueden ser resueltos con las funciones de la librería **tidyr**. Como su nombre indica, esta librería tiene como objetivo generar *tidy datasets* en R. 
+
+
+
+> - There are three interrelated rules which make a dataset tidy:
+>     1. Each variable must have its own column.
+>     2. Each observation must have its own row.
+>     3. Each value must have its own cell.
+>     
+> 1. One variable might be spread across multiple columns.
+> 2. One observation might be scattered across multiple rows.
+> 
+> To fix these
+> problems, you’ll need the two most important functions in tidyr: pivot_longer() and pivot_wider().
+> 
+> - **pivot_longer()** makes **datasets longer** by increasing the number of rows and decreasing the number of columns.
+> - **pivot_wider()** is the opposite of pivot_longer(). You use it when an observation is scattered across multiple rows.
+> - **separate()** pulls apart one column into multiple columns, by splitting wherever a separator character appears.
+> - **unite()** is the inverse of separate(): it combines multiple columns into a single column.
+
+
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('dplyr.png')
+```
+
+>  In this chapter you are going to learn the five key dplyr functions
+> that allow you to solve the vast majority of your data manipulation
+> challenges:
+>      Pick observations by their values (`filter()`).
+>      Reorder the rows (`arrange()`).
+>      Pick variables by their names (`select()`).
+>      Create new variables with functions of existing variables (`mutate()`).
+>      Collapse many values down to a single summary (`summarise()`).
+> filter() allows you to subset observations based on their values.
+> 
+> To use filtering effectively, you have to know how to select the observations that you want using the comparison operators. R provides the standard suite: >, >=, <, <=, != > (not equal), and == (equal).
+> 
+> Multiple arguments to filter() are combined with “and”: every expression must be true in order for a row to be included in the output. For other types of combinations, you’ll > need to use Boolean operators yourself: & is “and”, | is “or”, and ! is “not”.
+
+
+
+## llevando datos a estilo tidy
+```{r, eval = TRUE, echo = TRUE}
+library(magrittr)
+# se realizan algunas modificaciones al set de datos, para transformarlo en 'tidy data'
+## levamos a formato alargado
+vuelos %<>% tidyr::pivot_longer(., cols = colnames(.)[-1], 
+                                   names_to = 'aeropuerto', 
+                                   values_to = 'lat/lon')
+
+vuelos
+
+# filtramos los valores que son NA
+vuelos %<>% dplyr::filter(!is.na(`lat/lon`))
+
+vuelos
+
+# separamos algunos valores que estan unidos
+vuelos %<>% tidyr::separate(., col = `Flight code (altitude)`, 
+                               sep = ' ', 
+                               into = c('Flight code', 'altitude'))
+
+vuelos
+
+vuelos %<>% tidyr::separate(., col = `lat/lon`, 
+                               sep = '/', 
+                               into = c('lat', 'lon'))
+vuelos
+
+# modificamos el tipo de estos datos
+vuelos$lat %<>% as.numeric() 
+vuelos$lon %<>% as.numeric() 
+
+vuelos
+```
+
+### Ejercicio 2
+Lleve los datos presentes en la variable de clase *tibble* donde alojó los datos de Gapminder a un formato de tipo tidy.
+**HAY QUE ACLARAR QUE SON DATOS DE EXPECTATIVA DE VIDAAAAA**
+
+```{r, eval = TRUE, echo = TRUE}
+library(magrittr)
+# se realizan algunas modificaciones al set de datos, para transformarlo en 'tidy data'
+## levamos a formato alargado
+gapminder_1 %<>% tidyr::pivot_longer(., cols = colnames(.)[-1], 
+                                   names_to = 'Continente/Pais', 
+                                   values_to = 'expectativaVida')
+
+# separamos algunos valores que estan unidos
+gapminder_1 %<>% tidyr::separate(., col = `Continente/Pais`, 
+                               sep = '/', 
+                               into = c('Continente', 'Pais'))
+```
+
+# mas edicion
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('stringr_logo.png')
+```
+
+> a
+> b
+> c
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('dplyr.png')
+```
+
+> a
+> b
+> c
+
+# mas edicion: edicion de texto y union de tablas 
+```{r, eval = TRUE, echo = TRUE, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
+# editamos strings con la libreria stringr. 
+#utilizamos expresiones regulares para definir dos caracteres a modificar; '(' y ')'.
+
+vuelos$altitude %<>% stringr::str_replace_all(string = ., 
+                                              pattern = '\\(|\\)', 
+                                              replacement = '')
+vuelos$altitude %<>% as.numeric()
+
+vuelos
+
+# leo segunda tabla que tiene informacion referente a la ubicacion de los aeropuertos. 
+# nuevamente, se separan datos en una columna
+aeropuertos = readr::read_tsv('airports_2.tsv') %>% 
+              tidyr::separate(data = ., 
+                              col = 'tzone', 
+                              sep = '/', 
+                              into = c('continente', 'ciudad'))
+
+aeropuertos
+
+# uno ambas tablas
+vuelos %>%
+  left_join(x = ., 
+            y = aeropuertos, 
+            by = c('aeropuerto' = 'airport')) -> vuelos_final
+
+vuelos_final
+```
+
+### Ejercicio 3
+Cargue la tabla alojada en el archivo 'gapminder_2.tsv'. Una la misma junto a los datos que viene trabajando para crear una tabla final.
+
+```{r, eval = TRUE, echo = TRUE, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
+
+
+# leo segunda tabla que tiene informacion referente a la ubicacion de los aeropuertos. 
+# nuevamente, se separan datos en una columna
+gapminder_2 = readr::read_tsv('gapminder_2.tsv') 
+
+# uno ambas tablas
+gapminder_1 %>%
+  left_join(x = ., 
+            y = gapminder_2, 
+            by = c('Pais' = 'country')) -> gapminder_final
+
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('ggplot2_logo.png')
+```
+
+> The first step in making this plot [un scatterplot] is to create a new dataset that reflects the mapping of x-position to A, y-position to C, and shape to D. x-position, y-position, and shape > are examples of aesthetics, things that we can perceive on the graphic.
+> 
+> We can create many different types of plots using this same basic specification. For
+> example, if we were to draw lines instead of points, we would get a line plot. If we used
+> bars, we would get a bar plot. Bars, lines, and points are all examples of geometric objects
+> 
+> Faceting is a more general case of the techniques known as conditioning, trellising, and latticing, and produces small multiples showing different subsets of the data.
+> 
+> - In the examples above, we have seen some of the components that make up a plot:
+> • data and aesthetic mappings,
+> • geometric objects,
+> • scales, and
+> • facet specification.
+> We have also touched on two other components:
+> • statistical transformations, and
+> • the coordinate system.
+
+
+
+# visualizando datos
+
+
+
+```{r, eval = TRUE, echo = TRUE}
+
+# realizamos un plot sencillo
+vuelos_final %>%
+  ggplot(data = .,
+         mapping = aes(x = lon, y = lat)) +
+  geom_point()
+
+# podemos colorear segun los continentes o las ciudades
+vuelos_final %>%
+  ggplot(data = .,
+         mapping = aes(x = lon, y = lat, color = continente)) +
+  geom_point()
+
+vuelos_final %>%
+  ggplot(data = .,
+         mapping = aes(x = lon, y = lat, color = ciudad)) +
+  geom_point()
+
+```
+
+### Ejercicio 4.1
+***a)*** Grafique la expectativa de vida en función del GDP per capita ().
+***b)*** Modifique el código anterior para colorear en función del continente.
+***c)*** Filtre para obtener, además, solo datos para África y Europa.
+***d)*** Seleccione datos para África, y coloree en función del país.
+
+
+```{r, eval = TRUE, echo = TRUE}
+# a)
+gapminder_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = gdpPercap, y = expectativaVida)) +
+  geom_point()
+
+# b) 
+gapminder_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = gdpPercap, y = expectativaVida, color = Continente)) +
+  geom_point()
+
+# c)
+gapminder_final %>%
+  filter(., Continente == 'Africa' | Continente == 'Europa') %>%
+  ggplot(data = ., 
+         mapping = aes(x = gdpPercap, y = expectativaVida, color = Continente)) +
+  geom_point()
+
+# d)
+gapminder_final %>%
+  filter(., Continente == 'Africa') %>%
+  ggplot(data = ., 
+         mapping = aes(x = gdpPercap, y = expectativaVida, color = Pais)) +
+  geom_point()
+
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('dplyr.png')
+```
+
+> a
+> b
+> c
+
+# modificamos un poco mas (dplyr)
+```{r, eval = TRUE, echo = TRUE}
+# ahora clasificaremos los vuelos segun tres tipos de altitudes: altas, medianas y bajas
+# primero vamos a ver como se distribuyen estas altitudes
+vuelos_final %>%
+  ggplot(data = .,
+         mapping = aes(y = altitude)) +
+  geom_boxplot()
+
+vuelos_final %>%
+  ggplot(data = .,
+         mapping = aes(y = altitude, x = continente, fill = continente)) +
+  geom_boxplot()
+
+# pasamos ahora a hacer la clasificacion
+## lo haremos en base a lo reportado por la funcion quantile()
+quantiles_alt = quantile(vuelos_final$altitude)
+
+vuelos_final %<>%
+  dplyr::mutate(., clasificacion = case_when(altitude < quantiles_alt[2] ~ 'altitud_baja',
+                                             altitude > quantiles_alt[2] & 
+                                             quantiles_alt[4] > altitude ~ 'altitud_media',
+                                             altitude > quantiles_alt[4] & 
+                                             quantiles_alt[5] > altitude ~ 'altitud_alta')
+                )
+
+# ahora podemos visualizar esto de diferentes maneras
+vuelos_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = lon, y = lat, color = clasificacion)) +
+  geom_point()
+
+vuelos_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = lon, y = lat, color = clasificacion)) +
+  geom_point() +
+  facet_wrap(~continente)
+
+vuelos_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = lon, y = lat, color = clasificacion)) +
+  geom_point() +
+  facet_wrap(~ciudad)
+
+# para ver mejor incluso podemos dar poca intensidad al coloreado
+vuelos_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = lon, y = lat, color = clasificacion, alpha = 1/100)) +
+  geom_point() +
+  facet_wrap(~ciudad)
+
+vuelos_final %>%
+  ggplot(data = ., 
+         mapping = aes(x = lon, y = lat, color = ciudad, alpha = 1/100)) +
+  geom_point() +
+  facet_wrap(~clasificacion)
+
+```
+
+
+
+
+
+
+
+
+
+
+```{r, viendo_iris, echo = TRUE, echo = TRUE}
+library(tibble)
+as_tibble(iris)
+```
+
+
+# Cargando datos: readr
+
+```{r, cargando_iris, echo = TRUE, eval = TRUE}
+library(readr)
+
+aeropuertos = readr::read_tsv('airports.tsv')
+
+aeropuertos
+```
+
+## Ejercico 1
+
+- Cargue en 
+
+```{r cargado_datos, echo = TRUE, eval = T}
+# cargamos librerias
+library(readr)
+library(magrittr)
+library(dplyr)
+
+# cargamos los datasets
+dataset_pollo = readr::read_tsv('KallistoNormalizedTPM_Chicken.txt')
+dataset_raton = readr::read_tsv('KallistoNormalizedTPM_Mouse.txt')
+dataset_rata = readr::read_tsv('KallistoNormalizedTPM_Rat.txt')
+
+# vemos que columnas son compartidas entre los datasets, a fin de crear un unico set de datos con el que trabajar
+columnas_compartidas = dplyr::intersect(x = colnames(dataset_pollo), y = colnames(dataset_raton)) %>%
+  dplyr::intersect(x = ., y = colnames(dataset_rata))
+
+# unimos los datasets
+### esto hay que hacerlo con un loop capaz
+dataset_pollo %<>% dplyr::select(columnas_compartidas)
+dataset_raton %<>% dplyr::select(columnas_compartidas)
+dataset_rata %<>% dplyr::select(columnas_compartidas)
+
+# agregamos un tag para identificar de donde viene cada dataset
+dataset_pollo %<>% dplyr::mutate(., set = 'pollo')
+dataset_raton %<>% dplyr::mutate(., set = 'raton')
+dataset_rata %<>% dplyr::mutate(., set = 'rata')
+
+dataset_final = dplyr::bind_rows(dataset_pollo, dataset_raton, dataset_rata)
+```
+
+
+
+# Filtrado de datos
+
+```{r, filtro_aeropuertos, echo = T, eval = T}
+library(dplyr)
+library(stringr)
+
+aeropuertos %>%
+  filter(lat > -100)
+
+aeropuertos %>%
+  filter(lat > -100 & lon > 100)
+
+aeropuertos %>%
+  filter(lat > -100 & lon > 100 & stringr::str_detect(string = tzone, 'Asia'))
+```
+
+# Modificación y agregado de datos
+
+```{r modificaciones, echo = T, eval = T}
+
+aeropuertos %>%
+  mutate(., continent = stringr::str_split(tzone, '/') %>% purrr::map_chr(1))
+
+```
+
+# Visualización de datos: ggplot2
+
+```{r visualizando, echo = T, eval = T}
+library(ggplot2)
+
+aeropuertos %>%
+  mutate(., continent = stringr::str_split(tzone, '/') %>% purrr::map_chr(1)) %>%
+  ggplot(data = ., 
+         mapping = aes(x = lon, y = lat)) +
+  geom_point()
+
+```
+
+```{r ggplot2, echo = TRUE, eval = T}
+library(ggplot2)
+library(reshape2)
+library(purrr)
+
+# visualizando todos los datos juntos
+dataset_final %>%
+  group_split(set) %>%
+  purrr::map_dfr(., ~{
+    .[1:3000,]
+    }
+  ) %>%
+  melt() %>%
+  as_tibble() %>%
+  dplyr::rename(tejido = 'variable', TPM = 'value') %>%
+  ggplot(data = ., 
+         mapping = aes(x = set, y = TPM, fill = tejido, color = tejido)
+         ) +
+  geom_point() 
+  #facet_wrap(~tejido)
+  
+# por set
+  dataset_final %>%
+  group_split(set) %>%
+  purrr::map_dfr(., ~{
+    .[1:3000,]
+    }
+  ) %>% 
+  melt() %>% 
+  as_tibble() %>%
+  dplyr::rename(tejido = 'variable', TPM = 'value') %>%
+  ggplot(data = ., 
+         mapping = aes(x = set, y = TPM, fill = tejido, color = tejido)
+         ) +
+  geom_point() +
+  facet_wrap(~tejido)
+  
+  # realizando algunas modificaciones podemos dividir entre los tejidos en si
+  library(stringr)
+  
+  dataset_final %>%
+  group_split(set) %>%
+  purrr::map_dfr(., ~{
+    .[1:5000,]
+    }
+  ) %>% 
+  melt() %>% 
+  as_tibble() %>%
+  dplyr::rename(tejido = 'variable', TPM = 'value') %>%
+  mutate(set_tejido = str_split(tejido, '_') %>% purrr::map_chr(1)) %>%
+  ggplot(data = ., 
+         mapping = aes(x = tejido, y = TPM, fill = set, color = set, group = set_tejido, alpha = 0.3)
+         ) +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~set_tejido, scales = 'free_x')
+  
+  # nos focalizamos en algunos genes
+  dataset_final %>%
+  group_split(set) %>%
+  purrr::map_dfr(., ~{
+    .[1:5000,]
+    }
+  ) %>% filter(Liver_LateEmbryo2 > 40000) %>% .$GeneID -> genes_interes
+  
+  dataset_final %>%
+  group_split(set) %>%
+  purrr::map_dfr(., ~{
+    .[1:5000,]
+    }
+  ) %>%
+  #dplyr::select(GeneID, set, Liver_EarlyEmbryo1, Liver_EarlyEmbryo2, Liver_LateEmbryo1, Liver_LateEmbryo2) %>%
+  melt() %>% 
+  as_tibble() %>%
+  dplyr::rename(tejido = 'variable', TPM = 'value') %>%
+  #filter(GeneID %in% genes_interes) %>%
+  filter(TPM > 20000) %>%
+  mutate(set_tejido = str_split(tejido, '_') %>% purrr::map_chr(1)) %>%
+  ggplot(data = ., 
+         mapping = aes(x = tejido, y = TPM, fill = GeneID, color = GeneID, group = GeneID)
+         ) +
+  geom_line() +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~set_tejido+set, scale = 'free_x')
+  
+```
+
+De una [busqueda en Ensembl]() se ve que el gen **ENSRNOG00000002889** corresponde al gen *Afp*, un gen descrito como *'Predicted to have fatty acid binding activity and zinc ion binding activity. Involved in animal organ development and response to organic substance. (...)'*.
+
+**ENSRNOG00000002911**, a su vez, corresponde al gen *Alb*, la albumina.
+
+- Incluir el tema de hacer facets y eso
+
+# Algunos otros ejemplos
+
+## Visualización de filogenias: ggtree
+
+## Visualización de datos genómicos: BioCircos
+
+## Algo tipo lo de ver cosas genomicas
+
+
