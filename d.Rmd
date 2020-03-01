@@ -17,6 +17,10 @@ header-includes:
 
 # tidyr
 
+opa = function(x=1,y =1){
+return(x+y)
+}
+
 
 \begin{tikzpicture}[remember picture,overlay]
   \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {

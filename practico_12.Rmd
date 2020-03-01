@@ -1,6 +1,7 @@
 ---
 title: "Practico 12"
-output: pdf_document
+output:
+  html_document
 ---
 
 Se usaron datos sacados de [este paper](https://github.com/anecsulea/LncEvoDevo)
@@ -169,37 +170,33 @@ library(knitr)
 knitr::include_graphics('tidyr.png')
 ```
 
-La librería tidyverse fue construída para trabajar sobre conjuntos de datos que poseen un formato en particular: estos datos son llamados *tidy data*. 
-
-Para que un set sea caracterizado como *tidy data* debe poseer tres características que están interrelacionadas:
-  - Cada variable debe estar representada en una columna
-  - Cada observación debe estar representada en una fila
-  - Cada valor debe estar alojado en una celda
-
-Esto no siempre se cumple en la vida cotidiana. Los *datos crudos* con los que solemos presentarnos suelen tener uno (o los dos) siguientes defectos que nos impiden definirlos como *tidy datasets*:
-  - Una variable puede estar siendo representada en más de una columna
-  - Una observación puede estar representada en más de una fila
-
-Estos problemas pueden ser resueltos con las funciones de la librería **tidyr**. Como su nombre indica, esta librería tiene como objetivo generar *tidy datasets* en R. 
-
-
-
-> - There are three interrelated rules which make a dataset tidy:
->     1. Each variable must have its own column.
->     2. Each observation must have its own row.
->     3. Each value must have its own cell.
->     
-> 1. One variable might be spread across multiple columns.
-> 2. One observation might be scattered across multiple rows.
+> La librería tidyverse fue construída para trabajar sobre conjuntos de datos que poseen un formato en particular: estos datos son llamados *tidy data*. 
 > 
-> To fix these
-> problems, you’ll need the two most important functions in tidyr: pivot_longer() and pivot_wider().
+> Para que un set sea caracterizado como *tidy data* debe poseer tres características que están interrelacionadas:
+>
+>   • Cada variable debe estar representada en una columna
+>
+>   • Cada observación debe estar representada en una fila
+>
+>   • Cada valor debe estar alojado en una celda
 > 
-> - **pivot_longer()** makes **datasets longer** by increasing the number of rows and decreasing the number of columns.
-> - **pivot_wider()** is the opposite of pivot_longer(). You use it when an observation is scattered across multiple rows.
-> - **separate()** pulls apart one column into multiple columns, by splitting wherever a separator character appears.
-> - **unite()** is the inverse of separate(): it combines multiple columns into a single column.
-
+> Esto no siempre se cumple en la vida cotidiana. Los *datos crudos* con los que solemos presentarnos suelen tener uno (o los dos) siguientes defectos que nos > impiden definirlos como *tidy datasets*:
+>
+>   • Una variable puede estar siendo representada en más de una columna
+>
+>   • Una observación puede estar representada en más de una fila
+> 
+> Estos problemas pueden ser resueltos con las funciones de la librería **tidyr**. Como su nombre indica, esta librería tiene como objetivo generar *tidy datasets* > en R. 
+> 
+> Sus funciones más importantes son 
+>
+> • **pivot_longer()**: hace a un dataset más *largo*, alojando valores que antes se encontraban en columnas en filas. 
+>
+> • **pivot_wider()**: lo opuesto de pibot_longer(). Un dataset se hace más *ancho* al aumentar el número de columnas y disminuir el número de filas.
+>
+> • **separate()**: separa observaciones de una columna en varias columnas, al separar los valores de sus celdas según un separador.
+>
+> • **unite()**: lo opuesto de separate(). Se unen observaciones de diferentes columnas, utilizando para ello un caracter especificado.
 
 
 ```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
@@ -208,20 +205,26 @@ library(knitr)
 knitr::include_graphics('dplyr.png')
 ```
 
->  In this chapter you are going to learn the five key dplyr functions
-> that allow you to solve the vast majority of your data manipulation
-> challenges:
->      Pick observations by their values (`filter()`).
->      Reorder the rows (`arrange()`).
->      Pick variables by their names (`select()`).
->      Create new variables with functions of existing variables (`mutate()`).
->      Collapse many values down to a single summary (`summarise()`).
-> filter() allows you to subset observations based on their values.
+> Cinco de las funciones de la librería **dplyr** permiten hacer un conjunto de operaciones que, en su conjunto, logran resolver la mayoría de los problemas  relacionados con la manipulación de datos en un *tidy dataset*.
 > 
-> To use filtering effectively, you have to know how to select the observations that you want using the comparison operators. R provides the standard suite: >, >=, <, <=, != > (not equal), and == (equal).
+> Estas funciones son
 > 
-> Multiple arguments to filter() are combined with “and”: every expression must be true in order for a row to be included in the output. For other types of combinations, you’ll > need to use Boolean operators yourself: & is “and”, | is “or”, and ! is “not”.
-
+> • **filter()**:
+> 
+> • **arrange()**
+> 
+> • **select()**
+> 
+> • **mutate()**
+> 
+> • **summarise()**
+> 
+> En esta sección nos focalizamos en **filter()**. 
+> 
+> El uso efectivo de esta función se basa en los siguientes operadores: **>** (*mayor*), **>=** (*mayor o igual*), **<** (*menor*), **<=** (*menor o igual*), **!=** (*dstinto de*) y **==** (*igual*).
+> 
+> A su vez se pueden combinar argumentos en el filtrado usando operadores booleanos clásicos como los encontrados en otros lenguajes (*i.e.* Bash o awk).
+> Estos operadores son: **&** (operador *AND*), **|** (operador *OR*) y **!** (*negación*).
 
 
 ## llevando datos a estilo tidy
@@ -512,7 +515,7 @@ vuelos_final %>%
 
 
 
-```{r, viendo_iris, echo = TRUE, echo = TRUE}
+```{r, viendo_iris, echo = TRUE, eval = F}
 library(tibble)
 as_tibble(iris)
 ```
@@ -520,7 +523,7 @@ as_tibble(iris)
 
 # Cargando datos: readr
 
-```{r, cargando_iris, echo = TRUE, eval = TRUE}
+```{r, cargando_iris, echo = TRUE, eval = F}
 library(readr)
 
 aeropuertos = readr::read_tsv('airports.tsv')
@@ -532,7 +535,7 @@ aeropuertos
 
 - Cargue en 
 
-```{r cargado_datos, echo = TRUE, eval = T}
+```{r cargado_datos, echo = TRUE, eval = F}
 # cargamos librerias
 library(readr)
 library(magrittr)
@@ -565,7 +568,7 @@ dataset_final = dplyr::bind_rows(dataset_pollo, dataset_raton, dataset_rata)
 
 # Filtrado de datos
 
-```{r, filtro_aeropuertos, echo = T, eval = T}
+```{r, filtro_aeropuertos, echo = T, eval = F}
 library(dplyr)
 library(stringr)
 
@@ -581,7 +584,7 @@ aeropuertos %>%
 
 # Modificación y agregado de datos
 
-```{r modificaciones, echo = T, eval = T}
+```{r modificaciones, echo = T, eval = F}
 
 aeropuertos %>%
   mutate(., continent = stringr::str_split(tzone, '/') %>% purrr::map_chr(1))
@@ -590,7 +593,7 @@ aeropuertos %>%
 
 # Visualización de datos: ggplot2
 
-```{r visualizando, echo = T, eval = T}
+```{r visualizando, echo = T, eval = F}
 library(ggplot2)
 
 aeropuertos %>%
@@ -601,7 +604,7 @@ aeropuertos %>%
 
 ```
 
-```{r ggplot2, echo = TRUE, eval = T}
+```{r ggplot2, echo = TRUE, eval = F}
 library(ggplot2)
 library(reshape2)
 library(purrr)
