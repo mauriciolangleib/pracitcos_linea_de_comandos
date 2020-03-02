@@ -1,6 +1,6 @@
 ---
 title: "Práctico 11"
-author: "Funciones y Loops en R"
+author: "Funciones y Loops en R - Soluciones"
 output:
   pdf_document
 ---
@@ -69,7 +69,7 @@ knitr::opts_chunk$set(error = TRUE)
 
 > *a)* Tome como argumento a un nombre e imprima a pantalla un saludo
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 saluda  = function(nombre){
   return(paste('Hola', nombre))
 }
@@ -82,7 +82,7 @@ saluda('Sofia')
 
 > **Nota**: En caso de que el argumento no sea numerico, devuelva al usuario un mensaje.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 raiz_cuadrada = function(numero){
   # Generamos un control de que la variable dada sea de tipo numerico
   if(class(numero) != 'numeric'){
@@ -101,7 +101,7 @@ raiz_cuadrada('4')
 
 > **Nota**: puede usar la función round().
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 raiz_cuadrada_redondeando = function(numero){
   # Generamos un control de que la variable dada sea de tipo numerico
   if(class(numero) != 'numeric'){
@@ -128,7 +128,7 @@ raiz_cuadrada_redondeando(4.3)
 
 > *d)* Dados dos vectores, uno con nombres y otro con números de teléfono, se devuelva un data.frame con los mismos. El mismo deberá indexar a dichas personas con números (ver ejemplo a continuación). Considere, ademas, que se realice la operacion si poseen igual largo los vectores.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 guia_telefonica = function(personas, telefonos){
   if(length(personas) != length(telefonos)){
     stop('La cantidad de personas o telefonos es insuficiente')
@@ -150,7 +150,7 @@ guia_telefonica(personas = nombres, telefonos = tel)
 
 > *a)* Defina una función que, dado un conjunto de números, devuelva el mayor de los mismos.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 ordenador = function(numeros){
   # ordeno los numeros
   ordenados = sort(numeros)
@@ -171,7 +171,7 @@ ordenador(secuencia)
 
 > **Nota:** utilice el vector **letters** (que se encuentra por defecto en R) y la funcion s2c() de la libreria seqinr.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 indexa_letras = function(palabra){
   # cargamos libreria seqinr
   library(seqinr)
@@ -186,7 +186,7 @@ indexa_letras('vaca')
 
 > *c)* Defina una función que, dada una palabra, la devuelva en mayúscula. Llame a la función creada en b) para esto, y el vector LETTERS.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 indexa_letras = function(palabra){
   # cargamos libreria seqinr
   library(seqinr)
@@ -265,7 +265,7 @@ La variable *i* toma, entonces, los valores desde 1 a length(numeros) (el largo 
 
 > *a)* Elija alguna de las funciones que definió en la primer sección del práctico. Aplique la misma sobre un conjunto de valores.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 numeros = c(1,5,4,3,8,6)
 
 for (i in seq_along(numeros)) {
@@ -275,7 +275,7 @@ for (i in seq_along(numeros)) {
 
 > *b)* Modifique este loop para almacenar los resultados en otro vector.
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 numeros = c(1,5,4,3,8,6)
 resultado = c()
 for (i in seq_along(numeros)) {
@@ -285,7 +285,7 @@ for (i in seq_along(numeros)) {
 
 > *c)* Realice la misma operación, pero valiendose de una función del tipo *apply().
 
-```{r, echo = F, eval = F, message=FALSE}
+```{r, echo = T, eval = T, message=FALSE}
 numeros = c(1,5,4,3,8,6)
 
 sapply(X = numeros, FUN = raiz_cuadrada) -> resultado
@@ -305,7 +305,7 @@ Los precios de los productos se encuentran en la tabla alojada en el archivo **c
 
 > **Nota**: en caso de leer los archivos mencionados con la función read.table(), introduzca como argumento **stringsAsFactors = FALSE**. De lo contrario se leerán las columnas de la tabla como factores.
 
-```{r, echo = F, eval = F}
+```{r, echo = T, eval = T}
 pedidosDeLaMesa <- read.table("pedidoMesaUno.lista", stringsAsFactors = FALSE)
 carta <- read.table("carta.lista")
 pagoPorPersona <- c()

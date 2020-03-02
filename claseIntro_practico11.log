@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.7.23)  1 MAR 2020 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.7.23)  2 MAR 2020 01:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1807,9 +1807,12 @@ Overfull \hbox (118.11641pt too wide) in paragraph at lines 17--17
 \openout4 = `claseIntro_practico11.vrb'.
 
 (./claseIntro_practico11.vrb
-Overfull \hbox (210.09615pt too wide) in paragraph at lines 29--29
-[]\T1/lmtt/m/n/10.95 ## Error in eleva_y_resta(x = 2, y = "2"): Alguno de los a
-rgumentos dados no es un numero.[] 
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 15.
+
+Overfull \hbox (165.20876pt too wide) in paragraph at lines 31--31
+[]\T1/lmtt/m/n/10 ## Error in eleva_y_resta(x = 2, y = "2"): Alguno de los argu
+mentos dados no es un numero.[] 
  []
 
 ) [31
@@ -1826,7 +1829,7 @@ rgumentos dados no es un numero.[]
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 766.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 771.
 [34
 
 ]
@@ -1871,6 +1874,8 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 
 (./claseIntro_practico11.vrb) [43
 
+] [44
+
 ]
 \tf@nav=\write7
 \openout7 = `claseIntro_practico11.nav'.
@@ -1881,21 +1886,21 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 \tf@snm=\write9
 \openout9 = `claseIntro_practico11.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 943.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 943.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 971.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 971.
 (./claseIntro_practico11.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 943.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 943.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 971.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 971.
 Package rerunfilecheck Info: File `claseIntro_practico11.out' has not changed.
 (rerunfilecheck)             Checksum: A4E8105883E930332FA9431B8B62BDE2;218.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 943.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 971.
  ) 
 Here is how much of TeX's memory you used:
- 35554 strings out of 494944
- 800204 string characters out of 6180677
- 1015030 words of memory out of 5000000
- 37971 multiletter control sequences out of 15000+600000
- 41940 words of font info for 49 fonts, out of 8000000 for 9000
+ 35568 strings out of 494944
+ 800440 string characters out of 6180677
+ 1015029 words of memory out of 5000000
+ 37982 multiletter control sequences out of 15000+600000
+ 43201 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,15n,79p,737b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1907,10 +1912,10 @@ sbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmtti10.pfb>
-Output written on claseIntro_practico11.pdf (43 pages, 1391063 bytes).
+Output written on claseIntro_practico11.pdf (44 pages, 1393096 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 132 named destinations out of 1000 (max. 500000)
  8286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

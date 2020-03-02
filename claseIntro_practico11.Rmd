@@ -40,6 +40,13 @@ knit_hooks$set(output = function(x, options) {
   x <- paste(c(x, ""), collapse = "\n")
   hook_output(x, options)
 })
+
+def.chunk.hook  <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  ifelse(options$size != "normalsize", paste0("\n \\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
+})
+
 ``` 
 
 ```{r, eval = F, echo = F}
@@ -77,7 +84,8 @@ library(knitr)
 knitr::include_graphics('r_tipos_datos.png')
 ```
 
-[A practical guide to the R package Luminescence (Dietze et al., 2013)](https://hal.archives-ouvertes.fr/hal-01846155/document)
+[A practical guide to the R package Luminescence (Dietze et al., 2013)](https://hal.archives-ouvertes.fr/hal-01846155/document) 
+
 
 ## Breve repaso
 
@@ -166,24 +174,22 @@ Esto generalmente incluye
 
 # Funciones en R
 
-## Funciones: una parte central de R
+## Qué es una función?
+- Un conjunto de **operaciones** definidas que toman **argumentos** para dar un resultado
 
+## Funciones: una parte central de R
 - Es un lenguaje de programación en base a funciones: casi todo lo que hacemos las utiliza.
   - Otros lenguajes operan de forma diferente.
 - R tiene funciones que vienen incorporadas por defecto
 - Utilizando librerías obtenemos nuevas funciones (como las de **seqinr**, por ejemplo)
 - Nosotros podemos hacer nuestras propias funciones
 
-## Pero... qué es una función?
-
-- una definicion de función
-
-## componentes de la funcion clasica
+## Componentes de una función 
 - **cuerpo**: el código dentro de la función
 - **formales**: la lista de argumentos que controlan cómo se llama a la función
 - **ambiente**: el "mapa" de la locación de las variables de la función
   
-## componentes de la funcion clasica
+## Componentes de una función 
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE, out.height="50%", output.lines = 5}
 library(seqinr)
@@ -191,7 +197,7 @@ library(seqinr)
 body(seqinr::GC)
 ```
 
-## componentes de la funcion clasica
+## Componentes de una función 
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 10}
 library(seqinr)
@@ -199,7 +205,7 @@ library(seqinr)
 formals(seqinr::GC)
 ```
 
-## componentes de la funcion clasica
+## Componentes de una función 
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE}
 library(seqinr)
@@ -207,14 +213,14 @@ library(seqinr)
 environment(seqinr::GC)
 ```
 
-## R tiene varios tipos de funciones
+## Funciones particulares
 - Podemos, además, distinguir tipos especiales de funciones:
   - **Funciones primitivas**: llaman directamente a C
     - No tienen cuerpo ni formales.
   - **Funciones de alto rango**: operan sobre funciones
     - Tienen cuerpo y formales, pero constituyen un caso interesante en sí
 
-## funciones primitivas
+## Funciones primitivas
 ```{r, echo = TRUE, eval = TRUE, message=TRUE}
 sum
 
@@ -223,14 +229,14 @@ formals(sum)
 environment(sum)
 ```
 
-## funciones primitivas
+## Funciones primitivas
 ```{r, echo = TRUE, eval = TRUE, message=TRUE}
 `[`
 
 `for`
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 mi_funcion = function(argumento_1, argumento_2, ...){
@@ -244,7 +250,7 @@ mi_funcion = function(argumento_1, argumento_2, ...){
 }
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
   resultado = x^2 - y^2
@@ -252,7 +258,7 @@ eleva_y_resta = function(x,y){
 }
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
   resultado = x^2 - y^2
@@ -262,7 +268,7 @@ eleva_y_resta = function(x,y){
 eleva_y_resta(2,3)
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
   resultado = x^2 + y^2
@@ -272,7 +278,7 @@ eleva_y_resta = function(x,y){
 eleva_y_resta(y = 2, x =3)
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 ```{r setup, cache = F, eval = T, echo = F}
 knitr::opts_chunk$set(error = TRUE)
 ```
@@ -286,7 +292,7 @@ eleva_y_resta = function(x,y){
 eleva_y_resta(y = 2)
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 ```{r, echo = TRUE, eval = F, message=FALSE}
 eleva_y_resta = function(x = 1, y =1){
   resultado = x^2 - y^2
@@ -307,7 +313,7 @@ eleva_y_resta = function(x, y){
 eleva_y_resta(x = 1, y = 2)
 ```
 
-## definiendo funciones en R
+## Definición de funciones
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 # ojo con el alcance de las variables!
 x = 2
@@ -330,11 +336,11 @@ eleva_y_resta = function(x, y){
 eleva_y_resta(x = 2, y = 2)
 ```
 
-## programación defensiva
+## Programación defensiva
 
 - la función **stop()** permite salir de la función si algo esperable no sucede
 
-```{r, echo = TRUE, eval = TRUE, message=TRUE}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, size = 'small'}
 eleva_y_resta = function(x = 1, y =1){
   
   if(!is.numeric(x) | !is.numeric(y)){
@@ -348,7 +354,7 @@ eleva_y_resta = function(x = 1, y =1){
 eleva_y_resta(x = 2, y = "2")
 ```
 
-## salida de funciones en R
+## Salida de funciones 
 ```{r, echo = T, eval = T, message=FALSE}
 # ojo con el alcance de las variables!
 x = 2
@@ -361,7 +367,7 @@ eleva_resta_y_suma = function(x, y){
 eleva_resta_y_suma(x = 2, y = 2)
 ```
 
-## salida de funciones en R
+## Salida de funciones
 ```{r, echo = T, eval = T, message=FALSE}
 # ojo con el alcance de las variables!
 x = 2
@@ -374,13 +380,13 @@ eleva_resta_y_suma = function(x, y){
 eleva_resta_y_suma(x = 2, y = 2)
 ```
 
-## funciones de alto rango (*high-order functions*)
+## Funciones de alto rango (*high-order functions*)
 
 - Son funciones que toman a otras funciones como argumentos y devuelven una función o valor.
 - Funciones como apply(), sapply(), lapply(), mapply()...
 
 ## sapply
-```{r, echo = TRUE, eval = TRUE, message=TRUE, linewidth = 10, error = T}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, linewidth = 10, error = T, size = 'small'}
 # definimos un vector
 numeros = c(1,2,3,4)
 
@@ -391,7 +397,7 @@ numeros_cuadrado
 ```
 
 ## lapply
-```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 5}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 5, size = 'small'}
 # definimos un vector
 numeros = c(1,2,3,4)
 
@@ -413,7 +419,7 @@ matriz
 
 # Loops en R
 
-## loops
+## For loop (abstracto)
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 # for loop
@@ -426,7 +432,7 @@ for (i in ____) {
 }
 ```
 
-## loops
+## For loop (ejemplo)
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 numeros = c(3,40,15,6)
@@ -437,7 +443,7 @@ for (i in 1:length(numeros)) {
 }
 ```
 
-## loops
+## For loop (usando seq_along())
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 numeros = c(3,40,15,6)
@@ -448,7 +454,7 @@ for (i in seq_along(numeros)) {
 }
 ```
 
-## next
+## Operador next
 ```{r, echo = TRUE, eval = T, message=FALSE}
 numeros = c(3,40,15,6)
 numeros_cuadrado = c()
@@ -466,7 +472,7 @@ numeros_cuadrado
 ```
 
 
-## break
+## Operador break
 ```{r, echo = TRUE, eval = T, message=FALSE}
 numeros = c(3,40,15,6)
 numeros_cuadrado = c()
@@ -482,4 +488,8 @@ for (i in seq_along(numeros)) {
 numeros_cuadrado
 ```
 
+## While loop
 
+- Sigue la misma lógica que en Bash
+- Se utiliza la función while() en vez de for()
+- Se puede realizar combinando un for loop con un operador break 
