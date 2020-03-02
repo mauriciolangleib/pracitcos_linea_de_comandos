@@ -52,8 +52,8 @@ Y así con todos los datos que nos vamos cruzando... nos vamos a ir encontrando 
 
 ## Ahi recien paso a hablar del paquete
 
-## libro que vamos a usar
-```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
+## Bibliografía
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "45%", fig.align='center'}
 library(knitr)
 knitr::include_graphics('cover_rfordatascience.png')
 
@@ -201,7 +201,7 @@ Sepal.Width.Median = iris %>% .$Sepal.Width %>% median(.)
   };
 \end{tikzpicture}
 
-```{r, echo = FALSE, eval = TRUE, message=FALSE}
+```{r, echo = FALSE, eval = F, message=FALSE}
 library(knitr)
 
 knitr::include_graphics('join-setup.png')
@@ -213,10 +213,50 @@ knitr::include_graphics('transform-logical.png')
 ```
 
 
-```{r, echo = FALSE, eval = TRUE, message=FALSE}
+```{r, echo = FALSE, eval = F, message=FALSE}
 library(knitr)
 
 knitr::include_graphics('dplyr_funciones.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('filtro_filas.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('filtro_columna.png')
+```
+
+##
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{dplyr.png}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width="50%", fig.align='center'}
+library(knitr)
+
+knitr::include_graphics('combinando_dplyr.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width="20%", fig.align='left'}
+library(knitr)
+
+knitr::include_graphics('comb_dplyr1.png')
+knitr::include_graphics('comb_dplyr2.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width="20%", fig.align='right'}
+library(knitr)
+
+knitr::include_graphics('comb_dplyr3.png')
+knitr::include_graphics('comb_dplyr4.png')
 ```
 
 ## tidyr
@@ -233,6 +273,32 @@ knitr::include_graphics('dplyr_funciones.png')
 library(knitr)
 
 knitr::include_graphics('tidyr.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='right'}
+library(knitr)
+
+knitr::include_graphics('data_wide.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='right'}
+library(knitr)
+
+knitr::include_graphics('data_long.png')
+```
+
+##
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='right'}
+library(knitr)
+
+knitr::include_graphics('pivot_longer_detailed.png')
+```
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='right'}
+library(knitr)
+
+knitr::include_graphics('pivot_wider_detailed.png')
 ```
 
 ## tidyr
@@ -315,7 +381,37 @@ knitr::include_graphics('tidy-17.png')
 
 - Es importante aca explicar cosas como lo de **aes()** y cosas del estilo. Para eso hay que leer bien un articulo sobre ggplot2!
 
-## Visualización de datos
+## 
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{ggplot2_logo.png}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('ggplot_basico_1.png')
+```
+
+##
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{ggplot2_logo.png}
+  };
+\end{tikzpicture}
+
+```{r, echo = FALSE, eval = TRUE, message=FALSE}
+library(knitr)
+
+knitr::include_graphics('ggplot_basico_2.png')
+```
+
+
+##
 
 ```{r, echo = FALSE, eval = TRUE, message=FALSE}
 library(tidyverse)

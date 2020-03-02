@@ -1,0 +1,145 @@
+---
+title: "Practico 12"
+output:
+  html_document
+---
+
+```{r, echo = F, eval = T}
+#haciendo modificacioenes borrar esto a la mierda
+library(tidyverse)
+library(magrittr)
+country_original = read_csv('country-and-continent-codes-list-csv.csv')
+pais_vs_continente.final = country_original %>% dplyr::select(Continent_Name, Two_Letter_Country_Code) %>% 
+                            dplyr::rename(continente = 'Continent_Name', codigo_pais = 'Two_Letter_Country_Code')
+
+### country_original %>%
+###   dplyr::select(Continent_Name, Country_Name, Two_Letter_Country_Code) %>%
+###   mutate(Country_Name = glue('{Two_Letter_Country_Code}/{Country_Name}') %>% as.character()) %>%
+###   dplyr::select(-Two_Letter_Country_Code) %>%
+###   tidyr::pivot_wider(data = ., names_from = Continent_Name, values_from = Country_Name) %>%
+###   tidyr::unnest(., cols = c(Asia, Europe, Antarctica, Africa, Oceania, `North America`, 
+###     `South America`))
+# d
+# tengo que modificar la de los aeropuertos para tener el codigo_del_pais, que se llame 'iso_'
+
+
+#### d
+```
+
+# Introducción
+
+En este práctico (...)
+
+En particular, utilizaremos datos de la publicación ***Comparative transcriptomics analyses across species, organs, and developmental stages reveal functionally constrained lncRNAs*** (Darbellay & Necsulea, 2019).
+
+A su vez se ejemplificarán las funciones básicas a emplear con un dataset estándar empleado en muchas demostraciones: el dataset 'iris'.
+
+
+
+# Demostración
+## Leyendo datos con la librería **readr**
+
+```{r, echo = T, eval = T}
+# cargo las librerias que utilizamos en el practico
+library(magrittr)
+library(tidyverse)
+
+# cargo la tabla CSV
+aeropuertos = readr::read_csv('airport-codes.csv')
+# la visualizo
+aeropuertos
+```
+
+## Realizando modificaciones con la librería **tidyr**
+
+**FALTA PONER ALGO ACA**
+
+```{r, echo = T, eval = T}
+# realizo una modificacion con la libreria tidyr
+aeropuertos %<>% tidyr::separate(data = ., col = 'coordinates', into = c('lon', 'lat'), sep = ', ')
+aeropuertos$lat %<>% as.numeric()
+aeropuertos$lon %<>% as.numeric()
+
+# viasualizo el resultado
+aeropuertos
+```
+
+Aunque a simple vista no parezca, es posible que nuestra tabla posea datos faltantes en las columnas que posee. Limpiaremos nuestra tabla de toda fila que los posea utilizando la función **filter()**, de la librería **dplyr**. A su vez nos valdremos de la función **is.na()**.
+
+```{r, echo = T, eval = T}
+# visualizamos un caso en el cual existen NAs en nuestra tabla.
+aeropuertos %>%
+  filter(is.na(iso_country))
+```
+
+
+
+Nuestro *tibble* (clase con la que se designa a las tablas de la libreria tidyverse) no posee datos en la columna *continent*. Nos deshacemos de ella utilizando la función **select()** de la librería **dplyr**. 
+
+Cargaremos otra tabla, ** **, en la cual se correlacionan correctamente los aeropuertos y sus continentes. Esto nos servirá más adelante, ya que haremos algunos análisis categorizando en base a continentes.
+
+La misma está en formato alargado, por lo que tendremos que usar la función **pivot_longer()** de la librería **tidyr** para llevar a un formato alargado, tal como posee nuestro tibble *aeropuertos*.
+
+```{r, echo = T, eval = F}
+
+```
+
+Unimos estas tablas con la función **left_join** de la librería **dplyr**. 
+
+```{r, echo = T, eval = T}
+aeropuertos %>%
+ left_join(x = ., y = pais_vs_continente.final, by = c('iso_country' = 'codigo_pais')) %>%
+ dplyr::select(-continent) -> aeropuertos
+### aeropuertos %<>% dplyr::rename(continente = 'continent')
+### 
+### aeropuertos %<>% filter(!is.na(ident) & !is.na(type) & !is.na(elevation_ft) & !is.na(continente) & !is.na(iso_country) & !is.na(iso_region) & ### !is.na(municipality) & !is.na(gps_code) & !is.na(iata_code))
+
+aeropuertos
+
+```
+
+## Visualizando con la librería ggplot2
+
+**PONER ACA COSAS DEL GGPLOT2**
+
+Visualizaremos ahora nuestro set de datos. Empezaremos graficando, tomando la variable **lon** como coordenada *x* de nuestro gráfico y la variable **lat** como coordenada *y*, especificando estos argumentos con la función **aes()** de la librería.
+
+A su vez, debemos elegir una geometría que represente a nuestros puntos. En este caso, llamaremos a la función **geom_point()** para especificar que la misma será la geometría de puntos.
+
+```{r, echo = T, eval = T}
+aeropuertos %>%
+#  dplyr::filter(., continente == 'South America') %>%
+  ggplot(data = .,
+         mapping = aes(x = lon, y = lat, color = continente)) + 
+  geom_point()
+```
+
+```{r, echo = T, eval = T}
+aeropuertos %>%
+  dplyr::filter(., continente == 'South America') %>%
+  ggplot(data = .,
+         mapping = aes(x = lon, y = lat, color = iso_country)) + 
+  geom_point()
+```
+
+A su vez podriamos realizar un boxplot para visualizar la dispersión que posee cada continente en torno a esta variable. Para ello podemos utilizar la función **geom_boxplot()** para visualizar nuestras variables con esa geometría.
+
+```{r, echo = T, eval = T}
+aeropuertos %>%
+  ggplot(data = .,
+         mapping = aes(x = continente, y = elevation_ft, color = continente)) + 
+  geom_boxplot()
+```
+
+Podemos a su vez subdividir nuestro analisis en base a continentes (o cualquier factor). Lo haremos con la función **facet_wrap()**.
+
+```{r, echo = T, eval = T}
+aeropuertos %>%
+  ggplot(data = .,
+         mapping = aes(x = continente, y = elevation_ft, color = continente)) + 
+  geom_boxplot() +
+  facet_wrap(~type)
+```
+
+# Ejercicio
+

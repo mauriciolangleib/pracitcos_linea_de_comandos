@@ -14,7 +14,34 @@ En particular, utilizaremos datos de la publicación ***Comparative transcriptom
 
 A su vez se ejemplificarán las funciones básicas a emplear con un dataset estándar empleado en muchas demostraciones: el dataset 'iris'.
 
+# modifico un poco mas los datos
+tabla_aeropuertos = readr::read_csv('airport-codes.csv')
+tabla_aeropuertos %<>% tidyr::separate(., sep = ', ', col = 'coordinates', into = c('lon','lat'))
+tabla_aeropuertos$lon %<>% as.numeric()
+tabla_aeropuertos$lat %<>% as.numeric()
+
 # Precalentamiento
+
+# cargo datos de aeropuertos
+aeropuertos = readr::read_csv('airport-codes.csv')
+aeropuertos %<>% tidyr::separate(., col = 'coordinates', sep = ', ', into = c('lon','lat'))
+aeropuertos %>% filter(iso_country == 'AU') %>% ggplot(data = ., mapping = aes(x = lon, y = lat, color = iso_region)) + geom_point()
+
+aeropuertos %>% filter(elevation_ft > 5000) %>%
+ggplot(data = ., mapping = aes(x = lon, y = lat, color = iso_country)) + geom_point()
+
+
+# cargo datos de 
+
+
+
+
+
+
+
+
+
+
 ```{r, eval = F, echo = F}
 ### ## prep data
 ### datos_continentes = read_csv('gapminder_data.csv')
