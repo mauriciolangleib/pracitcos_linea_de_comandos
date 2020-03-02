@@ -355,17 +355,13 @@ Esto generalmente incluye
 \begin{itemize}
 \tightlist
 \item
-  componentes de una función en R
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{cuerpo}:
-  \item
-    \textbf{formales}:
-  \item
-    \textbf{ambiente}:
-  \end{itemize}
+  \textbf{cuerpo}: el código dentro de la función
+\item
+  \textbf{formales}: la lista de argumentos que controlan cómo se llama
+  a la función
+\item
+  \textbf{ambiente}: el ``mapa'' de la locación de las variables de la
+  función
 \end{itemize}
 
 \end{frame}
@@ -387,78 +383,7 @@ Esto generalmente incluye
 ##         return(NA)
 ##     if (nchar(seq[1]) > 1) 
 ##         stop("sequence is not a vector of chars")
-##     if (forceToLower) 
-##         seq <- tolower(seq)
-##     nc <- sum(seq == "c")
-##     ng <- sum(seq == "g")
-##     na <- sum(seq == "a")
-##     nt <- sum(seq == "t")
-##     if (oldGC) {
-##         warning("argument oldGC is deprecated")
-##         return((nc + ng)/length(seq))
-##     }
-##     if (!exact) {
-##         if (na + nc + ng + nt == 0) {
-##             result <- NA.GC
-##         }
-##         else {
-##             result <- (nc + ng)/(na + nc + ng + nt)
-##         }
-##     }
-##     else {
-##         ngc <- ng + nc
-##         nat <- na + nt
-##         ngc <- ngc + sum(seq == "s")
-##         nat <- nat + sum(seq == "w")
-##         if (na + nc != 0) {
-##             nm <- sum(seq == "m")
-##             ngc <- ngc + nm * nc/(na + nc)
-##             nat <- nat + nm * na/(na + nc)
-##         }
-##         if (ng + nt != 0) {
-##             nk <- sum(seq == "k")
-##             ngc <- ngc + nk * ng/(ng + nt)
-##             nat <- nat + nk * nt/(ng + nt)
-##         }
-##         if (ng + na != 0) {
-##             nr <- sum(seq == "r")
-##             ngc <- ngc + nr * ng/(ng + na)
-##             nat <- nat + nr * na/(ng + na)
-##         }
-##         if (nc + nt != 0) {
-##             ny <- sum(seq == "y")
-##             ngc <- ngc + ny * nc/(nc + nt)
-##             nat <- nat + ny * nt/(nc + nt)
-##         }
-##         if (na + nc + ng != 0) {
-##             nv <- sum(seq == "v")
-##             ngc <- ngc + nv * (nc + ng)/(na + nc + ng)
-##             nat <- nat + nv * na/(na + nc + ng)
-##         }
-##         if (na + nc + nt != 0) {
-##             nh <- sum(seq == "h")
-##             ngc <- ngc + nh * nc/(na + nc + nt)
-##             nat <- nat + nh * (na + nt)/(na + nc + nt)
-##         }
-##         if (na + ng + nt != 0) {
-##             nd <- sum(seq == "d")
-##             ngc <- ngc + nd * ng/(na + ng + nt)
-##             nat <- nat + nd * (na + nt)/(na + ng + nt)
-##         }
-##         if (nc + ng + nt != 0) {
-##             nb <- sum(seq == "b")
-##             ngc <- ngc + nb * (nc + ng)/(nc + ng + nt)
-##             nat <- nat + nb * nt/(nc + ng + nt)
-##         }
-##         if (ngc + nat == 0) {
-##             result <- NA.GC
-##         }
-##         else {
-##             result <- ngc/(ngc + nat)
-##         }
-##     }
-##     return(result)
-## }
+...
 \end{verbatim}
 
 \end{frame}
@@ -485,10 +410,7 @@ Esto generalmente incluye
 ## [1] FALSE
 ## 
 ## $NA.GC
-## [1] NA
-## 
-## $oldGC
-## [1] FALSE
+...
 \end{verbatim}
 
 \end{frame}
@@ -670,7 +592,7 @@ Esto generalmente incluye
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{eleva_y_suma =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x,y)\{}
+\NormalTok{eleva_y_resta =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x,y)\{}
 \NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
   \KeywordTok{return}\NormalTok{(resultado)}
 \NormalTok{\}}
@@ -680,7 +602,7 @@ Esto generalmente incluye
 \end{Shaded}
 
 \begin{verbatim}
-## [1] 5
+## [1] 13
 \end{verbatim}
 
 \end{frame}
@@ -690,8 +612,8 @@ Esto generalmente incluye
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{eleva_y_suma =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x,y)\{}
-\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+\NormalTok{eleva_y_resta =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x,y)\{}
+\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{-}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
   \KeywordTok{return}\NormalTok{(resultado)}
 \NormalTok{\}}
 
@@ -710,8 +632,8 @@ Esto generalmente incluye
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{eleva_y_suma =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(}\DataTypeTok{x =} \DecValTok{1}\NormalTok{, }\DataTypeTok{y =}\DecValTok{1}\NormalTok{)\{}
-\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+\NormalTok{eleva_y_resta =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(}\DataTypeTok{x =} \DecValTok{1}\NormalTok{, }\DataTypeTok{y =}\DecValTok{1}\NormalTok{)\{}
+\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{-}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
   \KeywordTok{return}\NormalTok{(resultado)}
 \NormalTok{\}}
 
@@ -732,8 +654,8 @@ Esto generalmente incluye
 \begin{Highlighting}[]
 \CommentTok{# ojo con el alcance de las variables!}
 \NormalTok{x =}\StringTok{ }\DecValTok{2}
-\NormalTok{eleva_y_suma =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x, y)\{}
-\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+\NormalTok{eleva_y_resta =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x, y)\{}
+\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{-}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
   \KeywordTok{return}\NormalTok{(resultado)}
 \NormalTok{\}}
 
@@ -747,60 +669,84 @@ Esto generalmente incluye
 
 \end{frame}
 
-\begin{frame}[fragile]{Un ejemplo un poco más refinado}
-\protect\hypertarget{un-ejemplo-un-poco-muxe1s-refinado}{}
+\begin{frame}[fragile]{programación defensiva}
+\protect\hypertarget{programaciuxf3n-defensiva}{}
+
+\begin{itemize}
+\tightlist
+\item
+  la función \textbf{stop()} permite salir de la función si algo
+  esperable no sucede
+\end{itemize}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# se arma una función arbitraria que evalúa si un número es par}
-
-\NormalTok{evalua_par =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(numero)\{}
-  \CommentTok{# si la variable numero no es de clase numeric devuelvo mensaje al usuario}
-  \ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{is.numeric}\NormalTok{(numero))\{}
-    \KeywordTok{return}\NormalTok{(}\StringTok{'Ingrese un numero'}\NormalTok{)}
+\NormalTok{eleva_y_resta =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(}\DataTypeTok{x =} \DecValTok{1}\NormalTok{, }\DataTypeTok{y =}\DecValTok{1}\NormalTok{)\{}
+  
+  \ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{is.numeric}\NormalTok{(x) }\OperatorTok{|}\StringTok{ }\OperatorTok{!}\KeywordTok{is.numeric}\NormalTok{(y))\{}
+    \KeywordTok{stop}\NormalTok{(}\StringTok{'Alguno de los argumentos dados no es un numero.'}\NormalTok{)}
 \NormalTok{  \}}
   
-  \ControlFlowTok{else}\NormalTok{ \{}
-    \CommentTok{# evaluo si numero es par, considerando el resto de dividirlo entre 2.}
-\NormalTok{    resto =}\StringTok{ }\NormalTok{numero }\OperatorTok{%%}\StringTok{ }\DecValTok{2}
-    
-    \ControlFlowTok{if}\NormalTok{(resto }\OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{)\{}
-      \KeywordTok{return}\NormalTok{(}\OtherTok{TRUE}\NormalTok{)}
-\NormalTok{    \}}
-    
-    \ControlFlowTok{else}\NormalTok{ \{}
-      \KeywordTok{return}\NormalTok{(}\OtherTok{FALSE}\NormalTok{)}
-\NormalTok{    \}}
-\NormalTok{  \}}
+\NormalTok{  resultado =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{-}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+  \KeywordTok{return}\NormalTok{(resultado)}
 \NormalTok{\}}
 
-\CommentTok{# evaluamos nuestra funcion}
-\KeywordTok{evalua_par}\NormalTok{(}\StringTok{"Texto"}\NormalTok{)}
+\KeywordTok{eleva_y_resta}\NormalTok{(}\DataTypeTok{x =} \DecValTok{2}\NormalTok{, }\DataTypeTok{y =} \StringTok{"2"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "Ingrese un numero"
+## Error in eleva_y_resta(x = 2, y = "2"): Alguno de los argumentos dados no es un numero.
 \end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{salida de funciones en R}
+\protect\hypertarget{salida-de-funciones-en-r}{}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{evalua_par}\NormalTok{(}\DataTypeTok{numero =} \DecValTok{4}\NormalTok{)}
+\CommentTok{# ojo con el alcance de las variables!}
+\NormalTok{x =}\StringTok{ }\DecValTok{2}
+\NormalTok{eleva_resta_y_suma =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x, y)\{}
+\NormalTok{  resta =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{-}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+\NormalTok{  suma =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+  \KeywordTok{return}\NormalTok{(}\KeywordTok{c}\NormalTok{(resta, suma))}
+\NormalTok{\}}
+
+\KeywordTok{eleva_resta_y_suma}\NormalTok{(}\DataTypeTok{x =} \DecValTok{2}\NormalTok{, }\DataTypeTok{y =} \DecValTok{2}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [1] TRUE
+## [1] 0 8
 \end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{salida de funciones en R}
+\protect\hypertarget{salida-de-funciones-en-r-1}{}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{evalua_par}\NormalTok{(}\DataTypeTok{numero =} \DecValTok{3}\NormalTok{)}
+\CommentTok{# ojo con el alcance de las variables!}
+\NormalTok{x =}\StringTok{ }\DecValTok{2}
+\NormalTok{eleva_resta_y_suma =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x, y)\{}
+\NormalTok{  resta =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{-}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+\NormalTok{  suma =}\StringTok{ }\NormalTok{x}\OperatorTok{^}\DecValTok{2} \OperatorTok{+}\StringTok{ }\NormalTok{y}\OperatorTok{^}\DecValTok{2}
+  \KeywordTok{return}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\KeywordTok{list}\NormalTok{(resta, suma)))}
+\NormalTok{\}}
+
+\KeywordTok{eleva_resta_y_suma}\NormalTok{(}\DataTypeTok{x =} \DecValTok{2}\NormalTok{, }\DataTypeTok{y =} \DecValTok{2}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [1] FALSE
+## [[1]]
+## [1] 0
+## 
+## [[2]]
+## [1] 8
 \end{verbatim}
 
 \end{frame}
@@ -811,29 +757,11 @@ Esto generalmente incluye
 \begin{itemize}
 \tightlist
 \item
-  Higher-order functions are functions that take other functions as
-  arguments and return either another function, or a value.
+  Son funciones que toman a otras funciones como argumentos y devuelven
+  una función o valor.
+\item
+  Funciones como apply(), sapply(), lapply(), mapply()\ldots{}
 \end{itemize}
-
-functions that work like Map(), such as apply(), lapply(), mapply(),
-sapply(), vapply() and tapply().
-
-\end{frame}
-
-\hypertarget{en-esta-seccion-esta-bueno-mostrar-eso-de-usar-una-funcion-explicita-o-de-definirla-al-boleo}{%
-\section{en esta seccion esta bueno mostrar eso de usar una funcion
-explicita o de definirla al
-boleo}\label{en-esta-seccion-esta-bueno-mostrar-eso-de-usar-una-funcion-explicita-o-de-definirla-al-boleo}}
-
-\begin{frame}{Familia de funcion apply()}
-\protect\hypertarget{familia-de-funcion-apply}{}
-
-The apply() family pertains to the R base package and is populated with
-functions to manipulate slices of data from matrices, arrays, lists and
-dataframes in a repetitive way. These functions allow crossing the data
-in a number of ways and avoid explicit use of loop constructs. They act
-on an input list, matrix or array and apply a named function with one or
-several optional arguments.
 
 \end{frame}
 
@@ -879,12 +807,7 @@ several optional arguments.
 ## 
 ## [[2]]
 ## [1] 4
-## 
-## [[3]]
-## [1] 9
-## 
-## [[4]]
-## [1] 16
+...
 \end{verbatim}
 
 \end{frame}
@@ -937,9 +860,7 @@ several optional arguments.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# for loop}
-
-\NormalTok{numeros =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{6}\NormalTok{)}
+\NormalTok{numeros =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
 \NormalTok{numeros_cuadrado =}\StringTok{ }\KeywordTok{c}\NormalTok{()}
 
 \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(numeros)) \{}
@@ -955,9 +876,7 @@ several optional arguments.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# for loop}
-
-\NormalTok{numeros =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{6}\NormalTok{)}
+\NormalTok{numeros =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
 \NormalTok{numeros_cuadrado =}\StringTok{ }\KeywordTok{c}\NormalTok{()}
 
 \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \KeywordTok{seq_along}\NormalTok{(numeros)) \{}
@@ -965,6 +884,59 @@ several optional arguments.
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{next}
+\protect\hypertarget{next}{}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{numeros =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
+\NormalTok{numeros_cuadrado =}\StringTok{ }\KeywordTok{c}\NormalTok{()}
+
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \KeywordTok{seq_along}\NormalTok{(numeros)) \{}
+  
+  \ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\NormalTok{numeros[i] }\OperatorTok{%%}\StringTok{ }\DecValTok{3} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{)\{}
+    \ControlFlowTok{next}
+\NormalTok{  \}}
+  \ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{  numeros_cuadrado[i] =}\StringTok{ }\NormalTok{numeros[i]}\OperatorTok{^}\DecValTok{2}
+\NormalTok{  \}}
+\NormalTok{\}}
+\NormalTok{numeros_cuadrado}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1]   9  NA 225  36
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{break}
+\protect\hypertarget{break}{}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{numeros =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
+\NormalTok{numeros_cuadrado =}\StringTok{ }\KeywordTok{c}\NormalTok{()}
+
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \KeywordTok{seq_along}\NormalTok{(numeros)) \{}
+  
+  \ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\NormalTok{numeros[i] }\OperatorTok{%%}\StringTok{ }\DecValTok{3} \OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{)\{}
+    \ControlFlowTok{break}
+\NormalTok{  \}}
+  
+\NormalTok{  numeros_cuadrado[i] =}\StringTok{ }\NormalTok{numeros[i]}\OperatorTok{^}\DecValTok{2}
+\NormalTok{\}}
+\NormalTok{numeros_cuadrado}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 9
+\end{verbatim}
 
 \end{frame}
 

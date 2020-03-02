@@ -18,6 +18,58 @@ header-includes:
 
 ---
 
+```{r, echo = F, eval = T}
+library(knitr)
+hook_output <- knit_hooks$get("output")
+knit_hooks$set(output = function(x, options) {
+  lines <- options$output.lines
+  if (is.null(lines)) {
+    return(hook_output(x, options))  # pass to default hook
+  }
+  x <- unlist(strsplit(x, "\n"))
+  more <- "..."
+  if (length(lines)==1) {        # first n lines
+    if (length(x) > lines) {
+      # truncate the output, but add ....
+      x <- c(head(x, lines), more)
+    }
+  } else {
+    x <- c(more, x[lines], more)
+  }
+  # paste these lines together
+  x <- paste(c(x, ""), collapse = "\n")
+  hook_output(x, options)
+})
+``` 
+
+```{r, eval = F, echo = F}
+library(knitr)
+hook_output = knit_hooks$get('output')
+knit_hooks$set(output = function(x, options) {
+  # this hook is used only when the linewidth option is not NULL
+  if (!is.null(n <- options$linewidth)) {
+    x = knitr:::split_lines(x)
+    # any lines wider than n should be wrapped
+    if (any(nchar(x) > n)) x = strwrap(x, width = n)
+    x = paste(x, collapse = '\n')
+  }
+  hook_output(x, options)
+})
+```
+
+```{r, echo = F, eval = T}
+library(knitr)
+error_hook <- knitr::knit_hooks$get("error")
+knitr::knit_hooks$set(error = function(x, options) {
+  if (!is.null(n <- options$linewidth)) {
+    x = knitr:::split_lines(x)
+    if (any(nchar(x) > n)) x = strwrap(x, width = n)
+    x = paste(x, collapse = '\n')
+  }
+  error_hook(x, options)
+})
+```
+
 ## Breve repaso
 
 ```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
@@ -133,7 +185,7 @@ Esto generalmente incluye
   
 ## componentes de la funcion clasica
 
-```{r, echo = TRUE, eval = TRUE, message=TRUE, out.height="50%"}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, out.height="50%", output.lines = 5}
 library(seqinr)
 
 body(seqinr::GC)
@@ -141,7 +193,7 @@ body(seqinr::GC)
 
 ## componentes de la funcion clasica
 
-```{r, echo = TRUE, eval = TRUE, message=TRUE}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 10}
 library(seqinr)
 
 formals(seqinr::GC)
@@ -212,7 +264,7 @@ eleva_y_resta(2,3)
 
 ## definiendo funciones en R
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
-eleva_y_suma = function(x,y){
+eleva_y_resta = function(x,y){
   resultado = x^2 + y^2
   return(resultado)
 }
@@ -226,8 +278,8 @@ knitr::opts_chunk$set(error = TRUE)
 ```
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE}
-eleva_y_suma = function(x,y){
-  resultado = x^2 + y^2
+eleva_y_resta = function(x,y){
+  resultado = x^2 - y^2
   return(resultado)
 }
 
@@ -236,8 +288,8 @@ eleva_y_resta(y = 2)
 
 ## definiendo funciones en R
 ```{r, echo = TRUE, eval = F, message=FALSE}
-eleva_y_suma = function(x = 1, y =1){
-  resultado = x^2 + y^2
+eleva_y_resta = function(x = 1, y =1){
+  resultado = x^2 - y^2
   return(resultado)
 }
 
@@ -247,8 +299,8 @@ eleva_y_resta(y = 2)
 ```{r, echo = F, eval = T, message=FALSE}
 # ojo con el alcance de las variables!
 x = 2
-eleva_y_suma = function(x, y){
-  resultado = x^2 + y^2
+eleva_y_resta = function(x, y){
+  resultado = x^2 - y^2
   return(resultado)
 }
 
@@ -259,8 +311,8 @@ eleva_y_resta(x = 1, y = 2)
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 # ojo con el alcance de las variables!
 x = 2
-eleva_y_suma = function(x, y){
-  resultado = x^2 + y^2
+eleva_y_resta = function(x, y){
+  resultado = x^2 - y^2
   return(resultado)
 }
 
@@ -270,42 +322,56 @@ eleva_y_resta(y = 2)
 ```{r, echo = F, eval = T, message=FALSE}
 # ojo con el alcance de las variables!
 x = 2
-eleva_y_suma = function(x, y){
-  resultado = x^2 + y^2
+eleva_y_resta = function(x, y){
+  resultado = x^2 - y^2
   return(resultado)
 }
 
 eleva_y_resta(x = 2, y = 2)
 ```
 
-## Un ejemplo un poco más refinado
-```{r, echo = TRUE, eval = TRUE, message=TRUE, size='tiny'}
-# se arma una función arbitraria que evalúa si un número es par
+## programación defensiva
 
-evalua_par = function(numero){
-  # si la variable numero no es de clase numeric devuelvo mensaje al usuario
-  if(!is.numeric(numero)){
-    return('Ingrese un numero')
+- la función **stop()** permite salir de la función si algo esperable no sucede
+
+```{r, echo = TRUE, eval = TRUE, message=TRUE}
+eleva_y_resta = function(x = 1, y =1){
+  
+  if(!is.numeric(x) | !is.numeric(y)){
+    stop('Alguno de los argumentos dados no es un numero.')
   }
   
-  else {
-    # evaluo si numero es par, considerando el resto de dividirlo entre 2.
-    resto = numero %% 2
-    
-    if(resto == 0){
-      return(TRUE)
-    }
-    
-    else {
-      return(FALSE)
-    }
-  }
+  resultado = x^2 - y^2
+  return(resultado)
 }
 
-# evaluamos nuestra funcion
-evalua_par("Texto")
-evalua_par(numero = 4)
-evalua_par(numero = 3)
+eleva_y_resta(x = 2, y = "2")
+```
+
+## salida de funciones en R
+```{r, echo = T, eval = T, message=FALSE}
+# ojo con el alcance de las variables!
+x = 2
+eleva_resta_y_suma = function(x, y){
+  resta = x^2 - y^2
+  suma = x^2 + y^2
+  return(c(resta, suma))
+}
+
+eleva_resta_y_suma(x = 2, y = 2)
+```
+
+## salida de funciones en R
+```{r, echo = T, eval = T, message=FALSE}
+# ojo con el alcance de las variables!
+x = 2
+eleva_resta_y_suma = function(x, y){
+  resta = x^2 - y^2
+  suma = x^2 + y^2
+  return(c(list(resta, suma)))
+}
+
+eleva_resta_y_suma(x = 2, y = 2)
 ```
 
 ## funciones de alto rango (*high-order functions*)
@@ -314,7 +380,7 @@ evalua_par(numero = 3)
 - Funciones como apply(), sapply(), lapply(), mapply()...
 
 ## sapply
-```{r, echo = TRUE, eval = TRUE, message=TRUE, size='tiny'}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, linewidth = 10, error = T}
 # definimos un vector
 numeros = c(1,2,3,4)
 
@@ -325,7 +391,7 @@ numeros_cuadrado
 ```
 
 ## lapply
-```{r, echo = TRUE, eval = TRUE, message=TRUE, size='tiny'}
+```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 5}
 # definimos un vector
 numeros = c(1,2,3,4)
 
@@ -363,9 +429,7 @@ for (i in ____) {
 ## loops
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
-# for loop
-
-numeros = c(1,40,2,6)
+numeros = c(3,40,15,6)
 numeros_cuadrado = c()
 
 for (i in 1:length(numeros)) {
@@ -376,9 +440,7 @@ for (i in 1:length(numeros)) {
 ## loops
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
-# for loop
-
-numeros = c(1,40,2,6)
+numeros = c(3,40,15,6)
 numeros_cuadrado = c()
 
 for (i in seq_along(numeros)) {
@@ -386,7 +448,38 @@ for (i in seq_along(numeros)) {
 }
 ```
 
+## next
+```{r, echo = TRUE, eval = T, message=FALSE}
+numeros = c(3,40,15,6)
+numeros_cuadrado = c()
+
+for (i in seq_along(numeros)) {
+  
+  if(!numeros[i] %% 3 == 0){
+    next
+  }
+  else {
+  numeros_cuadrado[i] = numeros[i]^2
+  }
+}
+numeros_cuadrado
+```
 
 
+## break
+```{r, echo = TRUE, eval = T, message=FALSE}
+numeros = c(3,40,15,6)
+numeros_cuadrado = c()
+
+for (i in seq_along(numeros)) {
+  
+  if(!numeros[i] %% 3 == 0){
+    break
+  }
+  
+  numeros_cuadrado[i] = numeros[i]^2
+}
+numeros_cuadrado
+```
 
 
