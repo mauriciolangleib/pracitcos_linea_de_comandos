@@ -271,7 +271,7 @@ eleva_y_resta(2,3)
 ## Definición de funciones
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
-  resultado = x^2 + y^2
+  resultado = x^2 - y^2
   return(resultado)
 }
 
