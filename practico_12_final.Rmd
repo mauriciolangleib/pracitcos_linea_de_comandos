@@ -5,7 +5,7 @@ output:
 ---
 
 
-```{r, echo = F, eval = T, results=F}
+```{r, echo = F, eval = F, results=F}
 #haciendo modificacioenes borrar esto a la mierda
 library(tidyverse)
 library(magrittr)
@@ -29,7 +29,9 @@ pais_vs_continente.final = country_original %>% dplyr::select(Continent_Name, Tw
 
 # Introducción
 
+En el presente práctico se trabajará con librerías del conjunto **tidyverse**, las cuales permiten cargar, almacenar, filtrar, editar y visualizar datos de formato tabular. En particular, de las muchas librerías que engloba tidyverse nos focalizaremos en el uso de cuatro librerías clave: **readr**, **dplyr**, **tidyr** y **ggplot2**.
 
+La modalidad será un práctico de tipo exposición, donde se irán discutiendo las operaciones realizadas. Se utilizarán dos sets de datos públicos obtenidos de (Data-Hub)[https://datahub.io/]. Los mismos son referentes a aeropuertos situados a lo largo del planeta.
 
 Información rápida sobre las operaciones clásicas de estas librerías se encuentran en las llamadas **cheatsheets**. A continuación una lista con las mismas.
 
@@ -39,10 +41,17 @@ Información rápida sobre las operaciones clásicas de estas librerías se encu
 
 - [Cheatsheet de ggplot2](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 
-Varias cheatsheets se encuentran en (esta página de RStudio)[https://rstudio.cloud/learn/cheat-sheets]
+Varias cheatsheets se encuentran en [esta página de RStudio](https://rstudio.cloud/learn/cheat-sheets)
 
-# Demostración
+A su vez, se recomienda el [libro R para Ciencia de Datos](https://es.r4ds.hadley.nz/), escrito por el inventor de tidyverse (Hadley Wickham). En el mismo se expican de forma clara y concisa cómo utilizar la totalidad de estas herramientas.
+
+# Práctico
+
 ## Leyendo datos con la librería **readr**
+
+Es muy común que los archivos con los datos crudos que deseamos analizar se encuentren alojados en el disco duro en forma de tablas. Los mismos pueden estar en distintos formatos como CSV (*comma-separated values*), TSV (*tab-separated values*) u otros.
+
+La librería **readr** posee funciones que permiten cargar estas tablas a R, produciendo automáticamente un objeto de clase *tibble*, específico de la librería tidyverse y diseñado para trabajar en ella. Las funciones de readr suelen llamarse **read_\*()**.
 
 ```{r, echo = T, eval = T}
 # cargo las librerias que utilizamos en el practico
@@ -57,6 +66,7 @@ aeropuertos
 
 ## Realizando modificaciones con la librería **tidyr**
 
+Es común que tengamos que realizar operaciones sobre las tablas que nos disponemos a analizar. Estas pueden poseer una disposición poco amigable, o poseer celdas donde exista más de un tipo de variable a la vez. Las funciones de la librería **tidyr** nos permiten llevar nuestros datos al formato deseado para análisis con tidyverse. En inglés se denomina a este tipo de tablas *tidy data*.
 
 ```{r, echo = T, eval = T}
 # realizo una modificacion con la libreria tidyr
@@ -68,7 +78,7 @@ aeropuertos$lon %<>% as.numeric()
 aeropuertos
 ```
 
-Aunque a simple vista no parezca, es posible que nuestra tabla posea datos faltantes en las columnas que posee. Limpiaremos nuestra tabla de toda fila que los posea utilizando la función **filter()**, de la librería **dplyr**. A su vez nos valdremos de la función **is.na()**.
+Aunque a simple vista no parezca, es posible que nuestra tabla posea datos faltantes en las columnas que posee. Podemos corroborar la existencia de datos faltantes utilizando la función **filter()**, de la librería **dplyr**. A su vez nos valdremos de la función **is.na()**.
 
 ```{r, echo = T, eval = T}
 # visualizamos un caso en el cual existen NAs en nuestra tabla.
@@ -77,26 +87,19 @@ aeropuertos %>%
 ```
 
 
+Nuestro *tibble* posee algunos valores NAs en la columna *continent*. Nos deshacemos de ella utilizando la función **select()** de la librería **dplyr**. 
 
-Nuestro *tibble* (clase con la que se designa a las tablas de la libreria tidyverse) no posee datos en la columna *continent*. Nos deshacemos de ella utilizando la función **select()** de la librería **dplyr**. 
-
-Cargaremos otra tabla, ** **, en la cual se correlacionan correctamente los aeropuertos y sus continentes. Esto nos servirá más adelante, ya que haremos algunos análisis categorizando en base a continentes.
-
-La misma está en formato alargado, por lo que tendremos que usar la función **pivot_longer()** de la librería **tidyr** para llevar a un formato alargado, tal como posee nuestro tibble *aeropuertos*.
-
-```{r, echo = T, eval = F}
-
-```
+Nos valdremos de otra tabla, **country-and-continent-codes-list-csv.csv**, en la cual se correlacionan correctamente los aeropuertos y sus continentes. Esto nos servirá más adelante, ya que haremos algunos análisis categorizando en base a continentes.
 
 Unimos estas tablas con la función **left_join** de la librería **dplyr**. 
 
 ```{r, echo = T, eval = T}
+
+paises_vs_continentes = read_csv('country-and-continent-codes-list-csv.csv') %>% dplyr::select(Continent_Name, Two_Letter_Country_Code)
+
 aeropuertos %>%
- left_join(x = ., y = pais_vs_continente.final, by = c('iso_country' = 'codigo_pais')) %>%
+ left_join(x = ., y = paises_vs_continentes, by = c('iso_country' = 'Two_Letter_Country_Code')) %>%
  dplyr::select(-continent) -> aeropuertos
-### aeropuertos %<>% dplyr::rename(continente = 'continent')
-### 
-### aeropuertos %<>% filter(!is.na(ident) & !is.na(type) & !is.na(elevation_ft) & !is.na(continente) & !is.na(iso_country) & !is.na(iso_region) & ### !is.na(municipality) & !is.na(gps_code) & !is.na(iata_code))
 
 aeropuertos
 
@@ -109,23 +112,33 @@ Ahora que contamos con nuestra tabla completa, podemos obtener algunos valores d
 Podríamos, por ejemplo, preguntarnos cuántos aeropuertos tenemos descritos por continente. Al realizar estas operaciones es necesario ser cuidadosos, ya que filas repetidas pueden distorsionar el estudio de las variables de interés.
 
 ```{r, echo = T, eval = T}
+# analizamos el numero de aeropuertos por continente
 aeropuertos %>% 
-  dplyr::select(name, continente) %>% 
+  # seleccionamos columnas de interes
+  dplyr::select(name, Continent_Name) %>% 
+  # nos deshacemos de filas repetidas
   unique() %>% 
-  group_by(continente) %>% 
+  # agrupamos segun valor en columna 'Continent_Name'
+  group_by(Continent_Name) %>% 
+  # obtenemos el resumen 
   summarise(numero_aeropuertos = n())
 
+# analizaremos el tipo de aeropuertos que hay por continente
 aeropuertos %>% 
-  dplyr::select(name, continente, type) %>% 
+  dplyr::select(name, Continent_Name, type) %>% 
   unique() %>% 
-  group_by(continente, type) %>% 
+  # en este caso agrupamos segun dos columnas, 'Continent_Name' y 'type'
+  group_by(Continent_Name, type) %>% 
   summarise(numero_aeropuertos = n())
 
+# veremos ahora la altura promedio de los aeropuertos por continente
 aeropuertos %>% 
+  # nos deshacemos primero de aquellos aeropuertos para los que no tenemos datos
   filter(!is.na(elevation_ft)) %>%
-  dplyr::select(name, continente, iso_country, elevation_ft) %>% 
+  # seleccionamos columnas de interes
+  dplyr::select(name, Continent_Name, iso_country, elevation_ft) %>% 
   unique() %>% 
-  group_by(continente) %>% 
+  group_by(Continent_Name) %>% 
   summarise(numero_aeropuertos = mean(elevation_ft))
 
 ```
@@ -138,27 +151,50 @@ Visualizaremos ahora nuestro set de datos. Empezaremos graficando, tomando la va
 A su vez, debemos elegir una geometría que represente a nuestros puntos. En este caso, llamaremos a la función **geom_point()** para especificar que la misma será la geometría de puntos.
 
 ```{r, echo = T, eval = T}
+# tomamos los datos de aeropuerto
 aeropuertos %>%
-#  dplyr::filter(., continente == 'South America') %>%
+  # seteamos las variables a representarse en de los ejes x e y,
   ggplot(data = .,
-         mapping = aes(x = lon, y = lat, color = continente)) + 
+         mapping = aes(x = lon, y = lat)) + 
+  # seteamos el tipo de geometria  a ser usada ('point')
+  geom_point()
+
+
+# podemos a su vez colorear en funcion de la columna 'continente'
+aeropuertos %>%
+  ggplot(data = .,
+         mapping = aes(x = lon, y = lat, color = Continent_Name)) + 
   geom_point()
 ```
 
 ```{r, echo = T, eval = T}
+# nos focalizaremos en America del Sur, coloreando segun pais
 aeropuertos %>%
-  dplyr::filter(., continente == 'South America') %>%
+  dplyr::filter(., Continent_Name == 'South America') %>%
   ggplot(data = .,
          mapping = aes(x = lon, y = lat, color = iso_country)) + 
   geom_point()
+
+# Filtraremos en base a un pais especifico, Australia (codigo AU). Coloreamos segun tipo de aeropuerto
+aeropuertos %>% 
+  filter(iso_country == 'AU') %>% 
+  ggplot(data = ., mapping = aes(x = lon, y = lat, color = type)) + geom_point()
+
+# Observamos como se distribuye el tipo de aeropuertos en America del Sur.
+aeropuertos %>% 
+  filter(Continent_Name == 'South America') %>% 
+  ggplot(data = ., mapping = aes(x = lon, y = lat, color = type)) + geom_point()
+
 ```
 
 A su vez podriamos realizar un boxplot para visualizar la dispersión que posee cada continente en torno a esta variable. Para ello podemos utilizar la función **geom_boxplot()** para visualizar nuestras variables con esa geometría.
 
 ```{r, echo = T, eval = T}
 aeropuertos %>%
+  dplyr::filter(!is.na(elevation_ft)) %>%
   ggplot(data = .,
-         mapping = aes(x = continente, y = elevation_ft, color = continente)) + 
+         mapping = aes(x = Continent_Name, y = elevation_ft, color = Continent_Name)) + 
+  # en este caso utilizamos una geometria de tipo 'boxplot'
   geom_boxplot()
 ```
 
@@ -166,9 +202,11 @@ Podemos a su vez subdividir nuestro analisis en base a continentes (o cualquier 
 
 ```{r, echo = T, eval = T}
 aeropuertos %>%
+  dplyr::filter(!is.na(elevation_ft)) %>%
   ggplot(data = .,
-         mapping = aes(x = continente, y = elevation_ft, color = continente)) + 
+         mapping = aes(x = Continent_Name, y = elevation_ft, color = Continent_Name)) + 
   geom_boxplot() +
+  # realizamos una subdivision 'en funcion' (~) de la columna 'type'
   facet_wrap(~type)
 ```
 
@@ -246,5 +284,11 @@ knitr::include_graphics('dplyr.png')
 > • **summarise()**: resume datos de un *tibble* realizando operaciones sobre el mismo (*e.g.* contar un número de columnas -función n()-, o sacar un promedio -función mean()-). Suele utilizarse junto con la función **group_by**, la cual permite subdividir a un *tibble* en función de los valores de una o más columnas.
 
 
-# Ejercicio
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{ggplot2_logo.png}
+  };
+\end{tikzpicture}
+
+> La librería **ggplot2** nos permite realizar
 

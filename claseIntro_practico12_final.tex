@@ -256,11 +256,11 @@
   };
 \end{tikzpicture}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{combinando_dplyr} \end{center}
+\begin{center}\includegraphics[width=0.8\linewidth]{combinando_dplyr} \end{center}
 
-\begin{center}\includegraphics[width=0.4\linewidth]{claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-13-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-13-1} \end{center}
 
-\begin{center}\includegraphics[width=0.4\linewidth]{claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-14-1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-14-1} \end{center}
 
 \end{frame}
 
@@ -375,8 +375,31 @@
 \begin{itemize}
 \tightlist
 \item
-  Es importante aca explicar cosas como lo de \textbf{aes()} y cosas del
-  estilo. Para eso hay que leer bien un articulo sobre ggplot2!
+  Para realizar un gráfico preciso especificar:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Los \textbf{datos} sobre los que trabajo
+  \item
+    Un sistema de coordenadas
+  \item
+    Una especificación de qué representa cada dato a nivel
+    \textbf{estético}
+  \item
+    Una \textbf{forma geométrica} para representar estos datos
+  \end{itemize}
+\item
+  Además, podríamos considerar
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Especificar \textbf{funciones} que operen sobre nuestros datos,
+    agrupándolos o transformándolos (pasa en histogramas, por ejemplo)
+  \item
+    \textbf{Subdivisiones} de nuestros datos en base a factores.
+  \end{itemize}
 \end{itemize}
 
 \end{frame}
@@ -390,7 +413,39 @@
   };
 \end{tikzpicture}
 
-\includegraphics{ggplot_basico_1.png}
+\begin{itemize}
+\tightlist
+\item
+  Para realizar un gráfico preciso especificar:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Los \textbf{datos} sobre los que trabajo -\textgreater{}
+    \textbf{ggplot()}
+  \item
+    Un sistema de coordenadas -\textgreater{} \textbf{ggplot()}
+  \item
+    Una especificación de qué representa cada dato a nivel
+    \textbf{estético} -\textgreater{} \textbf{aes()}
+  \item
+    Una \textbf{forma geométrica} para representar estos datos
+    -\textgreater{} \textbf{geom()}
+  \end{itemize}
+\item
+  Además, podríamos considerar
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Especificar \textbf{funciones} que operen sobre nuestros datos,
+    agrupándolos o transformándolos (pasa en histogramas, por ejemplo)
+    -\textgreater{} \textbf{stat()}
+  \item
+    \textbf{Subdivisiones} de nuestros datos en base a factores.
+    -\textgreater{} \textbf{facet\_wrap}
+  \end{itemize}
+\end{itemize}
 
 \end{frame}
 
@@ -403,12 +458,25 @@
   };
 \end{tikzpicture}
 
+\includegraphics{ggplot_basico_1.png}
+
+\end{frame}
+
+\begin{frame}{}
+\protect\hypertarget{section-11}{}
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{ggplot2_logo.png}
+  };
+\end{tikzpicture}
+
 \includegraphics{ggplot_basico_2.png}
 
 \end{frame}
 
 \begin{frame}[fragile]{}
-\protect\hypertarget{section-11}{}
+\protect\hypertarget{section-12}{}
 
 \begin{tikzpicture}[remember picture,overlay]
   \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
@@ -434,7 +502,7 @@
 \end{frame}
 
 \begin{frame}{}
-\protect\hypertarget{section-12}{}
+\protect\hypertarget{section-13}{}
 
 \begin{tikzpicture}[remember picture,overlay]
   \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
@@ -447,14 +515,14 @@
 \end{frame}
 
 \begin{frame}{}
-\protect\hypertarget{section-13}{}
+\protect\hypertarget{section-14}{}
 
 \includegraphics{streamlining-with-magrittr.jpg}
 
 \end{frame}
 
 \begin{frame}{}
-\protect\hypertarget{section-14}{}
+\protect\hypertarget{section-15}{}
 
 \begin{tikzpicture}[remember picture,overlay]
   \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
@@ -476,7 +544,7 @@
 \end{frame}
 
 \begin{frame}[fragile]{}
-\protect\hypertarget{section-15}{}
+\protect\hypertarget{section-16}{}
 
 \begin{tikzpicture}[remember picture,overlay]
   \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {

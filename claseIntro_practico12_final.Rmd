@@ -174,13 +174,13 @@ knitr::include_graphics('filtro_columna.png')
   };
 \end{tikzpicture}
 
-```{r, echo = FALSE, eval = T, message=FALSE, out.width="50%", fig.align='center'}
+```{r, echo = FALSE, eval = T, message=FALSE, out.width="80%", fig.align='center'}
 library(knitr)
 
 knitr::include_graphics('combinando_dplyr.png')
 ```
 
-```{r, echo = FALSE, eval = T, message=FALSE, out.width="40%", fig.align='center'}
+```{r, echo = FALSE, eval = T, message=FALSE, out.width="60%", fig.align='center'}
 library(knitr)
 library(magick)
 library(cowplot)
@@ -190,13 +190,13 @@ p2 = ggdraw() + draw_image('comb_dplyr2.png')
 plot_grid(p1,p2)
 ```
 
-```{r, echo = FALSE, eval = T, message=FALSE, out.width="40%", fig.align='center'}
+```{r, echo = FALSE, eval = T, message=FALSE, out.width="60%", fig.align='center'}
 library(knitr)
 library(magick)
 library(cowplot)
 
-p1 = ggdraw() + draw_image('comb_dplyr1.png')
-p2 = ggdraw() + draw_image('comb_dplyr2.png')
+p1 = ggdraw() + draw_image('comb_dplyr3.png')
+p2 = ggdraw() + draw_image('comb_dplyr4.png')
 plot_grid(p1,p2)
 ```
 
@@ -303,7 +303,33 @@ knitr::include_graphics('tidyr_unite.png')
   };
 \end{tikzpicture}
 
-- Es importante aca explicar cosas como lo de **aes()** y cosas del estilo. Para eso hay que leer bien un articulo sobre ggplot2!
+- Para realizar un gráfico preciso especificar:
+  - Los **datos** sobre los que trabajo
+  - Un sistema de coordenadas
+  - Una especificación de qué representa cada dato a nivel **estético**
+  - Una **forma geométrica** para representar estos datos
+
+- Además, podríamos considerar
+  - Especificar **funciones** que operen sobre nuestros datos, agrupándolos o transformándolos (pasa en histogramas, por ejemplo)
+  - **Subdivisiones** de nuestros datos en base a factores.
+
+## 
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(0cm,7.8cm)$) {
+     \includegraphics[width=1.5cm]{ggplot2_logo.png}
+  };
+\end{tikzpicture}
+
+- Para realizar un gráfico preciso especificar:
+  - Los **datos** sobre los que trabajo -> **ggplot()**
+  - Un sistema de coordenadas -> **ggplot()**
+  - Una especificación de qué representa cada dato a nivel **estético** -> **aes()**
+  - Una **forma geométrica** para representar estos datos -> **geom()**
+
+- Además, podríamos considerar
+  - Especificar **funciones** que operen sobre nuestros datos, agrupándolos o transformándolos (pasa en histogramas, por ejemplo) -> **stat()**
+  - **Subdivisiones** de nuestros datos en base a factores. -> **facet_wrap**
+
 
 ## 
 
@@ -348,7 +374,7 @@ library(tidyverse)
   # se grafica Sepal.Length vs Sepal.Width,
   # coloreando segun Species
 ggplot(data = iris,
-          aes(x = Sepal.Length, 
+       mapping = aes(x = Sepal.Length, 
               y = Sepal.Width, 
               color = Species, 
               fill = Species)) +
@@ -370,7 +396,7 @@ library(tidyverse)
   # se grafica Sepal.Length vs Sepal.Width,
   # coloreando segun Species
 ggplot(data = iris,
-          aes(x = Sepal.Length, 
+       mapping = aes(x = Sepal.Length, 
               y = Sepal.Width, 
               color = Species, 
               fill = Species)) +

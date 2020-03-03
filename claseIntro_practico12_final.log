@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.7.23)  3 MAR 2020 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.7.23)  3 MAR 2020 02:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1765,7 +1765,7 @@ Package pdftex.def Info: dplyr.png used on input line 265.
 File: combinando_dplyr.png Graphic file (type png)
 <use combinando_dplyr.png>
 Package pdftex.def Info: combinando_dplyr.png used on input line 265.
-(pdftex.def)             Requested size: 153.628pt x 44.09392pt.
+(pdftex.def)             Requested size: 245.8179pt x 70.55405pt.
 
 <claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-13-1.pdf, id=84,
  722.7pt x 260.975pt>
@@ -1774,16 +1774,20 @@ aphic file (type pdf)
 <use claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-13-1.pdf>
 Package pdftex.def Info: claseIntro_practico12_final_files/figure-beamer/unname
 d-chunk-13-1.pdf used on input line 265.
-(pdftex.def)             Requested size: 122.9125pt x 44.38507pt.
+(pdftex.def)             Requested size: 184.36876pt x 66.5776pt.
 
 <claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-14-1.pdf, id=85,
- 722.7pt x 260.975pt>
+ 722.7pt x 303.1325pt>
 File: claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-14-1.pdf Gr
 aphic file (type pdf)
 <use claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-14-1.pdf>
 Package pdftex.def Info: claseIntro_practico12_final_files/figure-beamer/unname
 d-chunk-14-1.pdf used on input line 265.
-(pdftex.def)             Requested size: 122.9125pt x 44.38507pt.
+(pdftex.def)             Requested size: 184.36876pt x 77.33244pt.
+
+Overfull \vbox (2.98378pt too high) detected at line 265
+ []
+
 [7
 
  <./combinando_dplyr.png> <./claseIntro_practico12_final_files/figure-beamer/un
@@ -1860,33 +1864,40 @@ Package pdftex.def Info: tidyr_unite.png used on input line 364.
 x 93.01416pt>
 File: ggplot2_logo.png Graphic file (type png)
 <use ggplot2_logo.png>
-Package pdftex.def Info: ggplot2_logo.png used on input line 382.
+Package pdftex.def Info: ggplot2_logo.png used on input line 405.
 (pdftex.def)             Requested size: 42.68008pt x 49.43776pt.
 [14
 
  <./ggplot2_logo.png>]
 File: ggplot2_logo.png Graphic file (type png)
 <use ggplot2_logo.png>
-Package pdftex.def Info: ggplot2_logo.png used on input line 395.
+Package pdftex.def Info: ggplot2_logo.png used on input line 450.
 (pdftex.def)             Requested size: 42.68008pt x 49.43776pt.
-<ggplot_basico_1.png, id=178, 1033.8625pt x 454.69875pt>
+[15
+
+]
+File: ggplot2_logo.png Graphic file (type png)
+<use ggplot2_logo.png>
+Package pdftex.def Info: ggplot2_logo.png used on input line 463.
+(pdftex.def)             Requested size: 42.68008pt x 49.43776pt.
+<ggplot_basico_1.png, id=186, 1033.8625pt x 454.69875pt>
 File: ggplot_basico_1.png Graphic file (type png)
 <use ggplot_basico_1.png>
-Package pdftex.def Info: ggplot_basico_1.png used on input line 395.
+Package pdftex.def Info: ggplot_basico_1.png used on input line 463.
 (pdftex.def)             Requested size: 307.29001pt x 135.14793pt.
-[15
+[16
 
  <./ggplot_basico_1.png>]
 File: ggplot2_logo.png Graphic file (type png)
 <use ggplot2_logo.png>
-Package pdftex.def Info: ggplot2_logo.png used on input line 408.
+Package pdftex.def Info: ggplot2_logo.png used on input line 476.
 (pdftex.def)             Requested size: 42.68008pt x 49.43776pt.
-<ggplot_basico_2.png, id=187, 1026.83624pt x 520.94624pt>
+<ggplot_basico_2.png, id=196, 1026.83624pt x 520.94624pt>
 File: ggplot_basico_2.png Graphic file (type png)
 <use ggplot_basico_2.png>
-Package pdftex.def Info: ggplot_basico_2.png used on input line 408.
+Package pdftex.def Info: ggplot_basico_2.png used on input line 476.
 (pdftex.def)             Requested size: 307.2855pt x 155.89557pt.
-[16
+[17
 
  <./ggplot_basico_2.png>]
 \openout4 = `claseIntro_practico12_final.vrb'.
@@ -1898,40 +1909,40 @@ Package pdftex.def Info: ggplot2_logo.png used on input line 6.
 (pdftex.def)             Requested size: 42.68008pt x 49.43776pt.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 12.
-) [17
+) [18
 
 ]
 File: ggplot2_logo.png Graphic file (type png)
 <use ggplot2_logo.png>
-Package pdftex.def Info: ggplot2_logo.png used on input line 447.
+Package pdftex.def Info: ggplot2_logo.png used on input line 515.
 (pdftex.def)             Requested size: 42.68008pt x 49.43776pt.
 
-<claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-26-1.pdf, id=205
+<claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-26-1.pdf, id=213
 , 706.64pt x 495.8525pt>
 File: claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-26-1.pdf Gr
 aphic file (type pdf)
 <use claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-26-1.pdf>
 Package pdftex.def Info: claseIntro_practico12_final_files/figure-beamer/unname
-d-chunk-26-1.pdf used on input line 447.
+d-chunk-26-1.pdf used on input line 515.
 (pdftex.def)             Requested size: 307.28888pt x 215.62599pt.
-[18
-
- <./claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-26-1.pdf>] <s
-treamlining-with-magrittr.jpg, id=220, 1003.75pt x 752.8125pt>
-File: streamlining-with-magrittr.jpg Graphic file (type jpg)
-<use streamlining-with-magrittr.jpg>
-Package pdftex.def Info: streamlining-with-magrittr.jpg used on input line 454.
-
-(pdftex.def)             Requested size: 307.28435pt x 230.46326pt.
 [19
 
- <./streamlining-with-magrittr.jpg>] <magrittr_log.jpg, id=229, 752.8125pt x 92
+ <./claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-26-1.pdf>] <s
+treamlining-with-magrittr.jpg, id=229, 1003.75pt x 752.8125pt>
+File: streamlining-with-magrittr.jpg Graphic file (type jpg)
+<use streamlining-with-magrittr.jpg>
+Package pdftex.def Info: streamlining-with-magrittr.jpg used on input line 522.
+
+(pdftex.def)             Requested size: 307.28435pt x 230.46326pt.
+[20
+
+ <./streamlining-with-magrittr.jpg>] <magrittr_log.jpg, id=237, 752.8125pt x 92
 3.45pt>
 File: magrittr_log.jpg Graphic file (type jpg)
 <use magrittr_log.jpg>
-Package pdftex.def Info: magrittr_log.jpg used on input line 476.
+Package pdftex.def Info: magrittr_log.jpg used on input line 544.
 (pdftex.def)             Requested size: 42.67412pt x 52.34692pt.
-[20
+[21
 
  <./magrittr_log.jpg>]
 \openout4 = `claseIntro_practico12_final.vrb'.
@@ -1941,74 +1952,74 @@ File: magrittr_log.jpg Graphic file (type jpg)
 <use magrittr_log.jpg>
 Package pdftex.def Info: magrittr_log.jpg used on input line 6.
 (pdftex.def)             Requested size: 42.67412pt x 52.34692pt.
-) [21
+) [22
 
-] [22
+] [23
 
-] <cover_rfordatascience.png, id=251, 240.9pt x 361.35pt>
+] <cover_rfordatascience.png, id=259, 240.9pt x 361.35pt>
 File: cover_rfordatascience.png Graphic file (type png)
 <use cover_rfordatascience.png>
-Package pdftex.def Info: cover_rfordatascience.png used on input line 516.
+Package pdftex.def Info: cover_rfordatascience.png used on input line 584.
 (pdftex.def)             Requested size: 138.28116pt x 207.42175pt.
-[23
+[24
 
- <./cover_rfordatascience.png>] [24
+ <./cover_rfordatascience.png>] [25
 
 ]
-<claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-31-1.pdf, id=266
+<claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-31-1.pdf, id=275
 , 712.6625pt x 493.845pt>
 File: claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-31-1.pdf Gr
 aphic file (type pdf)
 <use claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-31-1.pdf>
 Package pdftex.def Info: claseIntro_practico12_final_files/figure-beamer/unname
-d-chunk-31-1.pdf used on input line 530.
+d-chunk-31-1.pdf used on input line 598.
 (pdftex.def)             Requested size: 307.2871pt x 212.93697pt.
-[25
+[26
 
  <./claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-31-1.pdf>]
-<claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-32-1.pdf, id=282
+<claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-32-1.pdf, id=290
 , 521.95pt x 395.4775pt>
 File: claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-32-1.pdf Gr
 aphic file (type pdf)
 <use claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-32-1.pdf>
 Package pdftex.def Info: claseIntro_practico12_final_files/figure-beamer/unname
-d-chunk-32-1.pdf used on input line 541.
+d-chunk-32-1.pdf used on input line 609.
 (pdftex.def)             Requested size: 307.29475pt x 232.83487pt.
 
-Overfull \vbox (15.76393pt too high) detected at line 541
- []
-
-[26
-
- <./claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-32-1.pdf>] <r
-circlize.png, id=297, 341.3553pt x 341.3553pt>
-File: rcirclize.png Graphic file (type png)
-<use rcirclize.png>
-Package pdftex.def Info: rcirclize.png used on input line 548.
-(pdftex.def)             Requested size: 248.48412pt x 248.48412pt.
-
-Overfull \vbox (31.41318pt too high) detected at line 548
+Overfull \vbox (15.76393pt too high) detected at line 609
  []
 
 [27
 
- <./rcirclize.png>] <ggnomics_1.png, id=305, 513.92pt x 513.92pt>
-File: ggnomics_1.png Graphic file (type png)
-<use ggnomics_1.png>
-Package pdftex.def Info: ggnomics_1.png used on input line 555.
-(pdftex.def)             Requested size: 248.48239pt x 248.48239pt.
+ <./claseIntro_practico12_final_files/figure-beamer/unnamed-chunk-32-1.pdf>] <r
+circlize.png, id=305, 341.3553pt x 341.3553pt>
+File: rcirclize.png Graphic file (type png)
+<use rcirclize.png>
+Package pdftex.def Info: rcirclize.png used on input line 616.
+(pdftex.def)             Requested size: 248.48412pt x 248.48412pt.
 
-Overfull \vbox (31.41145pt too high) detected at line 555
+Overfull \vbox (31.41318pt too high) detected at line 616
  []
 
 [28
 
- <./ggnomics_1.png>] <ggnomics_2.png, id=313, 505.89pt x 361.35pt>
+ <./rcirclize.png>] <ggnomics_1.png, id=313, 513.92pt x 513.92pt>
+File: ggnomics_1.png Graphic file (type png)
+<use ggnomics_1.png>
+Package pdftex.def Info: ggnomics_1.png used on input line 623.
+(pdftex.def)             Requested size: 248.48239pt x 248.48239pt.
+
+Overfull \vbox (31.41145pt too high) detected at line 623
+ []
+
+[29
+
+ <./ggnomics_1.png>] <ggnomics_2.png, id=321, 505.89pt x 361.35pt>
 File: ggnomics_2.png Graphic file (type png)
 <use ggnomics_2.png>
-Package pdftex.def Info: ggnomics_2.png used on input line 562.
+Package pdftex.def Info: ggnomics_2.png used on input line 630.
 (pdftex.def)             Requested size: 291.92657pt x 208.519pt.
-[29
+[30
 
  <./ggnomics_2.png (PNG copy)>]
 \tf@nav=\write7
@@ -2020,35 +2031,36 @@ Package pdftex.def Info: ggnomics_2.png used on input line 562.
 \tf@snm=\write9
 \openout9 = `claseIntro_practico12_final.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 564.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 564.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 632.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 632.
 (./claseIntro_practico12_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 564.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 564.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 632.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 632.
 Package rerunfilecheck Info: File `claseIntro_practico12_final.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: C8D6E86FA9C4AA69850975C7CC2CFDDD;68.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 564.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 632.
  ) 
 Here is how much of TeX's memory you used:
- 35477 strings out of 494944
- 800283 string characters out of 6180677
+ 35525 strings out of 494944
+ 801408 string characters out of 6180677
  1021040 words of memory out of 5000000
- 37998 multiletter control sequences out of 15000+600000
- 32736 words of font info for 39 fonts, out of 8000000 for 9000
+ 38035 multiletter control sequences out of 15000+600000
+ 38977 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,15n,79p,743b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmtti10.pfb>
-Output written on claseIntro_practico12_final.pdf (29 pages, 2934464 bytes).
+m/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+so10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10
+.pfb>
+Output written on claseIntro_practico12_final.pdf (30 pages, 2952068 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
- 6345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 8393 words of extra memory for PDF output out of 10000 (max. 10000000)
 
