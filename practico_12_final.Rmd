@@ -4,6 +4,7 @@ output:
   html_document
 ---
 
+
 ```{r, echo = F, eval = T}
 #haciendo modificacioenes borrar esto a la mierda
 library(tidyverse)
