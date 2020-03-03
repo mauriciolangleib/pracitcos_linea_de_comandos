@@ -5,7 +5,7 @@ output:
 ---
 
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, results=F}
 #haciendo modificacioenes borrar esto a la mierda
 library(tidyverse)
 library(magrittr)
@@ -29,13 +29,17 @@ pais_vs_continente.final = country_original %>% dplyr::select(Continent_Name, Tw
 
 # Introducción
 
-En este práctico (...)
-
-En particular, utilizaremos datos de la publicación ***Comparative transcriptomics analyses across species, organs, and developmental stages reveal functionally constrained lncRNAs*** (Darbellay & Necsulea, 2019).
-
-A su vez se ejemplificarán las funciones básicas a emplear con un dataset estándar empleado en muchas demostraciones: el dataset 'iris'.
 
 
+Información rápida sobre las operaciones clásicas de estas librerías se encuentran en las llamadas **cheatsheets**. A continuación una lista con las mismas.
+
+- [Cheatsheet de readr](https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_data-import.pdf)
+
+- [Cheatsheet de dplyr + tidyr](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+
+- [Cheatsheet de ggplot2](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+
+Varias cheatsheets se encuentran en (esta página de RStudio)[https://rstudio.cloud/learn/cheat-sheets]
 
 # Demostración
 ## Leyendo datos con la librería **readr**
@@ -53,7 +57,6 @@ aeropuertos
 
 ## Realizando modificaciones con la librería **tidyr**
 
-**FALTA PONER ALGO ACA**
 
 ```{r, echo = T, eval = T}
 # realizo una modificacion con la libreria tidyr
@@ -99,9 +102,36 @@ aeropuertos
 
 ```
 
-## Visualizando con la librería ggplot2
+## Obteniendo algunos valores descriptivos con funciones de la librería **dplyr**
 
-**PONER ACA COSAS DEL GGPLOT2**
+Ahora que contamos con nuestra tabla completa, podemos obtener algunos valores descriptivos valiéndonos de las funciones **group_by()** y **summarise()**
+
+Podríamos, por ejemplo, preguntarnos cuántos aeropuertos tenemos descritos por continente. Al realizar estas operaciones es necesario ser cuidadosos, ya que filas repetidas pueden distorsionar el estudio de las variables de interés.
+
+```{r, echo = T, eval = T}
+aeropuertos %>% 
+  dplyr::select(name, continente) %>% 
+  unique() %>% 
+  group_by(continente) %>% 
+  summarise(numero_aeropuertos = n())
+
+aeropuertos %>% 
+  dplyr::select(name, continente, type) %>% 
+  unique() %>% 
+  group_by(continente, type) %>% 
+  summarise(numero_aeropuertos = n())
+
+aeropuertos %>% 
+  filter(!is.na(elevation_ft)) %>%
+  dplyr::select(name, continente, iso_country, elevation_ft) %>% 
+  unique() %>% 
+  group_by(continente) %>% 
+  summarise(numero_aeropuertos = mean(elevation_ft))
+
+```
+
+
+## Visualizando con la librería **ggplot2**
 
 Visualizaremos ahora nuestro set de datos. Empezaremos graficando, tomando la variable **lon** como coordenada *x* de nuestro gráfico y la variable **lat** como coordenada *y*, especificando estos argumentos con la función **aes()** de la librería.
 
@@ -141,6 +171,80 @@ aeropuertos %>%
   geom_boxplot() +
   facet_wrap(~type)
 ```
+
+# Un poco más de información
+
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('readr_logo.png')
+```
+
+> En la mayoría de los casos los datos con los que se trabaja suelen ser importados de archivos alojados en disco duro.
+> 
+> Para este propósito se utiliza la librería **readr**. Las funciones de la misma son capaces de leer archivos de varios formatos: CSV (*comma-separated values*), TSV (*tab-separated > alues*) y otros. 
+
+> Las funciones alojadas en esta librería comienzan todas con el prefijo **read_***, acompañadas del formato de texto que son capaces de leer. Así, por ejemplo, read_csv() es la función de esta librería diseñada para cargar archivos de texto con formato csv.
+ 
+> En general estas funciones también poseen una sintaxis similar, por lo que al aprenderse a utilizar una ya se posee el conocimiento para lograr cargar otros formatos.
+
+
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('tidyr.png')
+```
+
+> La librería tidyverse fue construída para trabajar sobre conjuntos de datos que poseen un formato en particular: estos datos son llamados *tidy data*. 
+> 
+> Para que un set sea caracterizado como *tidy data* debe poseer tres características que están interrelacionadas:
+>
+>   • Cada variable debe estar representada en una columna
+>
+>   • Cada observación debe estar representada en una fila
+>
+>   • Cada valor debe estar alojado en una celda
+> 
+> Esto no siempre se cumple en la vida cotidiana. Los *datos crudos* con los que solemos presentarnos suelen tener uno (o los dos) siguientes defectos que nos > impiden definirlos como *tidy datasets*:
+>
+>   • Una variable puede estar siendo representada en más de una columna
+>
+>   • Una observación puede estar representada en más de una fila
+> 
+> Estos problemas pueden ser resueltos con las funciones de la librería **tidyr**. Como su nombre indica, esta librería tiene como objetivo generar *tidy datasets* > en R. 
+> 
+> Sus funciones más importantes son 
+>
+> • **pivot_longer()**: hace a un dataset más *largo*, alojando valores que antes se encontraban en columnas en filas. 
+>
+> • **pivot_wider()**: lo opuesto de pibot_longer(). Un dataset se hace más *ancho* al aumentar el número de columnas y disminuir el número de filas.
+>
+> • **separate()**: separa observaciones de una columna en varias columnas, al separar los valores de sus celdas según un separador.
+>
+> • **unite()**: lo opuesto de separate(). Se unen observaciones de diferentes columnas, utilizando para ello un caracter especificado.
+
+```{r, echo = FALSE, eval = T, message=FALSE, fig.align='left', out.width="10%"}
+library(knitr)
+
+knitr::include_graphics('dplyr.png')
+```
+
+> Cinco de las funciones de la librería **dplyr** permiten hacer un conjunto de operaciones que, en su conjunto, logran resolver la mayoría de los problemas  relacionados con la manipulación de datos en un *tidy dataset*.
+> 
+> Estas funciones son
+> 
+> • **filter()**: filtra un *tibble* teniendo en cuenta condiciones lógicas que operan sobre sus columnas.
+> 
+> • **arrange()**: ordena un *tibble* en base a los valores de una o más columnas
+> 
+> • **select()**: selecciona/descarta columnas de un *tibble*.
+> 
+> • **mutate()**: genera nuevas columnas en un *tibble* en base a operaciones ejecutadas sobre columnas preexistentes
+> 
+> • **summarise()**: resume datos de un *tibble* realizando operaciones sobre el mismo (*e.g.* contar un número de columnas -función n()-, o sacar un promedio -función mean()-). Suele utilizarse junto con la función **group_by**, la cual permite subdividir a un *tibble* en función de los valores de una o más columnas.
+
 
 # Ejercicio
 
