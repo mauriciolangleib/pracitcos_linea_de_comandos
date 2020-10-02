@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hernan Juan | LBC</title>
+    <link>/es/author/hernan-juan/</link>
+      <atom:link href="/es/author/hernan-juan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hernan Juan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es</language>
+    <image>
+      <url>/images/logo_hub28cf1cc0fcc53511d471c0565db28c4_137691_300x300_fit_lanczos_2.png</url>
+      <title>Hernan Juan</title>
+      <link>/es/author/hernan-juan/</link>
+    </image>
+    
+  </channel>
+</rss>

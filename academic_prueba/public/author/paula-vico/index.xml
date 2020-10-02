@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paula Vico | LBC</title>
+    <link>/author/paula-vico/</link>
+      <atom:link href="/author/paula-vico/index.xml" rel="self" type="application/rss+xml" />
+    <description>Paula Vico</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/author/paula-vico/avatar_huc865761d159f71fdf6354eb860a34371_80201_270x270_fill_q90_lanczos_center.jpg</url>
+      <title>Paula Vico</title>
+      <link>/author/paula-vico/</link>
+    </image>
+    
+  </channel>
+</rss>

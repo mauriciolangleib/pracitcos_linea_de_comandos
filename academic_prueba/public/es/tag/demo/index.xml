@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo | LBC</title>
+    <link>/es/tag/demo/</link>
+      <atom:link href="/es/tag/demo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Demo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hub28cf1cc0fcc53511d471c0565db28c4_137691_300x300_fit_lanczos_2.png</url>
+      <title>Demo</title>
+      <link>/es/tag/demo/</link>
+    </image>
+    
+    <item>
+      <title>External Project</title>
+      <link>/es/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/es/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
