@@ -27,14 +27,14 @@ interests:
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
+  - course: Doctorado en Ciencias Biológicas
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - course: Mag. en Zoología 
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - course: Lic. en Ciencias Biológicas
+    institution: Facultad de Ciencias - Universidad de la República
     year: 2008
 
 # Social/Academic Networking
