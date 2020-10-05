@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types | LBC</title>
+    <title>Publication_types | Lab. Biol. Comp.</title>
     <link>/es/publication_types/</link>
       <atom:link href="/es/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
