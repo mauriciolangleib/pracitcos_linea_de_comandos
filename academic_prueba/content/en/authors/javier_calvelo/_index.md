@@ -28,13 +28,13 @@ education:
   courses:
   - course: Doctorado en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: 2012
+    year: 2019 - in progress
   - course: Mag. en Zoología 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: 2009
+    year: 2015 - 2017
   - course: Lic. en Ciencias Biológicas
     institution: Facultad de Ciencias - Universidad de la República
-    year: 2008
+    year: 2008 - 2014
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
