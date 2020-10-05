@@ -10,20 +10,19 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD student / Gr. 1 (5 hs)
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Dept. Biotechnology
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+#bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Bioinformatics
+- Parasite transcriptomics
 
 education:
   courses:
@@ -69,6 +68,7 @@ user_groups:
 - Researchers
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+After starting my career studying fish evolution, I have focused the later years specializing in the field of bioinformatics and parasite transcriptomics under the tutelage of Dr. Héctor Musto, Dr. Andrés Iriarte and Dr. Uriel Koziol. Specifically, I’m interested in Spliced Leader (SL) Trans-Splicing in Plathelminths in relation to the evolution of parasitism. Its description in the phylum, physiological functions and its evolutionary dynamics.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+To this ends first focused on refining in a novel pipeline for Splice Leader detection, named SLFinder that allows the novel detection of SL sequences based only on abundance, location, and orientation in mRNA transcripts. Now I’m applying it to study in detail its usage on the cestode Hymenolepis microstoma, and plan to apply the gained information and knowledge in a comprehensive survey of SL trans-splicing in the entire phylum.
+
