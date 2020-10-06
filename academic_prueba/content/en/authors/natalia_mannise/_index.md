@@ -70,6 +70,8 @@ user_groups:
 - Researchers
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My research interests rely on answering questions about ecology, evolution, and health through the use environmental samples combined with molecular approaches, such as massive sequencing. During my Ph.D. project, I focused on the study of Uruguayan foxes. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+On one hand, we analyzed the diet of these species from DNA metabarcoding approach. On the other hand, samples of foxes (feces and tissues of road-killed animals) were collected and the presence of the protozoan parasite Neospora caninum that causes abortions in cattle was examined. Foxes are considered predators of lambs and potential disease transmitters to livestock. However, they have an important role in the seed dispersion of native species, control over the populations of their prey, and are potential sentinel species of ecological health. It is necessary to know their diet composition and parasite presence from environmental DNA through several approaches, including massive sequencing. 
+
+My Ph.D. project is also carried out in the Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable and, collaboration with researchers from the Institute Pasteur de Montevideo and INIA La Estanzuela. It was funded by ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus, and Secretariado Uruguayo de la Lana.
