@@ -14,7 +14,7 @@ role: PhD student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Dept. Biotechnology (Medicine Faculty) | IIBCE
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
