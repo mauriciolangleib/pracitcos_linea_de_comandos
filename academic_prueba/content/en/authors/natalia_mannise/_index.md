@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD student
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Arreglar esto...
 
 interests:
 - Molecular ecology
@@ -28,15 +28,15 @@ interests:
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biological Sciences
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: 2015 - in progress
+  - course: MSc. in Biological Sciences () 
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: 2010 - 2013
+  - course: BSc. in Biological Sciences
+    institution: Facultad de Ciencias - Universidad de la República
+    year: 2003 - 2009
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
