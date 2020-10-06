@@ -75,3 +75,12 @@ My research interests rely on answering questions about ecology, evolution, and 
 On one hand, we analyzed the diet of these species from DNA metabarcoding approach. On the other hand, samples of foxes (feces and tissues of road-killed animals) were collected and the presence of the protozoan parasite Neospora caninum that causes abortions in cattle was examined. Foxes are considered predators of lambs and potential disease transmitters to livestock. However, they have an important role in the seed dispersion of native species, control over the populations of their prey, and are potential sentinel species of ecological health. It is necessary to know their diet composition and parasite presence from environmental DNA through several approaches, including massive sequencing. 
 
 My Ph.D. project is also carried out in the Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable and, collaboration with researchers from the Institute Pasteur de Montevideo and INIA La Estanzuela. It was funded by ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus, and Secretariado Uruguayo de la Lana.
+
+**Selected publications**
+
+- <font size="4"> [Mannise N, Trovati RG, Duarte JMB, Maldonado JE, González S. 2018. Using non-invasive genetic techniques to assist in maned wolf conservation in a remnant fragment of the Brazilian Cerrado. Animal Biodiversity and Conservation, 41(2): 315-19.]() </font> <font size="2">  </font> 
+
+- <font size="4"> [Mannise N, Cosse M, González S, Emmons LH, Duarte JMB, Beccaceci MD, Maldonado JE. 2017. Maned wolves retain moderate levels ofgenetic diversity and gene flow despite drastic habitat fragmentation, Endangered Species Research, 34: 449-62.]() </font> <font size="2">  </font> 
+
+- <font size="4"> [Moreno F, Figueiro G, Mannise N, Iriarte A, González S, Duarte JMB, Cosse M. 2016. Use of next-generation molecular tools in archaeological neotropical deer sample analysis. Journal of Archaeological Science: Reports, 10: 403– 410]() </font> <font size="2"> </font> 
+
