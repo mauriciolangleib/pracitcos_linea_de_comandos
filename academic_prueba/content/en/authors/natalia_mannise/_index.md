@@ -78,9 +78,9 @@ My Ph.D. project is also carried out in the Departamento de Biodiversidad y Gen�
 
 **Selected publications**
 
-- <font size="4"> [Mannise N, Trovati RG, Duarte JMB, Maldonado JE, González S. 2018. Using non-invasive genetic techniques to assist in maned wolf conservation in a remnant fragment of the Brazilian Cerrado. Animal Biodiversity and Conservation, 41(2): 315-19.]() </font> <font size="2">  </font> 
+- <font size="4"> [Mannise N, Trovati RG, Duarte JMB, Maldonado JE, González S. 2018. Using non-invasive genetic techniques to assist in maned wolf conservation in a remnant fragment of the Brazilian Cerrado. Animal Biodiversity and Conservation, 41(2): 315-19.](http://abc.museucienciesjournals.cat/volume-41-2-2018-abc/using-non-invasive-genetic-techniques-to-assist-in-maned-wolf-conservation-in-a-remnant-fragment-of-the-brazilian-cerrado/?lang=en) </font> <font size="2"> doi: https://doi.org/10.32800/abc.2018.41.0315 </font> 
 
-- <font size="4"> [Mannise N, Cosse M, González S, Emmons LH, Duarte JMB, Beccaceci MD, Maldonado JE. 2017. Maned wolves retain moderate levels ofgenetic diversity and gene flow despite drastic habitat fragmentation, Endangered Species Research, 34: 449-62.]() </font> <font size="2">  </font> 
+- <font size="4"> [Mannise N, Cosse M, González S, Emmons LH, Duarte JMB, Beccaceci MD, Maldonado JE. 2017. Maned wolves retain moderate levels ofgenetic diversity and gene flow despite drastic habitat fragmentation, Endangered Species Research, 34: 449-62.](https://pdfs.semanticscholar.org/7e8e/07d8cb565553df0948e24ec81d73736d4a4e.pdf?_ga=2.215528850.40569583.1602024617-1892739475.1601060741) </font> <font size="2"> doi: https://doi.org/10.3354/esr00859 </font> 
 
-- <font size="4"> [Moreno F, Figueiro G, Mannise N, Iriarte A, González S, Duarte JMB, Cosse M. 2016. Use of next-generation molecular tools in archaeological neotropical deer sample analysis. Journal of Archaeological Science: Reports, 10: 403– 410]() </font> <font size="2"> </font> 
+- <font size="4"> [Moreno F, Figueiro G, Mannise N, Iriarte A, González S, Duarte JMB, Cosse M. 2016. Use of next-generation molecular tools in archaeological neotropical deer sample analysis. Journal of Archaeological Science: Reports, 10: 403– 410](https://www.sciencedirect.com/science/article/abs/pii/S2352409X16307052) </font> <font size="2"> doi:https://doi.org/10.1016/j.jasrep.2016.11.006 </font> 
 
