@@ -4,7 +4,7 @@
   
   <url>
     <loc>/courses/example/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>/courses/example/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -34,7 +34,7 @@
   
   <url>
     <loc>/talk/example/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -48,38 +48,8 @@
   </url>
   
   <url>
-    <loc>/talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/talk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/talk/"
-                />
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/post/"
-                />
-  </url>
-  
-  <url>
     <loc>/post/writing-technical-content/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -93,23 +63,8 @@
   </url>
   
   <url>
-    <loc>/courses/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/courses/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/courses/"
-                />
-  </url>
-  
-  <url>
     <loc>/publication-type/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -124,7 +79,7 @@
   
   <url>
     <loc>/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -138,23 +93,8 @@
   </url>
   
   <url>
-    <loc>/author/andres-iriarte/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/andres-iriarte/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/andres-iriarte/"
-                />
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-06T23:00:45+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -169,7 +109,7 @@
   
   <url>
     <loc>/publication_types/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -183,23 +123,8 @@
   </url>
   
   <url>
-    <loc>/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication/"
-                />
-  </url>
-  
-  <url>
     <loc>/tag/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -214,7 +139,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -229,7 +154,7 @@
   
   <url>
     <loc>/post/jupyter/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -244,7 +169,7 @@
   
   <url>
     <loc>/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -259,7 +184,7 @@
   
   <url>
     <loc>/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -274,7 +199,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -289,7 +214,7 @@
   
   <url>
     <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -304,7 +229,7 @@
   
   <url>
     <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -319,7 +244,7 @@
   
   <url>
     <loc>/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -334,7 +259,7 @@
   
   <url>
     <loc>/tag/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -349,7 +274,7 @@
   
   <url>
     <loc>/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -364,7 +289,7 @@
   
   <url>
     <loc>/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -379,7 +304,7 @@
   
   <url>
     <loc>/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -394,7 +319,7 @@
   
   <url>
     <loc>/tag/academic/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -409,7 +334,7 @@
   
   <url>
     <loc>/post/getting-started/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -424,7 +349,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -439,7 +364,7 @@
   
   <url>
     <loc>/category/demo/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -454,7 +379,7 @@
   
   <url>
     <loc>/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -469,7 +394,7 @@
   
   <url>
     <loc>/tag/%E5%BC%80%E6%BA%90/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -484,7 +409,7 @@
   
   <url>
     <loc>/category/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -499,7 +424,7 @@
   
   <url>
     <loc>/publication-type/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -514,7 +439,7 @@
   
   <url>
     <loc>/author/balestrazzi-l./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -529,7 +454,7 @@
   
   <url>
     <loc>/author/betancor-l./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -544,7 +469,7 @@
   
   <url>
     <loc>/author/chabalgoity-j.a./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -559,7 +484,7 @@
   
   <url>
     <loc>/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -574,7 +499,7 @@
   
   <url>
     <loc>/author/dalessandro-b./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -589,7 +514,7 @@
   
   <url>
     <loc>/author/grattarola-f./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -604,7 +529,7 @@
   
   <url>
     <loc>/author/iriarte-a./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -619,7 +544,7 @@
   
   <url>
     <loc>/author/pickard-d./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -634,7 +559,7 @@
   
   <url>
     <loc>/author/perez-escanda-v./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -649,7 +574,7 @@
   
   <url>
     <loc>/author/yim-l./</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -664,7 +589,7 @@
   
   <url>
     <loc>/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -679,7 +604,7 @@
   
   <url>
     <loc>/tag/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -694,7 +619,7 @@
   
   <url>
     <loc>/category/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -709,7 +634,7 @@
   
   <url>
     <loc>/tag/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -724,7 +649,7 @@
   
   <url>
     <loc>/tag/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -739,7 +664,7 @@
   
   <url>
     <loc>/publication-type/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -754,7 +679,7 @@
   
   <url>
     <loc>/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -769,7 +694,7 @@
   
   <url>
     <loc>/author/robert-ford/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -783,7 +708,23 @@
   </url>
   
   <url>
+    <loc>/author/andres-iriarte/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/author/andres-iriarte/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/author/andres-iriarte/"
+                />
+  </url>
+  
+  <url>
     <loc>/author/cecilia-rodriguez/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -797,7 +738,23 @@
   </url>
   
   <url>
+    <loc>/courses/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/courses/"
+                />
+  </url>
+  
+  <url>
     <loc>/author/eugenio-jara/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -812,6 +769,7 @@
   
   <url>
     <loc>/author/german-traglia/</loc>
+    <lastmod>2020-10-05T19:21:47+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -826,6 +784,7 @@
   
   <url>
     <loc>/author/hernan-juan/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -840,6 +799,7 @@
   
   <url>
     <loc>/author/javier-calvelo/</loc>
+    <lastmod>2020-10-05T19:21:47+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -854,6 +814,7 @@
   
   <url>
     <loc>/author/mauricio-langleib/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -868,6 +829,7 @@
   
   <url>
     <loc>/author/natalia-mannise/</loc>
+    <lastmod>2020-10-06T23:00:45+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -882,6 +844,7 @@
   
   <url>
     <loc>/author/paula-vico/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -896,6 +859,7 @@
   
   <url>
     <loc>/author/pilar-dos-santos/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -909,7 +873,53 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/publication/"
+                />
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/talk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/talk/"
+                />
+  </url>
+  
+  <url>
     <loc>/author/sylvia-vazquez/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -924,6 +934,7 @@
   
   <url>
     <loc>/author/virginia-cantera/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
