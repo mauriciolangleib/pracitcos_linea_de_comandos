@@ -77,3 +77,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+
+# agregando esto
+[[params.customCSS]]
+ href = "static/css/custom_width.css"
