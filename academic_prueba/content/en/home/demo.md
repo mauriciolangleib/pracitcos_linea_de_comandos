@@ -56,16 +56,13 @@ subtitle = ""
 
 </center>
 
-# Description of research
+# Research lines
 
 + Linea unooooo
 
 + Linea dos
 
 + Linea tress
-
-
-<img src="img/cabezal_ddbt.jpg" width="1200">
 
 <center>
 

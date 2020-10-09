@@ -67,7 +67,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Researchers
+- PhD. students
 ---
 
 My research interests rely on answering questions about ecology, evolution, and health through the use environmental samples combined with molecular approaches, such as massive sequencing. During my Ph.D. project, I focused on the study of Uruguayan foxes. 

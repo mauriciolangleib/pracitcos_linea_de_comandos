@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Our Publications | Lab. de Biología Computacional</title>
+    <link>/whole_publication/</link>
+      <atom:link href="/whole_publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Our Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hub28cf1cc0fcc53511d471c0565db28c4_137691_300x300_fit_lanczos_2.png</url>
+      <title>Our Publications</title>
+      <link>/whole_publication/</link>
+    </image>
+    
+  </channel>
+</rss>

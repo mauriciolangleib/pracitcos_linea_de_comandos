@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cursos | Lab. Biol. Comp.</title>
+    <title>Courses | Lab. de Biología Computacional</title>
     <link>/courses/</link>
       <atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
-    <description>Cursos</description>
+    <description>Courses</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>/images/logo_hub28cf1cc0fcc53511d471c0565db28c4_137691_300x300_fit_lanczos_2.png</url>
-      <title>Cursos</title>
+      <title>Courses</title>
       <link>/courses/</link>
     </image>
     

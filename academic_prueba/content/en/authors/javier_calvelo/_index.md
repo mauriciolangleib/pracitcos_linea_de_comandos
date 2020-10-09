@@ -65,7 +65,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Researchers
+- PhD. students
 ---
 
 After starting my career studying fish evolution, I have focused the later years specializing in the field of bioinformatics and parasite transcriptomics under the tutelage of Dr. Héctor Musto, Dr. Andrés Iriarte and Dr. Uriel Koziol. 
