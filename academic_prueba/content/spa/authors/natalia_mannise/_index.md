@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student
+role: Estudiante de Doctorado
 
 # Organizations/Affiliations
 organizations:
@@ -21,20 +21,21 @@ organizations:
 bio: Arreglar esto...
 
 interests:
-- Molecular ecology
-- Ambiental DNA
-- DNA metabarcoding
-- Parasite studies
+- Ecología molecular
+- ADN ambiental
+- Metagenómica
+- Metabarcoding de ADN
+- Estudio de parásitos
 
 education:
   courses:
-  - course: PhD in Biological Sciences
+  - course: Doctorado en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2015 - in progress
-  - course: MSc. in Biological Sciences () 
+  - course: Maestría en Ciencias Biológicas 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2010 - 2013
-  - course: BSc. in Biological Sciences
+  - course: Licenciatura en Ciencias Biológicas
     institution: Facultad de Ciencias - Universidad de la República
     year: 2003 - 2009
 
@@ -70,15 +71,12 @@ user_groups:
 - PhD. students
 ---
 
-My research interests rely on answering questions about ecology, evolution, and health through the use environmental samples combined with molecular approaches, such as massive sequencing. During my Ph.D. project, I focused on the study of Uruguayan foxes. 
+Desde la línea de trabajo en la que me desarrollo busco responder preguntas ecológicas, evolutivas y sanitarias a partir de muestras ambientales y la utilización de aproximaciones moleculares, como la secuenciación masiva. En este marco, durante mi proyecto de tesis doctoral profundicé en el estudio de los zorros de Uruguay. Por un lado, analizamos la dieta de estas especies a partir de metabarcoding de ADN. Por otro lado, se colectaron muestras de zorros (fecas y tejidos de animales atropellados) y examinamos la presencia del protozoario parásito Neospora caninum que causa abortos en ganado. Los zorros son considerados depredadores de corderos y potenciales transmisores de enfermedades al ganado. Sin embargo, tienen un rol importante en la dispersión de semillas de especies nativas, control sobre las poblaciones de sus presas y son potenciales especies centinelas de la salud ecológica. De esta manera, resulta necesario conocer los taxa que componen su dieta y los parásitos presentes a partir de ADN ambiental mediante diversas aproximaciones, como la secuenciación masiva. El proyecto de doctorado se realiza también en el Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable y en colaboración con investigadores del Instituto Pasteur e INIA La Estanzuela. Fue financiado por ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus y Secretariado Uruguayo de la Lana. 
 
-On one hand, we analyzed the diet of these species from DNA metabarcoding approach. On the other hand, samples of foxes (feces and tissues of road-killed animals) were collected and the presence of the protozoan parasite Neospora caninum that causes abortions in cattle was examined. Foxes are considered predators of lambs and potential disease transmitters to livestock. However, they have an important role in the seed dispersion of native species, control over the populations of their prey, and are potential sentinel species of ecological health. It is necessary to know their diet composition and parasite presence from environmental DNA through several approaches, including massive sequencing. 
-
-My Ph.D. project is also carried out in the Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable and, collaboration with researchers from the Institute Pasteur de Montevideo and INIA La Estanzuela. It was funded by ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus, and Secretariado Uruguayo de la Lana.
 
 ___
 
-**Selected publications**
+**Publicaciones destacadas**
 ___
 
 - <font size="4"> [Mannise N, Trovati RG, Duarte JMB, Maldonado JE, González S. 2018. Using non-invasive genetic techniques to assist in maned wolf conservation in a remnant fragment of the Brazilian Cerrado. Animal Biodiversity and Conservation, 41(2): 315-19.](http://abc.museucienciesjournals.cat/volume-41-2-2018-abc/using-non-invasive-genetic-techniques-to-assist-in-maned-wolf-conservation-in-a-remnant-fragment-of-the-brazilian-cerrado/?lang=en) </font> <font size="2"> doi: https://doi.org/10.32800/abc.2018.41.0315 </font> 
