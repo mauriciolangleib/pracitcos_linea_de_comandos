@@ -76,7 +76,10 @@ On one hand, we analyzed the diet of these species from DNA metabarcoding approa
 
 My Ph.D. project is also carried out in the Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable and, collaboration with researchers from the Institute Pasteur de Montevideo and INIA La Estanzuela. It was funded by ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus, and Secretariado Uruguayo de la Lana.
 
+___
+
 **Selected publications**
+___
 
 - <font size="4"> [Mannise N, Trovati RG, Duarte JMB, Maldonado JE, González S. 2018. Using non-invasive genetic techniques to assist in maned wolf conservation in a remnant fragment of the Brazilian Cerrado. Animal Biodiversity and Conservation, 41(2): 315-19.](http://abc.museucienciesjournals.cat/volume-41-2-2018-abc/using-non-invasive-genetic-techniques-to-assist-in-maned-wolf-conservation-in-a-remnant-fragment-of-the-brazilian-cerrado/?lang=en) </font> <font size="2"> doi: https://doi.org/10.32800/abc.2018.41.0315 </font> 
 

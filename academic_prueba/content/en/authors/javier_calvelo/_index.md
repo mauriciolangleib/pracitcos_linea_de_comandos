@@ -74,6 +74,9 @@ Specifically, I’m interested in Spliced Leader (SL) Trans-Splicing in Plathelm
 
 To this ends first focused on refining in a novel pipeline for Splice Leader detection, named SLFinder that allows the novel detection of SL sequences based only on abundance, location, and orientation in mRNA transcripts. Now I’m applying it to study in detail its usage on the cestode Hymenolepis microstoma, and plan to apply the gained information and knowledge in a comprehensive survey of SL trans-splicing in the entire phylum.
 
+___
+
 **Selected publications**
+___
 
 - <font size="4"> [J. Calvelo, H. Juan, H. Musto, U. Koziol, A. Iriarte, SLFinder, a pipeline for the novel identification of splice-leader sequences: A good enough solution for a complex problem, BMC Bioinformatics. 21 (2020) 293.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03610-6) </font> <font size="2"> https://doi.org/10.1186/s12859-020-03610-6. </font> 
