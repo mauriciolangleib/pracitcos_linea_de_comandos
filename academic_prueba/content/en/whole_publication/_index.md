@@ -6,7 +6,11 @@ layout: docs
 title: Our Publications
 ---
 
+___
+
 ## 2020
+___
+
 - **Fratini F., Tamarozzi F., Macchia G., Mariconti M., Birago C., Iriarte A., Brunetti E., Cretu C.M., Akhan O., Siles-Lucas M., Diaz A. & Casulli A.** Proteomic analysis of plasma exosomes from Cystic Echinococcosis patients provides in vivo support for distinct immune response profiles in active vs inactive infection and suggests potential biomarkers. PLOS Neglected Tropical Diseases (in press). [Journal]
 
 - **Jara E., Peñagaricano F., Menezes C., Tardiz L., Rodons G., Iriarte A. & Armstrong E.** Transcriptomic analysis of eyelid pigmentation in Hereford cattle. Animal Genetics (in press). [Journal]
@@ -19,7 +23,10 @@ title: Our Publications
 
 - **D’Alessandro B., Pérez-Escanda V., Balestrazzi L., Grattarola F., Iriarte A., Pickard D., Yim L., Chabalgoity J.A. & Betancor L.** Comparative genomics of Salmonella enterica serovar Enteritidis ST-11 isolated in Uruguay reveals lineages associated with particular epidemiological traits. Scientific Reports 10(1):3638. [Pubmed]
 
+___
+
 ## 2019
+___
 
 - **Cordeiro N.F., Iriarte A., Yim L., Betancor L., Chabalgoity J.A., Camou T. & Vignoli R.** Plasmidome of a multiresistant Salmonella enterica ser. Typhimurium from Uruguay. Journal of Global Antimicrobial Resistance 20:84-86. [Pubmed]
 
@@ -39,7 +46,11 @@ title: Our Publications
 
 - **Traglia G.M., Place K., Dotto C., Fernandez J.S., Montaña S., dos Santos Bahiense C., Soler-Bistue A., Iriarte A., Perez F., Tolmasky M.E., Bonomo R.A., Melano R.G. & Ramirez M.S.** Interspecies DNA acquisition by a naturally competent Acinetobacter baumannii strain. International Journal of Antimicrobial Agents 534, 483-490. [ScienceDirect]
 
+___
+
 ## 2018
+
+___
 
 - **Traglia G.M., Chiem K., Quinn B., Fernandez J.S., Montaña S., Traglia G.M., Almuzara M., Mussi M.A., Tolmasky M., Iriarte A., Centron D. & Ramirez M.S.** Genome sequence analysis of an extensively drug-resistant Acinetobacter baumannii indigo-pigmented strain depicts evidence of increase genome plasticity. Scientific Reports 8:16961. [Journal]
 
@@ -67,7 +78,12 @@ title: Our Publications
 
 - **Montaña S., Hernandez M., Fernandez J.S., Pennini M., Centrón D., Sucari A., Iriarte A. & Ramírez M.S.** Molecular Characterization of KPC-2 positive Klebsiella pneumoniae isolates from a neurosurgical center in Argentina. New Microbes and New Infections 24:32-34. [Pubmed]
 
+___
+
 ## 2017
+
+___
+
 
 - **Sasías M.S., Martínez, A., Betancor L., Martinez A., D'Alessandro B., Iriarte A., Chabalgoity, J.A. & Yim L.** A Naturally Occurring Deletion in FliE from Salmonella enterica Serovar Dublin Results in an Aflagellate Phenotype and Defective Proinflammatory Properties. Infection and Immunity 86(1). [Pubmed]
 
@@ -77,8 +93,11 @@ title: Our Publications
 
 - **Jara E., Morel M.A., Lamolle G., Castro-Sowinski S., Simón D., Iriarte A. & Musto H.** The complex pattern of codon usage evolution in the family Comamonadaceae Ecological Genetics and Genomics. 6:1-8. [ScienceDirect]
 
+___
 
 ## 2016
+
+___
 
 - **Moreno F., Figueiro G., Mannise N., Iriarte A., González S., Barbanti-Duarte J. M. & Cosse M.** The use of next-generation molecular tools in the analysis of archaeological neotropical deer samples Journal of Archaeological Science: Reports. 10:403-410. [Journal]
 
@@ -96,7 +115,12 @@ title: Our Publications
 
 - **Morel M.A., Iriarte A. , Jara E., Musto H. & Castro-Sowinski S.** Revealing the biotechnological potential of Delftia sp. JD2 by a genomic approach. AIMS Bioengineering. 3(2), 156-175. [Pdf]
 
+___
+
 ## 2015
+
+___
+
 
 - **Traglia G.M., Almuzara M., Barberis C., Montaña S., Schramm S.T., Enriquez B., Mussi M.A., Vay C., Iriarte A. & Ramírez M.S.** Draft genome sequence of a taxonomically unique acinetobacter clinical strain with proteolytic and hemolytic activities. Genome Announcements. 3(2), pii: e00235-15. [Pubmed]
 
@@ -108,7 +132,12 @@ title: Our Publications
 
 - **Martínez-Rosales C., Marizcurrena J.J.,Iriarte A., Fullana N., Romero H. & Castro-Sowinski, S.** Characterizing proteases in an Antarctic Janthinobacterium sp. isolate. Evidence of a protease horizontal gene transfer event. Advances in Polar Science. 26(1-English), (88-95). [pdf]
 
+___
+
 ## 2014
+
+___
+
 
 - **Iriarte A., Jara E., Leytón L., Diana L. & Musto, H.** General trends in selectively driven codon usage biases in the domain archaea. J. Mol. Evol. 79(3-4), 105-110. [Pubmed]
 
@@ -118,7 +147,12 @@ title: Our Publications
 
 - Traglia G., Vilacoba E., Almuzara M., Diana L., Iriarte, A., Centrón D. & Ramírez M.S. Draft Genome Sequence of an of extensively drug-resistant Acinetobacter baumannii indigo-pigmented strain. Genome Announcements. 2(6), pii: e01146-14.. [Pubmed]
 
+___
+
 ## 2013
+
+___
+
 
 - **Iriarte A., Baraibar J., Romero H., Castro S. & Musto H.** Evolution of optimal codon choices in the family Enterobacteriaceae. Microbiology UK. 159(Pt 3), 555-64. [Pubmed]
 
@@ -126,7 +160,11 @@ title: Our Publications
 
 - **Armstrong E., Iriarte A., Martínez A.M., Feijoo M., Vega-Pla J.L., Delgado J.V. & Postiglioni A.** Genetic diversity analysis of the Uruguayan Creole cattle breed using microsatellites and mtDNA markers. Genet. Mol. Res. 12(2), 1119 - 1131. [Pdf]
 
+___
+
 ## 2012
+
+___
 
 - **Iriarte A., Arbildi P., La-Rocca S., Musto H. & Fernandez V.** Identification of novel glutathione transferases in Echinococcus granulosus. An evolutionary perspective. Acta Trop 123, 208-216. [Pubmed]
 
@@ -134,13 +172,24 @@ title: Our Publications
 
 - **Goni N., Iriarte A., Comas V., Sonora M., Moreno P., Moratorio G., Musto H. & Cristina J.** Pandemic influenza A virus codon usage revisited: biases, adaptation and implications for vaccine strain development. Virol J 9, 263. [Pdf]
 
+___
+
 ## 2011
+
+___
+
 
 - **Iriarte A., Baraibar J.D., Romero H. & Musto H.** Selected codon usage bias in members of the class Mollicutes. Gene 473, 110-118. [Pubmed]
 
 - **Koziol U., Costabile A., Dominguez M.F., Iriarte A., Alvite G., Kun A. & Castillo E.** Developmental expression of high molecular weight tropomyosin isoforms in Mesocestoides corti. Mol Biochem Parasitol 175, 181-191. [Pubmed]
 
+
+___
+
+
 ## Prior to 2010
+
+___
 
 - **Artigas R., Iriarte W., Iriarte A., de Bethencourt M., Llambi S. & Postiglioni A. (2010).** Effects of 5-azacytidine on lymphocyte-metaphases of Creole cows carrying the rob(1;29). Res Vet Sci 88, 263-266. [Pubmed]
 
