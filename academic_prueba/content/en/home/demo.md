@@ -56,17 +56,29 @@ subtitle = ""
 
 </center>
 
-# Research lines
+___ 
 
-+ One of the main goals of comparative genomics is the elucidation of the genetic basis of the phenotypic differences among species and strains. The genomic approach is of particular importance when analyzing complex phenotypes that depends on a combination of several genetic elements, such as pathogenicity, virulence or symbiosis. The genomic variability may include several levels (rearrangements, presence/absence of genes, indels or single nucleotide variants). I study these genomic traits and its evolutionary dynamics in pathogenic and nonpathogenic bacteria, including clinical and environmental isolates of Salmonella, Acinetobacter and Shewanella, among other.
+<center>
+
+# Our Research
+
+</center>
+
+___
+
+## **Platyhelminth genomics**
+
+One of the main goals of comparative genomics is the elucidation of the genetic basis of the phenotypic differences among species and strains. The genomic approach is of particular importance when analyzing complex phenotypes that depends on a combination of several genetic elements, such as pathogenicity, virulence or symbiosis. The genomic variability may include several levels (rearrangements, presence/absence of genes, indels or single nucleotide variants). I study these genomic traits and its evolutionary dynamics in pathogenic and nonpathogenic bacteria, including clinical and environmental isolates of Salmonella, Acinetobacter and Shewanella, among other.
 
 
+## ***Salmonella enterica* line**
 
-+ The study of genomes confirmed that duplication is a powerful evolutionary mechanism, generating raw material for the acquisition of new functions in the cell. In many cases the increase of copies in a family of genes has proven to be the result of an adaptive process. I have studied the evolution of gene families in platyhelminthes and other phyla. Studies mainly include phylogenetic analyzes, gene structure identification, protein 3D prediction and molecular distances estimations.
+The study of genomes confirmed that duplication is a powerful evolutionary mechanism, generating raw material for the acquisition of new functions in the cell. In many cases the increase of copies in a family of genes has proven to be the result of an adaptive process. I have studied the evolution of gene families in platyhelminthes and other phyla. Studies mainly include phylogenetic analyzes, gene structure identification, protein 3D prediction and molecular distances estimations.
 
 
+## **Evolutionary genomics**
 
-+ Codon usage bias (CUB) is the nonrandom usage of synonymous codons, which can be evidenced when comparing different genomes, genes and regions within genes. Different hypothesis have been proposed to explain CUB at these levels. In most organisms selection is likely to be the main force responsible for the preference for certain triplets in highly expressed genes and conserved regions. These preferred triplets, known as optimal codons, may be more efficient for the translation process. I have studied the evolutionary dynamics of optimal codon choices and CUB in a phylogenetic framework. Optimal codons choices are studied in relation to tRNA gene content, genomic composition and eco-physiological traits variations.
+Codon usage bias (CUB) is the nonrandom usage of synonymous codons, which can be evidenced when comparing different genomes, genes and regions within genes. Different hypothesis have been proposed to explain CUB at these levels. In most organisms selection is likely to be the main force responsible for the preference for certain triplets in highly expressed genes and conserved regions. These preferred triplets, known as optimal codons, may be more efficient for the translation process. I have studied the evolutionary dynamics of optimal codon choices and CUB in a phylogenetic framework. Optimal codons choices are studied in relation to tRNA gene content, genomic composition and eco-physiological traits variations.
 
 
 
