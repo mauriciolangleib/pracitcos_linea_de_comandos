@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student / Gr. 1 (5 hs)
+role: Estudiante de Doctorado / Gr. 1 (5 hs)
 
 # Organizations/Affiliations
 organizations:
@@ -21,18 +21,18 @@ organizations:
 #bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Bioinformatics
-- Parasite transcriptomics
+- Bioinformática
+- Transcriptómica de parásitos
 
 education:
   courses:
   - course: Doctorado en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: 2019 - in progress
-  - course: Mag. en Zoología 
+    year: 2019 - a la fecha
+  - course: Maestría en Zoología 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2015 - 2017
-  - course: Lic. en Ciencias Biológicas
+  - course: Licenciatura en Ciencias Biológicas
     institution: Facultad de Ciencias - Universidad de la República
     year: 2008 - 2014
 
@@ -68,15 +68,14 @@ user_groups:
 - PhD. students
 ---
 
-After starting my career studying fish evolution, I have focused the later years specializing in the field of bioinformatics and parasite transcriptomics under the tutelage of Dr. Héctor Musto, Dr. Andrés Iriarte and Dr. Uriel Koziol. 
+Después de comenzar mi carrera estudiando la evolución de los peces, me he enfocado los últimos años especializándome en el campo de la bioinformática y la transcriptómica de parásitos bajo la tutela del Dr. Héctor Musto, el Dr. Andrés Iriarte y el Dr. Uriel Koziol. Específicamente, estoy interesado en Spliced Leader (SL) Trans-Splicing en Platelmintos en relación con la evolución del parasitismo. Su descripción en el filo, funciones fisiológicas y su dinámica evolutiva.
 
-Specifically, I’m interested in Spliced Leader (SL) Trans-Splicing in Plathelminths in relation to the evolution of parasitism, its description in the phylum, physiological functions and its evolutionary dynamics.
+Con este fin, primero se centró en perfeccionar una nueva tubería para la detección de SLs, SLFinder, que permite la detección novedosa de secuencias de SL basándose únicamente en la abundancia, la ubicación y la orientación en las transcripciones de ARNm. Ahora lo estoy aplicando para estudiar en detalle su uso en el cestodo Hymenolepis microstoma, y planeo aplicar la información y el conocimiento adquiridos en un relevamiento exahustivo del SL trans-splicing en todo el filo.
 
-To this ends first focused on refining in a novel pipeline for Splice Leader detection, named SLFinder that allows the novel detection of SL sequences based only on abundance, location, and orientation in mRNA transcripts. Now I’m applying it to study in detail its usage on the cestode Hymenolepis microstoma, and plan to apply the gained information and knowledge in a comprehensive survey of SL trans-splicing in the entire phylum.
 
 ___
 
-**Selected publications**
+**Publicaciones destacadas**
 ___
 
 - <font size="4"> [J. Calvelo, H. Juan, H. Musto, U. Koziol, A. Iriarte, SLFinder, a pipeline for the novel identification of splice-leader sequences: A good enough solution for a complex problem, BMC Bioinformatics. 21 (2020) 293.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03610-6) </font> <font size="2"> https://doi.org/10.1186/s12859-020-03610-6. </font> 
