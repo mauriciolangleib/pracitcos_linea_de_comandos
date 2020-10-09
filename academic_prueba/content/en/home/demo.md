@@ -65,6 +65,8 @@ subtitle = ""
 + Linea tress
 
 
+<img src="img/cabezal_ddbt.jpg" width="1200">
+
 <center>
 
 ![](img/cabezal_ddbt.jpg)
