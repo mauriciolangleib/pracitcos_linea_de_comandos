@@ -23,6 +23,7 @@ bio: Arreglar esto...
 interests:
 - Molecular ecology
 - Ambiental DNA
+- Metagenomics
 - DNA metabarcoding
 - Parasite studies
 

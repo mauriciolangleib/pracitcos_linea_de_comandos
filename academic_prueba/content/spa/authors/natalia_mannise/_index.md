@@ -14,7 +14,7 @@ role: Estudiante de Doctorado
 
 # Organizations/Affiliations
 organizations:
-- name: Dept. Biotechnology (Medicine Faculty) | IIBCE
+- name: Depto. de Desarrollo Biotecnológico | IIBCE
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -31,7 +31,7 @@ education:
   courses:
   - course: Doctorado en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: 2015 - in progress
+    year: 2015 - a la fecha
   - course: Maestría en Ciencias Biológicas 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2010 - 2013
@@ -71,7 +71,11 @@ user_groups:
 - PhD. students
 ---
 
-Desde la línea de trabajo en la que me desarrollo busco responder preguntas ecológicas, evolutivas y sanitarias a partir de muestras ambientales y la utilización de aproximaciones moleculares, como la secuenciación masiva. En este marco, durante mi proyecto de tesis doctoral profundicé en el estudio de los zorros de Uruguay. Por un lado, analizamos la dieta de estas especies a partir de metabarcoding de ADN. Por otro lado, se colectaron muestras de zorros (fecas y tejidos de animales atropellados) y examinamos la presencia del protozoario parásito Neospora caninum que causa abortos en ganado. Los zorros son considerados depredadores de corderos y potenciales transmisores de enfermedades al ganado. Sin embargo, tienen un rol importante en la dispersión de semillas de especies nativas, control sobre las poblaciones de sus presas y son potenciales especies centinelas de la salud ecológica. De esta manera, resulta necesario conocer los taxa que componen su dieta y los parásitos presentes a partir de ADN ambiental mediante diversas aproximaciones, como la secuenciación masiva. El proyecto de doctorado se realiza también en el Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable y en colaboración con investigadores del Instituto Pasteur e INIA La Estanzuela. Fue financiado por ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus y Secretariado Uruguayo de la Lana. 
+Desde la línea de trabajo en la que me desarrollo busco responder preguntas ecológicas, evolutivas y sanitarias a partir de muestras ambientales y la utilización de aproximaciones moleculares, como la secuenciación masiva. En este marco, durante mi proyecto de tesis doctoral profundicé en el estudio de los zorros de Uruguay. Por un lado, analizamos la dieta de estas especies a partir de metabarcoding de ADN. 
+
+Por otro lado, se colectaron muestras de zorros (fecas y tejidos de animales atropellados) y examinamos la presencia del protozoario parásito Neospora caninum que causa abortos en ganado. Los zorros son considerados depredadores de corderos y potenciales transmisores de enfermedades al ganado. Sin embargo, tienen un rol importante en la dispersión de semillas de especies nativas, control sobre las poblaciones de sus presas y son potenciales especies centinelas de la salud ecológica. De esta manera, resulta necesario conocer los taxa que componen su dieta y los parásitos presentes a partir de ADN ambiental mediante diversas aproximaciones, como la secuenciación masiva. 
+
+El proyecto de doctorado se realiza también en el Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable y en colaboración con investigadores del Instituto Pasteur e INIA La Estanzuela. Fue financiado por ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus y Secretariado Uruguayo de la Lana. 
 
 
 ___
