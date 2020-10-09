@@ -94,7 +94,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <lastmod>2020-10-09T20:29:58-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -769,11 +769,11 @@
   
   <url>
     <loc>/author/german-matias-traglia/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <lastmod>2020-10-09T20:29:58-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/author/german-traglia/"
+                href="/es/author/german-matias-traglia/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -799,7 +799,7 @@
   
   <url>
     <loc>/author/javier-calvelo/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <lastmod>2020-10-09T20:29:58-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -829,7 +829,7 @@
   
   <url>
     <loc>/author/natalia-mannise/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <lastmod>2020-10-09T20:29:58-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -845,6 +845,16 @@
   <url>
     <loc>/whole_publication/</loc>
     <lastmod>2020-10-09T18:49:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/whole_publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/whole_publication/"
+                />
   </url>
   
   <url>

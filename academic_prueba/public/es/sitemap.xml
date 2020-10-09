@@ -768,7 +768,7 @@
   </url>
   
   <url>
-    <loc>/es/author/german-traglia/</loc>
+    <loc>/es/author/german-matias-traglia/</loc>
     <lastmod>2020-10-05T19:21:47+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -778,7 +778,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/es/author/german-traglia/"
+                href="/es/author/german-matias-traglia/"
                 />
   </url>
   
@@ -839,6 +839,20 @@
                 rel="alternate"
                 hreflang="es"
                 href="/es/author/natalia-mannise/"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/whole_publication/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/whole_publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/whole_publication/"
                 />
   </url>
   
