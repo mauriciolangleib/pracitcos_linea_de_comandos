@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: MSc. student
 
 # Organizations/Affiliations
 organizations:
@@ -21,21 +21,16 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Metagenomic of eukaryotes
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc. in Bioinformatics
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: 2019 - in progress
+  - course: BSc. in Biological Sciences
+    institution: Facultad de Ciencias - Universidad de la República
+    year: ? - 2019
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -69,6 +64,11 @@ user_groups:
 - MSc. students
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Infection by soil transmitted helminths (geohelminths) currently affects over 1 billion people across the world. These parasites' ability to persist in the environment as eggs and larvae results in high reinfection rates in exposed human populations, greatly reducing the long term efficiency of antihelminthic drug treatments. Effective containment measures call for the identification of geohelminth reservoirs.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Morphology based diagnostic methods are time intensive and their effectiveness depends on the operative's expertise, which greatly reduces their applicability at large scale studies.
+
+Metabarcoding analysis consists on PCR amplification of diagnostic sequences, known as molecular markers, from bulk DNA extractions of environmental samples. These markers are then matched against reference databases to determine the clades present sampled environment. This is a fast, accurate, and highly scalable method to characterize the species composition of a biological community.
+
+My master's thesis aims to develop an alternative method of geohelminth detection from soil samples, taking advantage of NGS technologies and meta barcoding analysis. We seek to develop a bioinformatic tool estimate the probability of occurrence of a set of helminth species of interest. We expect this tool will be a useful asset for the diagnostic of geohelminth reservoirs and the development of adequate preventive measures.
+
