@@ -55,6 +55,12 @@ subtitle = ""
 ![](img/cabezal_pagina_lbc_blanco.png)
 
 </center>
+<center>
+
+The Computational Biology Lab (LBC) focuses on the comparative and functional genomics of pathogens. Within these general areas of work, we maintain lines of research that seek to understand the genetic basis of complex phenotypes in bacteria, the evolution of multigene families in worms, and the development of tools for the application of massive sequencing.
+
+</center>
+
 
 ___ 
 
