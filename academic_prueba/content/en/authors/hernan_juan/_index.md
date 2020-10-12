@@ -30,7 +30,7 @@ education:
     year: 2019 - in progress
   - course: BSc. in Biological Sciences
     institution: Facultad de Ciencias - Universidad de la República
-    year: ? - 2019
+    year: 2012 - 2019
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
