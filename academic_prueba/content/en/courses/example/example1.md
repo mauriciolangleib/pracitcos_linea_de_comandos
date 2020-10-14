@@ -135,7 +135,7 @@ cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
 g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal (creada en a y cuyo path guardo en b). Esta vez utilice el carácter “*”.
 
 ```{bash}
-i) cp *.aln/home/estudiantes/andres_iriarte/PRACT1/
+cp *.aln /home/estudiantes/andres_iriarte/PRACT1/
 ```
 
 > **Nota**: nuevamente recuerde los espacios y razone lo que está haciendo antes y después de ejecutar el comando. 
