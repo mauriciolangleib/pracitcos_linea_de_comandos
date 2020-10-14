@@ -54,7 +54,7 @@
   
   <url>
     <loc>/publication-type/2/</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -69,7 +69,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -89,7 +89,7 @@
   
   <url>
     <loc>/author/iriarte-a./</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -109,7 +109,7 @@
   
   <url>
     <loc>/author/koziol-u./</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
   </url>
   
   <url>
@@ -119,7 +119,7 @@
   
   <url>
     <loc>/publication_types/</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -134,7 +134,7 @@
   
   <url>
     <loc>/tag/selected-publications/</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
   </url>
   
   <url>
@@ -144,7 +144,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -155,6 +155,36 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/author/aubriot-l./</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/vico_etal_2020/</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/bonilla-s./</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/cremella-b./</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/piccini-c./</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/vico-p./</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -169,51 +199,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/post/writing-technical-content/"
-                />
-  </url>
-  
-  <url>
-    <loc>/publication-type/3/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/publication-type/3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication-type/3/"
-                />
-  </url>
-  
-  <url>
-    <loc>/publication/preprint/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/publication/preprint/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication/preprint/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tag/source-themes/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/tag/source-themes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tag/source-themes/"
                 />
   </url>
   
@@ -309,22 +294,22 @@
   
   <url>
     <loc>/author/castillo-e./</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
   </url>
   
   <url>
     <loc>/author/costabile-a./</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/costabile_etal_2018/</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
   </url>
   
   <url>
     <loc>/author/tort-jf./</loc>
-    <lastmod>2020-10-14T20:29:47-03:00</lastmod>
+    <lastmod>2020-10-14T20:31:31-03:00</lastmod>
   </url>
   
   <url>
@@ -508,141 +493,6 @@
   </url>
   
   <url>
-    <loc>/author/balestrazzi-l./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/balestrazzi-l./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/balestrazzi-l./"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/betancor-l./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/betancor-l./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/betancor-l./"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/chabalgoity-j.a./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/chabalgoity-j.a./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/chabalgoity-j.a./"
-                />
-  </url>
-  
-  <url>
-    <loc>/publication/journal-article/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/publication/journal-article/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication/journal-article/"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/dalessandro-b./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/dalessandro-b./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/dalessandro-b./"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/grattarola-f./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/grattarola-f./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/grattarola-f./"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/pickard-d./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/pickard-d./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/pickard-d./"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/perez-escanda-v./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/perez-escanda-v./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/perez-escanda-v./"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/yim-l./</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/yim-l./"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/yim-l./"
-                />
-  </url>
-  
-  <url>
     <loc>/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
@@ -714,51 +564,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/tag/regression/"
-                />
-  </url>
-  
-  <url>
-    <loc>/publication-type/1/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/publication-type/1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication-type/1/"
-                />
-  </url>
-  
-  <url>
-    <loc>/publication/conference-paper/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/publication/conference-paper/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication/conference-paper/"
-                />
-  </url>
-  
-  <url>
-    <loc>/author/robert-ford/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/robert-ford/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/robert-ford/"
                 />
   </url>
   
