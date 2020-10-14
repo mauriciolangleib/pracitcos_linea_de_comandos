@@ -1,9 +1,7 @@
 ---
-title: Práctico 1
+title: "Práctico 1"
 author: Dr Andrés Iriarte
-output:
-  pdf_document:
-    toc: true
+output: pdf_document
 ---
 
 ___
