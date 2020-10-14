@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="Guía de actividades Práctico 1 Docente: Dr Andrés Iriarte Conexión remota vía SSH. Desplazamiento a través de la terminal. Uso de comandos básicos. Conexión al Servidor vía SSH 1. En un sistema operativo Linux: En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y distribuciones (ssh client).">
+  <meta name="description" content="Docente: Dr Andrés Iriarte
+ Conexión al Servidor vía SSH  1. En un sistema operativo Linux: En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y distribuciones (ssh client).">
 
   
   <link rel="alternate" hreflang="es" href="/es/courses/example/example1/">
@@ -237,13 +238,14 @@
   <meta property="og:site_name" content="Lab. de Biología Computacional">
   <meta property="og:url" content="/courses/example/example1/">
   <meta property="og:title" content="Práctico 1 | Lab. de Biología Computacional">
-  <meta property="og:description" content="Guía de actividades Práctico 1 Docente: Dr Andrés Iriarte Conexión remota vía SSH. Desplazamiento a través de la terminal. Uso de comandos básicos. Conexión al Servidor vía SSH 1. En un sistema operativo Linux: En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y distribuciones (ssh client)."><meta property="og:image" content="/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png">
+  <meta property="og:description" content="Docente: Dr Andrés Iriarte
+ Conexión al Servidor vía SSH  1. En un sistema operativo Linux: En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y distribuciones (ssh client)."><meta property="og:image" content="/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png">
   <meta property="twitter:image" content="/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-05-05T00:00:00&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-10-02T17:38:27&#43;00:00">
+    <meta property="article:modified_time" content="2020-10-13T21:58:39-03:00">
   
 
   
@@ -665,16 +667,14 @@ hr {
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#docente-dr-andrés-iriarte">Docente: Dr Andrés Iriarte</a></li>
-  </ul>
-
-  <ul>
     <li><a href="#conexión-al-servidor-vía-ssh">Conexión al Servidor vía SSH</a>
       <ul>
         <li><a href="#1-en-un-sistema-operativo-linux">1. En un sistema operativo Linux:</a></li>
         <li><a href="#2-en-un-sistema-operativo-windows">2. En un sistema operativo Windows:</a></li>
       </ul>
     </li>
+    <li><a href="#desplazamiento-en-la-terminal-comandos-cd-y-pwd">Desplazamiento en la Terminal. Comandos <em>cd</em> y <em>pwd</em>.</a></li>
+    <li><a href="#comandos-básicos-ls-mkdir-cp-mv-y-less-echo">Comandos Básicos: <em>ls</em>, <em>mkdir</em>, <em>cp</em>, <em>mv</em>, y <em>less</em>, <em>echo</em></a></li>
   </ul>
 </nav>
 
@@ -690,10 +690,10 @@ hr {
           <h1>Práctico 1</h1>
 
           <div class="article-style">
-            <h1 id="guía-de-actividades-práctico-1">Guía de actividades Práctico 1</h1>
-<h2 id="docente-dr-andrés-iriarte">Docente: Dr Andrés Iriarte</h2>
-<h1 id="conexión-remota-vía-ssh-desplazamiento-a-través-de-la-terminal-uso-de-comandos-básicos">Conexión remota vía SSH. Desplazamiento a través de la terminal. Uso de comandos básicos.</h1>
+            <p>Docente: Dr Andrés Iriarte</p>
+<hr>
 <h2 id="conexión-al-servidor-vía-ssh">Conexión al Servidor vía SSH</h2>
+<hr>
 <h3 id="1-en-un-sistema-operativo-linux">1. En un sistema operativo Linux:</h3>
 <p>En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y
 distribuciones (ssh client). Usted solo necesita localizar la terminal y activarla. Una vez en la terminal utilice el comando ssh para generar una conexión con el servidor remoto, utilizando su nombre de usuario e IP (del servidor) de la siguiente forma:</p>
@@ -707,6 +707,85 @@ los siguientes pasos:</p>
 <p>a) Abra el programa PuTTY:</p>
 <p>b) Complete el dialogo los datos de usuario (incluyendo la dirección de IP) y N° de puerto, como se
 muestra a continuación.</p>
+<p>c) Guarde la sesión una vez le haya puesto nombre (ej. estud_lbc1) y cliquee en el botón “Save”.</p>
+<p>d) Para conectarse al servidor haga click en “Open”.</p>
+<p>e) Introduzca la palabra clave o password.</p>
+<p><strong>Responda: En que lugar del sistema aparece?</strong></p>
+<hr>
+<h2 id="desplazamiento-en-la-terminal-comandos-cd-y-pwd">Desplazamiento en la Terminal. Comandos <em>cd</em> y <em>pwd</em>.</h2>
+<hr>
+<p>El comando “cd” (change directory) permite desplazarse dentro del sistema operativo, moviéndose entre
+carpetas, subiendo (hacia root) o bajando de nivel. El comando pwd (print working directory) imprime su ubicación en el sistema.</p>
+<p>a) Para salir de la carpeta donde usted está ubicado, es decir para subir de nivel, escriba:</p>
+<pre><code class="language-{bash}">cd ..
+</code></pre>
+<p>b) Para subir dos niveles, es decir salir de dos carpetas anidadas, escriba:</p>
+<pre><code class="language-{bash}">cd ../..
+</code></pre>
+<blockquote>
+<p><strong>Nota</strong>: recuerde el espacio luego del comando y separando argumentos</p>
+</blockquote>
+<p>c) Utilizando el comando “pwd” establezca su ubicación y escríbala a continuación:
+………………………………….………………………………….</p>
+<p>d) ¿Puede seguir subiendo de nivel? Justifique su respuesta.</p>
+<p>e) Vuelva a la carpeta de su usuario con la opción a o b:
+a. cd /home/estudiantes o
+b. cd home y luego
+cd estudiantes</p>
+<p>f) Dibuje a continuación de forma muy esquemática y en un diagrama jerárquico el sistema de
+archivos de su lcb1 o lcb2 (no baje más de 3 niveles!).</p>
+<hr>
+<h2 id="comandos-básicos-ls-mkdir-cp-mv-y-less-echo">Comandos Básicos: <em>ls</em>, <em>mkdir</em>, <em>cp</em>, <em>mv</em>, y <em>less</em>, <em>echo</em></h2>
+<hr>
+<p>El comando “ls” (list) permite enlistar el contenido de un directorio, con “mkdir” (make directory) genera nuevos directorios (o carpetas). “cp” (copy) y “mv”(move) permiten copiar y mover archivos,respectivamente. En el caso de “mv”, se puede utilizar para cambiar el nombre de un archivo o directorio.</p>
+<p>Utilizando “less” o “more” es posible visualizar el contenido de un archivo de texto, no modificarlo.</p>
+<p>Finalmente “echo” permite imprimir a la pantalla un texto o el contenido de una variable.</p>
+<p>a) Generaremos un directorio dentro de la carpeta general del usuario “estudiantes” con su nombre y apellido, utilice “mkdir”.
+Dentro de esta carpeta cree una nueva con el nombre PRACT1.Recuerde no utilizar caracteres extraños como por ejemplo: ñ ; ¿ ^ $ “ ‘ = ( ] { á o espacio).</p>
+<pre><code class="language-{bash}">mkdir andres_iriarte
+cd andres_iriarte
+mkdir PRACT1 
+</code></pre>
+<blockquote>
+<p><strong>Nota</strong>: cada estudiante trabajará en su carpeta!</p>
+</blockquote>
+<p>b) Entre en la carpeta recién creada utilizando el comando “cd” y luego utilizando el comando “pwd”
+establezca su path o dirección absoluta. Guarde en un archivo de texto este path.
+i) cd PRACT1
+ii) pwd
+c) Desplazarse a la carpeta MATERIALES dentro del usuario “estudiantes” y dentro de ella a la carpeta
+Practico1.
+d) Utilizando el comando “ls” visualice todos los archivos presentes en la carpeta Practico1,
+/home/estudiantes/MATERIALES/Practico1/. Utilizando el carácter “*”puede enlistar todos los
+archivos terminados en “.fas” o “.aln” o todos los que comiencen con “seq”:
+i) ls
+ii) ls <em>.fas
+iii) ls <em>.aln
+iv) ls seq</em>
+e) Visualice el primer archivo en formato fasta utilizando el comando “less”, y luego el primer archivo
+en formato clustalW. Cuantas secuencias contiene el primer archivo fasta y el segundo.
+i) less cpe.1000.fas
+ii) less cpe.1001.fas
+f) Copie, utilizando el comando “cp” todos los archivos que terminan en “.fas” a su carpeta personal
+(creada en a y cuyo path guardo en b):
+i) cp cpe.1000.fas /home/estudiantes/andres_iriarte/PRACT1/
+ii) cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
+iii) …
+g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal
+(creada en a y cuyo path guardo en b). Esta vez utilice el carácter “</em>”.
+i) cp *.aln/home/estudiantes/andres_iriarte/PRACT1/
+nota: nuevamente recuerde los espacios y
+razone lo que está haciendo antes y después de
+ejecutar el comando.</p>
+<ul>
+<li>ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.
+Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los
+dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro
+del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
+no volver a escribir los comandos ya ejecutados.
+La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos
+estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos.</li>
+</ul>
 
           </div>
 
@@ -727,7 +806,7 @@ muestra a continuación.</p>
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Oct 2, 2020</p>
+          <p>Last updated on Oct 13, 2020</p>
 
           
 
