@@ -80,7 +80,7 @@ ___
 
 - <font size="4"> [Paula Vico; Luis Aubriot; Fatima Martigani; Natalia Rigamonti; Sylvia Bonilla; ClaudiaPiccini. 2016. Título "Influence of nitrogen availability on the expression of genesinvolved in the biosynthesis of saxitoxin and analogs in Cylindrospermopsis raciborskii”. Harmful Algae 56 (2016) 37–43.]() </font> <font size="2"> doi: dx.doi.org/10.1016/j.hal.2016.04.008</font> 
 
-- <font size="4"> []() </font> <font size="2"> doi: </font> 
+- <font size="4"> [Guadalupe Beamud; Paula Vico; Signe Haakonsson; Gabriela Martınez de la Escalera; Claudia Piccini; Beatriz M. Brena; Macarena Pirez; Sylvia Bonilla. Influence of UV-B radiation on the fitness and toxin expression of the cyanobacterium Cylindrospermopsis raciborskii Hydrobiologia (2016) 763-161.]() </font> <font size="2"> doi: </font> 
 
-- <font size="4"> []() </font> <font size="2"> doi: </font> 
+- <font size="4"> [Carla Kruk; Angel Segura; LucíaNogueira; Carmela Carballo; Gabriela Martínez de la Escalera; Danilo Calliari; Graciela Ferrari; Macarena Simoens; Jacqueline Cea; Ignacio Alcántara; Paula Vico; Diana Míguez; Claudia Piccini. 2015. Título: “Herramientas para el monitoreo y sistema de alerta de floraciones de cianobacterias nocivas: Río Uruguay y Río de la Plata”. INNOTEC 10 (2015) 23 – 39.]() </font> <font size="2"> doi: </font> 
 

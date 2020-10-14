@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
@@ -21,21 +21,20 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Prokaryote transcriptomics, metabolomics and proteomics
+- Plant-bacteria interaction
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biological Sciences
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: in progress
+  - course: MSc. in Biological Sciences
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: 
+  - course: BSc in Biochemistry
+    institution: Universidad de la República
+    year: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -69,6 +68,17 @@ user_groups:
 - PhD. students
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Currently, within the framework of my PhD project, I am working on a line of research which is based on the study of BNF in $$\alpha$$- and $$\beta$$-proteobacteria. Rhizobia are bacteria that fix gaseous nitrogen ($$N_2$$) after endosymbiotically established in nodules, generally root, of legumes. These bacteria form a phylogenetically diverse group located within the alpha and beta-proteobacteria, the latter being the least studied. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Describing and understanding the lineage-specific changes that occurred in the genome of different rhizobia is essential to fully understand the process of BNF in symbiosis. This project specifically aims to understand the process of biological nitrogen fixation (BNF) in $$\beta$$-rhizobia, with special emphasis on genetic processes related to the recognition of the host plant and nodulation, using a transcriptomic tool, RNAseq. For this, a rhizobium of the genus *Cupriavidus*, previously isolated in our laboratory, and a species of the genus *Mimosa* as nodulation host will be used as a study model. 
+
+The RNAseq analysis is proposed in three key stages in the symbiosis process. The identification of the genes with differential expression obtained, as well as the immediate characterization that arises naturally from the metabolic pathways and/or related systems, will allow us to understand in more depth the biological process. With the data obtained, it is proposed to determine the similarities and differences between the associations established between alpha and beta-rhizobia with their host legumes.
+
+___
+
+**Selected publications**
+___
+
+- <font size="4"> [Improved glycerol to ethanol conversion by E. coli using a metagenomic fragment isolated from an anaerobic reactor, 2016 LOÁCES, I. , RODRIGUEZ, C. , AMARELLE, V. , FABIANO, E , NOYA, F]() </font> <font size="2"> doi:  </font> 
+
+- <font size="4"> [Est10: A Novel Alkaline Esterase Isolated from Bovine Rumen Belonging to the New Family XV of Lipolytic Enzymes (Completo, 2015) RODRIGUEZ, C. , LOÁCES, I. , AMARELLE, V , SENATORE, D , IRIARTE, A. , FABIANO, E , NOYA, F PLoS ONE, 2015.]() </font> <font size="2"> doi:  </font> 
