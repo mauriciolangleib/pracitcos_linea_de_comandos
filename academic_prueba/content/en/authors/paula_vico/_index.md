@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
@@ -21,21 +21,19 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Genomics
+- Transcriptomics
+- Evolution
+- Toxin production in cyanobacteria
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biological Sciences
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: in progress
+  - course: BSc in Biochemistry
+    institution: Universidad de la República
+    year: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -69,6 +67,20 @@ user_groups:
 - PhD. students
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+The global distribution of the toxic cyanobacterium cause negative ecological and health impacts. In that sense, the aim of my work is elucidate the biological and ecological role of toxins production in cyanobacterias. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Based on an evolutionary, genomics, metagenomics and transcriptomics aporach, we evaluate the possible mechanisms involved in toxin production by a cyanobacteria of the genus Raphidiopsis (ex Cylindrospemopsis). Furthermore, we aslo inlcude the study of the bacterial microbiome associated with cyanobacteria,since it has recently been propoused that it would be necessary in the biology of cyanobacteria
+
+___
+
+**Selected publications**
+___
+
+- <font size="4"> [Paula Vico; Sylvia Bonilla; Bruno Cremella; Luis Aubriot; Andres Iriarte; Claudia Piccini. 2020. Título“ Biogeography of the cyanobacterium Raphidiopsis (Cylindrospermopsis) raciborskii: Integrating genomics,phylogenetic and toxicity data”. Molecular Phylogenetics and Evolution 149 (2020) 106824. ]() </font> <font size="2"> doi: 10.1016/j.ympev.2020.106824 </font> 
+
+- <font size="4"> [Paula Vico; Luis Aubriot; Fatima Martigani; Natalia Rigamonti; Sylvia Bonilla; ClaudiaPiccini. 2016. Título "Influence of nitrogen availability on the expression of genesinvolved in the biosynthesis of saxitoxin and analogs in Cylindrospermopsis raciborskii”. Harmful Algae 56 (2016) 37–43.]() </font> <font size="2"> doi: dx.doi.org/10.1016/j.hal.2016.04.008</font> 
+
+- <font size="4"> []() </font> <font size="2"> doi: </font> 
+
+- <font size="4"> []() </font> <font size="2"> doi: </font> 
+
