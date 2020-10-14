@@ -24,10 +24,9 @@
 &lt;h3 id=&#34;1-en-un-sistema-operativo-linux&#34;&gt;1. En un sistema operativo Linux:&lt;/h3&gt;
 &lt;p&gt;En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y
 distribuciones (ssh client). Usted solo necesita localizar la terminal y activarla. Una vez en la terminal utilice el comando ssh para generar una conexión con el servidor remoto, utilizando su nombre de usuario e IP (del servidor) de la siguiente forma:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ssh &lt;a href=&#34;mailto:estudiantes@164.73.173.95&#34;&gt;estudiantes@164.73.173.95&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;A continuación escriba el password o palabra clave (ver en pizarrón).&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;ssh estudiantes@164.73.173.95
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A continuación escriba el password o palabra clave (ver en pizarrón).&lt;/p&gt;
 &lt;h3 id=&#34;2-en-un-sistema-operativo-windows&#34;&gt;2. En un sistema operativo Windows:&lt;/h3&gt;
 &lt;p&gt;Para conectarnos a un servidor vía ssh desde un sistema operativo Windows utilizaremos el programa PuTTY, que usted debería ya tener instalado. De no ser así por favor instale en su computadora desde el ejecutable disponible en &lt;a href=&#34;http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html&#34;&gt;www.chiark.greenend.org.uk/~sgtatham/putty/latest.html&lt;/a&gt;. Una vez instalado siga
 los siguientes pasos:&lt;/p&gt;
