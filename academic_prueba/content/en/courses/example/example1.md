@@ -96,41 +96,54 @@ mkdir PRACT1
 
 > **Nota**: cada estudiante trabajará en su carpeta!
 
-b) Entre en la carpeta recién creada utilizando el comando “cd” y luego utilizando el comando “pwd”
-establezca su path o dirección absoluta. Guarde en un archivo de texto este path.
-i) cd PRACT1
-ii) pwd
-c) Desplazarse a la carpeta MATERIALES dentro del usuario “estudiantes” y dentro de ella a la carpeta
-Practico1.
-d) Utilizando el comando “ls” visualice todos los archivos presentes en la carpeta Practico1,
-/home/estudiantes/MATERIALES/Practico1/. Utilizando el carácter “*”puede enlistar todos los
-archivos terminados en “.fas” o “.aln” o todos los que comiencen con “seq”:
-i) ls
-ii) ls *.fas
-iii) ls *.aln
-iv) ls seq*
-e) Visualice el primer archivo en formato fasta utilizando el comando “less”, y luego el primer archivo
-en formato clustalW. Cuantas secuencias contiene el primer archivo fasta y el segundo.
-i) less cpe.1000.fas
-ii) less cpe.1001.fas
-f) Copie, utilizando el comando “cp” todos los archivos que terminan en “.fas” a su carpeta personal
-(creada en a y cuyo path guardo en b):
-i) cp cpe.1000.fas /home/estudiantes/andres_iriarte/PRACT1/
-ii) cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
-iii) …
-g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal
-(creada en a y cuyo path guardo en b). Esta vez utilice el carácter “*”.
-i) cp *.aln/home/estudiantes/andres_iriarte/PRACT1/
-nota: nuevamente recuerde los espacios y
-razone lo que está haciendo antes y después de
-ejecutar el comando. 
+b) Entre en la carpeta recién creada utilizando el comando “cd” y luego utilizando el comando *pwd* establezca su path o dirección absoluta. Guarde en un archivo de texto este path.
 
-- ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.
-Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los
-dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro
-del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
+```{bash}
+cd PRACT1
+pwd
+```
+
+c) Desplazarse a la carpeta MATERIALES dentro del usuario “estudiantes” y dentro de ella a la carpeta Practico1.
+
+d) Utilizando el comando “ls” visualice todos los archivos presentes en la carpeta Practico1, /home/estudiantes/MATERIALES/Practico1/. Utilizando el carácter “*” puede enlistar todos los archivos terminados en “.fas” o “.aln” o todos los que comiencen con “seq”:
+
+```{bash}
+ls
+ls *.fas
+ls *.aln
+ls seq*
+```
+
+e) Visualice el primer archivo en formato fasta utilizando el comando “less”, y luego el primer archivo en formato clustalW. Cuantas secuencias contiene el primer archivo fasta y el segundo.
+
+```{bash}
+less cpe.1000.fas
+less cpe.1001.fas
+```
+
+f) Copie, utilizando el comando “cp” todos los archivos que terminan en “.fas” a su carpeta personal (creada en a y cuyo path guardo en b):
+
+```{bash}
+cp cpe.1000.fas /home/estudiantes/andres_iriarte/PRACT1/
+cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
+…
+```
+
+g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal (creada en a y cuyo path guardo en b). Esta vez utilice el carácter “*”.
+
+```{bash}
+i) cp *.aln/home/estudiantes/andres_iriarte/PRACT1/
+```
+
+> **Nota**: nuevamente recuerde los espacios y razone lo que está haciendo antes y después de ejecutar el comando. 
+
+___
+## ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.
+___
+
+Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
 no volver a escribir los comandos ya ejecutados.
-La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos
-estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos. 
+
+La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos. 
 
 

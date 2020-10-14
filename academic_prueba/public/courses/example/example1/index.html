@@ -245,7 +245,7 @@
     
       <meta property="article:published_time" content="2019-05-05T00:00:00&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-10-13T21:58:39-03:00">
+    <meta property="article:modified_time" content="2020-10-13T22:11:33-03:00">
   
 
   
@@ -675,6 +675,7 @@ hr {
     </li>
     <li><a href="#desplazamiento-en-la-terminal-comandos-cd-y-pwd">Desplazamiento en la Terminal. Comandos <em>cd</em> y <em>pwd</em>.</a></li>
     <li><a href="#comandos-básicos-ls-mkdir-cp-mv-y-less-echo">Comandos Básicos: <em>ls</em>, <em>mkdir</em>, <em>cp</em>, <em>mv</em>, y <em>less</em>, <em>echo</em></a></li>
+    <li><a href="#atajos-o-shorcuts-flechas-arriba-abajo-y-tecla-tabulador">ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.</a></li>
   </ul>
 </nav>
 
@@ -749,43 +750,38 @@ mkdir PRACT1
 <blockquote>
 <p><strong>Nota</strong>: cada estudiante trabajará en su carpeta!</p>
 </blockquote>
-<p>b) Entre en la carpeta recién creada utilizando el comando “cd” y luego utilizando el comando “pwd”
-establezca su path o dirección absoluta. Guarde en un archivo de texto este path.
-i) cd PRACT1
-ii) pwd
-c) Desplazarse a la carpeta MATERIALES dentro del usuario “estudiantes” y dentro de ella a la carpeta
-Practico1.
-d) Utilizando el comando “ls” visualice todos los archivos presentes en la carpeta Practico1,
-/home/estudiantes/MATERIALES/Practico1/. Utilizando el carácter “*”puede enlistar todos los
-archivos terminados en “.fas” o “.aln” o todos los que comiencen con “seq”:
-i) ls
-ii) ls <em>.fas
-iii) ls <em>.aln
-iv) ls seq</em>
-e) Visualice el primer archivo en formato fasta utilizando el comando “less”, y luego el primer archivo
-en formato clustalW. Cuantas secuencias contiene el primer archivo fasta y el segundo.
-i) less cpe.1000.fas
-ii) less cpe.1001.fas
-f) Copie, utilizando el comando “cp” todos los archivos que terminan en “.fas” a su carpeta personal
-(creada en a y cuyo path guardo en b):
-i) cp cpe.1000.fas /home/estudiantes/andres_iriarte/PRACT1/
-ii) cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
-iii) …
-g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal
-(creada en a y cuyo path guardo en b). Esta vez utilice el carácter “</em>”.
-i) cp *.aln/home/estudiantes/andres_iriarte/PRACT1/
-nota: nuevamente recuerde los espacios y
-razone lo que está haciendo antes y después de
-ejecutar el comando.</p>
-<ul>
-<li>ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.
-Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los
-dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro
-del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
-no volver a escribir los comandos ya ejecutados.
-La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos
-estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos.</li>
-</ul>
+<p>b) Entre en la carpeta recién creada utilizando el comando “cd” y luego utilizando el comando <em>pwd</em> establezca su path o dirección absoluta. Guarde en un archivo de texto este path.</p>
+<pre><code class="language-{bash}">cd PRACT1
+pwd
+</code></pre>
+<p>c) Desplazarse a la carpeta MATERIALES dentro del usuario “estudiantes” y dentro de ella a la carpeta Practico1.</p>
+<p>d) Utilizando el comando “ls” visualice todos los archivos presentes en la carpeta Practico1, /home/estudiantes/MATERIALES/Practico1/. Utilizando el carácter “*” puede enlistar todos los archivos terminados en “.fas” o “.aln” o todos los que comiencen con “seq”:</p>
+<pre><code class="language-{bash}">ls
+ls *.fas
+ls *.aln
+ls seq*
+</code></pre>
+<p>e) Visualice el primer archivo en formato fasta utilizando el comando “less”, y luego el primer archivo en formato clustalW. Cuantas secuencias contiene el primer archivo fasta y el segundo.</p>
+<pre><code class="language-{bash}">less cpe.1000.fas
+less cpe.1001.fas
+</code></pre>
+<p>f) Copie, utilizando el comando “cp” todos los archivos que terminan en “.fas” a su carpeta personal (creada en a y cuyo path guardo en b):</p>
+<pre><code class="language-{bash}">cp cpe.1000.fas /home/estudiantes/andres_iriarte/PRACT1/
+cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
+…
+</code></pre>
+<p>g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal (creada en a y cuyo path guardo en b). Esta vez utilice el carácter “*”.</p>
+<pre><code class="language-{bash}">i) cp *.aln/home/estudiantes/andres_iriarte/PRACT1/
+</code></pre>
+<blockquote>
+<p><strong>Nota</strong>: nuevamente recuerde los espacios y razone lo que está haciendo antes y después de ejecutar el comando.</p>
+</blockquote>
+<hr>
+<h2 id="atajos-o-shorcuts-flechas-arriba-abajo-y-tecla-tabulador">ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.</h2>
+<hr>
+<p>Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
+no volver a escribir los comandos ya ejecutados.</p>
+<p>La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos.</p>
 
           </div>
 
