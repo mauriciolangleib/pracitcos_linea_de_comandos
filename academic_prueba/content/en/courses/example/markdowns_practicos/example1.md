@@ -1,5 +1,5 @@
 ---
-date: "2019-05-05T00:00:00+01:00"
+author: Dr Andrés Iriarte
 draft: false
 linktitle: Práctico 1
 menu:
@@ -7,7 +7,6 @@ menu:
     parent: Prácticos
     weight: 1
 title: Práctico 1
-toc: true
 type: docs
 weight: 1
 output:
@@ -15,9 +14,6 @@ output:
     theme: cayman
     highlight: github
 ---
-
-Docente: Dr Andrés Iriarte
-
 ___
 ## Conexión al Servidor vía SSH
 ___
