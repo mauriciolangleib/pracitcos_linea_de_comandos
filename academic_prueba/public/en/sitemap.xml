@@ -69,7 +69,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-10-14T20:35:57-03:00</lastmod>
+    <lastmod>2020-11-02T18:10:09-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -313,58 +313,18 @@
   </url>
   
   <url>
-    <loc>/tag/deep-learning/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/tag/deep-learning/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tag/deep-learning/"
-                />
-  </url>
-  
-  <url>
-    <loc>/project/external-project/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/project/external-project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/project/external-project/"
-                />
-  </url>
-  
-  <url>
-    <loc>/project/internal-project/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/project/internal-project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/project/internal-project/"
-                />
+    <loc>/project/platys_secreted/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/platyhelminthes/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/project/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -589,7 +549,7 @@
   
   <url>
     <loc>/author/eugenio-jara/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <lastmod>2020-11-02T18:10:09-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -649,7 +609,7 @@
   
   <url>
     <loc>/author/laboratorio-de-biologia-computacional/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <lastmod>2020-11-02T18:10:09-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -664,6 +624,7 @@
   
   <url>
     <loc>/author/laboratorio-de-biologia-computacional/</loc>
+    <lastmod>2020-11-02T18:10:09-03:00</lastmod>
   </url>
   
   <url>
@@ -787,7 +748,7 @@
   </url>
   
   <url>
-    <loc>/author/sylvia-vazquez/</loc>
+    <loc>/author/sylvia-enid-vazquez-zeballos/</loc>
     <lastmod>2020-10-09T17:23:29+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -797,7 +758,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/sylvia-vazquez/"
+                href="/author/sylvia-enid-vazquez-zeballos/"
                 />
   </url>
   
