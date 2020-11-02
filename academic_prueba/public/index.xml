@@ -14,11 +14,43 @@
     
     <item>
       <title>Práctico 1</title>
-      <link>/courses/example/copyofexample1/</link>
+      <link>/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/copyofexample1/</guid>
-      <description>&lt;p&gt;Docente: Dr Andrés Iriarte&lt;/p&gt;
-&lt;hr&gt;
+      <guid>/courses/example/example1/</guid>
+      <description>&lt;SCRIPT&gt;
+function passWord() {
+var testV = 1;
+var pass1 = prompt(&#39;Please Enter Your Password&#39;,&#39; &#39;);
+while (testV &lt; 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == &#34;lineacomando&#34;) {
+window.open(&#39;/courses/example/example1.html&#39;);
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt(&#39;Access Denied - Password Incorrect, Please Try Again.&#39;,&#39;Password&#39;);
+}
+if (pass1.toLowerCase()!=&#34;password&#34; &amp; testV ==3) 
+history.go(-1);
+return &#34; &#34;;
+} 
+&lt;/SCRIPT&gt;
+&lt;CENTER&gt;
+&lt;FORM&gt;
+&lt;input type=&#34;button&#34; value=&#34;Acceder al Práctico&#34; onClick=&#34;passWord()&#34;&gt;
+&lt;/FORM&gt;
+&lt;/CENTER&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 1</title>
+      <link>/courses/markdowns_practicos/example1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/courses/markdowns_practicos/example1/</guid>
+      <description>&lt;hr&gt;
 &lt;h2 id=&#34;conexión-al-servidor-vía-ssh&#34;&gt;Conexión al Servidor vía SSH&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;1-en-un-sistema-operativo-linux&#34;&gt;1. En un sistema operativo Linux:&lt;/h3&gt;
@@ -107,39 +139,6 @@ cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
 &lt;p&gt;Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
 no volver a escribir los comandos ya ejecutados.&lt;/p&gt;
 &lt;p&gt;La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Práctico 1</title>
-      <link>/courses/example/example1/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
-      <description>&lt;SCRIPT&gt;
-function passWord() {
-var testV = 1;
-var pass1 = prompt(&#39;Please Enter Your Password&#39;,&#39; &#39;);
-while (testV &lt; 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == &#34;lineacomando&#34;) {
-window.open(&#39;/courses/example/example1.html&#39;);
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt(&#39;Access Denied - Password Incorrect, Please Try Again.&#39;,&#39;Password&#39;);
-}
-if (pass1.toLowerCase()!=&#34;password&#34; &amp; testV ==3) 
-history.go(-1);
-return &#34; &#34;;
-} 
-&lt;/SCRIPT&gt;
-&lt;CENTER&gt;
-&lt;FORM&gt;
-&lt;input type=&#34;button&#34; value=&#34;Acceder al Práctico&#34; onClick=&#34;passWord()&#34;&gt;
-&lt;/FORM&gt;
-&lt;/CENTER&gt;
 </description>
     </item>
     

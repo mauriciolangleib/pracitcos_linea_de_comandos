@@ -12,5 +12,102 @@
       <link>/courses/</link>
     </image>
     
+    <item>
+      <title>Práctico 1</title>
+      <link>/courses/markdowns_practicos/example1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/courses/markdowns_practicos/example1/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;conexión-al-servidor-vía-ssh&#34;&gt;Conexión al Servidor vía SSH&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1-en-un-sistema-operativo-linux&#34;&gt;1. En un sistema operativo Linux:&lt;/h3&gt;
+&lt;p&gt;En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y
+distribuciones (ssh client). Usted solo necesita localizar la terminal y activarla. Una vez en la terminal utilice el comando ssh para generar una conexión con el servidor remoto, utilizando su nombre de usuario e IP (del servidor) de la siguiente forma:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;ssh estudiantes@164.73.173.95
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A continuación escriba el password o palabra clave (ver en pizarrón).&lt;/p&gt;
+&lt;h3 id=&#34;2-en-un-sistema-operativo-windows&#34;&gt;2. En un sistema operativo Windows:&lt;/h3&gt;
+&lt;p&gt;Para conectarnos a un servidor vía ssh desde un sistema operativo Windows utilizaremos el programa PuTTY, que usted debería ya tener instalado. De no ser así por favor instale en su computadora desde el ejecutable disponible en &lt;a href=&#34;http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html&#34;&gt;www.chiark.greenend.org.uk/~sgtatham/putty/latest.html&lt;/a&gt;. Una vez instalado siga
+los siguientes pasos:&lt;/p&gt;
+&lt;p&gt;a) Abra el programa PuTTY:&lt;/p&gt;
+&lt;p&gt;b) Complete el dialogo los datos de usuario (incluyendo la dirección de IP) y N° de puerto, como se
+muestra a continuación.&lt;/p&gt;
+&lt;p&gt;c) Guarde la sesión una vez le haya puesto nombre (ej. estud_lbc1) y cliquee en el botón “Save”.&lt;/p&gt;
+&lt;p&gt;d) Para conectarse al servidor haga click en “Open”.&lt;/p&gt;
+&lt;p&gt;e) Introduzca la palabra clave o password.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Responda: En que lugar del sistema aparece?&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;desplazamiento-en-la-terminal-comandos-cd-y-pwd&#34;&gt;Desplazamiento en la Terminal. Comandos &lt;em&gt;cd&lt;/em&gt; y &lt;em&gt;pwd&lt;/em&gt;.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;El comando “cd” (change directory) permite desplazarse dentro del sistema operativo, moviéndose entre
+carpetas, subiendo (hacia root) o bajando de nivel. El comando pwd (print working directory) imprime su ubicación en el sistema.&lt;/p&gt;
+&lt;p&gt;a) Para salir de la carpeta donde usted está ubicado, es decir para subir de nivel, escriba:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;b) Para subir dos niveles, es decir salir de dos carpetas anidadas, escriba:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;cd ../..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: recuerde el espacio luego del comando y separando argumentos&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;c) Utilizando el comando “pwd” establezca su ubicación y escríbala a continuación:
+………………………………….………………………………….&lt;/p&gt;
+&lt;p&gt;d) ¿Puede seguir subiendo de nivel? Justifique su respuesta.&lt;/p&gt;
+&lt;p&gt;e) Vuelva a la carpeta de su usuario con la opción a o b:
+a. cd /home/estudiantes o
+b. cd home y luego
+cd estudiantes&lt;/p&gt;
+&lt;p&gt;f) Dibuje a continuación de forma muy esquemática y en un diagrama jerárquico el sistema de
+archivos de su lcb1 o lcb2 (no baje más de 3 niveles!).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;comandos-básicos-ls-mkdir-cp-mv-y-less-echo&#34;&gt;Comandos Básicos: &lt;em&gt;ls&lt;/em&gt;, &lt;em&gt;mkdir&lt;/em&gt;, &lt;em&gt;cp&lt;/em&gt;, &lt;em&gt;mv&lt;/em&gt;, y &lt;em&gt;less&lt;/em&gt;, &lt;em&gt;echo&lt;/em&gt;&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;El comando “ls” (list) permite enlistar el contenido de un directorio, con “mkdir” (make directory) genera nuevos directorios (o carpetas). “cp” (copy) y “mv”(move) permiten copiar y mover archivos,respectivamente. En el caso de “mv”, se puede utilizar para cambiar el nombre de un archivo o directorio.&lt;/p&gt;
+&lt;p&gt;Utilizando “less” o “more” es posible visualizar el contenido de un archivo de texto, no modificarlo.&lt;/p&gt;
+&lt;p&gt;Finalmente “echo” permite imprimir a la pantalla un texto o el contenido de una variable.&lt;/p&gt;
+&lt;p&gt;a) Generaremos un directorio dentro de la carpeta general del usuario “estudiantes” con su nombre y apellido, utilice “mkdir”.
+Dentro de esta carpeta cree una nueva con el nombre PRACT1.Recuerde no utilizar caracteres extraños como por ejemplo: ñ ; ¿ ^ $ “ ‘ = ( ] { á o espacio).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;mkdir andres_iriarte
+cd andres_iriarte
+mkdir PRACT1 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: cada estudiante trabajará en su carpeta!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;b) Entre en la carpeta recién creada utilizando el comando “cd” y luego utilizando el comando &lt;em&gt;pwd&lt;/em&gt; establezca su path o dirección absoluta. Guarde en un archivo de texto este path.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;cd PRACT1
+pwd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;c) Desplazarse a la carpeta MATERIALES dentro del usuario “estudiantes” y dentro de ella a la carpeta Practico1.&lt;/p&gt;
+&lt;p&gt;d) Utilizando el comando “ls” visualice todos los archivos presentes en la carpeta Practico1, /home/estudiantes/MATERIALES/Practico1/. Utilizando el carácter “*” puede enlistar todos los archivos terminados en “.fas” o “.aln” o todos los que comiencen con “seq”:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;ls
+ls *.fas
+ls *.aln
+ls seq*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;e) Visualice el primer archivo en formato fasta utilizando el comando “less”, y luego el primer archivo en formato clustalW. Cuantas secuencias contiene el primer archivo fasta y el segundo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;less cpe.1000.fas
+less cpe.1001.fas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;f) Copie, utilizando el comando “cp” todos los archivos que terminan en “.fas” a su carpeta personal (creada en a y cuyo path guardo en b):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;cp cpe.1000.fas /home/estudiantes/andres_iriarte/PRACT1/
+cp cpe.1001.fas /home/estudiantes/andres_iriarte/PRACT1/
+…
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;g) Copie, utilizando el comando “cp” todos los archivos que terminan en “.aln” a su carpeta personal (creada en a y cuyo path guardo en b). Esta vez utilice el carácter “*”.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{bash}&#34;&gt;cp *.aln /home/estudiantes/andres_iriarte/PRACT1/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: nuevamente recuerde los espacios y razone lo que está haciendo antes y después de ejecutar el comando.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;atajos-o-shorcuts-flechas-arriba-abajo-y-tecla-tabulador&#34;&gt;ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
+no volver a escribir los comandos ya ejecutados.&lt;/p&gt;
+&lt;p&gt;La tecla tabulación o Tab completa el texto de comandos, carpetas o archivos siempre y cuando estos estén accesibles en el path, es decir, pueda verlos desde donde estoy “parado” en el sistema de archivos.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
