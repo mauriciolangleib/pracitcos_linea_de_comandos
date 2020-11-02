@@ -10,6 +10,10 @@ title: Práctico 1
 toc: true
 type: docs
 weight: 1
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
 ---
 
 Docente: Dr Andrés Iriarte
