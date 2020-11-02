@@ -1,7 +1,7 @@
 ---
 date: "2019-05-05T00:00:00+01:00"
 draft: false
-linktitle: Práctico uno
+linktitle: Práctico 1
 menu:
   example:
     parent: Prácticos
@@ -20,7 +20,7 @@ while (testV < 3) {
 if (!pass1) 
 history.go(-1);
 if (pass1.toLowerCase() == "lineacomando") {
-window.open('/courses/example/example1.html');
+window.open('/courses/example/Practico1.html');
 break;
 } 
 testV+=1;

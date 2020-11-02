@@ -25,7 +25,7 @@ while (testV &lt; 3) {
 if (!pass1) 
 history.go(-1);
 if (pass1.toLowerCase() == &#34;lineacomando&#34;) {
-window.open(&#39;/courses/example/example1.html&#39;);
+window.open(&#39;/courses/example/Practico1.html&#39;);
 break;
 } 
 testV+=1;
