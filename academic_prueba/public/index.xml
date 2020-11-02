@@ -14,34 +14,11 @@
     
     <item>
       <title>Práctico 1</title>
-      <link>/courses/example/example1/</link>
+      <link>/courses/example/practico1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
-      <description>&lt;SCRIPT&gt;
-function passWord() {
-var testV = 1;
-var pass1 = prompt(&#39;Please Enter Your Password&#39;,&#39; &#39;);
-while (testV &lt; 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == &#34;lineacomando&#34;) {
-window.open(&#39;/courses/example/Practico1.html&#39;);
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt(&#39;Access Denied - Password Incorrect, Please Try Again.&#39;,&#39;Password&#39;);
-}
-if (pass1.toLowerCase()!=&#34;password&#34; &amp; testV ==3) 
-history.go(-1);
-return &#34; &#34;;
-} 
-&lt;/SCRIPT&gt;
-&lt;CENTER&gt;
-&lt;FORM&gt;
-&lt;input type=&#34;button&#34; value=&#34;Acceder al Práctico&#34; onClick=&#34;passWord()&#34;&gt;
-&lt;/FORM&gt;
-&lt;/CENTER&gt;
+      <guid>/courses/example/practico1/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico1.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
