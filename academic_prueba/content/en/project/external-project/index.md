@@ -1,11 +1,27 @@
 ---
 date: "2016-04-27T00:00:00Z"
-external_link: http://example.org
+external_link: ""
 image:
-  caption: Photo by Toa Heftiba on Unsplash
+  caption: 
   focal_point: Smart
-summary: An example of linking directly to an external project website using `external_link`.
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/georgecushen
+slides: example
+summary: An example of using the in-built project page.
 tags:
-- Demo
-title: External Project
+- Platyhelminthes
+title: Evolution of families of secretory proteins coding genes in Platyhelminthes
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
 ---
+
+Fondo Clemente Estable-2016, Code: FCE_3_2016_1_125297.
+
+Funding Source: ANII, Uruguay.
+
+Research Associates: Federico G. Hoffmann, Uriel Koziol, Estela Castillo, Francisco Peñagaricano, Anna Protasio, José F. Tort

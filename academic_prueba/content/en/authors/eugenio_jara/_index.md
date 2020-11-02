@@ -69,6 +69,8 @@ user_groups:
 - PhD. students
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I'm currently working with transcriptomic data of *Bos taurus* (mainly Hereford strain). I'm analyzing the gene expression profiles of pigmented and non-pigmented eyelid skin, searching for long non coding RNAs and aiming to get a better knolwdge of genes involved in the pigmentation process, as well as other interesting processes such as those related with the immune response of the studied phenotypes.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+The study of pigmentation in bovines is of great interest, as it has being demonstrated that depigmented Hereford strains present a greater incidence of ocular lessions and cancer with respect to eye-lid pigmented specimens.
+
+Our goal is theidentification of SNPs related to these conditions, in order to be able to select pigmented specimens of bovines with specific variants associated with a lower tendency to present lessions and/or cancer. We also aim to transmit the knowledge collected from this line of research to animal producers and to the general public.

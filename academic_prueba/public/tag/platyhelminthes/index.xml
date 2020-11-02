@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Platyhelminthes | Lab. de Biología Computacional</title>
+    <link>/tag/platyhelminthes/</link>
+      <atom:link href="/tag/platyhelminthes/index.xml" rel="self" type="application/rss+xml" />
+    <description>Platyhelminthes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png</url>
+      <title>Platyhelminthes</title>
+      <link>/tag/platyhelminthes/</link>
+    </image>
+    
+    <item>
+      <title>Evolution of families of secretory proteins coding genes in Platyhelminthes</title>
+      <link>/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/external-project/</guid>
+      <description>&lt;p&gt;Fondo Clemente Estable-2016, Code: FCE_3_2016_1_125297.&lt;/p&gt;
+&lt;p&gt;Funding Source: ANII, Uruguay.&lt;/p&gt;
+&lt;p&gt;Research Associates: Federico G. Hoffmann, Uriel Koziol, Estela Castillo, Francisco Peñagaricano, Anna Protasio, José F. Tort&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

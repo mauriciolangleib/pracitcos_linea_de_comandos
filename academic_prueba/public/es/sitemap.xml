@@ -230,16 +230,6 @@
   <url>
     <loc>/es/tag/demo/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tag/demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/tag/demo/"
-                />
   </url>
   
   <url>
@@ -563,7 +553,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/andres-iriarte/"
+                href="/author/laboratorio-de-biologia-computacional/"
                 />
     <xhtml:link
                 rel="alternate"

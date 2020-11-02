@@ -328,21 +328,6 @@
   </url>
   
   <url>
-    <loc>/tag/demo/</loc>
-    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/tag/demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tag/demo/"
-                />
-  </url>
-  
-  <url>
     <loc>/project/external-project/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
@@ -370,6 +355,11 @@
                 hreflang="en"
                 href="/project/internal-project/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tag/platyhelminthes/</loc>
+    <lastmod>2020-10-02T17:38:27+00:00</lastmod>
   </url>
   
   <url>
@@ -568,21 +558,6 @@
   </url>
   
   <url>
-    <loc>/author/andres-iriarte/</loc>
-    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/author/andres-iriarte/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/author/andres-iriarte/"
-                />
-  </url>
-  
-  <url>
     <loc>/author/cecilia-rodriguez/</loc>
     <lastmod>2020-10-14T20:02:08-03:00</lastmod>
     <xhtml:link
@@ -670,6 +645,25 @@
                 hreflang="en"
                 href="/author/javier-calvelo/"
                 />
+  </url>
+  
+  <url>
+    <loc>/author/laboratorio-de-biologia-computacional/</loc>
+    <lastmod>2020-10-09T17:23:29+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/author/andres-iriarte/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/author/laboratorio-de-biologia-computacional/"
+                />
+  </url>
+  
+  <url>
+    <loc>/author/laboratorio-de-biologia-computacional/</loc>
   </url>
   
   <url>
