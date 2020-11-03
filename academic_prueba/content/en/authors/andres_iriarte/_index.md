@@ -37,9 +37,9 @@ social:
   icon_pack: fab
   link: https://github.com/gcushen
 superuser: false
-title: Laboratorio de Biología Computacional
+title: Andrés Iriarte
 user_groups:
-- Otro
+- Principal Investigator
 ---
 
 The Computational Biology Lab belongs to the Biotechnology Department at the School of Medicine (Universidad de la República - Uruguay). We started our work as an independent group in the middle of 2016. 
