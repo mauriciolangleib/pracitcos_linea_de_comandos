@@ -14,7 +14,7 @@ role: Postdoctoral Student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Dept. Bitechnology
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -25,15 +25,12 @@ interests:
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD. in Microbial Genetics
+    institution: Facultad de Farmacia y Bioquímica (Universidad de Buenos Aires)
+    year: 
+  - course: BSc. in Genetics
+    institution: Facultad de Ciencias Exactas, Químicas y Naturales (Universidad Nacional de Misiones)
+    year: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
