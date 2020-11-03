@@ -11,6 +11,8 @@ ___
 ## 2020
 ___
 
+
+
 - **Fratini F., Tamarozzi F., Macchia G., Mariconti M., Birago C., Iriarte A., Brunetti E., Cretu C.M., Akhan O., Siles-Lucas M., Diaz A. & Casulli A.** Proteomic analysis of plasma exosomes from Cystic Echinococcosis patients provides in vivo support for distinct immune response profiles in active vs inactive infection and suggests potential biomarkers. PLOS Neglected Tropical Diseases (in press). [[Journal](https://journals.plos.org/plosntds/)]
 
 - **Jara E., Peñagaricano F., Menezes C., Tardiz L., Rodons G., Iriarte A. & Armstrong E.** Transcriptomic analysis of eyelid pigmentation in Hereford cattle. Animal Genetics (in press). [[Journal](https://onlinelibrary.wiley.com/journal/13652052)]
@@ -52,57 +54,32 @@ ___
 
 ___
 
-- **Traglia G.M., Chiem K., Quinn B., Fernandez J.S., Montaña S., Traglia G.M., Almuzara M., Mussi M.A., Tolmasky M., Iriarte A., Centron D. & Ramirez M.S.** Genome sequence analysis of an extensively drug-resistant Acinetobacter baumannii indigo-pigmented strain depicts evidence of increase genome plasticity. Scientific Reports 8:16961. [[Journal]()]
+- **Traglia G.M., Chiem K., Quinn B., Fernandez J.S., Montaña S., Traglia G.M., Almuzara M., Mussi M.A., Tolmasky M., Iriarte A., Centron D. & Ramirez M.S.** Genome sequence analysis of an extensively drug-resistant Acinetobacter baumannii indigo-pigmented strain depicts evidence of increase genome plasticity. Scientific Reports 8:16961. [[Journal](https://www.nature.com/articles/s41598-018-35377-5)]
 
-https://www.nature.com/articles/s41598-018-35377-5
+- **Quinn B., Rodman N., Jara E., Fernandez J.S., Martinez J., Traglia G.M., Montaña S., Cantera V., Place K., Bonomo R., Iriarte A. & Ramirez M.S.** Human serum albumin alters specific genes that can play a role in survival and persistence in Acinetobacter baumannii. Scientific Reports 8: 14741. [[Pdf](https://www.nature.com/articles/s41598-018-33072-z.pdf)]
 
-- **Quinn B., Rodman N., Jara E., Fernandez J.S., Martinez J., Traglia G.M., Montaña S., Cantera V., Place K., Bonomo R., Iriarte A. & Ramirez M.S.** Human serum albumin alters specific genes that can play a role in survival and persistence in Acinetobacter baumannii. Scientific Reports 8: 14741. [Pdf]
 
-https://www.nature.com/articles/s41598-018-33072-z.pdf
+- **Cordeiro N., D'Alessandro B., Iriarte A., Pickard D., Yim L., Chabalgoity J.A., Betancor L. & Vignoli R** Draft Genome Sequences of Two Multidrug-Resistant Salmonella enterica Serovar Typhimurium Clinical Isolates from Uruguay. Microbiology Resource Announcements 7:e00917-18. [[Pdf](https://mra.asm.org/content/ga/7/4/e00917-18.full.pdf)]
 
-- **Cordeiro N., D'Alessandro B., Iriarte A., Pickard D., Yim L., Chabalgoity J.A., Betancor L. & Vignoli R** Draft Genome Sequences of Two Multidrug-Resistant Salmonella enterica Serovar Typhimurium Clinical Isolates from Uruguay. Microbiology Resource Announcements 7:e00917-18. [Pdf]
+- **Montaña S., Fernandez F., Barenboim M., Hernandez M., Kayriyama C., Carulla M., Almuzara M., Iriarte A. & Ramirez M.S.** Whole-genome analysis and description of an outbreak due to carbapenem-resistant Ochrobactrum anthropi causing pseudo-bacteremias. New Microbes and New Infections 26:100-106. [[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/30345061)]
 
-https://mra.asm.org/content/ga/7/4/e00917-18.full.pdf
-
-- **Montaña S., Fernandez F., Barenboim M., Hernandez M., Kayriyama C., Carulla M., Almuzara M., Iriarte A. & Ramirez M.S.** Whole-genome analysis and description of an outbreak due to carbapenem-resistant Ochrobactrum anthropi causing pseudo-bacteremias. New Microbes and New Infections 26:100-106. [Pubmed]
-
-https://www.ncbi.nlm.nih.gov/pubmed/30345061
-
-- **Montaña S., Lazzaro T., Uong S., Place K., Iriarte A., Vera Ocampo C., Vay C. & Ramirez M.S.** Genomics helps deciphering the resistance mechanisms of a rare pneumonia causing Pseudomonas chlororaphis strain. New Microbes and New Infections. 25:45-47. [Pubmed]
-
-https://www.ncbi.nlm.nih.gov/pubmed/30090632
+- **Montaña S., Lazzaro T., Uong S., Place K., Iriarte A., Vera Ocampo C., Vay C. & Ramirez M.S.** Genomics helps deciphering the resistance mechanisms of a rare pneumonia causing Pseudomonas chlororaphis strain. New Microbes and New Infections. 25:45-47. [[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/30090632)]
 
 - **Armstrong E., Iriarte A., Nicolini P., De Los Santos J., Ithurralde J., Bielli A., Bianchi G. & Peñagaricano F.** Comparison of transcriptomic landscapes of different lamb muscles using RNA-Seq. PLoS One (in press).
 
+- **Rossi A., Mónaco A., Guarnaschelli J., Silveira F., Iriarte A., Benecke A. & Chabalgoity J.A.** Temporal evolution of anti-Clostridium antibody responses in sheep after vaccination with polyvalent Clostridial vaccines. Veterinary Immunology and Immunopathology. (202):46-51. [[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S016524271730421X)]
 
+- **Preza M., Montagne J., Costábile A., Iriarte A., Castillo E. & Koziol U.** Analysis of classical neurotransmitter markers in tapeworms: evidence for extensive loss of neurotransmitter pathways. International Journal for Parasitology. 13:979-992. [[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/30261184)]
 
-- **Rossi A., Mónaco A., Guarnaschelli J., Silveira F., Iriarte A., Benecke A. & Chabalgoity J.A.** Temporal evolution of anti-Clostridium antibody responses in sheep after vaccination with polyvalent Clostridial vaccines. Veterinary Immunology and Immunopathology. (202):46-51. [ScienceDirect]
+- **D'Alessandro B., Pérez Escanda V., Balestrazzi L., Iriarte A., Pickard D., Yim L., Chabalgoity J.A. & Betancor L.** A novel prophage identified in strains from Salmonella enterica serovar Enteritidis is a phylogenetic signature of the lineage ST-1974. Microbial Genomics 4. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/29509137)]
 
-https://www.sciencedirect.com/science/article/pii/S016524271730421X
+- **Agaras B.C., Iriarte A. & Valverde C.F.** Genomic insights into the broad antifungal activity, plant-probiotic properties, and their regulation, in Pseudomonas donghuensis strain SVBP6. PLoS One. 13(3):e0194088. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/29538430)]
 
-- **Preza M., Montagne J., Costábile A., Iriarte A., Castillo E. & Koziol U.** Analysis of classical neurotransmitter markers in tapeworms: evidence for extensive loss of neurotransmitter pathways. International Journal for Parasitology. 13:979-992. [Pubmed]
+- **Costábile A., Koziol U., Tort J.F., Iriarte A. & Castillo E.** Expansion of cap superfamily proteins in the genome of Mesocestoides corti : An extreme case of a general bilaterian trend. Gene Reports 11:110-20.[[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2452014418300268)]
 
-https://www.ncbi.nlm.nih.gov/pubmed/30261184
+- **Collins C., Almuzara M., Saigo M., Montaña S., Chiem K., Traglia G., Mussi M.A., Tolmasky M., Iriarte A., Vay C. & Ramírez M.S.** Whole genome analysis of an extensively-drug-resistance Empedobacter falsenii strain reveals distinct features and the presence of a novel metallo-ß-lactamase (EBR-2). Current Microbiology (8):1084-1089. [[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/29687150)]
 
-- **D'Alessandro B., Pérez Escanda V., Balestrazzi L., Iriarte A., Pickard D., Yim L., Chabalgoity J.A. & Betancor L.** A novel prophage identified in strains from Salmonella enterica serovar Enteritidis is a phylogenetic signature of the lineage ST-1974. Microbial Genomics 4. [Pubmed]
-
-http://www.ncbi.nlm.nih.gov/pubmed/29509137
-
-- **Agaras B.C., Iriarte A. & Valverde C.F.** Genomic insights into the broad antifungal activity, plant-probiotic properties, and their regulation, in Pseudomonas donghuensis strain SVBP6. PLoS One. 13(3):e0194088. [Pubmed]
-
-http://www.ncbi.nlm.nih.gov/pubmed/29538430
-
-- **Costábile A., Koziol U., Tort J.F., Iriarte A. & Castillo E.** Expansion of cap superfamily proteins in the genome of Mesocestoides corti : An extreme case of a general bilaterian trend. Gene Reports 11:110-20.[ScienceDirect]
-
-https://www.sciencedirect.com/science/article/pii/S2452014418300268
-
-- **Collins C., Almuzara M., Saigo M., Montaña S., Chiem K., Traglia G., Mussi M.A., Tolmasky M., Iriarte A., Vay C. & Ramírez M.S.** Whole genome analysis of an extensively-drug-resistance Empedobacter falsenii strain reveals distinct features and the presence of a novel metallo-ß-lactamase (EBR-2). Current Microbiology (8):1084-1089. [Pubmed]
-
-https://www.ncbi.nlm.nih.gov/pubmed/29687150
-
-- **Montaña S., Hernandez M., Fernandez J.S., Pennini M., Centrón D., Sucari A., Iriarte A. & Ramírez M.S.** Molecular Characterization of KPC-2 positive Klebsiella pneumoniae isolates from a neurosurgical center in Argentina. New Microbes and New Infections 24:32-34. [Pubmed]
-
-https://www.ncbi.nlm.nih.gov/pubmed/29922473
+- **Montaña S., Hernandez M., Fernandez J.S., Pennini M., Centrón D., Sucari A., Iriarte A. & Ramírez M.S.** Molecular Characterization of KPC-2 positive Klebsiella pneumoniae isolates from a neurosurgical center in Argentina. New Microbes and New Infections 24:32-34. [[Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/29922473)]
 ___
 
 ## 2017
@@ -110,21 +87,13 @@ ___
 ___
 
 
-- **Sasías M.S., Martínez, A., Betancor L., Martinez A., D'Alessandro B., Iriarte A., Chabalgoity, J.A. & Yim L.** A Naturally Occurring Deletion in FliE from Salmonella enterica Serovar Dublin Results in an Aflagellate Phenotype and Defective Proinflammatory Properties. Infection and Immunity 86(1). [Pubmed]
+- **Sasías M.S., Martínez, A., Betancor L., Martinez A., D'Alessandro B., Iriarte A., Chabalgoity, J.A. & Yim L.** A Naturally Occurring Deletion in FliE from Salmonella enterica Serovar Dublin Results in an Aflagellate Phenotype and Defective Proinflammatory Properties. Infection and Immunity 86(1). [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/29061704)]
 
-http://www.ncbi.nlm.nih.gov/pubmed/29061704
+- **Almuzara M., Montaña S., Lazzaro T., Uong S., Parmeciano Di Noto G., Traglia G., Bakai R., Centrón D., Iriarte A., Quiroga C. & Ramírez M.S.** Genetic analysis of a PER-2 producing Shewanella spp. strain harboring a variety of mobile genetic elements and antibiotic resistant determinants. Journal of Global Antimicrobial Resistance (JGAR). 11:81-86. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/28760680)]
 
-- **Almuzara M., Montaña S., Lazzaro T., Uong S., Parmeciano Di Noto G., Traglia G., Bakai R., Centrón D., Iriarte A., Quiroga C. & Ramírez M.S.** Genetic analysis of a PER-2 producing Shewanella spp. strain harboring a variety of mobile genetic elements and antibiotic resistant determinants. Journal of Global Antimicrobial Resistance (JGAR). 11:81-86. [Pubmed]
+- **Iriarte A., Giner-Lamia J., Silva C., Betancor L., Astocondor L., Cestero J.J., Ochoa T., García C., Puente J.L., Chabalgoity J.A., SalmoIber CYTED Network & García-Del Portillo F.** Draft Genome Sequence of Salmonella enterica subsp. enterica Serovar Infantis Strain SPE101, Isolated from a Chronic Human Infection. Genome Announcements. 5(29):pii:e00679-17. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/28729277)]
 
-http://www.ncbi.nlm.nih.gov/pubmed/28760680
-
-- **Iriarte A., Giner-Lamia J., Silva C., Betancor L., Astocondor L., Cestero J.J., Ochoa T., García C., Puente J.L., Chabalgoity J.A., SalmoIber CYTED Network & García-Del Portillo F.** Draft Genome Sequence of Salmonella enterica subsp. enterica Serovar Infantis Strain SPE101, Isolated from a Chronic Human Infection. Genome Announcements. 5(29):pii:e00679-17. [Pubmed]
-
-http://www.ncbi.nlm.nih.gov/pubmed/28729277
-
-- **Jara E., Morel M.A., Lamolle G., Castro-Sowinski S., Simón D., Iriarte A. & Musto H.** The complex pattern of codon usage evolution in the family Comamonadaceae Ecological Genetics and Genomics. 6:1-8. [ScienceDirect]
-
-https://www.sciencedirect.com/science/article/pii/S2405985417300277
+- **Jara E., Morel M.A., Lamolle G., Castro-Sowinski S., Simón D., Iriarte A. & Musto H.** The complex pattern of codon usage evolution in the family Comamonadaceae Ecological Genetics and Genomics. 6:1-8. [[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2405985417300277)]
 
 ___
 
@@ -132,21 +101,13 @@ ___
 
 ___
 
-- **Moreno F., Figueiro G., Mannise N., Iriarte A., González S., Barbanti-Duarte J. M. & Cosse M.** The use of next-generation molecular tools in the analysis of archaeological neotropical deer samples Journal of Archaeological Science: Reports. 10:403-410. [Journal]
+- **Moreno F., Figueiro G., Mannise N., Iriarte A., González S., Barbanti-Duarte J. M. & Cosse M.** The use of next-generation molecular tools in the analysis of archaeological neotropical deer samples Journal of Archaeological Science: Reports. 10:403-410. [[Journal](http://www.journals.elsevier.com/journal-of-archaeological-science-reports)]
 
-http://www.journals.elsevier.com/journal-of-archaeological-science-reports
+- **Iriarte A., Platero R., Romero V., Fabiano E. & Sotelo-Silveira J.** Draft Genome Sequence of Cupriavidus UYMMa02A, a novel Beta-rhizobium species. Genome Announcements 4(6):pii:e01258-16.[[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/27834710)]
 
-- **Iriarte A., Platero R., Romero V., Fabiano E. & Sotelo-Silveira J.** Draft Genome Sequence of Cupriavidus UYMMa02A, a novel Beta-rhizobium species. Genome Announcements 4(6):pii:e01258-16.[Pubmed]
+- **Montaña S., Schramm S., Traglia G.T., Chiem K., Parmeciano Di Noto G., Almuzara M., Barberis C., Vay C., Quiroga C., Tolmasky M., Iriarte A. & Ramírez M.S.** The genetic analysis of a Acinetobacter johnsonii clinical strain evidenced the presence of horizontal genetic transfer. PLoS ONE. 11(8):e0161528. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/27548264)]
 
-http://www.ncbi.nlm.nih.gov/pubmed/27834710
-
-- **Montaña S., Schramm S., Traglia G.T., Chiem K., Parmeciano Di Noto G., Almuzara M., Barberis C., Vay C., Quiroga C., Tolmasky M., Iriarte A. & Ramírez M.S.** The genetic analysis of a Acinetobacter johnsonii clinical strain evidenced the presence of horizontal genetic transfer. PLoS ONE. 11(8):e0161528. [Pubmed]
-
-http://www.ncbi.nlm.nih.gov/pubmed/27548264
-
-- **Lamolle G., Protasio A.V., Iriarte A., Jara E., Simón D. & Musto H.** An isochore-like structure in the genome of the flatworm Schistosoma mansoni. Genome Biology and Evolution 8(8):2312-8. [Pubmed]
-
-(http://www.ncbi.nlm.nih.gov/pubmed/27435793)]
+- **Lamolle G., Protasio A.V., Iriarte A., Jara E., Simón D. & Musto H.** An isochore-like structure in the genome of the flatworm Schistosoma mansoni. Genome Biology and Evolution 8(8):2312-8. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/27435793)]
 
 - **Platero R., James E.K., Rios C., Iriarte A., Sandes L., Zabaleta M., Battistoni F. & Fabiano E.** Novel Cupriavidus strains isolated from root nodules of native Uruguayan Mimosa species. Applied and Environmental Microbiology. 82(11), 3150-3164, pii:AEM.04142-15. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/26994087)]
 
@@ -186,7 +147,7 @@ ___
 
 - **Green R.E., Braun E.L., Armstrong J., Earl D., Nguyen N., Hickey G., Vandewege M.W., St John J.A., Capella-Gutiérrez S., Castoe T.A., Kern C., Fujita M.K., Opazo J.C., Jurka J., Kojima K.K., Caballero J., Hubley R.M., Smit A.F., Platt R.N., Lavoie C.A., Ramakodi M.P., Finger J.W. Jr., Suh A., Isberg S.R., Miles L., Chong A.Y., Jaratlerdsiri W., Gongora J., Moran C., Iriarte A., McCormack J., Burgess S.C., Edwards S.V., Lyons E., Williams C., Breen M., Howard J.T., Gresham C.R., Peterson D.G., Schmitz J., Pollock D.D., Haussler D., Triplett E.W., Zhang G., Irie N., Jarvis E.D., Brochu C.A., Schmidt C.J., McCarthy F.M., Faircloth B.C., Hoffmann F.G., Glenn T.C., Gabaldón T., Paten B. & Ray D.A.** Three crocodilian genomes reveal ancestral patterns of evolution among archosaurs. Science. 346(6215), 1254449. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25504731)]
 
-- Traglia G., Vilacoba E., Almuzara M., Diana L., Iriarte, A., Centrón D. & Ramírez M.S. Draft Genome Sequence of an of extensively drug-resistant Acinetobacter baumannii indigo-pigmented strain. Genome Announcements. 2(6), pii: e01146-14.. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25395633)]
+- **Traglia G., Vilacoba E., Almuzara M., Diana L., Iriarte, A., Centrón D. & Ramírez M.S.** Draft Genome Sequence of an of extensively drug-resistant Acinetobacter baumannii indigo-pigmented strain. Genome Announcements. 2(6), pii: e01146-14.. [[Pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25395633)]
 
 ___
 
