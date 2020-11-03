@@ -1,28 +1,12 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
-education:
-  courses:
-  - course: PhD in Biology. 
-    institution: PEDECIBA. Universidad de la República
-    year: 2010 2013
-  - course: MSc. in Biology.
-    institution: PEDECIBA  Universidad de la República
-    year: 2007 2009
-  - course: BSc in Biological Sciences
-    institution: Universidad de la República
-    year: 2000 2007
+bio: 
 email: "airiarte@higiene.edu.uy"
-interests:
-- Pathogens comparative genomics.
-- Evolution of gene families.
-- Evolution of codon and amino acid usage.
 organizations:
 - name: Dept. Biotechnology
   url: "http://www.higiene.edu.uy/ddbp/index.html"
-role: Associate Professor at the Biotech. Department.
+role: Our Lab is part of the
 social:
 - icon: envelope
   icon_pack: fas
