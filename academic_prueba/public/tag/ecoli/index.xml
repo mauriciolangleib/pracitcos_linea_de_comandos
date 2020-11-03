@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Lab. de Biología Computacional</title>
-    <link>/project/</link>
-      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
-    <description>Projects</description>
+    <title>Ecoli | Lab. de Biología Computacional</title>
+    <link>/tag/ecoli/</link>
+      <atom:link href="/tag/ecoli/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ecoli</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png</url>
-      <title>Projects</title>
-      <link>/project/</link>
+      <title>Ecoli</title>
+      <link>/tag/ecoli/</link>
     </image>
-    
-    <item>
-      <title>Evolution of families of secretory proteins coding genes in Platyhelminthes</title>
-      <link>/project/platys_secreted/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/platys_secreted/</guid>
-      <description>&lt;p&gt;Fondo Clemente Estable-2016, Code: FCE_3_2016_1_125297.&lt;/p&gt;
-&lt;p&gt;Funding Source: ANII, Uruguay.&lt;/p&gt;
-&lt;p&gt;Research Associates: Federico G. Hoffmann, Uriel Koziol, Estela Castillo, Francisco Peñagaricano, Anna Protasio, José F. Tort&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Genome wide association study (GWAS) in E. coli\: an approach to the search for genetic markers of the Shiga toxin-producing pathotype (STEC)</title>
