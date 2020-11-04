@@ -56,11 +56,20 @@ Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” 
 
 1. Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:
 
-> GCF_000005845.2 ASM584v2 \\
-> GCF_000007625.1 ASM762v1 \\
-> GCF_000009045.1 ASM904v1 \\
-> GCF_000498355.1 Ade.TY \\ 
-> GCF_001484935.1 ASM148493v1 \\
+```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+tabl <- "  # simple table creation here
+|   t      | A         | 
+|---------------|:-----------:|
+GCF_000005845.2 | ASM584v2    |
+GCF_000007625.1 | ASM762v1    |
+GCF_000009045.1 | ASM904v1    |
+GCF_000498355.1 | Ade.TY      |
+GCF_001484935.1 | ASM148493v1 |
+"
+cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+```
+
+
 
 > **Nota**: ls + awk -F'_' '{print $1”_”$2…}', notar que F'_' indica que el separador de columnas es el “_”. 
 
@@ -212,8 +221,8 @@ blastdbcmd -entry NC_000913.3_cds_NP_417259.1_2742_1 -db todos.base -out salida.
 
 6) Utilice el los comandos egrep y awk para seleccionar aquellos hits que cumplan con los siguientes
 requisitos:
--  >62% de identidad y >98% de cobertura
-- >50% de identidad y >90% de cobertura
+-  \>62% de identidad y >98% de cobertura
+- \>50% de identidad y >90% de cobertura
 
 7) Guarde en un archivo los nombres de las secuencias que cumplen con alguno de los criterios del Ejercicio 6. Viendo el manual de blastdbcmd, utilice esta lista para extraer estas secuencias.
 
