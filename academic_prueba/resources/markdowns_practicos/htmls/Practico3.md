@@ -56,7 +56,7 @@ Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” 
 
 1. Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:
 
-```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+```{r table2, eval = T, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 tabl <- "  # simple table creation here
 |   t      | A         | 
 |---------------|:-----------:|
@@ -68,6 +68,14 @@ GCF_001484935.1 | ASM148493v1 |
 "
 cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 ```
+
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9    
+\end{tabular}
+\end{center}
 
 
 
