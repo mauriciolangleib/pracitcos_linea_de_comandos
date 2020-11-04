@@ -58,22 +58,23 @@ Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” 
 
 <table style="width:100%">
   <tr>
-    <th>a</th>
-    <th>s</th>
-    <th>A</th>
-  </tr>
-  <tr>
 	<td>GCF_000005845.2</td>
-	<td>GCF_000007625.1</td>
-	<td>GCF_000009045.1</td>
-	<td>GCF_000498355.1</td>
-	<td>GCF_001484935.1</td>
+	<td>ASM584v2</td>
   </tr>
   <tr>
-	<td>ASM584v2</td>
+	<td>GCF_000007625.1</td>
 	<td>ASM762v1</td>
+  </tr>
+  <tr>	
+	<td>GCF_000009045.1</td>
 	<td>ASM904v1</td>
+	</tr>
+  <tr>	
+	<td>GCF_000498355.1</td>
 	<td>Ade.TY</td>
+  </tr>
+  <tr>
+	<td>GCF_001484935.1</td>
 	<td>ASM148493v1</td>
   </tr>
 </table>
