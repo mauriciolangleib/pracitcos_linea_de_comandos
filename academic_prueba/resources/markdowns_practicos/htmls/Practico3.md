@@ -16,15 +16,18 @@ output:
 ---
 
 ## Manejo de textos: sed, awk, uniq, grep, sort y otros
+
 En este práctico nos centraremos en utilizar herramientas para la edición de textos, aunque
 indirectamente repasaremos muchos de lo aprendido en las clases anteriores. Mediante dos ejercicios
 distintos, con objetivos similares, aprenderemos las técnicas y estrategias comunes para el procesamiento
 de textos.
 
 ## EJERCICIO 1: Extracción de secuencias utilizando comandos de edición de textos
+
 Utilizando comandos básicos del Shell y mediante un string (un conjunto de caracteres, generalmente texto) el estudiante deberá obtener una secuencia codificante determinada. El string se utiliza, en este caso, para buscar en la anotación asignada a cada secuencia codificante en el encabezado de cada una. 
 
 Vea abajo el string “enolase”, donde coincide en el encabezado:
+
 > >lcl|NC_000964.3_cds_NP_389242.1_1382 [gene=mtnW] [locus_tag=BSU13590] [db_xref=GeneID:939339]
 > [protein=2,3-diketo-5-methylthiopentyl-1-phosphate enolase] [protein_id=NP_389242.1] [location=1427034..1428278]
 > ATGGATGAAAATGAAAGGAGCTCTGGCATGAGTGAGTTATTAGCGACATATCTCCTGACCGAACCGGGAGCCGATACAGA
@@ -45,11 +48,13 @@ Vea abajo el string “enolase”, donde coincide en el encabezado:
 > CTTAAGCTTGCGCTAGATAAATGGGGAAAGGCTGAAGCCGTATGA
 
 ### 1) Obtenemos los datos crudos y analicemos algunas de sus propiedades
+
 En la carpeta PRACT3 dentro de MATERIALES encontraremos archivos multifasta que contienen todas las secuencias codificantes de ciertos organismos procariotas. Algunos de estos han sido intensamente estudiados y otros no tanto, esto puede ser relevante para una discusión posterior.
 
 Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” y trabaje allí adentro.
 
 1. Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:
+
 > GCF_000005845.2 ASM584v2
 > GCF_000007625.1 ASM762v1
 > GCF_000009045.1 ASM904v1
@@ -58,7 +63,7 @@ Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” 
 
 > **Nota**: ls + awk -F'_' '{print $1”_”$2…}', notar que F'_' indica que el separador de columnas es el “_”. 
 
-```{bash, echo = T, eval = F}
+```{bash}
 ls *.fna | awk -F'_' '{print $1”_”$2,$3}'
 ```
 
@@ -72,7 +77,8 @@ ls *.fna | awk -F'_' '{print $1”_”$2,$3}'
 > GCF_001484935.1 ……………..
 
 > **Nota**: utilizar el comando egrep con opción específica para conteo
-```{bash, echo = T, eval = F}
+
+```{bash}
 egrep -c ">" archive.fas
 ```
 
@@ -88,7 +94,7 @@ a. Citosina (C) en el transcriptoma:
 
 > Nota: utilizar el comando egrep para eliminar los encabezados, el comando sed para cambiar la C por una C más salto de línea y finalmente el comando wc con la opción –l para contar líneas.
 
-```{bash, echo = T, eval = F}
+```{bash}
 egrep -v ">" archive.fna | sed 's/C/\n&/g' | egrep -c ^[C]
 ```
 
@@ -103,7 +109,7 @@ b. Porcentaje de GC (G o C) en el transcriptoma:
 
 > Nota: utilizar una aproximación similar al caso anterior para contar G y C y luego el comando wc para contar el número de caracteres (para obtener el número de bases totales y calcular el porcentaje).
 
-```{bash, echo = T, eval = F}
+```{bash}
 egrep -v ">" archive.fna | sed 's/[CGAT]/\n&/g' | egrep -c ^[CG]
 ```
 
@@ -115,7 +121,7 @@ En este punto prepararemos el archivo fasta para hacer que la búsqueda sea posi
 
 Para transformar el archivo multifasta y dejar todas las secuencias en una única línea:
 
-```{bash, echo = T, eval = F}
+```{bash}
 sed 's/>..*/&____/g' ENTRADA | sed ':a;N;$!ba;s/\n//g' |sed 's/____/\n/g' | sed 's/>/\n>/g' | egrep .> SALIDA
 ```
 
@@ -129,6 +135,7 @@ Una vez que tiene todos los archivos con el formato ajustado. Busque la enolasa 
 robustez o confiabilidad de los resultados y a nivel técnico?
 
 ## EJERCICIO 2: Identificación y extracción de secuencias utilizando el paquete Blast
+
 El problema de la aproximación aplicada en el EJERCICIO 1 es que es absolutamente dependiente de la anotación del genoma. Si bien muchos organismos tienen una anotación confiable, porque han sido muy estudiados, esto no es para nada una regla general. Una aproximación basada en similitud de secuencias a nivel de proteínas sería lo correcto.
 
 La opción más común para realizar una búsqueda de secuencias por similitud es el blast. Los pasos según esta estrategia sería: i) construir base de datos, ii) buscar por identidad, iii) parsear archivo de salida del blast y iv) recuperar las secuencias desde la base de datos.
@@ -136,7 +143,7 @@ La opción más común para realizar una búsqueda de secuencias por similitud e
 1) Instalar Blast.
 Busque en la web como puede instalarse el paquete del blast y en caso de ser necesario pídale a su amable administrador que lo instale.
 
-```{bash, echo = T, eval = F}
+```{bash}
 sudo apt install ncbi-blast+
 ```
 
@@ -145,14 +152,14 @@ sudo apt install ncbi-blast+
 Vamos a construir una base de datos de blast utilizando todos de los genomas (archivo de secuencias codificantes) disponibles en el directorio del práctico 3 en MATERIALES. Si no lo hizo aun, copie los archivos de la carpeta MATERIAL/PRACT3 a su carpeta personal.
 Utilizamos cat para concatenar las secuencias codificantes y con la herramienta transeq (Emboss) es posible traducir las secuencias codificantes en un archivo de nucleótidos en fasta y otros formatos de secuencias.
 
-```{bash, echo = T, eval = F}
+```{bash}
 cat *.fna > todos.fna
 transeq todos.fna todos.faa
 ```
 
 Uno de los primeros pasos habituales para utilizar el blast local es construir una base de datos (binaria) con formato específico. La base de datos se construye a partir de un archivo de secuencias multifasta utilizando el comando makeblastdb.
 
-```{bash, echo = T, eval = F}
+```{bash}
 makeblastdb -in secuencia -dbtype prot -out base -parse_seqids
 ```
 
@@ -163,7 +170,7 @@ La búsqueda por identidad se hace con el programa blast. Este programa se basa 
 **Query**: Antes de hacer el blast defina que busca, ej.: enolasa, tuf, peptidasa, polimerasa…, una vez que defina
 lo que busca vaya al Genbank, a la base de datos de proteínas (ej. www.ncbi.nlm.nih.gov/protein/?term=(enolase)+AND+%22Escherichia+coli%22%5Bporgn%3A__txid562%5D), y copie una secuencia de referencia en formato fasta. Utilizando el editor joe puede abrir un archivo vacio, y luego con Shift+Insert (click derecho en la terminal) lo pega. Luego utiliza Ctr+KX para guardar el archivo
 
-```{bash, echo = T, eval = F}
+```{bash}
 joe SequenciasQuery.fas
 ```
 
@@ -171,7 +178,7 @@ joe SequenciasQuery.fas
 
 Blast:
 
-```{bash, echo = T, eval = F}
+```{bash}
 blastp -db base -query SequenciasQuery.fas -out GCF_Q.bl -evalue 1e-5 -num_threads 1 -max_target_seqs 20 -outfmt '7 std qcovs'
 ```
 
@@ -179,7 +186,7 @@ Como mínimo debe establecerse: el nombre de la base (-db), el query(-query) o s
 
 Visualice el resultado e interprete el significado de cada una de las columnas. Explique.
 
-```{bash, echo = T, eval = F}
+```{bash}
 less GCF_Q.bl
 ```
 
@@ -187,7 +194,7 @@ less GCF_Q.bl
 Utilice el los comandos egrep y awk para seleccionar aquellos hits que cumplan con poseer un 100% de
 cobertura.
 
-```{bash, echo = T, eval = F}
+```{bash}
 egrep -v ^# GCF_Q.bl | awk '$13 >=100'
 ```
 
@@ -196,7 +203,7 @@ egrep -v ^# GCF_Q.bl | awk '$13 >=100'
 5) Extraer una secuencia
 Utilizaremos el comando blastdbcmd para recuperar las secuencias identificadas como similares en nuestra base de datos (con identificadores enlistados en el archivo lista). La siguiente línea puede utilizarse para extraer de a una secuencia por vez:
 
-```{bash, echo = T, eval = F}
+```{bash}
 blastdbcmd -entry NC_000913.3_cds_NP_417259.1_2742_1 -db todos.base -out salida.fas
 ```
 

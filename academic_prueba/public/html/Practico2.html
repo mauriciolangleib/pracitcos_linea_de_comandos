@@ -68,8 +68,15 @@ code span.ot { color: #007020; }
 <ol start="2" style="list-style-type: decimal">
 <li><p>Identificar cuales son los argumentos y/o opciones mínimos necesarios para correr el programa. En la mayoría de los casos es necesario estudiar cuales son los formatos necesarios en los archivos de entrada y las opciones para obtener los resultados que se buscan.</p></li>
 <li><p>Características del programa y del análisis. Cuanto tiempo correrá el programa? Es necesario usar el comando nohup? Como es el archivo de salida? Hay que dirigir la salida estándar a un archivo o el programa genera un archivo de salida?</p></li>
-<li><p>Correr el programa. ### EJEMPLOS: ### 1. muscle MUSCLE (MUltiple Sequence Comparison by Log- Expectation) es un programa para alinear secuencias aminoacídicas o nucleotídicas. MUSCLE es un programa muy utilizado, combinando de manera muy buena la velocidad y la exactitud de los resultados. Su funcionamiento es muy simple y forma parte de los repositorios de Linux. Manual: www.drive5.com/muscle/manual/</p></li>
+<li><p>Correr el programa.</p></li>
 </ol>
+</div>
+<div id="ejemplos" class="section level3">
+<h3>EJEMPLOS:</h3>
+</div>
+<div id="muscle" class="section level3">
+<h3>1. muscle</h3>
+<p>MUSCLE (MUltiple Sequence Comparison by Log- Expectation) es un programa para alinear secuencias aminoacídicas o nucleotídicas. MUSCLE es un programa muy utilizado, combinando de manera muy buena la velocidad y la exactitud de los resultados. Su funcionamiento es muy simple y forma parte de los repositorios de Linux. Manual: www.drive5.com/muscle/manual/</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Antes de comenzar responda:</p></li>
 <li><p>¿Donde se ubica el ejecutable?</p></li>
@@ -82,7 +89,7 @@ code span.ot { color: #007020; }
 <li>Como en cada práctico, dentro de su carpeta personal (ubicada dentro de la carpeta general del</li>
 </ol>
 <p>usuario estudiantes), genere una carpeta correspondiente a este práctico, práctico 2.</p>
-<p><code>{bash, echo = T, eval = F} cd &amp; mkdir</code></p>
+<pre class="{bash}"><code>cd &amp; mkdir</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
 <li><p>Copie el archivo “para_agregar.fas” y “111816_abi.624.aa” disponibles en la carpeta general MATERIALES/PRACT2 en la carpeta creada en el punto anterior. Luego sume (o concatene) ambos archivos utilizando el comando cat y envíe el resultado a un nuevo archivo.</p></li>
 <li><p>Responda: qué tipo de archivos son ambos?</p></li>
@@ -90,25 +97,26 @@ code span.ot { color: #007020; }
 <ol start="2" style="list-style-type: lower-roman">
 <li>Utilizando los comandos cp &amp; cat:</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} cat para_agregar.fas 111816_abi.624.aa &gt; nuevo_archivo.fas</code></p>
+<pre class="{bash}"><code>cat para_agregar.fas 111816_abi.624.aa &gt; nuevo_archivo.fas</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
-<li>Alinea el nuevo archivo utilizando el programa muscle. Para saber sobre el modo de uso utilice la opción –h. ```{bash, echo = T, eval = F} muscle -in <input_file> -out <output_file></li>
+<li>Alinea el nuevo archivo utilizando el programa muscle. Para saber sobre el modo de uso utilice la opción –h.</li>
 </ol>
-<pre><code>
-&gt; **Nota**: 
-
-e) Explore el resultado.
-
-```{bash, echo = T, eval = F}
-less output_file</code></pre>
+<pre class="{bash}"><code>muscle -in &lt;input_file&gt; -out &lt;output_file&gt;</code></pre>
+<blockquote>
+<p><strong>Nota</strong>:</p>
+</blockquote>
+<ol start="5" style="list-style-type: lower-alpha">
+<li>Explore el resultado.</li>
+</ol>
+<pre class="{bash}"><code>less output_file</code></pre>
 <ol start="6" style="list-style-type: lower-alpha">
 <li>Vuelva a alinear las secuencias variando uno o varios parámetros (guarde con un nombre distinto la salida).</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} muscle -in &lt;input_file&gt; -out &lt;output_file2&gt;</code></p>
+<pre class="{bash}"><code>muscle -in &lt;input_file&gt; -out &lt;output_file2&gt;</code></pre>
 <ol start="7" style="list-style-type: lower-alpha">
 <li>Compare los resultados del programa y la corrida.</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} less output_file2</code></p>
+<pre class="{bash}"><code>less output_file2</code></pre>
 </div>
 <div id="fasttree" class="section level3">
 <h3>2. fasttree</h3>
@@ -128,16 +136,17 @@ less output_file</code></pre>
 <li><p>Cliquee con Botón Derecho en “GCA_001808015.1_ASM180801v1_genomic.fna.gz” y copie la dirección del enlace.</p></li>
 <li><p>Vuelva a la terminal y utilizando el comando wget con la dirección del enlace opiada en el punto anterior baje el archivo del genoma.</p></li>
 </ol>
-<p><code>{bash, echo = T, eval = F} wget ftp://ftp.ncbi.nlm.nih.gov/…/…/…/GCA_001808015.1_ASM180801v1_genomic.fna.gz</code></p>
+<pre class="{bash}"><code>wget ftp://ftp.ncbi.nlm.nih.gov/…/…/…/GCA_001808015.1_ASM180801v1_genomic.fna.gz</code></pre>
 <ol start="6" style="list-style-type: lower-alpha">
 <li>Utilizando el programa gunzip descomprima el archivo. Y explore el archivo.</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} gunzip GCA_001808015.1_ASM180801v1_genomic.fna.gz less GCA_001808015.1_ASM180801v1_genomic.fna</code></p>
+<pre class="{bash}"><code>gunzip GCA_001808015.1_ASM180801v1_genomic.fna.gz
+less GCA_001808015.1_ASM180801v1_genomic.fna</code></pre>
 <ol start="7" style="list-style-type: lower-alpha">
 <li><p>Utilice el script abyss-fac.pl para sacar los estadísticos de continuidad de este genoma.</p></li>
 <li><p>¿Porque piensa usted que a diferencia de los casos anteriores debe utilizarse un “./” antes del nombre del script.</p></li>
 </ol>
-<p><code>{bash, echo = T, eval = F} ./abyss-fac.pl GCA_001808015.1_ASM180801v1_genomic.fna</code></p>
+<pre class="{bash}"><code>./abyss-fac.pl GCA_001808015.1_ASM180801v1_genomic.fna</code></pre>
 <p>Guía para interpretar el resultado: (1) n N total de contigs en el ensamblaje (2) n:100 N contigs mayores al límite (o threshold, se puede establecer con la opción “-t”) Nota: todos los estadísticos luego de este valor se calculan solamente para los contigs mayores al límite establecido en el punto 2. (3) n:N50 N de contigs contenido en el set N50 (4) min Tamaño del contig más pequeño (5) median Mediana del tamaño de los contigs (6) mean Promedio del tamaño de los contigs (7) N50 Es definido como la longitud de los contigs tal que usando contigs de igual o mayor tamaño produce la mitad de las bases del genoma. El tamaño N50 se calcula ordenando todos los contigs de mayor a menor, y determinando el conjunto mínimo de contigs cuyo tamaño total sea el 50% de todo el genoma. (8) max Contig mayor (9) sum Suma total de los contigs en el ensamblado</p>
 <p>Las únicas opciones de la línea de comando son –t para establecer el límite y –j para obtener el resultado en formato JIRA.</p>
 <ol start="3" style="list-style-type: lower-roman">
