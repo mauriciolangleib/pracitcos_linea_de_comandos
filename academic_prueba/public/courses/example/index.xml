@@ -42,5 +42,15 @@
 </description>
     </item>
     
+    <item>
+      <title>Práctico 4</title>
+      <link>/courses/example/practico4/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico4/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Clase4.pptx&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
