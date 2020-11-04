@@ -43,16 +43,6 @@
     </item>
     
     <item>
-      <title>Práctico 3</title>
-      <link>/courses/example/practico5/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/practico5/</guid>
-      <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico5.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Práctico 4</title>
       <link>/courses/example/practico4/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
@@ -63,12 +53,22 @@
     </item>
     
     <item>
+      <title>Práctico 5</title>
+      <link>/courses/example/practico5/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico5/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico5.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Práctico 6</title>
       <link>/courses/example/practico6/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico6/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico6.pptx&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;/html/Practico6.pdf&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
