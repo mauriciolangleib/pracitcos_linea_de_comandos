@@ -90,8 +90,8 @@ ls *.fna | awk -F'_' '{print $1”_”$2,$3}'
 
 <table style="width:100%">
   <tr>
-	<th>Ensamblado</td>
-	<th>N° de CDS</td>
+	<th>Ensamblado</th>
+	<th>N° de CDS</th>
   </tr>
   <tr>
 	<td>GCF_000005845.2</td>
@@ -126,8 +126,8 @@ a. Citosina (C) en el transcriptoma:
 
 <table style="width:100%">
   <tr>
-	<th>Ensamblado</td>
-	<th>%C</td>
+	<th>Ensamblado</th>
+	<th>%C</th>
   </tr>
   <tr>
 	<td>GCF_000005845.2</td>
@@ -161,8 +161,8 @@ b. Porcentaje de GC (G o C) en el transcriptoma:
 
 <table style="width:100%">
   <tr>
-	<th>Ensamblado</td>
-	<th>GC%</td>
+	<th>Ensamblado</th>
+	<th>GC%</th>
   </tr>
   <tr>
 	<td>GCF_000005845.2</td>
