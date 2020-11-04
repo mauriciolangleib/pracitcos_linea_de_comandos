@@ -88,12 +88,32 @@ ls *.fna | awk -F'_' '{print $1”_”$2,$3}'
 
 2. Contar cuantos genes (o secuencias codificantes) fueron predichos en cada uno de los ensamblajes
 
-> Ensamblado N° de CDS
-> GCF_000005845.2 ……………..
-> GCF_000007625.1 ……………..
-> GCF_000009045.1 ……………..
-> GCF_000498355.1 ……………..
-> GCF_001484935.1 ……………..
+<table style="width:100%">
+  <tr>
+	<th>Ensamblado</td>
+	<th>N° de CDS</td>
+  </tr>
+  <tr>
+	<td>GCF_000005845.2</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000007625.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000009045.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000498355.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_001484935.1</td>
+	<td></td>
+  </tr> 
+</table>
 
 > **Nota**: utilizar el comando egrep con opción específica para conteo
 
@@ -104,12 +124,32 @@ egrep -c ">" archive.fas
 3. Estimar el contenidos de bases:
 a. Citosina (C) en el transcriptoma:
 
-> Ensamblado C
-> GCF_000005845.2 ……………..
-> GCF_000007625.1 ……………..
-> GCF_000009045.1 ……………..
-> GCF_000498355.1 ……………..
-> GCF_001484935.1 ……………..
+<table style="width:100%">
+  <tr>
+	<th>Ensamblado</td>
+	<th>%C</td>
+  </tr>
+  <tr>
+	<td>GCF_000005845.2</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000007625.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000009045.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000498355.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_001484935.1</td>
+	<td></td>
+  </tr> 
+</table>
 
 > Nota: utilizar el comando egrep para eliminar los encabezados, el comando sed para cambiar la C por una C más salto de línea y finalmente el comando wc con la opción –l para contar líneas.
 
@@ -119,12 +159,32 @@ egrep -v ">" archive.fna | sed 's/C/\n&/g' | egrep -c ^[C]
 
 b. Porcentaje de GC (G o C) en el transcriptoma:
 
-> Ensamblado GC%
-> GCF_000005845.2 ……………..
-> GCF_000007625.1 ……………..
-> GCF_000009045.1 ……………..
-> GCF_000498355.1 ……………..
-> GCF_001484935.1 ……………..
+<table style="width:100%">
+  <tr>
+	<th>Ensamblado</td>
+	<th>GC%</td>
+  </tr>
+  <tr>
+	<td>GCF_000005845.2</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000007625.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000009045.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_000498355.1</td>
+	<td></td>
+  </tr>
+  <tr>
+	<td>GCF_001484935.1</td>
+	<td></td>
+  </tr> 
+</table>
 
 > Nota: utilizar una aproximación similar al caso anterior para contar G y C y luego el comando wc para contar el número de caracteres (para obtener el número de bases totales y calcular el porcentaje).
 
