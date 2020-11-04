@@ -16,7 +16,9 @@ output:
 ---
 
 ## Correr programas desde la línea de comando
+
 ### PASOS PARA CORRER UN PROGRAMA
+
 1) Establecer donde se encuentra el programa:
   Los programas, compilados o scripts pueden estar ubicados en:
   1. El bin del equipo, /bin/, como ocurre en los casos en los que el programa es instalado por un administrador desde un repositorio utilizando el comando apt-get. También puede estar ubicado en el /bin/ si un usuario administrador, luego de compilarlo o bajarlo lo movió/copio al bin. El bin
@@ -31,8 +33,11 @@ del equipo está por definición en el path, es decir es accesible desde todos l
 3) Características del programa y del análisis. Cuanto tiempo correrá el programa? Es necesario usar el comando nohup? Como es el archivo de salida? Hay que dirigir la salida estándar a un archivo o el programa genera un archivo de salida?
 
 4) Correr el programa.
+
 ### EJEMPLOS:
+
 ### 1. muscle
+
 MUSCLE (MUltiple Sequence Comparison by Log- Expectation) es un programa para alinear secuencias aminoacídicas o nucleotídicas. MUSCLE es un programa muy utilizado, combinando de manera muy buena la velocidad y la exactitud de los resultados. Su funcionamiento es muy simple y forma parte de los
 repositorios de Linux. Manual: www.drive5.com/muscle/manual/
 
@@ -48,7 +53,7 @@ b) Como en cada práctico, dentro de su carpeta personal (ubicada dentro de la c
 
 usuario estudiantes), genere una carpeta correspondiente a este práctico, práctico 2.
 
-```{bash, echo = T, eval = F}
+```{bash}
 cd & mkdir
 ```
 
@@ -58,13 +63,14 @@ i) Responda: qué tipo de archivos son ambos?
 
 ii) Utilizando los comandos cp & cat:
 
-```{bash, echo = T, eval = F}
+```{bash}
 cat para_agregar.fas 111816_abi.624.aa > nuevo_archivo.fas
 ```
 
 d) Alinea el nuevo archivo utilizando el programa muscle. Para saber sobre el modo de uso utilice la
 opción –h.
-```{bash, echo = T, eval = F}
+
+```{bash}
 muscle -in <input_file> -out <output_file>
 ```
 
@@ -72,20 +78,20 @@ muscle -in <input_file> -out <output_file>
 
 e) Explore el resultado.
 
-```{bash, echo = T, eval = F}
+```{bash}
 less output_file
 ```
 
 f) Vuelva a alinear las secuencias variando uno o varios parámetros (guarde con un nombre distinto la
 salida).
 
-```{bash, echo = T, eval = F}
+```{bash}
 muscle -in <input_file> -out <output_file2>
 ```
 
 g) Compare los resultados del programa y la corrida.
 
-```{bash, echo = T, eval = F}
+```{bash}
 less output_file2
 ```
 
@@ -110,13 +116,13 @@ d) Cliquee con Botón Derecho en “GCA_001808015.1_ASM180801v1_genomic.fna.gz�
 
 e) Vuelva a la terminal y utilizando el comando wget con la dirección del enlace opiada en el punto anterior baje el archivo del genoma.
 
-```{bash, echo = T, eval = F}
+```{bash}
 wget ftp://ftp.ncbi.nlm.nih.gov/…/…/…/GCA_001808015.1_ASM180801v1_genomic.fna.gz
 ```
 
 f) Utilizando el programa gunzip descomprima el archivo. Y explore el archivo.
 
-```{bash, echo = T, eval = F}
+```{bash}
 gunzip GCA_001808015.1_ASM180801v1_genomic.fna.gz
 less GCA_001808015.1_ASM180801v1_genomic.fna
 ```
@@ -126,7 +132,7 @@ g) Utilice el script abyss-fac.pl para sacar los estadísticos de continuidad de
 i) ¿Porque piensa usted que a diferencia de los casos anteriores debe utilizarse un “./” antes del
 nombre del script.
 
-```{bash, echo = T, eval = F}
+```{bash}
 ./abyss-fac.pl GCA_001808015.1_ASM180801v1_genomic.fna
 ```
 
