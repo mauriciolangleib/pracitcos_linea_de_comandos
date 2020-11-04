@@ -84,27 +84,57 @@ CTTAAGCTTGCGCTAGATAAATGGGGAAAGGCTGAAGCCGTATGA</code></pre>
 <ol style="list-style-type: decimal">
 <li>Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:</li>
 </ol>
-<p>```{r, table2, eval = T, echo=FALSE, message=FALSE, warnings=FALSE} #tabl &lt;- &quot; # simple table creation here #| t | A | #|—————|:———–:| #GCF_000005845.2 | ASM584v2 | #GCF_000007625.1 | ASM762v1 | #GCF_000009045.1 | ASM904v1 | #GCF_000498355.1 | Ade.TY | #GCF_001484935.1 | ASM148493v1 | #&quot; #cat(tabl) # output the table in a format good for HTML/PDF/docx conversion library(tidyverse) library(knitr) tabla = tribble(~t, ~A, ‘GCF_000005845.2’, ‘ASM584v2’,<br />
-‘GCF_000007625.1’, ‘ASM762v1’,<br />
-‘GCF_000009045.1’, ‘ASM904v1’,<br />
-‘GCF_000498355.1’, ‘Ade.TY’,<br />
-‘GCF_001484935.1’, ‘ASM148493v1’)</p>
-<p>knitr::kable(tabla)</p>
-<pre><code>
-\begin{center}
-\begin{tabular}{ c c c }
- cell1 &amp; cell2 &amp; cell3 \\ 
- cell4 &amp; cell5 &amp; cell6 \\  
- cell7 &amp; cell8 &amp; cell9    
-\end{tabular}
-\end{center}
-
-
-
-&gt; **Nota**: ls + awk -F&#39;_&#39; &#39;{print $1”_”$2…}&#39;, notar que F&#39;_&#39; indica que el separador de columnas es el “_”. 
-
-```{bash}
-ls *.fna | awk -F&#39;_&#39; &#39;{print $1”_”$2,$3}&#39;</code></pre>
+<table style="width:100%">
+<tr>
+<th>
+a
+</th>
+<th>
+s
+</th>
+<th>
+A
+</th>
+</tr>
+<tr>
+<td>
+GCF_000005845.2
+</td>
+<td>
+GCF_000007625.1
+</td>
+<td>
+GCF_000009045.1
+</td>
+<td>
+GCF_000498355.1
+</td>
+<td>
+GCF_001484935.1
+</td>
+</tr>
+<tr>
+<td>
+ASM584v2
+</td>
+<td>
+ASM762v1
+</td>
+<td>
+ASM904v1
+</td>
+<td>
+Ade.TY
+</td>
+<td>
+ASM148493v1
+</td>
+</tr>
+</table>
+<blockquote>
+<p><strong>Nota</strong>: ls + awk -F’<em>’ ‘{print $1”<em>”$2…}’, notar que F’</em>’ indica que el separador de columnas es el “</em>”.</p>
+</blockquote>
+<pre class="{bash}"><code>ls *.fna | awk -F&#39;_&#39; &#39;{print $1”_”$2,$3}&#39;</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Contar cuantos genes (o secuencias codificantes) fueron predichos en cada uno de los ensamblajes</li>
 </ol>

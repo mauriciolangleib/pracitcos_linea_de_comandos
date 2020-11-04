@@ -56,37 +56,27 @@ Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” 
 
 1. Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:
 
-```{r, table2, eval = T, echo=FALSE, message=FALSE, warnings=FALSE}
-#tabl <- "  # simple table creation here
-#|   t      | A         | 
-#|---------------|:-----------:|
-#GCF_000005845.2 | ASM584v2    |
-#GCF_000007625.1 | ASM762v1    |
-#GCF_000009045.1 | ASM904v1    |
-#GCF_000498355.1 | Ade.TY      |
-#GCF_001484935.1 | ASM148493v1 |
-#"
-#cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
-library(tidyverse)
-library(knitr)
-tabla = tribble(~t, ~A,
-'GCF_000005845.2',  'ASM584v2',    
-'GCF_000007625.1',  'ASM762v1',    
-'GCF_000009045.1',  'ASM904v1',    
-'GCF_000498355.1',  'Ade.TY',      
-'GCF_001484935.1', 'ASM148493v1')
-
-knitr::kable(tabla)
-```
-
-\begin{center}
-\begin{tabular}{ c c c }
- cell1 & cell2 & cell3 \\ 
- cell4 & cell5 & cell6 \\  
- cell7 & cell8 & cell9    
-\end{tabular}
-\end{center}
-
+<table style="width:100%">
+  <tr>
+    <th>a</th>
+    <th>s</th>
+    <th>A</th>
+  </tr>
+  <tr>
+	<td>GCF_000005845.2</td>
+	<td>GCF_000007625.1</td>
+	<td>GCF_000009045.1</td>
+	<td>GCF_000498355.1</td>
+	<td>GCF_001484935.1</td>
+  </tr>
+  <tr>
+	<td>ASM584v2</td>
+	<td>ASM762v1</td>
+	<td>ASM904v1</td>
+	<td>Ade.TY</td>
+	<td>ASM148493v1</td>
+  </tr>
+</table>
 
 
 > **Nota**: ls + awk -F'_' '{print $1”_”$2…}', notar que F'_' indica que el separador de columnas es el “_”. 
