@@ -59,18 +59,26 @@ code span.ot { color: #007020; }
 <div id="ejercicio-1-extracción-de-secuencias-utilizando-comandos-de-edición-de-textos" class="section level2">
 <h2>EJERCICIO 1: Extracción de secuencias utilizando comandos de edición de textos</h2>
 <p>Utilizando comandos básicos del Shell y mediante un string (un conjunto de caracteres, generalmente texto) el estudiante deberá obtener una secuencia codificante determinada. El string se utiliza, en este caso, para buscar en la anotación asignada a cada secuencia codificante en el encabezado de cada una.</p>
-<p>Vea abajo el string “enolase”, donde coincide en el encabezado: &gt; &gt;lcl|NC_000964.3_cds_NP_389242.1_1382 [gene=mtnW] [locus_tag=BSU13590] [db_xref=GeneID:939339] &gt; [protein=2,3-diketo-5-methylthiopentyl-1-phosphate enolase] [protein_id=NP_389242.1] [location=1427034..1428278] &gt; ATGGATGAAAATGAAAGGAGCTCTGGCATGAGTGAGTTATTAGCGACATATCTCCTGACCGAACCGGGAGCCGATACAGA &gt; GAAGAAAGCAGAACAAATCGCAACAGGATTGACAGTAGGCTCCTGGACTGATCTGCCCCTTGTAAAACAGGAGCAAATGC &gt; AAAAGCACAAGGGGCGGGTGATAAAAGTTGAGGAGAGAGAGGGAACTGCTGCATCAGAAAAACAAGCGGTCATCACAATT &gt; GCCTATCCTGAAATCAATTTCTCTCAGGATATTCCGGCTTTGCTGACAACAGTGTTTGGCAAGCTGTCCCTGGACGGAAA &gt; AATCAAATTAATCGATCTTCACTTCTCTGAAGCATTTAAGCGTGCACTGCCGGGACCGAAGTTTGGCGTATACGGCATCC &gt; GGAAGCTGCTGGGAGAGTTTGAGAGACCGCTGTTAATGAGCATATTTAAAGGCGTAATCGGAAGGGACCTGAGTGATATT &gt; AAAGAACAGCTCCGGCAGCAGGCGCTTGGCGGAGTTGACTTGATTAAAGACGATGAAATTTTCTTTGAGACTGGTCTAGC &gt; GCCTTTTGAAACAAGAATTGCAGAAGGAAAGCAAATATTGAAAGAAACGTATGAACAAACCGGACATAAAACGCTGTATG &gt; CGGTGAATTTGACCGGACGTACGGCTGATCTGAAAGACAAAGCGAGACGCGCCGCCGAATTGGGAGCGGATGCGCTTTTG &gt; TTTAATGTCTTCGCTTACGGCTTGGACGTTATGCAAGGCCTTGCAGAAGATCCTGAAATCCCAGTTCCGATTATGGCGCA &gt; TCCAGCAGTGAGCGGAGCGTTTACGTCTTCTCCGTTTTACGGTTTTTCTCACGCTCTTTTACTCGGAAAATTAAACCGAT &gt; ATTGCGGTGCTGACTTCAGCCTCTTTCCGTCTCCATATGGTTCGGTTGCGCTTCCAAGAGCAGATGCACTGGCGATTCAT &gt; GAAGAATGTGTGAGAGAGGATGCTTTTAACCAAACATTTGCTGTTCCGTCAGCAGGCATTCATCCCGGCATGGTTCCGCT &gt; ATTAATGCGTGATTTCGGCATAGACCACATTATTAACGCCGGAGGAGGCGTACATGGACATCCGAACGGTGCCCAAGGCG &gt; GGGGGCGAGCGTTCAGAGCTATTATTGATGCGGTCCTAGAGGCCCAGCCGATTGATGAAAAAGCCGAACAATGCAAGGAT &gt; CTTAAGCTTGCGCTAGATAAATGGGGAAAGGCTGAAGCCGTATGA</p>
+<p>Vea abajo el string “enolase”, donde coincide en el encabezado:</p>
+<blockquote>
+<blockquote>
+<p>lcl|NC_000964.3_cds_NP_389242.1_1382 [gene=mtnW] [locus_tag=BSU13590] [db_xref=GeneID:939339] [protein=2,3-diketo-5-methylthiopentyl-1-phosphate enolase] [protein_id=NP_389242.1] [location=1427034..1428278] ATGGATGAAAATGAAAGGAGCTCTGGCATGAGTGAGTTATTAGCGACATATCTCCTGACCGAACCGGGAGCCGATACAGA GAAGAAAGCAGAACAAATCGCAACAGGATTGACAGTAGGCTCCTGGACTGATCTGCCCCTTGTAAAACAGGAGCAAATGC AAAAGCACAAGGGGCGGGTGATAAAAGTTGAGGAGAGAGAGGGAACTGCTGCATCAGAAAAACAAGCGGTCATCACAATT GCCTATCCTGAAATCAATTTCTCTCAGGATATTCCGGCTTTGCTGACAACAGTGTTTGGCAAGCTGTCCCTGGACGGAAA AATCAAATTAATCGATCTTCACTTCTCTGAAGCATTTAAGCGTGCACTGCCGGGACCGAAGTTTGGCGTATACGGCATCC GGAAGCTGCTGGGAGAGTTTGAGAGACCGCTGTTAATGAGCATATTTAAAGGCGTAATCGGAAGGGACCTGAGTGATATT AAAGAACAGCTCCGGCAGCAGGCGCTTGGCGGAGTTGACTTGATTAAAGACGATGAAATTTTCTTTGAGACTGGTCTAGC GCCTTTTGAAACAAGAATTGCAGAAGGAAAGCAAATATTGAAAGAAACGTATGAACAAACCGGACATAAAACGCTGTATG CGGTGAATTTGACCGGACGTACGGCTGATCTGAAAGACAAAGCGAGACGCGCCGCCGAATTGGGAGCGGATGCGCTTTTG TTTAATGTCTTCGCTTACGGCTTGGACGTTATGCAAGGCCTTGCAGAAGATCCTGAAATCCCAGTTCCGATTATGGCGCA TCCAGCAGTGAGCGGAGCGTTTACGTCTTCTCCGTTTTACGGTTTTTCTCACGCTCTTTTACTCGGAAAATTAAACCGAT ATTGCGGTGCTGACTTCAGCCTCTTTCCGTCTCCATATGGTTCGGTTGCGCTTCCAAGAGCAGATGCACTGGCGATTCAT GAAGAATGTGTGAGAGAGGATGCTTTTAACCAAACATTTGCTGTTCCGTCAGCAGGCATTCATCCCGGCATGGTTCCGCT ATTAATGCGTGATTTCGGCATAGACCACATTATTAACGCCGGAGGAGGCGTACATGGACATCCGAACGGTGCCCAAGGCG GGGGGCGAGCGTTCAGAGCTATTATTGATGCGGTCCTAGAGGCCCAGCCGATTGATGAAAAAGCCGAACAATGCAAGGAT CTTAAGCTTGCGCTAGATAAATGGGGAAAGGCTGAAGCCGTATGA</p>
+</blockquote>
+</blockquote>
 <div id="obtenemos-los-datos-crudos-y-analicemos-algunas-de-sus-propiedades" class="section level3">
 <h3>1) Obtenemos los datos crudos y analicemos algunas de sus propiedades</h3>
 <p>En la carpeta PRACT3 dentro de MATERIALES encontraremos archivos multifasta que contienen todas las secuencias codificantes de ciertos organismos procariotas. Algunos de estos han sido intensamente estudiados y otros no tanto, esto puede ser relevante para una discusión posterior.</p>
 <p>Copie los archivos a su carpeta personal, dentro de una carpeta “practico3” y trabaje allí adentro.</p>
 <ol style="list-style-type: decimal">
-<li>Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación: &gt; GCF_000005845.2 ASM584v2 &gt; GCF_000007625.1 ASM762v1 &gt; GCF_000009045.1 ASM904v1 &gt; GCF_000498355.1 Ade.TY &gt; GCF_001484935.1 ASM148493v1</li>
+<li>Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:</li>
 </ol>
+<blockquote>
+<p>GCF_000005845.2 ASM584v2 GCF_000007625.1 ASM762v1 GCF_000009045.1 ASM904v1 GCF_000498355.1 Ade.TY GCF_001484935.1 ASM148493v1</p>
+</blockquote>
 <blockquote>
 <p><strong>Nota</strong>: ls + awk -F’<em>’ ‘{print $1”<em>”$2…}’, notar que F’</em>’ indica que el separador de columnas es el “</em>”.</p>
 </blockquote>
-<p><code>{bash, echo = T, eval = F} ls *.fna | awk -F&#39;_&#39; &#39;{print $1”_”$2,$3}&#39;</code></p>
+<pre class="{bash}"><code>ls *.fna | awk -F&#39;_&#39; &#39;{print $1”_”$2,$3}&#39;</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Contar cuantos genes (o secuencias codificantes) fueron predichos en cada uno de los ensamblajes</li>
 </ol>
@@ -78,23 +86,22 @@ code span.ot { color: #007020; }
 <p>Ensamblado N° de CDS GCF_000005845.2 …………….. GCF_000007625.1 …………….. GCF_000009045.1 …………….. GCF_000498355.1 …………….. GCF_001484935.1 ……………..</p>
 </blockquote>
 <blockquote>
-<p><strong>Nota</strong>: utilizar el comando egrep con opción específica para conteo ```{bash, echo = T, eval = F} egrep -c “&gt;” archive.fas</p>
+<p><strong>Nota</strong>: utilizar el comando egrep con opción específica para conteo</p>
 </blockquote>
-<pre><code>
-3. Estimar el contenidos de bases:
-a. Citosina (C) en el transcriptoma:
-
-&gt; Ensamblado C
-&gt; GCF_000005845.2 ……………..
-&gt; GCF_000007625.1 ……………..
-&gt; GCF_000009045.1 ……………..
-&gt; GCF_000498355.1 ……………..
-&gt; GCF_001484935.1 ……………..
-
-&gt; Nota: utilizar el comando egrep para eliminar los encabezados, el comando sed para cambiar la C por una C más salto de línea y finalmente el comando wc con la opción –l para contar líneas.
-
-```{bash, echo = T, eval = F}
-egrep -v &quot;&gt;&quot; archive.fna | sed &#39;s/C/\n&amp;/g&#39; | egrep -c ^[C]</code></pre>
+<pre class="{bash}"><code>egrep -c &quot;&gt;&quot; archive.fas</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Estimar el contenidos de bases:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>Citosina (C) en el transcriptoma:</li>
+</ol>
+<blockquote>
+<p>Ensamblado C GCF_000005845.2 …………….. GCF_000007625.1 …………….. GCF_000009045.1 …………….. GCF_000498355.1 …………….. GCF_001484935.1 ……………..</p>
+</blockquote>
+<blockquote>
+<p>Nota: utilizar el comando egrep para eliminar los encabezados, el comando sed para cambiar la C por una C más salto de línea y finalmente el comando wc con la opción –l para contar líneas.</p>
+</blockquote>
+<pre class="{bash}"><code>egrep -v &quot;&gt;&quot; archive.fna | sed &#39;s/C/\n&amp;/g&#39; | egrep -c ^[C]</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
 <li>Porcentaje de GC (G o C) en el transcriptoma:</li>
 </ol>
@@ -104,14 +111,14 @@ egrep -v &quot;&gt;&quot; archive.fna | sed &#39;s/C/\n&amp;/g&#39; | egrep -c ^
 <blockquote>
 <p>Nota: utilizar una aproximación similar al caso anterior para contar G y C y luego el comando wc para contar el número de caracteres (para obtener el número de bases totales y calcular el porcentaje).</p>
 </blockquote>
-<p><code>{bash, echo = T, eval = F} egrep -v &quot;&gt;&quot; archive.fna | sed &#39;s/[CGAT]/\n&amp;/g&#39; | egrep -c ^[CG]</code></p>
+<pre class="{bash}"><code>egrep -v &quot;&gt;&quot; archive.fna | sed &#39;s/[CGAT]/\n&amp;/g&#39; | egrep -c ^[CG]</code></pre>
 </div>
 <div id="preparamos-el-archivo-multifasta-solucionando-un-problema-de-falta-de-estandarización" class="section level3">
 <h3>2) Preparamos el archivo multifasta solucionando un problema de falta de estandarización</h3>
 <p>En este punto prepararemos el archivo fasta para hacer que la búsqueda sea posible. La estrategia planeada debería incluir el uso de egrep con la opción “–A” (Busque para que sirve esta opción!!) y el egrep sería el comando responsable de buscar “enolase”. El problema de estandarización de los archivos fasta es que las secuencias, propiamente dichas pueden ubicarse en una única línea o en varias. Si en todos los casos estuviera ubicado en una única línea de largo diverso yo podría utilizar el comando egrep para obtener la secuencia.</p>
 <p>¿Por qué le parece usted que esto es un problema, en términos generales y en caso particular de nuestro problema?</p>
 <p>Para transformar el archivo multifasta y dejar todas las secuencias en una única línea:</p>
-<p><code>{bash, echo = T, eval = F} sed &#39;s/&gt;..*/&amp;____/g&#39; ENTRADA | sed &#39;:a;N;$!ba;s/\n//g&#39; |sed &#39;s/____/\n/g&#39; | sed &#39;s/&gt;/\n&gt;/g&#39; | egrep .&gt; SALIDA</code></p>
+<pre class="{bash}"><code>sed &#39;s/&gt;..*/&amp;____/g&#39; ENTRADA | sed &#39;:a;N;$!ba;s/\n//g&#39; |sed &#39;s/____/\n/g&#39; | sed &#39;s/&gt;/\n&gt;/g&#39; | egrep .&gt; SALIDA</code></pre>
 <ul>
 <li>Trate de explicar para qué sirve cada sección o proceso dentro de este pipeline. Puede y debe utilizar Google! Una vez que tiene todos los archivos con el formato ajustado. Busque la enolasa en todos los organismos.</li>
 <li>¿En cuántos organismos esta el gen identificado?</li>
@@ -128,37 +135,38 @@ egrep -v &quot;&gt;&quot; archive.fna | sed &#39;s/C/\n&amp;/g&#39; | egrep -c ^
 <ol style="list-style-type: decimal">
 <li>Instalar Blast. Busque en la web como puede instalarse el paquete del blast y en caso de ser necesario pídale a su amable administrador que lo instale.</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} sudo apt install ncbi-blast+</code></p>
+<pre class="{bash}"><code>sudo apt install ncbi-blast+</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Construir base de datos de las proteínas codificantes en el genoma</li>
 </ol>
 <p>Vamos a construir una base de datos de blast utilizando todos de los genomas (archivo de secuencias codificantes) disponibles en el directorio del práctico 3 en MATERIALES. Si no lo hizo aun, copie los archivos de la carpeta MATERIAL/PRACT3 a su carpeta personal. Utilizamos cat para concatenar las secuencias codificantes y con la herramienta transeq (Emboss) es posible traducir las secuencias codificantes en un archivo de nucleótidos en fasta y otros formatos de secuencias.</p>
-<p><code>{bash, echo = T, eval = F} cat *.fna &gt; todos.fna transeq todos.fna todos.faa</code></p>
+<pre class="{bash}"><code>cat *.fna &gt; todos.fna
+transeq todos.fna todos.faa</code></pre>
 <p>Uno de los primeros pasos habituales para utilizar el blast local es construir una base de datos (binaria) con formato específico. La base de datos se construye a partir de un archivo de secuencias multifasta utilizando el comando makeblastdb.</p>
-<p><code>{bash, echo = T, eval = F} makeblastdb -in secuencia -dbtype prot -out base -parse_seqids</code></p>
+<pre class="{bash}"><code>makeblastdb -in secuencia -dbtype prot -out base -parse_seqids</code></pre>
 <ol start="3" style="list-style-type: decimal">
 <li>Búsqueda por similitud</li>
 </ol>
 <p>La búsqueda por identidad se hace con el programa blast. Este programa se basa en el alineamiento local y en la extensión de patrones coincidentes (strings) iniciales. Como parte del resultado el programa brinda estadísticos de significancia de la identidad (porcentaje de identidad, Score, cobertura e e-value). Existen varias opciones para ajustar y permite entre otras cosas cambiar el formato de salida. En nuestro caso vamos a hacer un blastp sin una identidad mínima, relativamente flexible, e-value =e-5.</p>
 <p><strong>Query</strong>: Antes de hacer el blast defina que busca, ej.: enolasa, tuf, peptidasa, polimerasa…, una vez que defina lo que busca vaya al Genbank, a la base de datos de proteínas (ej. www.ncbi.nlm.nih.gov/protein/?term=(enolase)+AND+%22Escherichia+coli%22%5Bporgn%3A__txid562%5D), y copie una secuencia de referencia en formato fasta. Utilizando el editor joe puede abrir un archivo vacio, y luego con Shift+Insert (click derecho en la terminal) lo pega. Luego utiliza Ctr+KX para guardar el archivo</p>
-<p><code>{bash, echo = T, eval = F} joe SequenciasQuery.fas</code></p>
+<pre class="{bash}"><code>joe SequenciasQuery.fas</code></pre>
 <blockquote>
 <p><strong>Nota</strong>: Pegue la secuencia fasta obtenida del GenBank al documento SequenciasQuery.fas</p>
 </blockquote>
 <p>Blast:</p>
-<p><code>{bash, echo = T, eval = F} blastp -db base -query SequenciasQuery.fas -out GCF_Q.bl -evalue 1e-5 -num_threads 1 -max_target_seqs 20 -outfmt &#39;7 std qcovs&#39;</code></p>
+<pre class="{bash}"><code>blastp -db base -query SequenciasQuery.fas -out GCF_Q.bl -evalue 1e-5 -num_threads 1 -max_target_seqs 20 -outfmt &#39;7 std qcovs&#39;</code></pre>
 <p>Como mínimo debe establecerse: el nombre de la base (-db), el query(-query) o secuencia de referencia y la salida (-out). En esta caso también establecemos el número máximo de targets identificados (-max_target_seqs), el formato de salida (-outfmt), el número de procesadores (-num_threads) y e-value (-evalue).</p>
 <p>Visualice el resultado e interprete el significado de cada una de las columnas. Explique.</p>
-<p><code>{bash, echo = T, eval = F} less GCF_Q.bl</code></p>
+<pre class="{bash}"><code>less GCF_Q.bl</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Procesar el archivo de salida del blast. Utilice el los comandos egrep y awk para seleccionar aquellos hits que cumplan con poseer un 100% de cobertura.</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} egrep -v ^# GCF_Q.bl | awk &#39;$13 &gt;=100&#39;</code></p>
+<pre class="{bash}"><code>egrep -v ^# GCF_Q.bl | awk &#39;$13 &gt;=100&#39;</code></pre>
 <p>¿Puede filtrar con más de un criterio a la vez? Piense en distintas estrategias para resolver este problema.</p>
 <ol start="5" style="list-style-type: decimal">
 <li>Extraer una secuencia Utilizaremos el comando blastdbcmd para recuperar las secuencias identificadas como similares en nuestra base de datos (con identificadores enlistados en el archivo lista). La siguiente línea puede utilizarse para extraer de a una secuencia por vez:</li>
 </ol>
-<p><code>{bash, echo = T, eval = F} blastdbcmd -entry NC_000913.3_cds_NP_417259.1_2742_1 -db todos.base -out salida.fas</code></p>
+<pre class="{bash}"><code>blastdbcmd -entry NC_000913.3_cds_NP_417259.1_2742_1 -db todos.base -out salida.fas</code></pre>
 </div>
 <div id="para-hacer-en-el-domicilio" class="section level2">
 <h2>PARA HACER EN EL DOMICILIO</h2>
