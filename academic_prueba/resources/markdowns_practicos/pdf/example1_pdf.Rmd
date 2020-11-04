@@ -4,9 +4,8 @@ author: Dr Andrés Iriarte
 output: pdf_document
 ---
 
-___
+
 ## Conexión al Servidor vía SSH
-___
 ### 1. En un sistema operativo Linux:
 En un sistema operativo Linux el comando ssh se encuentra disponible en todas las versiones y
 distribuciones (ssh client). Usted solo necesita localizar la terminal y activarla. Una vez en la terminal utilice el comando ssh para generar una conexión con el servidor remoto, utilizando su nombre de usuario e IP (del servidor) de la siguiente forma: 
@@ -35,9 +34,8 @@ e) Introduzca la palabra clave o password.
 
 **Responda: En que lugar del sistema aparece?**
 
-___
+
 ## Desplazamiento en la Terminal. Comandos *cd* y *pwd*.
-___
 
 El comando “cd” (change directory) permite desplazarse dentro del sistema operativo, moviéndose entre
 carpetas, subiendo (hacia root) o bajando de nivel. El comando pwd (print working directory) imprime su ubicación en el sistema.
@@ -68,9 +66,7 @@ cd estudiantes
 f) Dibuje a continuación de forma muy esquemática y en un diagrama jerárquico el sistema de
 archivos de su lcb1 o lcb2 (no baje más de 3 niveles!).
 
-___
 ## Comandos Básicos: *ls*, *mkdir*, *cp*, *mv*, y *less*, *echo*
-___
 
 El comando “ls” (list) permite enlistar el contenido de un directorio, con “mkdir” (make directory) genera nuevos directorios (o carpetas). “cp” (copy) y “mv”(move) permiten copiar y mover archivos,respectivamente. En el caso de “mv”, se puede utilizar para cambiar el nombre de un archivo o directorio.
 
@@ -130,9 +126,7 @@ cp *.aln /home/estudiantes/andres_iriarte/PRACT1/
 
 > **Nota**: nuevamente recuerde los espacios y razone lo que está haciendo antes y después de ejecutar el comando. 
 
-___
 ## ATAJOS O SHORCUTS: flechas arriba, abajo y tecla tabulador.
-___
 
 Un atajo en Linux es una combinación de una o varias teclas que realiza una función determinada. Los dos atajos más importantes son flecha arriba o abajo y tabulación. Las primeras permiten moverse dentro del historial de los comandos ejecutados en la terminal (los últimos 1000), es una forma de ahorrar tiempo y
 no volver a escribir los comandos ya ejecutados.
