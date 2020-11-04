@@ -84,9 +84,7 @@ CTTAAGCTTGCGCTAGATAAATGGGGAAAGGCTGAAGCCGTATGA</code></pre>
 <ol style="list-style-type: decimal">
 <li>Enlistar los archivos y mediante la interacción con otro comando generar una tabla similar a la que se observa a continuación:</li>
 </ol>
-<blockquote>
-<p>GCF_000005845.2 ASM584v2 \ GCF_000007625.1 ASM762v1 \ GCF_000009045.1 ASM904v1 \ GCF_000498355.1 Ade.TY \ GCF_001484935.1 ASM148493v1 \</p>
-</blockquote>
+<p><code>{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results=&#39;asis&#39;} tabl &lt;- &quot;  # simple table creation here |   t      | A         |  |---------------|:-----------:| GCF_000005845.2 | ASM584v2    | GCF_000007625.1 | ASM762v1    | GCF_000009045.1 | ASM904v1    | GCF_000498355.1 | Ade.TY      | GCF_001484935.1 | ASM148493v1 | &quot; cat(tabl) # output the table in a format good for HTML/PDF/docx conversion</code></p>
 <blockquote>
 <p><strong>Nota</strong>: ls + awk -F’<em>’ ‘{print $1”<em>”$2…}’, notar que F’</em>’ indica que el separador de columnas es el “</em>”.</p>
 </blockquote>
@@ -186,12 +184,8 @@ transeq todos.fna todos.faa</code></pre>
 <li>Utilice el los comandos egrep y awk para seleccionar aquellos hits que cumplan con los siguientes requisitos:</li>
 </ol>
 <ul>
-<li><blockquote>
-<p>62% de identidad y &gt;98% de cobertura</p>
-</blockquote></li>
-<li><blockquote>
-<p>50% de identidad y &gt;90% de cobertura</p>
-</blockquote></li>
+<li>&gt;62% de identidad y &gt;98% de cobertura</li>
+<li>&gt;50% de identidad y &gt;90% de cobertura</li>
 </ul>
 <ol start="7" style="list-style-type: decimal">
 <li><p>Guarde en un archivo los nombres de las secuencias que cumplen con alguno de los criterios del Ejercicio 6. Viendo el manual de blastdbcmd, utilice esta lista para extraer estas secuencias.</p></li>
