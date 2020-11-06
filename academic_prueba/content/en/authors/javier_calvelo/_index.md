@@ -7,10 +7,10 @@ authors:
 - admin
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: PhD student / Gr. 1 (5 hs)
+role: PhD. student 
 
 # Organizations/Affiliations
 organizations:

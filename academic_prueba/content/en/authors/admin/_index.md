@@ -17,7 +17,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/LBC-Iriarte
-superuser: false
+superuser: true
 title: Laboratorio de Biología Computacional
 user_groups:
 - Otro
