@@ -1,8 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: 
 education:
   courses:
   - course: PhD in Biology. 
@@ -26,16 +25,13 @@ role: Associate Professor at the Biotech. Department.
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
-- icon: cv
-  icon_pack: ai
-  link: https://twitter.com/GeorgeCushen
+  link: mailto:airiarte@higiene.edu.uy
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://scholar.google.com/citations?user=I3c_gdMAAAAJ&hl=en
+- icon: cv
+  icon_pack: ai
+  link: https://exportcvuy.anii.org.uy/cv/?79a6fe3219f81bbd96d903026ec95926487ecd1e066241b995f1456f4831108089e1bdc7e433c3593c545736270815528f06b6323480092606faec3b947fd2ab
 superuser: false
 title: Andrés Iriarte
 user_groups:

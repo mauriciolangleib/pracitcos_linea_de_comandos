@@ -10,15 +10,15 @@ authors:
 superuser: false
 
 # Role/position
-role: Postdoctoral Student
+role: Postdoctoral student
 
 # Organizations/Affiliations
 organizations:
-- name: Dept. Bitechnology
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio:
 
 interests:
 - Functional & comparative genomics of prokaryotes
@@ -39,16 +39,22 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: mailto:gertra13a@gmail.com
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/gertra13
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?user=jwEl_RAAAAAJ&hl=es
+- icon: researchgate  
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/German_Matias_Traglia  
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/germant13
+- icon: cv
+  icon_pack: ai
+  link: https://exportcvuy.anii.org.uy/cv/?7b54f780b81d9d5b9d9c99f08b549686
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

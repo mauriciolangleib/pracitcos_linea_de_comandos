@@ -26,13 +26,13 @@ interests:
 
 education:
   courses:
-  - course: Doctorado en Ciencias Biológicas
+  - course: PhD. in Biological Sciences
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2019 - in progress
-  - course: Mag. en Zoología 
+  - course: MSc. in Zoology 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2015 - 2017
-  - course: Lic. en Ciencias Biológicas
+  - course: BSc. in Biological Sciences
     institution: Facultad de Ciencias - Universidad de la República
     year: 2008 - 2014
 
@@ -43,16 +43,13 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
+  link: mailto:javiercalvelo7@gmail.com
+- icon: researchgate  
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://www.researchgate.net/profile/Javier_Calvelo
+- icon: cv
+  icon_pack: ai
+  link: https://exportcvuy.anii.org.uy/cv/?b335424dc08bacc9e77b89429109fd1c409d20e5c614d299c27fdc04c6783ff2f5e255c61b52625dc8e3ba771a5a08edf0eb28fe212355a8ee40d3d1d9f3e807    
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
