@@ -1,0 +1,400 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Práctico 9},
+            pdfauthor={Funciones y Loops en R},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{Práctico 9}
+\author{Funciones y Loops en R}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{funciones}{%
+\section{Funciones}\label{funciones}}
+
+\textbf{Definicion de funciones en R}
+
+El lenguaje R hace uso de múltiples funciones: las mismas se encuentran
+pre-instaladas por defecto, o se pueden descargar de librerías
+específicas programadas para el trabajo en diversas áreas. En el
+práctico de la semana pasada, por ejemplo, se trabajó con funciones de
+la librería seqinr, las cuales facilitan el trabajo con secuencias
+biológicas en este lenguaje.
+
+El usuario de R puede a su vez definir sus propias funciones. Esto es de
+gran utilidad: si se define una función que realiza una función dada, no
+es necesario reescribir el código que lleva a cabo este conjunto de
+acciones cada vez que se quiere realizar las mismas sobre diferentes
+variables.
+
+Una función queda definida en R por dos elementos principales: el
+conjunto de elementos sobre los que opera (sus \textbf{argumentos}), y
+el \textbf{código} en el cual se especifica el conjunto de acciones que
+realiza dicha función. Al igual que en el caso de loops, el código de
+una función queda delimitado a través del uso de llaves.
+
+A continuación se muestra un código simple para ilustrar estos
+conceptos, donde se define una función sencilla. La misma toma un número
+y devuelve el resultado de multiplicar el mismo por cuatro.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{# Se define la funcion multiplica_por_cuatro, la cual tiene como argumento un numero.}
+\NormalTok{    multiplica_por_cuatro =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(numero)\{}
+    \CommentTok{# se guarda el resultado de multiplicar a la variable numero por 4}
+\NormalTok{    resultado <-}\StringTok{ }\NormalTok{numero }\OperatorTok{*}\StringTok{ }\DecValTok{4}
+    \CommentTok{# se devuelve al usuario el resultado}
+    \KeywordTok{return}\NormalTok{(resultado)}
+\NormalTok{    \}}
+    
+    \CommentTok{# se utiliza la funcion con diferentes numeros, y se guardan los resultados en }
+    \CommentTok{# variables}
+\NormalTok{    resultado_}\DecValTok{1}\NormalTok{ =}\StringTok{ }\KeywordTok{multiplica_por_cuatro}\NormalTok{(}\DataTypeTok{numero =} \DecValTok{1}\NormalTok{)}
+\NormalTok{    resultado_}\DecValTok{3}\NormalTok{ =}\StringTok{ }\KeywordTok{multiplica_por_cuatro}\NormalTok{(}\DataTypeTok{numero =} \DecValTok{3}\NormalTok{)}
+    
+\NormalTok{    resultado_}\DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{    resultado_}\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 12
+\end{verbatim}
+
+Algo a destacar es que los argumentos de una función son representados
+por variables (en este caso la variable \emph{numero}, las cuales son
+empleadas para representar a estos argumentos en el código de la
+función.
+
+En el caso anterior la funcion \emph{multiplica\_por\_cuatro} siempre
+devuelve el resultado de multiplicar el argumento \emph{numero} por
+cuatro. A continuación se muestra una función más flexible, donde el
+usuario puede pasar como argumento el número por el cual quiere
+multiplicar a otro número
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{# se define una nueva funcion, que toma como argumentos dos numeros y los multiplica.}
+\NormalTok{    multiplica =}\StringTok{ }\ControlFlowTok{function}\NormalTok{(numero_}\DecValTok{1}\NormalTok{, numero_}\DecValTok{2}\NormalTok{)\{}
+    \CommentTok{# se guarda el resultado de multiplicar ambos numeros}
+\NormalTok{    resultado <-}\StringTok{ }\NormalTok{numero_}\DecValTok{1} \OperatorTok{*}\StringTok{ }\NormalTok{numero_}\DecValTok{2}
+    \CommentTok{# se devuelve al usuario el resultado}
+    \KeywordTok{return}\NormalTok{(resultado)}
+\NormalTok{    \}}
+    
+    \CommentTok{# se utiliza la funcion con diferentes numeros, y se guardan los resultados en }
+    \CommentTok{# variables}
+\NormalTok{    resultado_}\DecValTok{1}\NormalTok{ =}\StringTok{ }\KeywordTok{multiplica}\NormalTok{(}\DataTypeTok{numero_1 =} \DecValTok{2}\NormalTok{, }\DataTypeTok{numero_2 =} \DecValTok{5}\NormalTok{)}
+\NormalTok{    resultado_}\DecValTok{2}\NormalTok{ =}\StringTok{ }\KeywordTok{multiplica}\NormalTok{(}\DataTypeTok{numero_1 =} \DecValTok{3}\NormalTok{, }\DataTypeTok{numero_2 =} \DecValTok{17}\NormalTok{)}
+    
+\NormalTok{    resultado_}\DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 10
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{    resultado_}\DecValTok{2}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 51
+\end{verbatim}
+
+\hypertarget{ejercicio-1}{%
+\subsection{Ejercicio 1}\label{ejercicio-1}}
+
+Defina funciones que realicen las siguientes tareas:
+
+\begin{quote}
+\emph{a)} Tome como argumento a un nombre e imprima a pantalla un saludo
+\end{quote}
+
+\begin{quote}
+\emph{b)} Dado un número, compute su raíz cuadrada.
+\end{quote}
+
+\begin{quote}
+\textbf{Nota}: En caso de que el argumento no sea numerico, devuelva al
+usuario un mensaje.
+\end{quote}
+
+\begin{quote}
+\emph{c)} Dado un número, compute su raíz cuadrada. Si el número no es
+entero, redondee primero y luego devuelva la raíz
+\end{quote}
+
+\begin{quote}
+\textbf{Nota}: puede usar la función round().
+\end{quote}
+
+\begin{quote}
+\emph{d)} Dados dos vectores, uno con nombres y otro con números de
+teléfono, se devuelva un data.frame con los mismos. El mismo deberá
+indexar a dichas personas con números (ver ejemplo a continuación).
+Considere, ademas, que se realice la operacion si poseen igual largo los
+vectores.
+\end{quote}
+
+\hypertarget{ejercicio-2}{%
+\subsection{Ejercicio 2}\label{ejercicio-2}}
+
+\begin{quote}
+\emph{a)} Defina una función que, dado un conjunto de números, devuelva
+el mayor de los mismos.
+\end{quote}
+
+\begin{quote}
+\emph{b)} Cree una función que, dada una palabra, de la posición de sus
+letras en un diccionario. La palabra \emph{``vaca''} da como resultado,
+entonces, el vector {[}22, 1, 3, 1{]}
+\end{quote}
+
+\begin{quote}
+\textbf{Nota:} utilice el vector \textbf{letters} (que se encuentra por
+defecto en R) y la funcion s2c() de la libreria seqinr.
+\end{quote}
+
+\begin{quote}
+\emph{c)} Defina una función que, dada una palabra, la devuelva en
+mayúscula. Llame a la función creada en b) para esto, y el vector
+LETTERS.
+\end{quote}
+
+\hypertarget{loops}{%
+\section{Loops}\label{loops}}
+
+La estructura de un \emph{for loop} en R es similar a la encontrada en
+otros lenguajes (como Bash): \emph{i)} se define un conjunto de
+elementos sobre los cuales se van a realizar acciones, \emph{ii)} se
+define una variable con la cual se hace referencia a estos elementos y
+\emph{iii)} se escriben las acciones a realizarse en el loop, las cuales
+están delimitadas en un bloque.
+
+A continuación se muestra un for loop sencillo. En el mismo se toma un
+conjunto de números (\emph{i.e.} los números del 1 al 5), se les suma un
+número y se guarda el resultado en un vector previamente definido.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Se define el vector en el que se depositaran los resultados}
+\NormalTok{resultados <-}\StringTok{ }\KeywordTok{c}\NormalTok{()}
+
+\CommentTok{# Se declara que se realizara el for loop sobre los elementos del vector 1:5 }
+\CommentTok{#(numeros del 1 al 5).}
+
+\CommentTok{# A su vez se define la variable i, que representara a estos numeros }
+\CommentTok{# en el loop}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{) \{}
+    \CommentTok{# Al numero i se le suma 3, y se deposita el resultado en el }
+    \CommentTok{# i-esimo elemento del vector resultados}
+\NormalTok{    resultados[i] <-}\StringTok{ }\NormalTok{i }\OperatorTok{+}\StringTok{ }\DecValTok{3}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+En este caso, al comenzar el loop la variable \emph{i} tomará en primer
+lugar el valor de 1. El resultado de sumar a este número 3 (lo cual se
+realiza en el bloque de acciones a realizarse en el loop) es guardado en
+el i-esimo elemento del vector \emph{resultados} (es decir, su primer
+elemento).
+
+Algo a destacar es el uso de las llaves (\emph{i.e.} \textbf{\{\}} para
+delimitar el loop: estos cumplen un rol análogo al que cumplen las
+palabras \textbf{do} y \textbf{done} en el lenguaje Bash, ayudando a
+delimitar el bloque de acciones que se ejecutará durante el loop.
+
+Otra forma de escribir el loop descrito arriba sería la siguiente:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Se define el vector en el que se depositaran los resultados}
+\NormalTok{resultados <-}\StringTok{ }\KeywordTok{c}\NormalTok{()}
+\CommentTok{# Se define el vector de numeros del 1 al 5}
+\NormalTok{numeros <-}\StringTok{ }\DecValTok{1}\OperatorTok{:}\DecValTok{5}
+\CommentTok{# Se declara que se realizara el for loop sobre los elementos }
+\CommentTok{# del vector numeros.}
+\CommentTok{# A su vez se define la variable i, que representara a estos numeros }
+\CommentTok{# en el loop}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(numeros)) \{}
+    \CommentTok{# Al numero i se le suma 3, y se deposita el resultado en el }
+    \CommentTok{# i-esimo elemento del vector resultados}
+\NormalTok{    resultados[i] <-}\StringTok{ }\NormalTok{numeros[i] }\OperatorTok{+}\StringTok{ }\DecValTok{3}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+En esta versión no se hace referencia directa a los números, si no que
+se realizan operaciones sobre los mismos a partir de los índices que
+tienen en el vector \emph{numeros} (definido de forma previa al loop).
+La variable \emph{i} toma, entonces, los valores desde 1 a
+length(numeros) (el largo del vector numeros), recorriendo asi los
+índices de los elementos que componen el vector. Estos índices son
+usados para llamar a los elementos del mismo, lo cual se ve en el uso de
+la expresión numeros{[}i{]}.
+
+\hypertarget{ejercicio-1-1}{%
+\subsection{Ejercicio 1}\label{ejercicio-1-1}}
+
+\begin{quote}
+\emph{a)} Elija alguna de las funciones que definió en la primer sección
+del práctico. Aplique la misma sobre un conjunto de valores.
+\end{quote}
+
+\begin{quote}
+\emph{b)} Modifique este loop para almacenar los resultados en otro
+vector.
+\end{quote}
+
+\begin{quote}
+\emph{c)} Realice la misma operación, pero valiendose de una función del
+tipo *apply().
+\end{quote}
+
+\hypertarget{ejercicio-2-1}{%
+\subsection{Ejercicio 2}\label{ejercicio-2-1}}
+
+En el archivo \textbf{pedidoMesaUno.lista} se encuentra una tabla que
+muestra el pedido que hizo un conjunto de personas en un bar
+montevideano.
+
+Los precios de los productos se encuentran en la tabla alojada en el
+archivo \textbf{carta.lista}.
+
+\begin{quote}
+Utilizando un loop, obtenga:
+\end{quote}
+
+\begin{quote}
+\emph{a)} Un data frame que represente a la cuenta. En la misma se debe
+detallar lo que debe pagar cada cliente.
+\end{quote}
+
+\begin{quote}
+\emph{b)} Una variable en donde se aloje el total de la cuenta a pagar
+por la mesa.
+\end{quote}
+
+\begin{quote}
+\textbf{Nota}: en caso de leer los archivos mencionados con la función
+read.table(), introduzca como argumento \textbf{stringsAsFactors =
+FALSE}. De lo contrario se leerán las columnas de la tabla como
+factores.
+\end{quote}
+
+\end{document}
