@@ -27,8 +27,8 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
-- icon: twitter
-  icon_pack: fab
+- icon: cv
+  icon_pack: ai
   link: https://twitter.com/GeorgeCushen
 - icon: google-scholar
   icon_pack: ai
@@ -42,6 +42,8 @@ user_groups:
 - Principal Investigator
 ---
 
-The Computational Biology Lab belongs to the Biotechnology Department at the School of Medicine (Universidad de la República - Uruguay). We started our work as an independent group in the middle of 2016. 
+I have a broad background in evolution and genetics, with specific training in bioinformatics, genomics, and comparative genomics. 
 
-Two national grants support our starting work, one founded by FCE- ANII, and the other by CSIC I+D UdelaR. Two young research assistants were hired at the beginning, then graduate students join our working team in two main lines of research: Functional al comparative genomics of platyhelminths and bacterial pathogens. During these years many national and international collaborations stand as a result our group is participating in exciting projects.
+Throughout my career I have integrated these areas of research to untangle the effect of selection operating on DNA sequences on different taxa and at different levels, from simple nucleotide polymorphism to genome rearrangements, studying the evolutionary dynamics of genetics and genomics changes in a phylogenetic framework. I also have extensive experience as a teaching assistant and invited lecturer in evolution, genetics, and genomics, at the School of Science, Veterinary Science, and Medicine. 
+
+I have acted as an academic advisor or co-advisor of undergraduate and graduate students. Currently, my research focuses on comparative and functional genomics. I used bioinformatics approaches to dissect the genomic basis of complex phenotypes; such as epidemiological or ecological characteristics of specific lineages. I also study the evolutionary dynamics of genomic features in order to identify convergent evolution and/or co-evolution. I lead projects nationwide and hold collaborative projects with different laboratories in Uruguay, Argentina, and the USA.
