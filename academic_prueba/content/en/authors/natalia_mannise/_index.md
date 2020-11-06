@@ -34,7 +34,7 @@ education:
   - course: PhD in Biological Sciences
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2015 - in progress
-  - course: MSc. in Biological Sciences () 
+  - course: MSc. in Biological Sciences 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2010 - 2013
   - course: BSc. in Biological Sciences
