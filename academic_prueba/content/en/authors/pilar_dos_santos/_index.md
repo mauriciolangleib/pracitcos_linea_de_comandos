@@ -34,18 +34,7 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -61,3 +50,8 @@ user_groups:
 - Alumni
 ---
 
+Pilar made her bachellor's final work under the tutelage of Drs. Andrés Iriarte and Verónica Fernandez. 
+
+Her work, which adresses the evolution of mu-class GSTs in *Echinococcus granulosus*, is freely available [at the following link](https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/10145).
+
+![](/img/Smircich_Fernandez_dosSantos_Iriarte.jpg)

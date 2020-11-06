@@ -14,7 +14,7 @@ role: PhD. Student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -68,9 +68,9 @@ user_groups:
 - PhD. students
 ---
 
-Currently, within the framework of my PhD project, I am working on a line of research which is based on the study of BNF in $$\alpha$$- and $$\beta$$-proteobacteria. Rhizobia are bacteria that fix gaseous nitrogen ($$N_2$$) after endosymbiotically established in nodules, generally root, of legumes. These bacteria form a phylogenetically diverse group located within the alpha and beta-proteobacteria, the latter being the least studied. 
+Currently, within the framework of my PhD project, I am working on a line of research which is based on the study of BNF in alpha- and beta-proteobacteria. Rhizobia are bacteria that fix gaseous nitrogen (N2) after endosymbiotically established in nodules, generally root, of legumes. These bacteria form a phylogenetically diverse group located within the alpha and beta-proteobacteria, the latter being the least studied. 
 
-Describing and understanding the lineage-specific changes that occurred in the genome of different rhizobia is essential to fully understand the process of BNF in symbiosis. This project specifically aims to understand the process of biological nitrogen fixation (BNF) in $$\beta$$-rhizobia, with special emphasis on genetic processes related to the recognition of the host plant and nodulation, using a transcriptomic tool, RNAseq. For this, a rhizobium of the genus *Cupriavidus*, previously isolated in our laboratory, and a species of the genus *Mimosa* as nodulation host will be used as a study model. 
+Describing and understanding the lineage-specific changes that occurred in the genome of different rhizobia is essential to fully understand the process of BNF in symbiosis. This project specifically aims to understand the process of biological nitrogen fixation (BNF) in beta-rhizobia, with special emphasis on genetic processes related to the recognition of the host plant and nodulation, using a transcriptomic tool, RNAseq. For this, a rhizobium of the genus *Cupriavidus*, previously isolated in our laboratory, and a species of the genus *Mimosa* as nodulation host will be used as a study model. 
 
 The RNAseq analysis is proposed in three key stages in the symbiosis process. The identification of the genes with differential expression obtained, as well as the immediate characterization that arises naturally from the metabolic pathways and/or related systems, will allow us to understand in more depth the biological process. With the data obtained, it is proposed to determine the similarities and differences between the associations established between alpha and beta-rhizobia with their host legumes.
 

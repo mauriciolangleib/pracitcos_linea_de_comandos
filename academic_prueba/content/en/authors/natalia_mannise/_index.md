@@ -14,7 +14,9 @@ role: PhD student
 
 # Organizations/Affiliations
 organizations:
-- name: Dept. Biotechnology (Medicine Faculty) | IIBCE
+- name: Dept. Biotechnology
+  url: ""
+- name: IIBCE
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -46,16 +48,20 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: mailto:natymanni@gmail.com.
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/ManniseNatalia
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://scholar.google.com/citations?user=j4Zd6YAAAAAJ&hl=es
+- icon: researchgate  
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Natalia_Mannise2
+- icon: cv
+  icon_pack: ai
+  link: https://exportcvuy.anii.org.uy/cv/?7e76c22b7fd2245b4b2ebffa76b0161f46d2e6be4ca9fe95bd4dde6af2c20c2e84e0167f72813af96a78248e83c6b82e0dd3d9ab8060d089d3d49f7461831706
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
