@@ -12,4 +12,4 @@ type: docs
 weight: 1
 ---
 
-[Acceder al Archivo de la Clase](/html/Practico6.pdf)
+[Acceder al Archivo de la Clase](/html/Practico7a.html)
