@@ -18,7 +18,17 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico1/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico1.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;./html/Practico1.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 10: R4</title>
+      <link>/courses/example/practico10/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico10/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;./html/Practico10.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -28,7 +38,7 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico2/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico2.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;./html/Practico2.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -38,7 +48,7 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico3/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico3.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;./html/Practico3.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -48,7 +58,7 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico4/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Clase4.pptx&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;./html/Clase4.pptx&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -58,7 +68,7 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico5/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico5.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;./html/Practico5.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -68,7 +78,47 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
       <guid>/courses/example/practico6/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;/html/Practico6.pdf&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;./html/Practico6.pdf&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 7a</title>
+      <link>/courses/example/practico7a/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico7a/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;./html/Practico7a.html&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 7b</title>
+      <link>/courses/example/practico7b/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico7b/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;./html/Practico7b.html&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 8: R1 y R2</title>
+      <link>/courses/example/practico8/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico8/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;./html/PracticosR1y2.zip&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 9: R3</title>
+      <link>/courses/example/practico9/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/practico9/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;./html/Practico9.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -559,6 +609,17 @@ Three
     </item>
     
     <item>
+      <title>Characterization of cell factors involved in the bioremediation of organic compounds in Shewanella isolates.</title>
+      <link>/project/shewanella/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/shewanella/</guid>
+      <description>&lt;p&gt;Beca Movilidad y Cooperación-2015, Code: MOV_CO_2015_1_110194.&lt;/p&gt;
+&lt;p&gt;Funding Source: ANII, Uruguay - CONICET, Argentina.&lt;/p&gt;
+&lt;p&gt;Project leaders: Cecilia Quiroga &amp;amp; Andrés Iriarte&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Evolution of families of secretory proteins coding genes in Platyhelminthes</title>
       <link>/project/platys_secreted/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -588,28 +649,6 @@ Three
       <description>&lt;p&gt;CSIC I+D-2018, Code: ID-404.&lt;/p&gt;
 &lt;p&gt;Funding Source: CSIC-UDELAR, Uruguay.&lt;/p&gt;
 &lt;p&gt;Research Associates: Gustavo Varela, Sylvia Vazquez, Cecilia Quiroga, Francisco Peñagaricano&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Genomic analysis of new species of native beta-rhizobium</title>
-      <link>/project/beta_rhizobium/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/beta_rhizobium/</guid>
-      <description>&lt;p&gt;Fondo Clemente Estable-2013, Code: FCE_3_2013_1_100727.&lt;/p&gt;
-&lt;p&gt;Funding Source: ANII, Uruguay.&lt;/p&gt;
-&lt;p&gt;Research Associates: Ma. Cecilia Rodríguez, Raúl A. Platero, Elena Fabiano, José Sotelo-Silveira&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Phylogenetic analysis of the Uruguayan Creole cattle breed using mtDNA marker</title>
-      <link>/project/creole_cattle/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/creole_cattle/</guid>
-      <description>&lt;p&gt;Proyectos CIDEC 2008.&lt;/p&gt;
-&lt;p&gt;Funding Source: CIDEC, FVET-UDELAR, Uruguay.&lt;/p&gt;
-&lt;p&gt;Research Associates: Alicia Postiglioni, Eileen Armstrong&lt;/p&gt;
 </description>
     </item>
     
@@ -798,7 +837,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;./post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
