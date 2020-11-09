@@ -39,16 +39,14 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: mailto: vircantera@gmail.com
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
+  link: https://twitter.com/vir_cmm
+- icon: researchgate  
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://www.researchgate.net/profile/Maria_Cantera4
+  
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -64,4 +62,4 @@ user_groups:
 - MSc. students
 ---
 
-The investigation I'm doing at the moment is focused on functional and comparative genomics in bacteria, mostly focused on *Salmonella enterica*.
+The investigation I'm doing at the moment is focused on functional and comparative genomics in bacteria, mostly focused on Salmonella enterica. The aim of these studies is to find differences through genomics that could explain the differences we find on pathogenicity between different strains of *Salmonella*.
