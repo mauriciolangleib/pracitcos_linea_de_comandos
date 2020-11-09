@@ -14,11 +14,11 @@ role: PhD. student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 interests:
 
@@ -42,16 +42,10 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
+  link: mailto: sylvia.vazquez.zeballos@gmail.com
+- icon: cv
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://exportcvuy.anii.org.uy/cv/?5f3596ce8e4f71dc6b1243fe8a62e0b7d42b059e7484b702fc90182489b5d6ba537ddb39c3fd629a68060d9da23cdc5681a4f4204ccce2f8462a34891dc9ea29
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

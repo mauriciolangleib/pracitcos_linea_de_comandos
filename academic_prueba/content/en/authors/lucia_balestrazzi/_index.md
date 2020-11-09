@@ -25,10 +25,10 @@ interests:
 
 education:
   courses:
-  - course: MSc. in Biological Sciences
+  - course: MSc in Biological Sciences
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2019 - in progress
-  - course: BSc. in Biochemistry
+  - course: BSc in Biological Sciences
     institution: Facultad de Ciencias (Universidad de la República)
     year: 2013 - 2018
 
@@ -40,6 +40,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: mailto:luciabalestrazzi@gmail.com
+- icon: cv
+  icon_pack: ai
+  link: https://exportcvuy.anii.org.uy/cv/?0b23b04d0e8a63e7e1df9623d59f40943456767bbad0660cf7f03d405694a299254a0d706ede91df3a6dfd1ac55afea22b3d69586cd25a0ac7ab6ba6bf3a3a22
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
