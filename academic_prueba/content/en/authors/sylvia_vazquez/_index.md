@@ -42,7 +42,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto: sylvia.vazquez.zeballos@gmail.com
+  link: mailto:sylvia.vazquez.zeballos@gmail.com
 - icon: cv
   icon_pack: ai
   link: https://exportcvuy.anii.org.uy/cv/?5f3596ce8e4f71dc6b1243fe8a62e0b7d42b059e7484b702fc90182489b5d6ba537ddb39c3fd629a68060d9da23cdc5681a4f4204ccce2f8462a34891dc9ea29

@@ -14,7 +14,7 @@ role: MSc student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -39,7 +39,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto: vircantera@gmail.com
+  link: mailto:vircantera@gmail.com
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/vir_cmm
