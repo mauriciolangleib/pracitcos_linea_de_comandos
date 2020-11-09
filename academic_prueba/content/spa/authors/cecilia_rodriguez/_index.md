@@ -7,35 +7,34 @@ authors:
 - admin
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Estudiante de Doctorado
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Transcriptómica, metabolómica y proteómica de procariotas
+- Interacción planta-bacteria
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Doctora en Ciencias Biológicas 
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: en progreso
+  - course: Magíster en Ciencias Biológicas
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: 
+  - course: Licenciada en Bioquímica
+    institution: Universidad de la República
+    year: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -66,9 +65,21 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- PhD. students
+- Estudiantes de Doctorado
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Actualmente, en el marco de mi proyecto de Doctorado me encuentro trabajando en una línea de investigación la cual se basa en el estudio de la FBN en alfa y beta proteobacterias. Los rizobios son bacterias que fijan nitrógeno gaseoso (N2) después de haberse establecido endosimbióticamente en nódulos, generalmente radiculares, de leguminosas. Estas bacterias forman un conjunto filogenéticamente diverso ubicado dentro de las alfa y beta-proteobacterias, siendo las últimas las menos estudiadas. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Describir y entender los cambios linaje-específicos ocurridos en el genoma de diferentes rizobios es fundamental para entender cabalmente el proceso de FBN en simbiosis. Este proyecto específicamente pretende entender el proceso de fijación biológica de nitrógeno (FBN) en beta-rizobios, con especial énfasis en procesos genéticos vinculados con el reconocimiento de la planta hospedera y la nodulación, utilizando una herramienta de transcriptómica, el RNAseq. Par ello se utilizará como modelo de estudio un rizobio del género Cupriavidus, aislado previamente en nuestro laboratorio y como hospedero de nodulación una especie del género Mimosa. 
+
+Se plantea el análisis de RNAseq en tres estadíos claves en el proceso de simbiosis.La identificación de los genes con expresión diferencial obtenidos, así como la inmediata caracterización que surge naturalmente de las rutas metabólicas y/o sistemas relacionados, nos permitirán entender con más profundidad el proceso biológico. Con los datos obtenidos se plantea determinar las similitudes y las diferencias entre las asociaciones establecidas entre alfa y beta-rizobios con sus leguminosas hospederas.
+
+
+___
+
+**Publicaciones destacadas**
+___
+
+- <font size="4"> [Improved glycerol to ethanol conversion by E. coli using a metagenomic fragment isolated from an anaerobic reactor, 2016 LOÁCES, I. , RODRIGUEZ, C. , AMARELLE, V. , FABIANO, E , NOYA, F]() </font> <font size="2"> doi:  </font> 
+
+- <font size="4"> [Est10: A Novel Alkaline Esterase Isolated from Bovine Rumen Belonging to the New Family XV of Lipolytic Enzymes (Completo, 2015) RODRIGUEZ, C. , LOÁCES, I. , AMARELLE, V , SENATORE, D , IRIARTE, A. , FABIANO, E , NOYA, F PLoS ONE, 2015.]() </font> <font size="2"> doi:  </font> 

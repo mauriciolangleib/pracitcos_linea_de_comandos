@@ -7,35 +7,33 @@ authors:
 - admin
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Genomics
+- Transcriptomics
+- Evolution
+- Toxin production in cyanobacteria
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biological Sciences
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: in progress
+  - course: BSc in Biochemistry
+    institution: Universidad de la República
+    year: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,16 +42,11 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
+  link: mailto:pauvicasti@gmail.com
+- icon: researchgate  
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://www.researchgate.net/profile/Paula_Vico
+  
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -69,6 +62,20 @@ user_groups:
 - PhD. students
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+The global distribution of the toxic cyanobacterium cause negative ecological and health impacts. In that sense, the aim of my work is elucidate the biological and ecological role of toxins production in cyanobacterias. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Based on an evolutionary, genomics, metagenomics and transcriptomics aporach, we evaluate the possible mechanisms involved in toxin production by a cyanobacteria of the genus Raphidiopsis (ex Cylindrospemopsis). Furthermore, we aslo inlcude the study of the bacterial microbiome associated with cyanobacteria,since it has recently been propoused that it would be necessary in the biology of cyanobacteria
+
+___
+
+**Selected publications**
+___
+
+- <font size="4"> [Paula Vico; Sylvia Bonilla; Bruno Cremella; Luis Aubriot; Andres Iriarte; Claudia Piccini. 2020. Título“ Biogeography of the cyanobacterium Raphidiopsis (Cylindrospermopsis) raciborskii: Integrating genomics,phylogenetic and toxicity data”. Molecular Phylogenetics and Evolution 149 (2020) 106824. ]() </font> <font size="2"> doi: 10.1016/j.ympev.2020.106824 </font> 
+
+- <font size="4"> [Paula Vico; Luis Aubriot; Fatima Martigani; Natalia Rigamonti; Sylvia Bonilla; ClaudiaPiccini. 2016. Título "Influence of nitrogen availability on the expression of genesinvolved in the biosynthesis of saxitoxin and analogs in Cylindrospermopsis raciborskii”. Harmful Algae 56 (2016) 37–43.]() </font> <font size="2"> doi: dx.doi.org/10.1016/j.hal.2016.04.008</font> 
+
+- <font size="4"> [Guadalupe Beamud; Paula Vico; Signe Haakonsson; Gabriela Martınez de la Escalera; Claudia Piccini; Beatriz M. Brena; Macarena Pirez; Sylvia Bonilla. Influence of UV-B radiation on the fitness and toxin expression of the cyanobacterium Cylindrospermopsis raciborskii Hydrobiologia (2016) 763-161.]() </font> <font size="2"> doi: </font> 
+
+- <font size="4"> [Carla Kruk; Angel Segura; LucíaNogueira; Carmela Carballo; Gabriela Martínez de la Escalera; Danilo Calliari; Graciela Ferrari; Macarena Simoens; Jacqueline Cea; Ignacio Alcántara; Paula Vico; Diana Míguez; Claudia Piccini. 2015. Título: “Herramientas para el monitoreo y sistema de alerta de floraciones de cianobacterias nocivas: Río Uruguay y Río de la Plata”. INNOTEC 10 (2015) 23 – 39.]() </font> <font size="2"> doi: </font> 
+

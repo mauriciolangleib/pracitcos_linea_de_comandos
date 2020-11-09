@@ -7,35 +7,30 @@ authors:
 - admin
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Estudiante de Maestría
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Metagenómica de eucariotas
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Magíster en Bioinformática
+    institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
+    year: en progreso
+  - course: Licenciado en Ciencias Biológicas
+    institution: Facultad de Ciencias - Universidad de la República
+    year: 2012 - 2019
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,16 +39,11 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
+  link: mailto:hernan.juan@gmail.com 
+- icon: researchgate  
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://www.researchgate.net/profile/Hernan_Juan
+  
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -66,9 +56,12 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- MSc. students
+- Estudiantes de Maestría
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Las infecciones con helmintos transmitidos por suelo (geohelmintos) afectan actualmente a más de mil millones de personas a nivel mundial. La capacidad de estos parásitos de persistir como huevos y larvas en el ambiente resulta en tasas de reinfección elevadas en poblaciones humanas expuestas, lo que reduce sobremanera la eficacia a largo plazo de los tratamientos con drogas antihelmínticas. Medidas de contención efectivas requieren la identificación de reservorios de geohelmintos.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+La metodología de diagnóstico basada en morfología requiere tiempo y experiencia por parte del operador para ser efectiva, lo que reduce su aplicabilidad en estudios a gran escala.
+El análisis por metabarcoding consiste en la amplificación por PCR de secuencias diagnóstico, denominadas marcadores moleculares, a partir de ADN extraído en masa de muestras ambientales. Estos marcadores son comparados contra bases de datos de referencia para determinar los clados presentes en el ambiente de la muestra. Se trata de un método rápido, preciso y escalable para caracterizar la composición de especies de una comunidad biológica.
+
+Mi tesis de Maestría busca desarrollar un método alternativo para la detección de geohelmintos a partir de muestras de suelo, aprovechando las ventajas ofrecidas por las tecnologías de secuenciación de próxima generación y el análisis por metabarcoding. Nos proponemos desarrollar una herramienta bioinformática para estimar la probabilidad de ocurrencia de un conjunto de especies de helmintos de interés. Esperamos que la misma sea un insumo de utilidad para el diagnóstico de reservorios de geohelmintos y el desarrollo de medidas de prevención adecuadas.

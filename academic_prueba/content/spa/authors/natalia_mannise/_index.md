@@ -7,18 +7,20 @@ authors:
 - admin
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: Estudiante de Doctorado
 
 # Organizations/Affiliations
 organizations:
-- name: Depto. de Desarrollo Biotecnológico | IIBCE
+- name: Depto. de Desarrollo Biotecnológico
+  url: ""
+- name: IIBCE
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Arreglar esto...
+bio: 
 
 interests:
 - Ecología molecular
@@ -29,13 +31,13 @@ interests:
 
 education:
   courses:
-  - course: Doctorado en Ciencias Biológicas
+  - course: Doctora en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: 2015 - a la fecha
-  - course: Maestría en Ciencias Biológicas 
+    year: 2015 - en progreso
+  - course: Magíster en Ciencias Biológicas 
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
     year: 2010 - 2013
-  - course: Licenciatura en Ciencias Biológicas
+  - course: Licenciada en Ciencias Biológicas
     institution: Facultad de Ciencias - Universidad de la República
     year: 2003 - 2009
 
@@ -46,16 +48,20 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: mailto:natymanni@gmail.com.
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/ManniseNatalia
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://scholar.google.com/citations?user=j4Zd6YAAAAAJ&hl=es
+- icon: researchgate  
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Natalia_Mannise2
+- icon: cv
+  icon_pack: ai
+  link: https://exportcvuy.anii.org.uy/cv/?7e76c22b7fd2245b4b2ebffa76b0161f46d2e6be4ca9fe95bd4dde6af2c20c2e84e0167f72813af96a78248e83c6b82e0dd3d9ab8060d089d3d49f7461831706
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -68,12 +74,12 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- PhD. students
+- Estudiantes de Doctorado
 ---
 
-Desde la línea de trabajo en la que me desarrollo busco responder preguntas ecológicas, evolutivas y sanitarias a partir de muestras ambientales y la utilización de aproximaciones moleculares, como la secuenciación masiva. En este marco, durante mi proyecto de tesis doctoral profundicé en el estudio de los zorros de Uruguay. Por un lado, analizamos la dieta de estas especies a partir de metabarcoding de ADN. 
+Desde la línea de trabajo en la que me desarrollo busco responder preguntas ecológicas, evolutivas y sanitarias a partir de muestras ambientales y la utilización de aproximaciones moleculares, como la secuenciación masiva. En este marco, durante mi proyecto de tesis doctoral profundicé en el estudio de los zorros de Uruguay. Por un lado, analizamos la dieta de estas especies a partir de metabarcoding de ADN. Por otro lado, se colectaron muestras de zorros (fecas y tejidos de animales atropellados) y examinamos la presencia del protozoario parásito *Neospora caninum* que causa abortos en ganado. 
 
-Por otro lado, se colectaron muestras de zorros (fecas y tejidos de animales atropellados) y examinamos la presencia del protozoario parásito Neospora caninum que causa abortos en ganado. Los zorros son considerados depredadores de corderos y potenciales transmisores de enfermedades al ganado. Sin embargo, tienen un rol importante en la dispersión de semillas de especies nativas, control sobre las poblaciones de sus presas y son potenciales especies centinelas de la salud ecológica. De esta manera, resulta necesario conocer los taxa que componen su dieta y los parásitos presentes a partir de ADN ambiental mediante diversas aproximaciones, como la secuenciación masiva. 
+Los zorros son considerados depredadores de corderos y potenciales transmisores de enfermedades al ganado. Sin embargo, tienen un rol importante en la dispersión de semillas de especies nativas, control sobre las poblaciones de sus presas y son potenciales especies centinelas de la salud ecológica. De esta manera, resulta necesario conocer los taxa que componen su dieta y los parásitos presentes a partir de ADN ambiental mediante diversas aproximaciones, como la secuenciación masiva. 
 
 El proyecto de doctorado se realiza también en el Departamento de Biodiversidad y Genética del Instituto de Investigaciones Biológicas Clemente Estable y en colaboración con investigadores del Instituto Pasteur e INIA La Estanzuela. Fue financiado por ANII FSSA_2015_1_1005292, PEDECIBA, Juntos dejamos huella Vida Silvestre- Salus y Secretariado Uruguayo de la Lana. 
 

@@ -5,7 +5,7 @@
     <link>/es/author/iriarte-a./</link>
       <atom:link href="/es/author/iriarte-a./index.xml" rel="self" type="application/rss+xml" />
     <description>Iriarte A.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es</language><lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png</url>
       <title>Iriarte A.</title>
@@ -13,23 +13,32 @@
     </image>
     
     <item>
-      <title>Comparative genomics of Salmonella enterica serovar Enteritidis ST-11 isolated in Uruguay reveals lineages associated with particular epidemiological traits. Scientific Reports</title>
-      <link>/es/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/es/publication/journal-article/</guid>
+      <title>SLFinder, a pipeline for the novel identification of splice-leader sequences: a good enough solution for a complex problem</title>
+      <link>/es/publication/calvelo_etal_2020/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/es/publication/calvelo_etal_2020/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+    Please refer to &lt;a href=&#34;https://github.com/LBC-Iriarte/SLFinder&#34;&gt;our Lab&amp;rsquo;s GitHub Page&lt;/a&gt; for more informeation about SLFinder.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Biogeography of the cyanobacterium *Raphidiopsis* (*Cylindrospermopsis*) *raciborskii*: Integrating genomics, phylogenetic and toxicity data</title>
+      <link>/es/publication/vico_etal_2020/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/es/publication/vico_etal_2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expansion of cap superfamily proteins in the genome of *Mesocestoides corti*: An extreme case of a general bilaterian trend</title>
+      <link>/es/publication/costabile_etal_2018/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/es/publication/costabile_etal_2018/</guid>
+      <description></description>
     </item>
     
   </channel>
