@@ -72,7 +72,7 @@ Currently, within the framework of my PhD project, I am working on a line of res
 
 Describing and understanding the lineage-specific changes that occurred in the genome of different rhizobia is essential to fully understand the process of BNF in symbiosis. This project specifically aims to understand the process of biological nitrogen fixation (BNF) in $\beta$-rhizobia, with special emphasis on genetic processes related to the recognition of the host plant and nodulation, using a transcriptomic tool, RNAseq. For this, a rhizobium of the genus *Cupriavidus*, previously isolated in our laboratory, and a species of the genus *Mimosa* as nodulation host will be used as a study model. 
 
-The RNAseq analysis is proposed in three key stages in the symbiosis process. The identification of the genes with differential expression obtained, as well as the immediate characterization that arises naturally from the metabolic pathways and/or related systems, will allow us to understand in more depth the biological process. With the data obtained, it is proposed to determine the similarities and differences between the associations established between alpha and beta-rhizobia with their host legumes.
+The RNAseq analysis is proposed in three key stages in the symbiosis process. The identification of the genes with differential expression obtained, as well as the immediate characterization that arises naturally from the metabolic pathways and/or related systems, will allow us to understand in more depth the biological process. With the data obtained, it is proposed to determine the similarities and differences between the associations established between $\alpha$ and $\beta$-rhizobia with their host legumes.
 
 ___
 

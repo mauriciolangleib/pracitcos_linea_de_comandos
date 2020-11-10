@@ -77,7 +77,7 @@ Por último debo agregar que desde mi unión al Laboratorio he realizado tambié
 
 ___
 
-**Publicaciones destacadas**
+**Publicaciones destacadas    **
 ___
 
 - <font size="4"> []() </font> <font size="2"> doi:  </font> 
