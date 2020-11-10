@@ -52,7 +52,7 @@ subtitle = ""
 
 <center>
 
-![](img/cabezal_pagina_lbc_blanco_tercero.png)
+![](/img/cabezal_pagina_lbc_blanco_tercero.png)
 
 </center>
 <center>
@@ -70,6 +70,6 @@ The Computational Biology Lab (LBC) focuses on the comparative and functional ge
 
 <center>
 
-![](img/cabezal_ddbt.jpg)
+![](/img/cabezal_ddbt.jpg)
 
 </center>
