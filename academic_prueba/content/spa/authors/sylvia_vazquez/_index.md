@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD student
+role: Estudiante de Doctorado
 
 # Organizations/Affiliations
 organizations:
@@ -25,13 +25,13 @@ interests:
 
 education:
   courses:
-  - course: PhD. in Biotechnology
-    institution: in progress
-    year: 2012
-  - course: MSc. in Biotechnology
+  - course: Doctora en Biotecnología
+    institution: 
+    year: en progreso
+  - course: Magíster en Biotecnología
     institution: 
     year: 
-  - course: BSc in Artificial Intelligence
+  - course: Licenciada en Bioquímica
     institution: Facultad de Ciencias (Universidad de la República)
     year: 
 
@@ -58,7 +58,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- PhD. students
+- Estudiantes de Doctorado
 ---
 
-Molecular markers for STEC (diagnosis and virulence mechanisms), resistance genes
+Mi línea de trabajo está relacionada a marcadores moleculares para STEC (vinculada a diagnóstico y mecanismos de virulencia), así como a genes de resistencia

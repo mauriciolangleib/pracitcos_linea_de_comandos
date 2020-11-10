@@ -25,13 +25,13 @@ interests:
 
 education:
   courses:
-  - course: PhD. in Biotechnology
-    institution: in progress
-    year: 2012
-  - course: MSc. in Biotechnology
+  - course: PhD in Biotechnology
+    institution: 
+    year: en progreso
+  - course: MSc in Biotechnology
     institution: 
     year: 
-  - course: BSc in Artificial Intelligence
+  - course: BSc in Biochemistry
     institution: Facultad de Ciencias (Universidad de la República)
     year: 
 

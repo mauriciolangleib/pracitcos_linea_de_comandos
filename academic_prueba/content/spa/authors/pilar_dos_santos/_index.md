@@ -18,14 +18,14 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 interests:
-- Genomics of platyhelminthes
+- Genómica de platelmintos
 
 education:
   courses:
-  - course: BSc. in Biochemistry
+  - course: Licenciada en Bioquímica
     institution: Facultad de Ciencias (Universidad de la República)
     year: 2012
 
@@ -50,8 +50,8 @@ user_groups:
 - Alumni
 ---
 
-Pilar made her bachellor's final work under the tutelage of Drs. Andrés Iriarte and Verónica Fernandez. 
+Pilar hizo su tesina de grado bajo la tutoría de los Dres. Andrés Iriarte y Verónica Fernández.
 
-Her work, which adresses the evolution of mu-class GSTs in *Echinococcus granulosus*, is freely available [at the following link](https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/10145).
+Su trabajo, que trata sobre la evolución de GSTs de clase $\mu$ en *Echinococcus granulosus*, está disponible de forma gratuita en [el siguiente link](https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/10145).
 
 ![](/img/Smircich_Fernandez_dosSantos_Iriarte.jpg)

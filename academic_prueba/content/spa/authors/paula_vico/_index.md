@@ -21,17 +21,17 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Genomics
-- Transcriptomics
-- Evolution
-- Toxin production in cyanobacteria
+- Genómica
+- Transcriptómica
+- Evolución
+- Producción de toxinas en cianobacterias
 
 education:
   courses:
-  - course: PhD in Biological Sciences
+  - course: Doctora en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: in progress
-  - course: BSc in Biochemistry
+    year: en progreso
+  - course: Licenciada en Bioquímica
     institution: Universidad de la República
     year: 
 
@@ -59,16 +59,18 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- PhD. students
+- Estudiantes de Doctorado
 ---
 
-The global distribution of the toxic cyanobacterium cause negative ecological and health impacts. In that sense, the aim of my work is elucidate the biological and ecological role of toxins production in cyanobacterias. 
+La alta producción de distintos tipos de toxinas durante las floraciones de
+cianobacterias son un problema a nivel mundial que trae concecuencias negativas
+para el ambiente y para la salud humana y animal. En ese sentido, mi trabajo se
+centra en dilucidar el rol biológico y ecológico que tiene la producción de toxinas en cianobacterias. 
 
-Based on an evolutionary, genomics, metagenomics and transcriptomics aporach, we evaluate the possible mechanisms involved in toxin production by a cyanobacteria of the genus Raphidiopsis (ex Cylindrospemopsis). Furthermore, we aslo inlcude the study of the bacterial microbiome associated with cyanobacteria,since it has recently been propoused that it would be necessary in the biology of cyanobacteria
-
+Teniendo en cuenta un enfoque evolutivo y una aproximación metodológica basada en la genómica, metagenómica y transcriptómica, evaluamos los posibles mecanismos involucrados en la producción de toxinas por las cianobacterias del género Raphidiopsis (ex Cylindrospemopsis). Ademas, se incluye el estudio del microbioma bacteriano asociado a la cianobacteria ya que se ha visto recientemente que dicho microbioma sería necesario en la biología de las cianobacterias 
 ___
 
-**Selected publications**
+**Publicaciones destacadas**
 ___
 
 - <font size="4"> [Paula Vico; Sylvia Bonilla; Bruno Cremella; Luis Aubriot; Andres Iriarte; Claudia Piccini. 2020. Título“ Biogeography of the cyanobacterium Raphidiopsis (Cylindrospermopsis) raciborskii: Integrating genomics,phylogenetic and toxicity data”. Molecular Phylogenetics and Evolution 149 (2020) 106824. ]() </font> <font size="2"> doi: 10.1016/j.ympev.2020.106824 </font> 

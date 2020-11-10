@@ -21,7 +21,7 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Genomics of platyhelminthes
+- Genomics of Platyhelminthes
 
 education:
   courses:
@@ -52,6 +52,6 @@ user_groups:
 
 Pilar made her bachellor's final work under the tutelage of Drs. Andrés Iriarte and Verónica Fernandez. 
 
-Her work, which adresses the evolution of mu-class GSTs in *Echinococcus granulosus*, is freely available [at the following link](https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/10145).
+Her work, which adresses the evolution of $\mu$ -class GSTs in *Echinococcus granulosus*, is freely available [at the following link](https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/10145).
 
 ![](/img/Smircich_Fernandez_dosSantos_Iriarte.jpg)

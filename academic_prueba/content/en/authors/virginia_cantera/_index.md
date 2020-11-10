@@ -62,4 +62,4 @@ user_groups:
 - MSc. students
 ---
 
-The investigation I'm doing at the moment is focused on functional and comparative genomics in bacteria, mostly focused on Salmonella enterica. The aim of these studies is to find differences through genomics that could explain the differences we find on pathogenicity between different strains of *Salmonella*.
+The investigation I'm doing at the moment is focused on functional and comparative genomics in bacteria, mostly focused on *Salmonella enterica*. The aim of these studies is to find differences through genomics that could explain the differences we find on pathogenicity between different strains of *Salmonella*.

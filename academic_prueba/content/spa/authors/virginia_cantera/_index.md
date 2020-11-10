@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: MSc student
+role: Estudiante de Maestría
 
 # Organizations/Affiliations
 organizations:
@@ -21,14 +21,14 @@ organizations:
 bio: 
 
 interests:
-- Functional genomics of prokaryotes
+- Genómica funcional de procariotas
 
 education:
   courses:
-  - course: MSc. in Biological Sciences
+  - course: Magíster en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: in progress
-  - course: BSc in Biochemistry 
+    year: en progreso
+  - course: Licenciatura en Bioquímica 
     institution: Universidad de la República 
     year: 
 
@@ -59,7 +59,8 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- MSc. students
+- Estudiantes de Maestría
 ---
 
-The investigation I'm doing at the moment is focused on functional and comparative genomics in bacteria, mostly focused on Salmonella enterica. The aim of these studies is to find differences through genomics that could explain the differences we find on pathogenicity between different strains of *Salmonella*.
+Actualmente mi línea de trabajo se focaliza en la genómica funcional y comparativa en bacterias, principalmente en *Salmonella enterica*. Nuestro objetivo es encontrar patrones a través de la genómica que permitan explicar las diferencias observadas en patogenicidad para diferentes cepas de *Salmonella*.
+
