@@ -52,7 +52,7 @@ subtitle = ""
 
 <center>
 
-![](/img/cabezal_pagina_lbc_blanco_tercero.png)
+![](/img/cabezal_pagina_lbc_blanco_tercero_spa.png)
 
 </center>
 <center>
