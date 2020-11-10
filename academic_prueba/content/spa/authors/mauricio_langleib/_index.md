@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: MSc student
+role: Estudiante de Maestría
 
 # Organizations/Affiliations
 organizations:
@@ -21,14 +21,14 @@ organizations:
 bio: 
 
 interests:
-- Comparative and functional genomics of platyhelminthes
+- Genómica comparativa y funcional de platelmintos
 
 education:
   courses:
-  - course: MSc. in Biological Sciences
+  - course: Magíster en Ciencias Biológicas
     institution: Programa de Desarrollo de las Ciencias Básicas (PEDECIBA)
-    year: 2019 - in progress
-  - course: BSc. in Biochemistry
+    year: 2019 - en progreso
+  - course: Licenciado en Bioquímica
     institution: Facultad de Ciencias (Universidad de la República)
     year: 2013 - 2018
 
@@ -62,23 +62,22 @@ email: "mauricio.langleib@gmail.com"
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- MSc. students
+- Estudiantes de Maestría
 ---
 
-I joined the LBC in 2017 (as a bachellor student) motivated by the [introductory course in command line tools for computational biology]() given by the lab.
+Me uní al Laboratorio de Biología Computacional en 2017 (siendo estudiante de grado), motivado por el [curso de introducción a la línea de comandos para análisis bioinformáticos]() que dicta el Laboratorio.
 
-Since then, I've been working in two main research lines: *i)* the study of lineage-specific duplications among multigene families in the phylum Platyhelminthes; and *ii)* the transcriptomic study of the intrasnail developmental stages of the trematode parasite *F. hepatica*.
+Desde entonces he estado trabajando en dos líneas de investigación: *i)* el estudio de duplicaciones linaje-específicas dentro de familias multigénicas en organismos del phylum Platyhelminthes; y *ii)* el etsudio del transcrptoma de las etapas de desarrollo intracaracol del tremátodo parásito *F. hepatica*.
 
-The work done in the first of these lines is part of a [grant financed by ANII](), and culminated in my final work to obtain the degree of BSc. in Biochemistry. We focused our studies in the lineage-specific duplications (*i.e. inparalogs*) existing in thirty platyheminthic genomes. This set of duplicated genes shows an enrichment in proteins related with the interaction between parasites and their respective hosts, as well as marks of possible evolution under positive selection in their sequences and, in some cases, stage or tissue specific expression. Our work culminated in a manuscript that hopefully will be published in brief.
+El trabajo realizado en la primera de estas líneas es parte de un [proyecto financiado por la ANII](). Con el mismo realicé mi tesina de grado para la obtención del título de Licenciado en Bioquímica. Nos focalizamos en el estudio de duplicaciones linaje-específicas (*i.e.* inparálogos) existentes en los genomas de treinta platelmintos, en su enorme mayoría parásitos. Este conjunto de genes duplicados muestra un enriquecimiento en genes codificantes para proteínas relacionadas con la interacción de parásitos con sus respectivos hospederos, así como posibles marcas de evolución bajo régimen de selección natural a nivel de secuencia y, en algunos casos, expresión específica ya sea a nivel de una etapa de desarrollo o en un tejido en particular. En la actualidad nos encontramos culminando la escritura de un manuscrito que recopila este trabajo, el cual esperamos publicar en una revista arbitrada en un futuro no lejano.
 
-The second line of research is related to my work as a MSc. student, under the tutelage of Dr. José F. Tort ([Departamento de Genética - Facultad de Medicina (Universidad de la República)]()) and Dr. Andrés Iriarte (Laboratorio de Biología Computacional). We aim to characterize transcript expression of the laval stages of the trematode *F. hepatica* in one of its intermediate snail hosts, *L. viatrix*. This is a crucial stage in the development of these parasite, as the larval stages experiencie asexual clonal expansion, leading to the production of several infective cercariae that are ultimately capable of infect the ultimate mammalian hosts. Interestingly, up to date exists published data regarding the intermediate molluscan stages of other parasitic trematodes (such as *S. mansoni* and *F. gigantica*), but transcriptomic data regarding this stage in *F. hepatica* is missing. Comparative studies of the expression levels of multigene families among these trematodes in these stages can uncover conserved and specific patterns that can help to elucidate the interaction of these parasites with their intermediate hosts.
+La segunda línea de investigación está vinculada a mi trabajo de Maestría, el cual realizo bajo la orientación de los Dres. José F. Tort ([Departamento de Genética - Facultad de Medicina (Universidad de la República)]()) y Andrés Iriarte (Laboratorio de Biología Computacional). El objetivo del trabajo es la caracterización del transcriptoma de las etapas larvarias de desarrollo del tremátodo *F. hepatica* que se desarrollan dentro de uno de sus hospederos intermedios caracol, *L. viatrix*. Las mismas son etapas cruciales en el desarrollo de este parásitos, dado que durante las mismas se lleva a cabo un rpoceso de expansión clonal asexual que termina generando una gran cantidad de cercarias, capaces en última instancia de infectar a los hospederos finales mamíferos. Interesantemente, a la fecha existen datos transcriptómicos referentes a etapas de desarrollo intracaracol de otros tremátodos (como lo son *S. mansoni* y *F. gigantica*), pero no existen estudios referentes a estas etapas para *F. hepatica*. Estudios comparativos de los niveles de expresión de miembros pertenecientes a familias multigénicas en estos parásitos pueden permitir dilucidar patrones conservados y específicos que permitan comprender la compleja interacción de estos parásitos con sus huéspedes intermedios.
 
-Finally, I must also mention that during these years I've also pérformed some minor collaborations with researches from other fields (specially microbiologists), giving some technical support in analysis such as genomic assembly of unknown strains of microorganisms.
-
+Por último debo agregar que desde mi unión al Laboratorio he realizado también algunas colaboraciones en calidad de co-autor con investigadores locales de otros campos de estudio (principalmente de la microbiología), en los cuales he ayudado en análisis tales como el ensamblado de genomas de cepas no descritas de microorganismos.
 
 ___
 
-**Selected publications**
+**Publicaciones destacadas**
 ___
 
 - <font size="4"> []() </font> <font size="2"> doi:  </font> 
