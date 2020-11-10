@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Descripción | Lab. de Biologia Computacional</title>
+    <link>/en-us/courses/example/</link>
+      <atom:link href="/en-us/courses/example/index.xml" rel="self" type="application/rss+xml" />
+    <description>Descripción</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu3dd169b0ed9f6b30ddc69b357ba80c4d_15880_300x300_fit_lanczos_2.png</url>
+      <title>Descripción</title>
+      <link>/en-us/courses/example/</link>
+    </image>
+    
+    <item>
+      <title>Práctico 1</title>
+      <link>/en-us/courses/example/practico1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico1/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico1.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 10: R4</title>
+      <link>/en-us/courses/example/practico10/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico10/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico10.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 2</title>
+      <link>/en-us/courses/example/practico2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico2/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico2.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 3</title>
+      <link>/en-us/courses/example/practico3/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico3/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico3.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 4</title>
+      <link>/en-us/courses/example/practico4/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico4/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Clase4.pptx&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 5</title>
+      <link>/en-us/courses/example/practico5/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico5/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico5.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 6</title>
+      <link>/en-us/courses/example/practico6/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico6/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico6.pdf&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 7a</title>
+      <link>/en-us/courses/example/practico7a/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico7a/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico7a.html&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 7b</title>
+      <link>/en-us/courses/example/practico7b/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico7b/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico7b.html&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 8: R1 y R2</title>
+      <link>/en-us/courses/example/practico8/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico8/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/PracticosR1y2.zip&#34;&gt;Acceder al Archivo de la Clase&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Práctico 9: R3</title>
+      <link>/en-us/courses/example/practico9/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/en-us/courses/example/practico9/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;/html/Practico9.html&#34;&gt;Acceder al Práctico&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

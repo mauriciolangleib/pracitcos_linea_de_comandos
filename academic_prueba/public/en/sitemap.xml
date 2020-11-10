@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/practico1/</loc>
+    <loc>/en/courses/example/practico1/</loc>
     <lastmod>2020-11-02T20:45:36-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -13,12 +13,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico1/"
+                href="/en/courses/example/practico1/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico10/</loc>
+    <loc>/en/courses/example/practico10/</loc>
     <lastmod>2020-11-06T19:45:30-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -28,12 +28,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico10/"
+                href="/en/courses/example/practico10/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico2/</loc>
+    <loc>/en/courses/example/practico2/</loc>
     <lastmod>2020-11-04T12:20:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -43,12 +43,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico2/"
+                href="/en/courses/example/practico2/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico3/</loc>
+    <loc>/en/courses/example/practico3/</loc>
     <lastmod>2020-11-04T12:20:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -58,12 +58,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico3/"
+                href="/en/courses/example/practico3/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico4/</loc>
+    <loc>/en/courses/example/practico4/</loc>
     <lastmod>2020-11-04T17:09:01-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -73,12 +73,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico4/"
+                href="/en/courses/example/practico4/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico5/</loc>
+    <loc>/en/courses/example/practico5/</loc>
     <lastmod>2020-11-04T17:27:15-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -88,12 +88,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico5/"
+                href="/en/courses/example/practico5/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico6/</loc>
+    <loc>/en/courses/example/practico6/</loc>
     <lastmod>2020-11-04T17:27:15-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -103,12 +103,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico6/"
+                href="/en/courses/example/practico6/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico7a/</loc>
+    <loc>/en/courses/example/practico7a/</loc>
     <lastmod>2020-11-06T19:45:30-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -118,12 +118,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico7a/"
+                href="/en/courses/example/practico7a/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico7b/</loc>
+    <loc>/en/courses/example/practico7b/</loc>
     <lastmod>2020-11-06T19:45:30-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -133,12 +133,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico7b/"
+                href="/en/courses/example/practico7b/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico8/</loc>
+    <loc>/en/courses/example/practico8/</loc>
     <lastmod>2020-11-06T18:07:47-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -148,12 +148,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico8/"
+                href="/en/courses/example/practico8/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/practico9/</loc>
+    <loc>/en/courses/example/practico9/</loc>
     <lastmod>2020-11-06T19:45:30-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -163,12 +163,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/practico9/"
+                href="/en/courses/example/practico9/"
                 />
   </url>
   
   <url>
-    <loc>/courses/example/</loc>
+    <loc>/en/courses/example/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -178,12 +178,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/example/"
+                href="/en/courses/example/"
                 />
   </url>
   
   <url>
-    <loc>/talk/example/</loc>
+    <loc>/en/talk/example/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -193,12 +193,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/talk/example/"
+                href="/en/talk/example/"
                 />
   </url>
   
   <url>
-    <loc>/publication-type/2/</loc>
+    <loc>/en/publication-type/2/</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -208,12 +208,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/publication-type/2/"
+                href="/en/publication-type/2/"
                 />
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>/en/authors/</loc>
     <lastmod>2020-11-09T20:18:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -223,12 +223,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/authors/"
+                href="/en/authors/"
                 />
   </url>
   
   <url>
-    <loc>/author/calvelo-j./</loc>
+    <loc>/en/author/calvelo-j./</loc>
     <lastmod>2020-10-14T20:21:51-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -238,12 +238,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/calvelo-j./"
+                href="/en/author/calvelo-j./"
                 />
   </url>
   
   <url>
-    <loc>/author/iriarte-a./</loc>
+    <loc>/en/author/iriarte-a./</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -253,12 +253,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/iriarte-a./"
+                href="/en/author/iriarte-a./"
                 />
   </url>
   
   <url>
-    <loc>/author/juan-h./</loc>
+    <loc>/en/author/juan-h./</loc>
     <lastmod>2020-10-14T20:21:51-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -268,12 +268,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/juan-h./"
+                href="/en/author/juan-h./"
                 />
   </url>
   
   <url>
-    <loc>/author/koziol-u./</loc>
+    <loc>/en/author/koziol-u./</loc>
     <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -283,12 +283,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/koziol-u./"
+                href="/en/author/koziol-u./"
                 />
   </url>
   
   <url>
-    <loc>/author/musto-h./</loc>
+    <loc>/en/author/musto-h./</loc>
     <lastmod>2020-10-14T20:21:51-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -298,12 +298,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/musto-h./"
+                href="/en/author/musto-h./"
                 />
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>/en/publication_types/</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -313,12 +313,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/publication_types/"
+                href="/en/publication_types/"
                 />
   </url>
   
   <url>
-    <loc>/tag/selected-publications/</loc>
+    <loc>/en/tag/selected-publications/</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -328,12 +328,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/selected-publications/"
+                href="/en/tag/selected-publications/"
                 />
   </url>
   
   <url>
-    <loc>/publication/calvelo_etal_2020/</loc>
+    <loc>/en/publication/calvelo_etal_2020/</loc>
     <lastmod>2020-10-14T20:21:51-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -343,12 +343,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/publication/calvelo_etal_2020/"
+                href="/en/publication/calvelo_etal_2020/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/en/tags/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -358,12 +358,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>/author/aubriot-l./</loc>
+    <loc>/en/author/aubriot-l./</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -373,12 +373,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/aubriot-l./"
+                href="/en/author/aubriot-l./"
                 />
   </url>
   
   <url>
-    <loc>/publication/vico_etal_2020/</loc>
+    <loc>/en/publication/vico_etal_2020/</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -388,12 +388,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/publication/vico_etal_2020/"
+                href="/en/publication/vico_etal_2020/"
                 />
   </url>
   
   <url>
-    <loc>/author/bonilla-s./</loc>
+    <loc>/en/author/bonilla-s./</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -403,12 +403,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/bonilla-s./"
+                href="/en/author/bonilla-s./"
                 />
   </url>
   
   <url>
-    <loc>/author/cremella-b./</loc>
+    <loc>/en/author/cremella-b./</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -418,12 +418,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/cremella-b./"
+                href="/en/author/cremella-b./"
                 />
   </url>
   
   <url>
-    <loc>/author/piccini-c./</loc>
+    <loc>/en/author/piccini-c./</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -433,12 +433,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/piccini-c./"
+                href="/en/author/piccini-c./"
                 />
   </url>
   
   <url>
-    <loc>/author/vico-p./</loc>
+    <loc>/en/author/vico-p./</loc>
     <lastmod>2020-10-14T20:35:57-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -448,12 +448,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/vico-p./"
+                href="/en/author/vico-p./"
                 />
   </url>
   
   <url>
-    <loc>/post/writing-technical-content/</loc>
+    <loc>/en/post/writing-technical-content/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -463,12 +463,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/post/writing-technical-content/"
+                href="/en/post/writing-technical-content/"
                 />
   </url>
   
   <url>
-    <loc>/post/jupyter/</loc>
+    <loc>/en/post/jupyter/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -478,12 +478,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/post/jupyter/"
+                href="/en/post/jupyter/"
                 />
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>/en/slides/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -493,12 +493,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/slides/"
+                href="/en/slides/"
                 />
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>/en/slides/example/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -508,12 +508,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/slides/example/"
+                href="/en/slides/example/"
                 />
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/en/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -523,12 +523,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="/en/"
                 />
   </url>
   
   <url>
-    <loc>/privacy/</loc>
+    <loc>/en/privacy/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -538,12 +538,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/privacy/"
+                href="/en/privacy/"
                 />
   </url>
   
   <url>
-    <loc>/terms/</loc>
+    <loc>/en/terms/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -553,12 +553,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/terms/"
+                href="/en/terms/"
                 />
   </url>
   
   <url>
-    <loc>/author/castillo-e./</loc>
+    <loc>/en/author/castillo-e./</loc>
     <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -568,12 +568,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/castillo-e./"
+                href="/en/author/castillo-e./"
                 />
   </url>
   
   <url>
-    <loc>/author/costabile-a./</loc>
+    <loc>/en/author/costabile-a./</loc>
     <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -583,12 +583,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/costabile-a./"
+                href="/en/author/costabile-a./"
                 />
   </url>
   
   <url>
-    <loc>/publication/costabile_etal_2018/</loc>
+    <loc>/en/publication/costabile_etal_2018/</loc>
     <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -598,12 +598,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/publication/costabile_etal_2018/"
+                href="/en/publication/costabile_etal_2018/"
                 />
   </url>
   
   <url>
-    <loc>/author/tort-jf./</loc>
+    <loc>/en/author/tort-jf./</loc>
     <lastmod>2020-10-14T20:31:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -613,12 +613,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/tort-jf./"
+                href="/en/author/tort-jf./"
                 />
   </url>
   
   <url>
-    <loc>/project/shewanella/</loc>
+    <loc>/en/project/shewanella/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -628,12 +628,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/shewanella/"
+                href="/en/project/shewanella/"
                 />
   </url>
   
   <url>
-    <loc>/tag/ecoli/</loc>
+    <loc>/en/tag/ecoli/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -643,12 +643,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/ecoli/"
+                href="/en/tag/ecoli/"
                 />
   </url>
   
   <url>
-    <loc>/project/platys_secreted/</loc>
+    <loc>/en/project/platys_secreted/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -658,12 +658,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/platys_secreted/"
+                href="/en/project/platys_secreted/"
                 />
   </url>
   
   <url>
-    <loc>/project/salmonella_lncrna/</loc>
+    <loc>/en/project/salmonella_lncrna/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -673,12 +673,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/salmonella_lncrna/"
+                href="/en/project/salmonella_lncrna/"
                 />
   </url>
   
   <url>
-    <loc>/project/ecoli_gwas/</loc>
+    <loc>/en/project/ecoli_gwas/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -688,12 +688,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/ecoli_gwas/"
+                href="/en/project/ecoli_gwas/"
                 />
   </url>
   
   <url>
-    <loc>/tag/platyhelminthes/</loc>
+    <loc>/en/tag/platyhelminthes/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -703,12 +703,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/platyhelminthes/"
+                href="/en/tag/platyhelminthes/"
                 />
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>/en/project/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -718,12 +718,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/project/"
+                href="/en/project/"
                 />
   </url>
   
   <url>
-    <loc>/tag/academic/</loc>
+    <loc>/en/tag/academic/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -733,12 +733,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/academic/"
+                href="/en/tag/academic/"
                 />
   </url>
   
   <url>
-    <loc>/post/getting-started/</loc>
+    <loc>/en/post/getting-started/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -748,12 +748,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/post/getting-started/"
+                href="/en/post/getting-started/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/en/categories/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -763,12 +763,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/category/demo/</loc>
+    <loc>/en/category/demo/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -778,12 +778,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/category/demo/"
+                href="/en/category/demo/"
                 />
   </url>
   
   <url>
-    <loc>/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
+    <loc>/en/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -793,12 +793,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/%E5%90%B3%E6%81%A9%E9%81%94/"
+                href="/en/author/%E5%90%B3%E6%81%A9%E9%81%94/"
                 />
   </url>
   
   <url>
-    <loc>/tag/%E5%BC%80%E6%BA%90/</loc>
+    <loc>/en/tag/%E5%BC%80%E6%BA%90/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -808,12 +808,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/%E5%BC%80%E6%BA%90/"
+                href="/en/tag/%E5%BC%80%E6%BA%90/"
                 />
   </url>
   
   <url>
-    <loc>/category/%E6%95%99%E7%A8%8B/</loc>
+    <loc>/en/category/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -823,12 +823,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/category/%E6%95%99%E7%A8%8B/"
+                href="/en/category/%E6%95%99%E7%A8%8B/"
                 />
   </url>
   
   <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>/en/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -838,12 +838,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/post/2015-07-23-r-rmarkdown/"
+                href="/en/post/2015-07-23-r-rmarkdown/"
                 />
   </url>
   
   <url>
-    <loc>/tag/plot/</loc>
+    <loc>/en/tag/plot/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -853,12 +853,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/plot/"
+                href="/en/tag/plot/"
                 />
   </url>
   
   <url>
-    <loc>/category/r/</loc>
+    <loc>/en/category/r/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -868,12 +868,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/category/r/"
+                href="/en/category/r/"
                 />
   </url>
   
   <url>
-    <loc>/tag/r-markdown/</loc>
+    <loc>/en/tag/r-markdown/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -883,12 +883,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/r-markdown/"
+                href="/en/tag/r-markdown/"
                 />
   </url>
   
   <url>
-    <loc>/tag/regression/</loc>
+    <loc>/en/tag/regression/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -898,12 +898,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tag/regression/"
+                href="/en/tag/regression/"
                 />
   </url>
   
   <url>
-    <loc>/author/andres-iriarte/</loc>
+    <loc>/en/author/andres-iriarte/</loc>
     <lastmod>2020-11-06T18:42:28-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -913,12 +913,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/andres-iriarte/"
+                href="/en/author/andres-iriarte/"
                 />
   </url>
   
   <url>
-    <loc>/author/cecilia-rodriguez/</loc>
+    <loc>/en/author/cecilia-rodriguez/</loc>
     <lastmod>2020-11-09T20:13:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -928,12 +928,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/cecilia-rodriguez/"
+                href="/en/author/cecilia-rodriguez/"
                 />
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>/en/courses/</loc>
     <lastmod>2020-10-09T17:23:29+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -943,12 +943,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/courses/"
+                href="/en/courses/"
                 />
   </url>
   
   <url>
-    <loc>/author/eugenio-jara/</loc>
+    <loc>/en/author/eugenio-jara/</loc>
     <lastmod>2020-11-09T20:13:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -958,12 +958,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/eugenio-jara/"
+                href="/en/author/eugenio-jara/"
                 />
   </url>
   
   <url>
-    <loc>/author/german-matias-traglia/</loc>
+    <loc>/en/author/german-matias-traglia/</loc>
     <lastmod>2020-11-06T18:42:28-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -973,12 +973,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/german-matias-traglia/"
+                href="/en/author/german-matias-traglia/"
                 />
   </url>
   
   <url>
-    <loc>/author/hernan-juan/</loc>
+    <loc>/en/author/hernan-juan/</loc>
     <lastmod>2020-11-09T20:13:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -988,12 +988,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/hernan-juan/"
+                href="/en/author/hernan-juan/"
                 />
   </url>
   
   <url>
-    <loc>/author/javier-calvelo/</loc>
+    <loc>/en/author/javier-calvelo/</loc>
     <lastmod>2020-11-09T20:13:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1003,12 +1003,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/javier-calvelo/"
+                href="/en/author/javier-calvelo/"
                 />
   </url>
   
   <url>
-    <loc>/author/laboratorio-de-biologia-computacional/</loc>
+    <loc>/en/author/laboratorio-de-biologia-computacional/</loc>
     <lastmod>2020-11-06T18:07:47-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1018,12 +1018,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/laboratorio-de-biologia-computacional/"
+                href="/en/author/laboratorio-de-biologia-computacional/"
                 />
   </url>
   
   <url>
-    <loc>/author/lucia-balestrazzi/</loc>
+    <loc>/en/author/lucia-balestrazzi/</loc>
     <lastmod>2020-11-09T20:04:49-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1033,12 +1033,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/lucia-balestrazzi/"
+                href="/en/author/lucia-balestrazzi/"
                 />
   </url>
   
   <url>
-    <loc>/author/mauricio-langleib/</loc>
+    <loc>/en/author/mauricio-langleib/</loc>
     <lastmod>2020-11-09T20:13:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1048,12 +1048,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/mauricio-langleib/"
+                href="/en/author/mauricio-langleib/"
                 />
   </url>
   
   <url>
-    <loc>/author/natalia-mannise/</loc>
+    <loc>/en/author/natalia-mannise/</loc>
     <lastmod>2020-11-09T19:57:50-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1063,12 +1063,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/natalia-mannise/"
+                href="/en/author/natalia-mannise/"
                 />
   </url>
   
   <url>
-    <loc>/whole_publication/</loc>
+    <loc>/en/whole_publication/</loc>
     <lastmod>2020-11-03T15:24:28-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1078,12 +1078,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/whole_publication/"
+                href="/en/whole_publication/"
                 />
   </url>
   
   <url>
-    <loc>/author/paula-vico/</loc>
+    <loc>/en/author/paula-vico/</loc>
     <lastmod>2020-11-09T20:13:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1093,12 +1093,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/paula-vico/"
+                href="/en/author/paula-vico/"
                 />
   </url>
   
   <url>
-    <loc>/author/pilar-dos-santos/</loc>
+    <loc>/en/author/pilar-dos-santos/</loc>
     <lastmod>2020-11-06T19:03:34-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1108,12 +1108,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/pilar-dos-santos/"
+                href="/en/author/pilar-dos-santos/"
                 />
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/en/post/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1123,12 +1123,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/post/"
+                href="/en/post/"
                 />
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>/en/publication/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1138,12 +1138,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/publication/"
+                href="/en/publication/"
                 />
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>/en/talk/</loc>
     <lastmod>2020-10-02T17:38:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1153,12 +1153,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/talk/"
+                href="/en/talk/"
                 />
   </url>
   
   <url>
-    <loc>/author/sylvia-enid-vazquez-zeballos/</loc>
+    <loc>/en/author/sylvia-enid-vazquez-zeballos/</loc>
     <lastmod>2020-11-09T20:18:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1168,12 +1168,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/sylvia-enid-vazquez-zeballos/"
+                href="/en/author/sylvia-enid-vazquez-zeballos/"
                 />
   </url>
   
   <url>
-    <loc>/author/virginia-cantera/</loc>
+    <loc>/en/author/virginia-cantera/</loc>
     <lastmod>2020-11-09T20:18:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1183,7 +1183,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/author/virginia-cantera/"
+                href="/en/author/virginia-cantera/"
                 />
   </url>
   
