@@ -1,0 +1,25 @@
+---
+title: "Apuntes"
+author: "M. Langleib"
+date: "2/26/2020"
+output: html_document
+---
+
+# Practico Loops y Functiones
+
+Que quiero que hagan si o si
+
+- Inventar alguna funcion
+  + Por ejemplo, una que lleve primera letra a mayusculas
+  + Alguna funcion que parsee un GFF?
+  
+  
+- Que tengo que dar en teorico entonces
+  + Como se define una funcion
+  + Por que la gente trabaja con funciones (algo asi como el concepto de functional programming, en oposicion/comparacion con object-oriented programming). Muy por arriba.
+  + Definiciones mas coquetas, con lo de (...) en la parte de argumentos
+  + Codigo con devolucion en caso de errores.
+  
+  
+
+# Practico tidyverse y visualizacion

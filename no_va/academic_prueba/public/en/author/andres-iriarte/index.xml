@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrés Iriarte | Lab. de Biología Computacional</title>
+    <link>/en/author/andres-iriarte/</link>
+      <atom:link href="/en/author/andres-iriarte/index.xml" rel="self" type="application/rss+xml" />
+    <description>Andrés Iriarte</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language>
+    <image>
+      <url>/en/author/andres-iriarte/avatar_huefe012aae48b95de5740e7dc94c3ad24_311342_270x270_fill_q90_lanczos_center.jpg</url>
+      <title>Andrés Iriarte</title>
+      <link>/en/author/andres-iriarte/</link>
+    </image>
+    
+  </channel>
+</rss>
