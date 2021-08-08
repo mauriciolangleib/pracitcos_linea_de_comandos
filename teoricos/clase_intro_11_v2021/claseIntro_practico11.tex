@@ -298,6 +298,19 @@ Guide}
     Otros lenguajes operan de forma diferente.
   \end{itemize}
 \item
+  Ventajas
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Le podemos dar nombre descriptivo
+  \item
+    Nos ahorramos copiar y pegar codigo varias veces (y errar en el
+    proceso)
+  \item
+    Si hay que cambiar algo, es solo cambiar la funcion
+  \end{itemize}
+\item
   Las funciones en R salen de muchos lados:
 
   \begin{itemize}
@@ -318,7 +331,10 @@ Guide}
 \begin{itemize}
 \tightlist
 \item
-  \textbf{cuerpo}: el código dentro de la función
+  \textbf{nombre} de la funcion. Es lo que nos permite referenciarla. Lo
+  asignamos cuando la definimos
+\item
+  \textbf{cuerpo}: el código que define a la función
 \item
   \textbf{formales}: la lista de argumentos que controlan cómo se llama
   a la función
@@ -375,6 +391,9 @@ Guide}
 
 \begin{frame}[fragile]{Componentes de una función}
 \protect\hypertarget{componentes-de-una-funciuxf3n-3}{}
+El \emph{ambiente} de una funcion controla el modo en que R encuentra el
+valor asociado a un nombre.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(seqinr)}
@@ -482,6 +501,16 @@ Guide}
 \begin{verbatim}
 ## .Primitive("for")
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\StringTok{\textasciigrave{}}\AttributeTok{c}\StringTok{\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## function (...)  .Primitive("c")
+\end{verbatim}
 \end{frame}
 
 \begin{frame}[fragile]{Definición de funciones}
@@ -489,14 +518,15 @@ Guide}
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{mi\_funcion }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(argumento\_1, argumento\_2, ...)\{}
+\CommentTok{\#\textless{}{-}\textgreater{} el indentado no es obligatorio, pero ayuda a leer  }
   \CommentTok{\# en este bloque suceden operaciones con argumento\_1}
 \NormalTok{  ...}
   \CommentTok{\# en este bloque suceden operaciones con argumento\_2}
 \NormalTok{  ...}
   \CommentTok{\# se devuelve algo como resultado de aplicar}
   \CommentTok{\# la funcion a los argumentos}
-  \FunctionTok{return}\NormalTok{(una\_variable\_nueva)}
-\NormalTok{\}}
+  \FunctionTok{return}\NormalTok{(una\_variable\_nueva) }\CommentTok{\# atencion: a veces una funcion no devuelve una variable}
+\NormalTok{\} }\CommentTok{\# una linea sola para este parentesis ayuda a leer}
 \end{Highlighting}
 \end{Shaded}
 \end{frame}
@@ -589,14 +619,14 @@ Guide}
 \protect\hypertarget{definiciuxf3n-de-funciones-6}{}
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# ojo con el alcance de las variables!}
+\CommentTok{\# ojo con el alcance de las variables! }
 \NormalTok{x }\OtherTok{=} \DecValTok{2}
 \NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x, y)\{}
 \NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
   \FunctionTok{return}\NormalTok{(resultado)}
 \NormalTok{\}}
 
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{)}
+\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{) }\CommentTok{\# nos juega una mala pasada el ambiente de la funcion...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -620,8 +650,8 @@ defensiva}}
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\NormalTok{, }\AttributeTok{y =}\DecValTok{1}\NormalTok{)\{}
-  
-  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(x) }\SpecialCharTok{|} \SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(y))\{}
+
+  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(x) }\SpecialCharTok{||} \SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(y))\{ }\CommentTok{\# en condicionales como if usar \textquotesingle{}||\textquotesingle{} o \textquotesingle{}\&\&\textquotesingle{}}
     \FunctionTok{stop}\NormalTok{(}\StringTok{\textquotesingle{}Alguno de los argumentos dados no es un numero.\textquotesingle{}}\NormalTok{)}
 \NormalTok{  \}}
   
@@ -886,6 +916,8 @@ existenciales?}\label{comentarios-dudas-existenciales}}
 \protect\hypertarget{a-programar-se-ha-dicho}{}
 \begin{itemize}
 \tightlist
+\item
+  10 minutos de pausa y volvemos.
 \item
   El practico de hoy esta en
   \href{http://www.higiene.edu.uy/ddbp/lbc/html/Practico9.html}{este

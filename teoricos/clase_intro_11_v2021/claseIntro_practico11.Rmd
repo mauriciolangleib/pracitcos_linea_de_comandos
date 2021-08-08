@@ -182,15 +182,20 @@ knitr::include_graphics('../../imgs/r_base_graphs.png')
 - Qué es una función? -> Un conjunto de **operaciones** definidas que toman **argumentos** para dar un resultado.
 - R Es un lenguaje de programación en base a funciones: casi todo lo que hacemos las utiliza.
   + Otros lenguajes operan de forma diferente.
+- Ventajas
+  + Le podemos dar nombre descriptivo
+  + Nos ahorramos copiar y pegar codigo varias veces (y errar en el proceso)
+  + Si hay que cambiar algo, es solo cambiar la funcion
 - Las funciones en R salen de muchos lados:
   + R tiene funciones que vienen incorporadas por defecto
   + Utilizando librerías obtenemos nuevas funciones (como las de **seqinr**, por ejemplo)
   + Nosotros podemos hacer nuestras propias funciones
 
 ## Componentes de una función 
-- **cuerpo**: el código dentro de la función
+- **cuerpo**: el código que define a la función
 - **formales**: la lista de argumentos que controlan cómo se llama a la función
 - **ambiente**: el "mapa" de la locación de las variables de la función
+  + Es la unica que se define implicitamente, dependiendo de donde uno define la funcion
   
 ## Componentes de una función 
 
@@ -209,7 +214,7 @@ formals(seqinr::GC)
 ```
 
 ## Componentes de una función 
-
+El *ambiente* de una funcion controla el modo en que R encuentra el valor asociado a un nombre.
 ```{r, echo = TRUE, eval = TRUE, message=TRUE}
 library(seqinr)
 
@@ -237,20 +242,23 @@ environment(sum)
 `[`
 
 `for`
+
+`c`
 ```
 
 ## Definición de funciones
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 mi_funcion = function(argumento_1, argumento_2, ...){
+#<-> el indentado no es obligatorio, pero ayuda a leer  
   # en este bloque suceden operaciones con argumento_1
   ...
   # en este bloque suceden operaciones con argumento_2
   ...
   # se devuelve algo como resultado de aplicar
   # la funcion a los argumentos
-  return(una_variable_nueva)
-}
+  return(una_variable_nueva) # atencion: a veces una funcion no devuelve una variable
+} # una linea sola para este parentesis ayuda a leer
 ```
 
 ## Definición de funciones
@@ -318,14 +326,14 @@ eleva_y_resta(x = 1, y = 2)
 
 ## Definición de funciones
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
-# ojo con el alcance de las variables!
+# ojo con el alcance de las variables! 
 x = 2
 eleva_y_resta = function(x, y){
   resultado = x^2 - y^2
   return(resultado)
 }
 
-eleva_y_resta(y = 2)
+eleva_y_resta(y = 2) # nos juega una mala pasada el ambiente de la funcion...
 ```
 
 ```{r, echo = F, eval = T, message=FALSE}
@@ -345,8 +353,8 @@ eleva_y_resta(x = 2, y = 2)
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE, size = 'small'}
 eleva_y_resta = function(x = 1, y =1){
-  
-  if(!is.numeric(x) | !is.numeric(y)){
+
+  if(!is.numeric(x) || !is.numeric(y)){ # en condicionales como if usar '||' o '&&'
     stop('Alguno de los argumentos dados no es un numero.')
   }
   
@@ -505,5 +513,6 @@ library(emo)
 emo::ji('smile')
 ```
 
+- 10 minutos de pausa y volvemos. 
 - El practico de hoy esta en [este link](http://www.higiene.edu.uy/ddbp/lbc/html/Practico9.html) (clickear).
 - passwd: **HfqsRNA2_**
