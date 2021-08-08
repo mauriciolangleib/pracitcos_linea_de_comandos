@@ -2,7 +2,8 @@
 title: "Práctico 11"
 author: "Funciones y Loops en R"
 output:
-  pdf_document
+  html_document:
+    df_print: paged
 ---
 
 

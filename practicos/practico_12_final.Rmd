@@ -89,13 +89,13 @@ aeropuertos %>%
 
 Nuestro *tibble* posee algunos valores NAs en la columna *continent*. Nos deshacemos de ella utilizando la función **select()** de la librería **dplyr**. 
 
-Nos valdremos de otra tabla, **country-and-continent-codes-list-csv.csv**, en la cual se correlacionan correctamente los aeropuertos y sus continentes. Esto nos servirá más adelante, ya que haremos algunos análisis categorizando en base a continentes.
+Nos valdremos de otra tabla, **country-and-continent-codes-list.csv**, en la cual se correlacionan correctamente los aeropuertos y sus continentes. Esto nos servirá más adelante, ya que haremos algunos análisis categorizando en base a continentes.
 
 Unimos estas tablas con la función **left_join** de la librería **dplyr**. 
 
 ```{r, echo = T, eval = T}
 
-paises_vs_continentes = read_csv('country-and-continent-codes-list-csv.csv') %>% dplyr::select(Continent_Name, Two_Letter_Country_Code)
+paises_vs_continentes = read_csv('country-and-continent-codes-list.csv') %>% dplyr::select(Continent_Name, Two_Letter_Country_Code)
 
 aeropuertos %>%
  left_join(x = ., y = paises_vs_continentes, by = c('iso_country' = 'Two_Letter_Country_Code')) %>%
