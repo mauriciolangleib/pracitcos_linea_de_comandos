@@ -179,7 +179,7 @@ ordenador(secuencia)
 
 > *b)* Cree una función que, dada una palabra, de la posición de sus letras en un diccionario. La palabra *"vaca"* da como resultado, entonces, el vector [22, 1, 3, 1] 
 
-> **Nota:** utilice el vector **letters** (que se encuentra por defecto en R) y la funcion s2c() de la libreria seqinr.
+> **Nota:** si le ayuda, utilice el vector **letters** (que se encuentra por defecto en R), la funcion s2c() de la libreria seqinr y la funcion grep.
 
 ```{r, echo = F, eval = F, message=FALSE}
 indexa_letras = function(palabra){
