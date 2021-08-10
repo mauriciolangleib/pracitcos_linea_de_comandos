@@ -2,11 +2,13 @@
 title: "Manejo de datos en R (I)"
 author: Introducción a la Línea de Comandos para Análisis Bioinformáticos
 date: 10 de Agosto, 2021
+fontsize: 10pt
 output: 
   beamer_presentation:
       keep_tex: yes
       theme: "default"
       colortheme: "beaver"
+      highlight: 'default'
       latex_engine: xelatex
 header-includes:
   - \usepackage{tikz}
@@ -16,6 +18,7 @@ header-includes:
   - \usepackage{pgfplots}
   - \usepackage{environ}
   - \useoutertheme{miniframes} 
+  - \usepackage{ragged2e} 
   - \useinnertheme{circles}
   #- \setbeameroption{show notes}
   - \setbeameroption{hide notes}
@@ -23,6 +26,7 @@ header-includes:
 
 ```{r, echo = F, eval = T}
 library(emo)
+library(tufte)
 ```
 
 ```{r, echo = F, eval = T}
@@ -54,7 +58,7 @@ knitr::knit_hooks$set(chunk = function(x, options) {
   ifelse(options$size != "normalsize", paste0("\n \\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
 })
 
-``` 
+```
 
 ```{r, eval = F, echo = F}
 library(knitr)
@@ -86,7 +90,7 @@ knitr::knit_hooks$set(error = function(x, options) {
 
 # Que vamos a hacer?
 
-## Manejo de datos y análisis reproducible 
+## Manejo de datos y análisis reproducible
 
 ```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
 library(knitr)
@@ -94,7 +98,9 @@ knitr::include_graphics('../../imgs/analytic_process.png')
 
 ```
 
-[Data Wrangling with R (Boehmke, 2016)](http://93.174.95.29/_ads/6F902E466A32011DD94E2B6EEE505F9F)
+\vspace{60pt}
+
+\raggedleft \small [Data Wrangling with R (Boehmke, 2016)](http://93.174.95.29/_ads/6F902E466A32011DD94E2B6EEE505F9F)
 
 ## Análisis reproducible en R
 
@@ -104,67 +110,51 @@ knitr::include_graphics('../../imgs/analytic_process_R.png')
 
 ```
 
-[Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al., 2016)]()
+\raggedleft \small [Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al., 2016)](https://revistaecosistemas.net/index.php/ecosistemas/article/view/1178)
 
-\note{
-Aca la cosa
-}
 
 ## Manejo de datos
-- ***Data wrangling***: es el proceso mediante el cual modificamos datos iniciales con el fin de analizarlos.
-- Incluye la edición, el filtrado, la obtención de nuevos valores y más.
-- *"In our experience, the tasks of exploratory data mining and data cleaning constitute 80% of the effort that determines 80% of the value of the ultimate data mining results. (...)"*. **Dasu & Johnson.** *Exploratory Data Mining and Data Cleaning* (2003).
 
-
-## Análisis reproducible
-
-```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
-library(knitr)
-knitr::include_graphics('../../imgs/gradiente_reproducibilidad.png')
-
-```
-
-[Reproducible Research in Computational Science (Peng, 2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383002/)
-
-- aca me falta una notita al pie con un warning message diciendo hasta donde vamos nosotros
+-   ***Data wrangling***: es el proceso mediante el cual modificamos datos iniciales con el fin de analizarlos.
+\vspace{15pt}
+-   Incluye la edición, el filtrado, la obtención de nuevos valores y más.
+\vspace{15pt}
+-   *"In our experience, the tasks of exploratory data mining and data cleaning constitute 80% of the effort that determines 80% of the value of the ultimate data mining results. (...)"*. \\ **Dasu & Johnson.** *Exploratory Data Mining and Data Cleaning* (2003).
 
 ## Estructura de las clases
 
-- Teórico/práctico.
-- Práctico 11: repaso de loops y armado de funciones en R
-  + accionar sobre los datos para transformarlos: funciones
-  + realizar acciones repetitivas: loops
-- Práctico 12: manejo de datos con paquetes de la librería **tidyverse**.
-  + filtrado y edición de datos 
-  + visualización de los datos
-  
+-   Teórico/práctico.
+\vspace{12pt}
+-   Práctico 11: repaso de loops y armado de funciones en R
+
+    -   accionar sobre los datos para transformarlos: funciones
+    -   realizar acciones repetitivas: loops
+\vspace{12pt}
+-   Práctico 12: manejo de datos con paquetes de la librería **tidyverse**.
+
+    -   filtrado y edición de datos
+    -   visualización de los datos
+
 # Breve repaso de R
 
 ## Breve repaso
-
 ```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
 library(knitr)
 knitr::include_graphics('../../imgs/r_tipos_datos.png')
 ```
 
-[A practical guide to the R package Luminescence (Dietze et al., 2013)](https://hal.archives-ouvertes.fr/hal-01846155/document) 
+\vspace{50pt}
 
+\raggedleft \small [A practical guide to the R package Luminescence (Dietze et al., 2013)](https://hal.archives-ouvertes.fr/hal-01846155/document)
 
 ## Breve repaso
 
-```{r, echo = FALSE, eval = T, message=FALSE, out.width = "70%", fig.align='center'}
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "60%", fig.align='center'}
 library(knitr)
 knitr::include_graphics('../../imgs/control_structures+in+R.PNG')
 ```
 
-[Control Structures in R (R-Bloggers)](https://www.r-bloggers.com/control-structures-loops-in-r/)
-
-## Breve repaso
-
-```{r, echo = FALSE, eval = T, message=FALSE, width = "50%"}
-library(knitr)
-knitr::include_graphics('../../imgs/bioconductor_logo_rgb.jpg')
-```
+\raggedleft \small [Control Structures in R (R-Bloggers)](https://www.r-bloggers.com/control-structures-loops-in-r/)
 
 ## Breve repaso
 
@@ -172,32 +162,63 @@ knitr::include_graphics('../../imgs/bioconductor_logo_rgb.jpg')
 library(knitr)
 knitr::include_graphics('../../imgs/r_base_graphs.png')
 ```
-
-[R Base Graphs: an Idiot's Guide](https://rpubs.com/SusanEJohnston/7953)
+\vspace{15pt}
+\raggedleft \small [R Base Graphs: an Idiot's Guide](https://rpubs.com/SusanEJohnston/7953)
 
 # Funciones en R
 
 ## Funciones: una parte central de R
 
-- Qué es una función? -> Un conjunto de **operaciones** definidas que toman **argumentos** para dar un resultado.
-- R Es un lenguaje de programación en base a funciones: casi todo lo que hacemos las utiliza.
-  + Otros lenguajes operan de forma diferente.
-- Ventajas
-  + Le podemos dar nombre descriptivo
-  + Nos ahorramos copiar y pegar codigo varias veces (y errar en el proceso)
-  + Si hay que cambiar algo, es solo cambiar la funcion
-- Las funciones en R salen de muchos lados:
-  + R tiene funciones que vienen incorporadas por defecto
-  + Utilizando librerías obtenemos nuevas funciones (como las de **seqinr**, por ejemplo)
-  + Nosotros podemos hacer nuestras propias funciones
+-   Qué es una función? Un conjunto de **operaciones** definidas que toman **argumentos** para dar un resultado.
 
-## Componentes de una función 
-- **cuerpo**: el código que define a la función
-- **formales**: la lista de argumentos que controlan cómo se llama a la función
-- **ambiente**: el "mapa" de la locación de las variables de la función
-  + Es la unica que se define implicitamente, dependiendo de donde uno define la funcion
-  
-## Componentes de una función 
+-   R Es un lenguaje de programación en base a funciones: casi todo lo que hacemos las utiliza.
+
+    -   Otros lenguajes operan de forma diferente.
+
+-   Ventajas
+
+    -   Le podemos dar nombre descriptivo
+    -   Nos ahorramos copiar y pegar codigo varias veces (y errar en el proceso)
+    -   Si hay que cambiar algo, es solo cambiar la funcion
+
+-   Las funciones en R salen de muchos lados:
+
+    -   R tiene funciones que vienen incorporadas por defecto
+    -   Utilizando librerías obtenemos nuevas funciones (como las de **seqinr**, por ejemplo)
+    -   Nosotros podemos hacer nuestras propias funciones
+
+## Ejemplo de una función
+En la clase pasada operaron sobre variables que alojaban secuencias, utilizando funciones como la funcion **GC** de la libreria seqinr
+\vspace{15pt}
+
+```{r, echo = FALSE, eval = TRUE, message=TRUE, out.height="50%", output.lines = 5}
+library(seqinr)
+secuencia = s2c(c('ATGCGTGTCTC'))
+```
+
+```{r, echo = TRUE, eval = TRUE, message=TRUE, out.height="50%", output.lines = 5}
+library(seqinr)
+
+seqinr::GC(secuencia)
+```
+
+\vspace{15pt}
+Como funciona esto?
+
+## Componentes de una función
+
+-   **cuerpo**: el código que define a la función
+\vspace{12pt}
+
+-   **formales**: la lista de argumentos que controlan cómo se llama a la función
+\vspace{12pt}
+
+-   **ambiente**: el "mapa" de la locación de las variables de la función
+
+    -   Es la unica que se define implicitamente, dependiendo de donde uno define la funcion
+
+
+## Componentes de una función
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE, out.height="50%", output.lines = 5}
 library(seqinr)
@@ -205,7 +226,9 @@ library(seqinr)
 body(seqinr::GC)
 ```
 
-## Componentes de una función 
+Toda funcion tiene que especificar como hace lo que hace en algun lugar...
+
+## Componentes de una función
 
 ```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 10}
 library(seqinr)
@@ -213,40 +236,22 @@ library(seqinr)
 formals(seqinr::GC)
 ```
 
-## Componentes de una función 
-El *ambiente* de una funcion controla el modo en que R encuentra el valor asociado a un nombre.
-```{r, echo = TRUE, eval = TRUE, message=TRUE}
+Los argumentos tambien se alojan en algun lugar.
+
+## Componentes de una función
+
+```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 10}
 library(seqinr)
 
 environment(seqinr::GC)
 ```
 
-## Funciones particulares
-- Podemos, además, distinguir tipos especiales de funciones:
-  - **Funciones primitivas**: llaman directamente a C
-    - No tienen cuerpo ni formales.
-  - **Funciones de alto rango**: operan sobre funciones
-    - Tienen cuerpo y formales, pero constituyen un caso interesante en sí
-
-## Funciones primitivas
-```{r, echo = TRUE, eval = TRUE, message=TRUE}
-sum
-
-body(sum)
-formals(sum)
-environment(sum)
-```
-
-## Funciones primitivas
-```{r, echo = TRUE, eval = TRUE, message=TRUE}
-`[`
-
-`for`
-
-`c`
-```
+La funcion va a buscar, en primer lugar, variables definidas en el ambiente "seqinr". 
 
 ## Definición de funciones
+
+Nosotros podemos hacer nuestras propias funciones, a medida de lo que necesitamos.
+\vspace{15pt}
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 mi_funcion = function(argumento_1, argumento_2, ...){
@@ -257,11 +262,15 @@ mi_funcion = function(argumento_1, argumento_2, ...){
   ...
   # se devuelve algo como resultado de aplicar
   # la funcion a los argumentos
-  return(una_variable_nueva) # atencion: a veces una funcion no devuelve una variable
+  return(una_variable_nueva) 
 } # una linea sola para este parentesis ayuda a leer
 ```
 
 ## Definición de funciones
+
+Hagamos una funcion que opere con dos numeros cualesquiera, *x* e *y*.
+\vspace{15pt}
+
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
   resultado = x^2 - y^2
@@ -270,6 +279,9 @@ eleva_y_resta = function(x,y){
 ```
 
 ## Definición de funciones
+
+Hagamos una funcion que opere con dos numeros cualesquiera, *x* e *y*.
+\vspace{15pt}
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
   resultado = x^2 - y^2
@@ -278,8 +290,13 @@ eleva_y_resta = function(x,y){
 
 eleva_y_resta(2,3)
 ```
+\vspace{15pt}
+Puedo pasar argumentos sin especificarlos explicitamente. Se interpreta el valor de cada argumento segun el orden de entrada.
 
 ## Definición de funciones
+
+Hagamos una funcion que opere con dos numeros cualesquiera, *x* e *y*.
+\vspace{15pt}
 ```{r, echo = TRUE, eval = TRUE, message=FALSE}
 eleva_y_resta = function(x,y){
   resultado = x^2 - y^2
@@ -290,6 +307,9 @@ eleva_y_resta(y = 2, x =3)
 ```
 
 ## Definición de funciones
+
+Hagamos una funcion que opere con dos numeros cualesquiera, *x* e *y*.
+\vspace{15pt}
 ```{r setup, cache = F, eval = T, echo = F}
 knitr::opts_chunk$set(error = TRUE)
 ```
@@ -302,135 +322,53 @@ eleva_y_resta = function(x,y){
 
 eleva_y_resta(y = 2)
 ```
+\vspace{15pt}
+Si un argumento utilizado en la funcion no tiene un valor asignado, sucede un error!
 
-## Definición de funciones
-```{r, echo = TRUE, eval = F, message=FALSE}
-eleva_y_resta = function(x = 1, y =1){
-  resultado = x^2 - y^2
-  return(resultado)
-}
+## Las funciones estan en todos lados...
 
-eleva_y_resta(y = 2)
+"Para entender el computo en *R*, dos sloganes son utiles:
+
+- Todo lo que existe es un objeto.
+
+- Todo sucede llamando a una funcion."
+
+`r tufte::quote_footer('--- Joe Chambers')`
+
+\vspace{12pt}
+
+
+En R usamos funciones hasta sin saberlo
+
+```{r, echo = T, eval = T}
+un_vector = c(1, 4, 6) # una funcion me permitio hacer esto
+un_vector[1] # y tambien una funcion me permitio hacer esto
 ```
 
-```{r, echo = F, eval = T, message=FALSE}
-# ojo con el alcance de las variables!
-x = 2
-eleva_y_resta = function(x, y){
-  resultado = x^2 - y^2
-  return(resultado)
-}
+\vspace{12pt}
 
-eleva_y_resta(x = 1, y = 2)
+Tanto **c**, como **=**, como **[** son funciones, aunque no lo parezcan.
+
+
+## Las funciones estan en todos lados...
+
+```{r, echo = TRUE, eval = TRUE, message=TRUE}
+`[`
+
+`for`
+
+`c`
 ```
+\vspace{12pt}
 
-## Definición de funciones
-```{r, echo = TRUE, eval = FALSE, message=FALSE}
-# ojo con el alcance de las variables! 
-x = 2
-eleva_y_resta = function(x, y){
-  resultado = x^2 - y^2
-  return(resultado)
-}
-
-eleva_y_resta(y = 2) # nos juega una mala pasada el ambiente de la funcion...
-```
-
-```{r, echo = F, eval = T, message=FALSE}
-# ojo con el alcance de las variables!
-x = 2
-eleva_y_resta = function(x, y){
-  resultado = x^2 - y^2
-  return(resultado)
-}
-
-eleva_y_resta(x = 2, y = 2)
-```
-
-## Evitando problemas: *programación defensiva*
-
-- la función **stop()** permite salir de la función si algo esperable no sucede
-
-```{r, echo = TRUE, eval = TRUE, message=TRUE, size = 'small'}
-eleva_y_resta = function(x = 1, y =1){
-
-  if(!is.numeric(x) || !is.numeric(y)){ # en condicionales como if usar '||' o '&&'
-    stop('Alguno de los argumentos dados no es un numero.')
-  }
-  
-  resultado = x^2 - y^2
-  return(resultado)
-}
-
-eleva_y_resta(x = 2, y = "2")
-```
-
-## Salida de funciones 
-```{r, echo = T, eval = T, message=FALSE}
-# ojo con el alcance de las variables!
-x = 2
-eleva_resta_y_suma = function(x, y){
-  resta = x^2 - y^2
-  suma = x^2 + y^2
-  return(c(resta, suma))
-}
-
-eleva_resta_y_suma(x = 2, y = 2)
-```
-
-## Salida de funciones
-```{r, echo = T, eval = T, message=FALSE}
-# ojo con el alcance de las variables!
-x = 2
-eleva_resta_y_suma = function(x, y){
-  resta = x^2 - y^2
-  suma = x^2 + y^2
-  return(c(list(resta, suma)))
-}
-
-eleva_resta_y_suma(x = 2, y = 2)
-```
-
-## Funciones de alto rango (*high-order functions*)
-
-- Son funciones que toman a otras funciones como argumentos y devuelven una función o valor.
-- Funciones como apply(), sapply(), lapply(), mapply()...
-
-## sapply
-```{r, echo = TRUE, eval = TRUE, message=TRUE, linewidth = 10, error = T, size = 'small'}
-# definimos un vector
-numeros = c(1,2,3,4)
-
-# aplicamos una funcion anonima sobre este vector
-numeros_cuadrado = sapply(X = numeros, FUN = function(x){x^2})
-
-numeros_cuadrado
-```
-
-## lapply
-```{r, echo = TRUE, eval = TRUE, message=TRUE, output.lines = 5, size = 'small'}
-# definimos un vector
-numeros = c(1,2,3,4)
-
-# aplicamos una funcion anonima sobre este vector
-numeros_cuadrado = lapply(X = numeros, FUN = function(x){x^2})
-
-numeros_cuadrado
-```
-
-## mapply
-```{r, echo = TRUE, eval = TRUE, message=FALSE}
-# creando una matriz de 4x4 con mapply
-matriz = mapply(rep, 1:4, 4)
-
-matriz
-```
-
-
+Son funciones llamadas *primitivas*. Estan escritas en el lenguaje C de programacion, y no podemos acceder a su codigo.
 
 # Loops en R
 
 ## For loop (abstracto)
+
+En las clases anteriores vieron estructuras del estilo:
+\vspace{15pt}
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 # for loop
@@ -443,7 +381,60 @@ for (i in ____) {
 }
 ```
 
-## For loop (ejemplo)
+\vspace{15pt}
+
+En R los loops utilizan indices para acceder a elementos de un vector/lista
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_0a.png')
+```
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_0b.png')
+```
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_0c.png')
+```
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_0d.png')
+```
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_1.png')
+```
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_2.png')
+```
+
+## For loop (la logica)
+
+```{r, echo = FALSE, eval = T, message=FALSE, out.width = "90%", fig.align='center'}
+library(knitr)
+knitr::include_graphics('images/explicando_forloops_en_r_3.png')
+```
+
+## For loop (ejemplo con codigo)
 
 ```{r, echo = TRUE, eval = FALSE, message=FALSE}
 numeros = c(3,40,15,6)
@@ -454,65 +445,33 @@ for (i in 1:length(numeros)) {
 }
 ```
 
-## For loop (usando seq_along())
+## Funciones \*apply(): otra forma de *loopear*
+Son *funciones de alto rango*: uno de sus argumentos es otra funcion, la cual aplican sobre un objeto.
 
-```{r, echo = TRUE, eval = FALSE, message=FALSE}
-numeros = c(3,40,15,6)
-numeros_cuadrado = c()
+```{r, echo = TRUE, eval = TRUE, message=TRUE, linewidth = 10, error = T, size = 'small'}
+# definimos un vector
+numeros = c(1,2,3,4)
 
-for (i in seq_along(numeros)) {
-  numeros_cuadrado[i] = numeros[i]^2
-}
-```
+# aplicamos una funcion anonima sobre este vector
+numeros_cuadrado = sapply(X = numeros, FUN = function(x){x^2})
 
-## Operador next
-```{r, echo = TRUE, eval = T, message=FALSE}
-numeros = c(3,40,15,6)
-numeros_cuadrado = c()
-
-for (i in seq_along(numeros)) {
-  
-  if(!numeros[i] %% 3 == 0){
-    next
-  }
-  else {
-  numeros_cuadrado[i] = numeros[i]^2
-  }
-}
 numeros_cuadrado
 ```
 
+\vspace{12pt}
 
-## Operador break
-```{r, echo = TRUE, eval = T, message=FALSE}
-numeros = c(3,40,15,6)
-numeros_cuadrado = c()
-
-for (i in seq_along(numeros)) {
-  
-  if(!numeros[i] %% 3 == 0){
-    break
-  }
-  
-  numeros_cuadrado[i] = numeros[i]^2
-}
-numeros_cuadrado
-```
-
-## While loop
-
-- Sigue la misma lógica que en Bash
-- Se utiliza la función while() en vez de for()
-- Se puede realizar combinando un for loop con un operador break 
+Tenemos varias opciones, que dan diferentes clases de salidas: sapply (vectores), lapply (listas), mapply (matrices).
 
 # Comentarios, dudas existenciales?
+
 ## A programar se ha dicho :)
 
-```{r, echo = F, eval = F} 
+```{r, echo = F, eval = F}
 library(emo)
 emo::ji('smile')
 ```
 
-- 10 minutos de pausa y volvemos. 
-- El practico de hoy esta en [este link](http://www.higiene.edu.uy/ddbp/lbc/html/Practico9.html) (clickear).
-- passwd: **HfqsRNA2_**
+-   10 minutos de pausa y volvemos.
+\vspace{20pt}
+-   El practico de hoy esta en [este link](https://rpubs.com/mlangleib/797813) (clickear).
+

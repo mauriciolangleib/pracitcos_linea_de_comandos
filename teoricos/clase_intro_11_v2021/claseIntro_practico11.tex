@@ -3,6 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
+  10pt,
   ignorenonframetext,
 ]{beamer}
 \usepackage{pgfpages}
@@ -145,6 +146,7 @@
 \usepackage{pgfplots}
 \usepackage{environ}
 \useoutertheme{miniframes}
+\usepackage{ragged2e}
 \useinnertheme{circles}
 \setbeameroption{hide notes}
 \ifluatex
@@ -166,7 +168,9 @@ Bioinformáticos}
 \protect\hypertarget{manejo-de-datos-y-anuxe1lisis-reproducible}{}
 \includegraphics{../../imgs/analytic_process.png}
 
-\href{http://93.174.95.29/_ads/6F902E466A32011DD94E2B6EEE505F9F}{Data
+\vspace{60pt}
+
+\raggedleft \small \href{http://93.174.95.29/_ads/6F902E466A32011DD94E2B6EEE505F9F}{Data
 Wrangling with R (Boehmke, 2016)}
 \end{frame}
 
@@ -174,12 +178,8 @@ Wrangling with R (Boehmke, 2016)}
 \protect\hypertarget{anuxe1lisis-reproducible-en-r}{}
 \includegraphics{../../imgs/analytic_process_R.png}
 
-\href{}{Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et
-al., 2016)}
-
-\note{
-Aca la cosa
-}
+\raggedleft \small \href{https://revistaecosistemas.net/index.php/ecosistemas/article/view/1178}{Ciencia
+reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al., 2016)}
 \end{frame}
 
 \begin{frame}{Manejo de datos}
@@ -188,39 +188,24 @@ Aca la cosa
 \tightlist
 \item
   \textbf{\emph{Data wrangling}}: es el proceso mediante el cual
-  modificamos datos iniciales con el fin de analizarlos.
+  modificamos datos iniciales con el fin de analizarlos. \vspace{15pt}
 \item
   Incluye la edición, el filtrado, la obtención de nuevos valores y más.
+  \vspace{15pt}
 \item
   \emph{``In our experience, the tasks of exploratory data mining and
   data cleaning constitute 80\% of the effort that determines 80\% of
   the value of the ultimate data mining results. (\ldots)''}.
-  \textbf{Dasu \& Johnson.} \emph{Exploratory Data Mining and Data
-  Cleaning} (2003).
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Análisis reproducible}
-\protect\hypertarget{anuxe1lisis-reproducible}{}
-\includegraphics{../../imgs/gradiente_reproducibilidad.png}
-
-\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383002/}{Reproducible
-Research in Computational Science (Peng, 2012)}
-
-\begin{itemize}
-\tightlist
-\item
-  aca me falta una notita al pie con un warning message diciendo hasta
-  donde vamos nosotros
+  \textbackslash{} \textbf{Dasu \& Johnson.} \emph{Exploratory Data
+  Mining and Data Cleaning} (2003).
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estructura de las clases}
 \protect\hypertarget{estructura-de-las-clases}{}
 \begin{itemize}
-\tightlist
 \item
-  Teórico/práctico.
+  Teórico/práctico. \vspace{12pt}
 \item
   Práctico 11: repaso de loops y armado de funciones en R
 
@@ -229,7 +214,7 @@ Research in Computational Science (Peng, 2012)}
   \item
     accionar sobre los datos para transformarlos: funciones
   \item
-    realizar acciones repetitivas: loops
+    realizar acciones repetitivas: loops \vspace{12pt}
   \end{itemize}
 \item
   Práctico 12: manejo de datos con paquetes de la librería
@@ -252,29 +237,25 @@ Research in Computational Science (Peng, 2012)}
 \protect\hypertarget{breve-repaso}{}
 \includegraphics{../../imgs/r_tipos_datos.png}
 
-\href{https://hal.archives-ouvertes.fr/hal-01846155/document}{A
+\vspace{50pt}
+
+\raggedleft \small \href{https://hal.archives-ouvertes.fr/hal-01846155/document}{A
 practical guide to the R package Luminescence (Dietze et al., 2013)}
 \end{frame}
 
 \begin{frame}{Breve repaso}
 \protect\hypertarget{breve-repaso-1}{}
-\begin{center}\includegraphics[width=0.7\linewidth]{../../imgs/control_structures+in+R} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{../../imgs/control_structures+in+R} \end{center}
 
-\href{https://www.r-bloggers.com/control-structures-loops-in-r/}{Control
+\raggedleft \small \href{https://www.r-bloggers.com/control-structures-loops-in-r/}{Control
 Structures in R (R-Bloggers)}
 \end{frame}
 
 \begin{frame}{Breve repaso}
 \protect\hypertarget{breve-repaso-2}{}
-\includegraphics{../../imgs/bioconductor_logo_rgb.jpg}
-\end{frame}
-
-\begin{frame}{Breve repaso}
-\protect\hypertarget{breve-repaso-3}{}
-\includegraphics{../../imgs/r_base_graphs.png}
-
-\href{https://rpubs.com/SusanEJohnston/7953}{R Base Graphs: an Idiot's
-Guide}
+\includegraphics{../../imgs/r_base_graphs.png} \vspace{15pt}
+\raggedleft \small \href{https://rpubs.com/SusanEJohnston/7953}{R Base
+Graphs: an Idiot's Guide}
 \end{frame}
 
 \hypertarget{funciones-en-r}{%
@@ -283,11 +264,9 @@ Guide}
 \begin{frame}{Funciones: una parte central de R}
 \protect\hypertarget{funciones-una-parte-central-de-r}{}
 \begin{itemize}
-\tightlist
 \item
-  Qué es una función? -\textgreater{} Un conjunto de
-  \textbf{operaciones} definidas que toman \textbf{argumentos} para dar
-  un resultado.
+  Qué es una función? Un conjunto de \textbf{operaciones} definidas que
+  toman \textbf{argumentos} para dar un resultado.
 \item
   R Es un lenguaje de programación en base a funciones: casi todo lo que
   hacemos las utiliza.
@@ -326,21 +305,47 @@ Guide}
 \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{Ejemplo de una función}
+\protect\hypertarget{ejemplo-de-una-funciuxf3n}{}
+En la clase pasada operaron sobre variables que alojaban secuencias,
+utilizando funciones como la funcion \textbf{GC} de la libreria seqinr
+\vspace{15pt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(seqinr)}
+
+\NormalTok{seqinr}\SpecialCharTok{::}\FunctionTok{GC}\NormalTok{(secuencia)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.5454545
+\end{verbatim}
+
+\vspace{15pt}
+
+Como funciona esto?
+\end{frame}
+
 \begin{frame}{Componentes de una función}
 \protect\hypertarget{componentes-de-una-funciuxf3n}{}
 \begin{itemize}
-\tightlist
 \item
-  \textbf{nombre} de la funcion. Es lo que nos permite referenciarla. Lo
-  asignamos cuando la definimos
-\item
-  \textbf{cuerpo}: el código que define a la función
+  \textbf{cuerpo}: el código que define a la función \vspace{12pt}
 \item
   \textbf{formales}: la lista de argumentos que controlan cómo se llama
-  a la función
+  a la función \vspace{12pt}
 \item
   \textbf{ambiente}: el ``mapa'' de la locación de las variables de la
   función
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Es la unica que se define implicitamente, dependiendo de donde uno
+    define la funcion
+  \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -362,6 +367,9 @@ Guide}
 ##         stop("sequence is not a vector of chars")
 ...
 \end{verbatim}
+
+Toda funcion tiene que especificar como hace lo que hace en algun
+lugar\ldots{}
 \end{frame}
 
 \begin{frame}[fragile]{Componentes de una función}
@@ -387,13 +395,12 @@ Guide}
 ## $NA.GC
 ...
 \end{verbatim}
+
+Los argumentos tambien se alojan en algun lugar.
 \end{frame}
 
 \begin{frame}[fragile]{Componentes de una función}
 \protect\hypertarget{componentes-de-una-funciuxf3n-3}{}
-El \emph{ambiente} de una funcion controla el modo en que R encuentra el
-valor asociado a un nombre.
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(seqinr)}
@@ -405,83 +412,156 @@ valor asociado a un nombre.
 \begin{verbatim}
 ## <environment: namespace:seqinr>
 \end{verbatim}
+
+La funcion va a buscar, en primer lugar, variables definidas en el
+ambiente ``seqinr''.
 \end{frame}
 
-\begin{frame}{Funciones particulares}
-\protect\hypertarget{funciones-particulares}{}
+\begin{frame}[fragile]{Definición de funciones}
+\protect\hypertarget{definiciuxf3n-de-funciones}{}
+Nosotros podemos hacer nuestras propias funciones, a medida de lo que
+necesitamos. \vspace{15pt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mi\_funcion }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(argumento\_1, argumento\_2, ...)\{}
+\CommentTok{\#\textless{}{-}\textgreater{} el indentado no es obligatorio, pero ayuda a leer  }
+  \CommentTok{\# en este bloque suceden operaciones con argumento\_1}
+\NormalTok{  ...}
+  \CommentTok{\# en este bloque suceden operaciones con argumento\_2}
+\NormalTok{  ...}
+  \CommentTok{\# se devuelve algo como resultado de aplicar}
+  \CommentTok{\# la funcion a los argumentos}
+  \FunctionTok{return}\NormalTok{(una\_variable\_nueva) }
+\NormalTok{\} }\CommentTok{\# una linea sola para este parentesis ayuda a leer}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Definición de funciones}
+\protect\hypertarget{definiciuxf3n-de-funciones-1}{}
+Hagamos una funcion que opere con dos numeros cualesquiera, \emph{x} e
+\emph{y}. \vspace{15pt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
+\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
+  \FunctionTok{return}\NormalTok{(resultado)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Definición de funciones}
+\protect\hypertarget{definiciuxf3n-de-funciones-2}{}
+Hagamos una funcion que opere con dos numeros cualesquiera, \emph{x} e
+\emph{y}. \vspace{15pt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
+\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
+  \FunctionTok{return}\NormalTok{(resultado)}
+\NormalTok{\}}
+
+\FunctionTok{eleva\_y\_resta}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] -5
+\end{verbatim}
+
+\vspace{15pt}
+
+Puedo pasar argumentos sin especificarlos explicitamente. Se interpreta
+el valor de cada argumento segun el orden de entrada.
+\end{frame}
+
+\begin{frame}[fragile]{Definición de funciones}
+\protect\hypertarget{definiciuxf3n-de-funciones-3}{}
+Hagamos una funcion que opere con dos numeros cualesquiera, \emph{x} e
+\emph{y}. \vspace{15pt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
+\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
+  \FunctionTok{return}\NormalTok{(resultado)}
+\NormalTok{\}}
+
+\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{, }\AttributeTok{x =}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 5
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Definición de funciones}
+\protect\hypertarget{definiciuxf3n-de-funciones-4}{}
+Hagamos una funcion que opere con dos numeros cualesquiera, \emph{x} e
+\emph{y}. \vspace{15pt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
+\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
+  \FunctionTok{return}\NormalTok{(resultado)}
+\NormalTok{\}}
+
+\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Error in eleva_y_resta(y = 2): argument "x" is missing, with no default
+\end{verbatim}
+
+\vspace{15pt}
+
+Si un argumento utilizado en la funcion no tiene un valor asignado,
+sucede un error!
+\end{frame}
+
+\begin{frame}[fragile]{Las funciones estan en todos lados\ldots{}}
+\protect\hypertarget{las-funciones-estan-en-todos-lados}{}
+"Para entender el computo en \emph{R}, dos sloganes son utiles:
+
 \begin{itemize}
-\tightlist
 \item
-  Podemos, además, distinguir tipos especiales de funciones:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{Funciones primitivas}: llaman directamente a C
-
-    \begin{itemize}
-    \tightlist
-    \item
-      No tienen cuerpo ni formales.
-    \end{itemize}
-  \item
-    \textbf{Funciones de alto rango}: operan sobre funciones
-
-    \begin{itemize}
-    \tightlist
-    \item
-      Tienen cuerpo y formales, pero constituyen un caso interesante en
-      sí
-    \end{itemize}
-  \end{itemize}
+  Todo lo que existe es un objeto.
+\item
+  Todo sucede llamando a una funcion."
 \end{itemize}
+
+\hfill --- Joe Chambers
+
+\vspace{12pt}
+
+En R usamos funciones hasta sin saberlo
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{un\_vector }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{6}\NormalTok{) }\CommentTok{\# una funcion me permitio hacer esto}
+\NormalTok{un\_vector[}\DecValTok{1}\NormalTok{] }\CommentTok{\# y tambien una funcion me permitio hacer esto}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\vspace{12pt}
+
+Tanto \textbf{c}, como \textbf{=}, como \textbf{{[}} son funciones,
+aunque no lo parezcan.
 \end{frame}
 
-\begin{frame}[fragile]{Funciones primitivas}
-\protect\hypertarget{funciones-primitivas}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{sum}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## function (..., na.rm = FALSE)  .Primitive("sum")
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{body}\NormalTok{(sum)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## NULL
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{formals}\NormalTok{(sum)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## NULL
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{environment}\NormalTok{(sum)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## NULL
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Funciones primitivas}
-\protect\hypertarget{funciones-primitivas-1}{}
+\begin{frame}[fragile]{Las funciones estan en todos lados\ldots{}}
+\protect\hypertarget{las-funciones-estan-en-todos-lados-1}{}
 \begin{Shaded}
 \begin{Highlighting}[]
 \StringTok{\textasciigrave{}}\AttributeTok{[}\StringTok{\textasciigrave{}}
@@ -511,225 +591,93 @@ valor asociado a un nombre.
 \begin{verbatim}
 ## function (...)  .Primitive("c")
 \end{verbatim}
+
+\vspace{12pt}
+
+Son funciones llamadas \emph{primitivas}. Estan escritas en el lenguaje
+C de programacion, y no podemos acceder a su codigo.
 \end{frame}
 
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones}{}
+\hypertarget{loops-en-r}{%
+\section{Loops en R}\label{loops-en-r}}
+
+\begin{frame}[fragile]{For loop (abstracto)}
+\protect\hypertarget{for-loop-abstracto}{}
+En las clases anteriores vieron estructuras del estilo: \vspace{15pt}
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{mi\_funcion }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(argumento\_1, argumento\_2, ...)\{}
-\CommentTok{\#\textless{}{-}\textgreater{} el indentado no es obligatorio, pero ayuda a leer  }
-  \CommentTok{\# en este bloque suceden operaciones con argumento\_1}
+\CommentTok{\# for loop}
+
+\NormalTok{un\_vector }\OtherTok{=}\NormalTok{ ...}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ \_\_\_\_) \{}
 \NormalTok{  ...}
-  \CommentTok{\# en este bloque suceden operaciones con argumento\_2}
+\NormalTok{  ... un\_vector[i] ....}
 \NormalTok{  ...}
-  \CommentTok{\# se devuelve algo como resultado de aplicar}
-  \CommentTok{\# la funcion a los argumentos}
-  \FunctionTok{return}\NormalTok{(una\_variable\_nueva) }\CommentTok{\# atencion: a veces una funcion no devuelve una variable}
-\NormalTok{\} }\CommentTok{\# una linea sola para este parentesis ayuda a leer}
+\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
+
+\vspace{15pt}
+
+En R los loops utilizan indices para acceder a elementos de un
+vector/lista
 \end{frame}
 
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones-1}{}
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_0a} \end{center}
+\end{frame}
+
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica-1}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_0b} \end{center}
+\end{frame}
+
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica-2}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_0c} \end{center}
+\end{frame}
+
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica-3}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_0d} \end{center}
+\end{frame}
+
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica-4}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_1} \end{center}
+\end{frame}
+
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica-5}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_2} \end{center}
+\end{frame}
+
+\begin{frame}{For loop (la logica)}
+\protect\hypertarget{for-loop-la-logica-6}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/explicando_forloops_en_r_3} \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{For loop (ejemplo con codigo)}
+\protect\hypertarget{for-loop-ejemplo-con-codigo}{}
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
+\NormalTok{numeros }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
+\NormalTok{numeros\_cuadrado }\OtherTok{=} \FunctionTok{c}\NormalTok{()}
+
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\FunctionTok{length}\NormalTok{(numeros)) \{}
+\NormalTok{  numeros\_cuadrado[i] }\OtherTok{=}\NormalTok{ numeros[i]}\SpecialCharTok{\^{}}\DecValTok{2}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 \end{frame}
 
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones-2}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
-\NormalTok{\}}
+\begin{frame}[fragile]{Funciones *apply(): otra forma de \emph{loopear}}
+\protect\hypertarget{funciones-apply-otra-forma-de-loopear}{}
+Son \emph{funciones de alto rango}: uno de sus argumentos es otra
+funcion, la cual aplican sobre un objeto.
 
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] -5
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones-3}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{, }\AttributeTok{x =}\DecValTok{3}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 5
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones-4}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x,y)\{}
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Error in eleva_y_resta(y = 2): argument "x" is missing, with no default
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones-5}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\NormalTok{, }\AttributeTok{y =}\DecValTok{1}\NormalTok{)\{}
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] -3
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Definición de funciones}
-\protect\hypertarget{definiciuxf3n-de-funciones-6}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# ojo con el alcance de las variables! }
-\NormalTok{x }\OtherTok{=} \DecValTok{2}
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x, y)\{}
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{y =} \DecValTok{2}\NormalTok{) }\CommentTok{\# nos juega una mala pasada el ambiente de la funcion...}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 0
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Evitando problemas: \emph{programación
-defensiva}}
-\protect\hypertarget{evitando-problemas-programaciuxf3n-defensiva}{}
-\begin{itemize}
-\tightlist
-\item
-  la función \textbf{stop()} permite salir de la función si algo
-  esperable no sucede
-\end{itemize}
-
-\small
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eleva\_y\_resta }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\NormalTok{, }\AttributeTok{y =}\DecValTok{1}\NormalTok{)\{}
-
-  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(x) }\SpecialCharTok{||} \SpecialCharTok{!}\FunctionTok{is.numeric}\NormalTok{(y))\{ }\CommentTok{\# en condicionales como if usar \textquotesingle{}||\textquotesingle{} o \textquotesingle{}\&\&\textquotesingle{}}
-    \FunctionTok{stop}\NormalTok{(}\StringTok{\textquotesingle{}Alguno de los argumentos dados no es un numero.\textquotesingle{}}\NormalTok{)}
-\NormalTok{  \}}
-  
-\NormalTok{  resultado }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(resultado)}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_y\_resta}\NormalTok{(}\AttributeTok{x =} \DecValTok{2}\NormalTok{, }\AttributeTok{y =} \StringTok{"2"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Error in eleva_y_resta(x = 2, y = "2"): Alguno de los argumentos dados no es un numero.
-\end{verbatim}
-
-\normalsize
-\end{frame}
-
-\begin{frame}[fragile]{Salida de funciones}
-\protect\hypertarget{salida-de-funciones}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# ojo con el alcance de las variables!}
-\NormalTok{x }\OtherTok{=} \DecValTok{2}
-\NormalTok{eleva\_resta\_y\_suma }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x, y)\{}
-\NormalTok{  resta }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-\NormalTok{  suma }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{+}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(}\FunctionTok{c}\NormalTok{(resta, suma))}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_resta\_y\_suma}\NormalTok{(}\AttributeTok{x =} \DecValTok{2}\NormalTok{, }\AttributeTok{y =} \DecValTok{2}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 0 8
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Salida de funciones}
-\protect\hypertarget{salida-de-funciones-1}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# ojo con el alcance de las variables!}
-\NormalTok{x }\OtherTok{=} \DecValTok{2}
-\NormalTok{eleva\_resta\_y\_suma }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x, y)\{}
-\NormalTok{  resta }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{{-}}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-\NormalTok{  suma }\OtherTok{=}\NormalTok{ x}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{+}\NormalTok{ y}\SpecialCharTok{\^{}}\DecValTok{2}
-  \FunctionTok{return}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\FunctionTok{list}\NormalTok{(resta, suma)))}
-\NormalTok{\}}
-
-\FunctionTok{eleva\_resta\_y\_suma}\NormalTok{(}\AttributeTok{x =} \DecValTok{2}\NormalTok{, }\AttributeTok{y =} \DecValTok{2}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [[1]]
-## [1] 0
-## 
-## [[2]]
-## [1] 8
-\end{verbatim}
-\end{frame}
-
-\begin{frame}{Funciones de alto rango (\emph{high-order functions})}
-\protect\hypertarget{funciones-de-alto-rango-high-order-functions}{}
-\begin{itemize}
-\tightlist
-\item
-  Son funciones que toman a otras funciones como argumentos y devuelven
-  una función o valor.
-\item
-  Funciones como apply(), sapply(), lapply(), mapply()\ldots{}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{sapply}
-\protect\hypertarget{sapply}{}
 \small
 
 \begin{Shaded}
@@ -749,163 +697,11 @@ defensiva}}
 \end{verbatim}
 
 \normalsize
-\end{frame}
 
-\begin{frame}[fragile]{lapply}
-\protect\hypertarget{lapply}{}
-\small
+\vspace{12pt}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# definimos un vector}
-\NormalTok{numeros }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{)}
-
-\CommentTok{\# aplicamos una funcion anonima sobre este vector}
-\NormalTok{numeros\_cuadrado }\OtherTok{=} \FunctionTok{lapply}\NormalTok{(}\AttributeTok{X =}\NormalTok{ numeros, }\AttributeTok{FUN =} \ControlFlowTok{function}\NormalTok{(x)\{x}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{\})}
-
-\NormalTok{numeros\_cuadrado}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [[1]]
-## [1] 1
-## 
-## [[2]]
-## [1] 4
-...
-\end{verbatim}
-
-\normalsize
-\end{frame}
-
-\begin{frame}[fragile]{mapply}
-\protect\hypertarget{mapply}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# creando una matriz de 4x4 con mapply}
-\NormalTok{matriz }\OtherTok{=} \FunctionTok{mapply}\NormalTok{(rep, }\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{)}
-
-\NormalTok{matriz}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##      [,1] [,2] [,3] [,4]
-## [1,]    1    2    3    4
-## [2,]    1    2    3    4
-## [3,]    1    2    3    4
-## [4,]    1    2    3    4
-\end{verbatim}
-\end{frame}
-
-\hypertarget{loops-en-r}{%
-\section{Loops en R}\label{loops-en-r}}
-
-\begin{frame}[fragile]{For loop (abstracto)}
-\protect\hypertarget{for-loop-abstracto}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# for loop}
-
-\NormalTok{un\_vector }\OtherTok{=}\NormalTok{ ...}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ \_\_\_\_) \{}
-\NormalTok{  ...}
-\NormalTok{  ... un\_vector[i] ....}
-\NormalTok{  ...}
-\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{frame}
-
-\begin{frame}[fragile]{For loop (ejemplo)}
-\protect\hypertarget{for-loop-ejemplo}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{numeros }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
-\NormalTok{numeros\_cuadrado }\OtherTok{=} \FunctionTok{c}\NormalTok{()}
-
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\FunctionTok{length}\NormalTok{(numeros)) \{}
-\NormalTok{  numeros\_cuadrado[i] }\OtherTok{=}\NormalTok{ numeros[i]}\SpecialCharTok{\^{}}\DecValTok{2}
-\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{frame}
-
-\begin{frame}[fragile]{For loop (usando seq\_along())}
-\protect\hypertarget{for-loop-usando-seq_along}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{numeros }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
-\NormalTok{numeros\_cuadrado }\OtherTok{=} \FunctionTok{c}\NormalTok{()}
-
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \FunctionTok{seq\_along}\NormalTok{(numeros)) \{}
-\NormalTok{  numeros\_cuadrado[i] }\OtherTok{=}\NormalTok{ numeros[i]}\SpecialCharTok{\^{}}\DecValTok{2}
-\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{frame}
-
-\begin{frame}[fragile]{Operador next}
-\protect\hypertarget{operador-next}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{numeros }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
-\NormalTok{numeros\_cuadrado }\OtherTok{=} \FunctionTok{c}\NormalTok{()}
-
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \FunctionTok{seq\_along}\NormalTok{(numeros)) \{}
-  
-  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\NormalTok{numeros[i] }\SpecialCharTok{\%\%} \DecValTok{3} \SpecialCharTok{==} \DecValTok{0}\NormalTok{)\{}
-    \ControlFlowTok{next}
-\NormalTok{  \}}
-  \ControlFlowTok{else}\NormalTok{ \{}
-\NormalTok{  numeros\_cuadrado[i] }\OtherTok{=}\NormalTok{ numeros[i]}\SpecialCharTok{\^{}}\DecValTok{2}
-\NormalTok{  \}}
-\NormalTok{\}}
-\NormalTok{numeros\_cuadrado}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1]   9  NA 225  36
-\end{verbatim}
-\end{frame}
-
-\begin{frame}[fragile]{Operador break}
-\protect\hypertarget{operador-break}{}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{numeros }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{40}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{6}\NormalTok{)}
-\NormalTok{numeros\_cuadrado }\OtherTok{=} \FunctionTok{c}\NormalTok{()}
-
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \FunctionTok{seq\_along}\NormalTok{(numeros)) \{}
-  
-  \ControlFlowTok{if}\NormalTok{(}\SpecialCharTok{!}\NormalTok{numeros[i] }\SpecialCharTok{\%\%} \DecValTok{3} \SpecialCharTok{==} \DecValTok{0}\NormalTok{)\{}
-    \ControlFlowTok{break}
-\NormalTok{  \}}
-  
-\NormalTok{  numeros\_cuadrado[i] }\OtherTok{=}\NormalTok{ numeros[i]}\SpecialCharTok{\^{}}\DecValTok{2}
-\NormalTok{\}}
-\NormalTok{numeros\_cuadrado}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 9
-\end{verbatim}
-\end{frame}
-
-\begin{frame}{While loop}
-\protect\hypertarget{while-loop}{}
-\begin{itemize}
-\tightlist
-\item
-  Sigue la misma lógica que en Bash
-\item
-  Se utiliza la función while() en vez de for()
-\item
-  Se puede realizar combinando un for loop con un operador break
-\end{itemize}
+Tenemos varias opciones, que dan diferentes clases de salidas: sapply
+(vectores), lapply (listas), mapply (matrices).
 \end{frame}
 
 \hypertarget{comentarios-dudas-existenciales}{%
@@ -917,13 +713,10 @@ existenciales?}\label{comentarios-dudas-existenciales}}
 \begin{itemize}
 \tightlist
 \item
-  10 minutos de pausa y volvemos.
+  10 minutos de pausa y volvemos. \vspace{20pt}
 \item
   El practico de hoy esta en
-  \href{http://www.higiene.edu.uy/ddbp/lbc/html/Practico9.html}{este
-  link} (clickear).
-\item
-  passwd: \textbf{HfqsRNA2\_}
+  \href{https://rpubs.com/mlangleib/797813}{este link} (clickear).
 \end{itemize}
 \end{frame}
 

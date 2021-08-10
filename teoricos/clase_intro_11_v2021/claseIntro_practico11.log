@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.7)  7 AUG 2021 17:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.7)  10 AUG 2021 07:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -95,8 +95,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks17
-) (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+) (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 ) (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/ho
 me/mauricio/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
@@ -963,31 +963,47 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthememiniframes
-.sty)
+.sty) (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+\CenteringLeftskip=\skip68
+\RaggedLeftLeftskip=\skip69
+\RaggedRightLeftskip=\skip70
+\CenteringRightskip=\skip71
+\RaggedLeftRightskip=\skip72
+\RaggedRightRightskip=\skip73
+\CenteringParfillskip=\skip74
+\RaggedLeftParfillskip=\skip75
+\RaggedRightParfillskip=\skip76
+\JustifyingParfillskip=\skip77
+\CenteringParindent=\skip78
+\RaggedLeftParindent=\skip79
+\RaggedRightParindent=\skip80
+\JustifyingParindent=\skip81
+)
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.st
 y) (./claseIntro_practico11.aux)
 \openout1 = `claseIntro_practico11.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1007,12 +1023,12 @@ LaTeX Font Info:    ... okay on input line 159.
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=14.22636pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=3.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1022,7 +1038,7 @@ LaTeX Font Info:    ... okay on input line 159.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 159.
+Package hyperref Info: Link coloring OFF on input line 161.
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1034,9 +1050,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count375
 )
-LaTeX Info: Redefining \ref on input line 159.
-LaTeX Info: Redefining \pageref on input line 159.
-LaTeX Info: Redefining \nameref on input line 159.
+LaTeX Info: Redefining \ref on input line 161.
+LaTeX Info: Redefining \pageref on input line 161.
+LaTeX Info: Redefining \nameref on input line 161.
 (./claseIntro_practico11.out) (./claseIntro_practico11.out)
 \@outlinefile=\write6
 \openout6 = `claseIntro_practico11.out'.
@@ -1067,27 +1083,27 @@ tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 159.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 161.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 159.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 161.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 159.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 161.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 159.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 161.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 159.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 161.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 159.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 161.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 159.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 161.
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
+
+
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
 Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
@@ -1099,245 +1115,245 @@ allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script
-=math;language=dflt;"
+(fontspec)             <->s*[1.030159915882193]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script
-=math;language=dflt;"
+(fontspec)             <->s*[1.030159915882193]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 159.
+(Font)              scaled to size 10.30167pt on input line 161.
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
+
+
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
 Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=
-latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,St
-yle=MathScriptScript}},BoldFont={latinmodern-math.otf}].
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->s*[1.03015890977869]"[latinmodern-math.otf]/OT:
-script=math;language=dflt;"<6.57-9.3075>s*[1.03015890977869]"[latinmodern-math.
-otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[1.03015890977869]"[latinmo
-dern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.030159915882193]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.030159915882193]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.030159915882193]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.03015890977869]"[latinmodern-math.otf]/OT:script
-=math;language=dflt;"
+(fontspec)             <->s*[1.030159915882193]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.28015pt on input line 159.
+(Font)              scaled to size 10.30167pt on input line 161.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 159.
+(Font)              `operators' in the math version `normal' on input line 161.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 159.
+ line 161.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 159.
+(Font)              `operators' in the math version `bold' on input line 161.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 159.
+t line 161.
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: latinmodern-math scale = 1.030261925669668.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030262931873781.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030261925669668.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030262931873781.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030261925669668.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030262931873781.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030261925669668.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030262931873781.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030261925669668.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
+
+
+Package fontspec Info: latinmodern-math scale = 1.030262931873781.
 
 
 Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=
-latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,St
-yle=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAd
-justment={\fontdimen
-(fontspec)             8\font =7.63666pt\relax \fontdimen 9\font
-(fontspec)             =4.44438pt\relax \fontdimen 10\font =5.00839pt\relax
-(fontspec)             \fontdimen 11\font =7.73819pt\relax \fontdimen 12\font
-(fontspec)             =3.89165pt\relax \fontdimen 13\font =4.0947pt\relax
-(fontspec)             \fontdimen 14\font =4.0947pt\relax \fontdimen 15\font
-(fontspec)             =3.25996pt\relax \fontdimen 16\font =2.7862pt\relax
-(fontspec)             \fontdimen 17\font =2.7862pt\relax \fontdimen 18\font
-(fontspec)             =2.82004pt\relax \fontdimen 19\font =2.25603pt\relax
-(fontspec)             \fontdimen 22\font =2.82004pt\relax \fontdimen 20\font
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =6.97423pt\relax \fontdimen 9\font
+(fontspec)             =4.05885pt\relax \fontdimen 10\font =4.57394pt\relax
+(fontspec)             \fontdimen 11\font =7.06694pt\relax \fontdimen 12\font
+(fontspec)             =3.55408pt\relax \fontdimen 13\font =3.7395pt\relax
+(fontspec)             \fontdimen 14\font =3.7395pt\relax \fontdimen 15\font
+(fontspec)             =2.97719pt\relax \fontdimen 16\font =2.54451pt\relax
+(fontspec)             \fontdimen 17\font =2.54451pt\relax \fontdimen 18\font
+(fontspec)             =2.57542pt\relax \fontdimen 19\font =2.06033pt\relax
+(fontspec)             \fontdimen 22\font =2.57542pt\relax \fontdimen 20\font
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->s*[1.030261925669668]"[latinmodern-math.otf]/OT
-:script=math;language=dflt;"<6.57-9.3075>s*[1.030261925669668]"[latinmodern-mat
-h.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[1.030261925669668]"[lati
-nmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.030262931873781]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.030262931873781]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.030262931873781]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =7.63666pt\relax \fontdimen 9\font
-(fontspec)             =4.44438pt\relax \fontdimen 10\font =5.00839pt\relax
-(fontspec)             \fontdimen 11\font =7.73819pt\relax \fontdimen 12\font
-(fontspec)             =3.89165pt\relax \fontdimen 13\font =4.0947pt\relax
-(fontspec)             \fontdimen 14\font =4.0947pt\relax \fontdimen 15\font
-(fontspec)             =3.25996pt\relax \fontdimen 16\font =2.7862pt\relax
-(fontspec)             \fontdimen 17\font =2.7862pt\relax \fontdimen 18\font
-(fontspec)             =2.82004pt\relax \fontdimen 19\font =2.25603pt\relax
-(fontspec)             \fontdimen 22\font =2.82004pt\relax \fontdimen 20\font
+(fontspec)             \fontdimen 8\font =6.97423pt\relax \fontdimen 9\font
+(fontspec)             =4.05885pt\relax \fontdimen 10\font =4.57394pt\relax
+(fontspec)             \fontdimen 11\font =7.06694pt\relax \fontdimen 12\font
+(fontspec)             =3.55408pt\relax \fontdimen 13\font =3.7395pt\relax
+(fontspec)             \fontdimen 14\font =3.7395pt\relax \fontdimen 15\font
+(fontspec)             =2.97719pt\relax \fontdimen 16\font =2.54451pt\relax
+(fontspec)             \fontdimen 17\font =2.54451pt\relax \fontdimen 18\font
+(fontspec)             =2.57542pt\relax \fontdimen 19\font =2.06033pt\relax
+(fontspec)             \fontdimen 22\font =2.57542pt\relax \fontdimen 20\font
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.030261925669668]"[latinmodern-math.otf]/OT:scrip
+(fontspec)             <->s*[1.030262931873781]"[latinmodern-math.otf]/OT:scrip
 t=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =7.63666pt\relax \fontdimen 9\font
-(fontspec)             =4.44438pt\relax \fontdimen 10\font =5.00839pt\relax
-(fontspec)             \fontdimen 11\font =7.73819pt\relax \fontdimen 12\font
-(fontspec)             =3.89165pt\relax \fontdimen 13\font =4.0947pt\relax
-(fontspec)             \fontdimen 14\font =4.0947pt\relax \fontdimen 15\font
-(fontspec)             =3.25996pt\relax \fontdimen 16\font =2.7862pt\relax
-(fontspec)             \fontdimen 17\font =2.7862pt\relax \fontdimen 18\font
-(fontspec)             =2.82004pt\relax \fontdimen 19\font =2.25603pt\relax
-(fontspec)             \fontdimen 22\font =2.82004pt\relax \fontdimen 20\font
+(fontspec)             \fontdimen 8\font =6.97423pt\relax \fontdimen 9\font
+(fontspec)             =4.05885pt\relax \fontdimen 10\font =4.57394pt\relax
+(fontspec)             \fontdimen 11\font =7.06694pt\relax \fontdimen 12\font
+(fontspec)             =3.55408pt\relax \fontdimen 13\font =3.7395pt\relax
+(fontspec)             \fontdimen 14\font =3.7395pt\relax \fontdimen 15\font
+(fontspec)             =2.97719pt\relax \fontdimen 16\font =2.54451pt\relax
+(fontspec)             \fontdimen 17\font =2.54451pt\relax \fontdimen 18\font
+(fontspec)             =2.57542pt\relax \fontdimen 19\font =2.06033pt\relax
+(fontspec)             \fontdimen 22\font =2.57542pt\relax \fontdimen 20\font
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 159.
+(Font)              `symbols' in the math version `normal' on input line 161.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 159.
+t line 161.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 159.
+(Font)              `symbols' in the math version `bold' on input line 161.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 159.
+t line 161.
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
-
-
-Package fontspec Info: latinmodern-math scale = 1.030055893887712.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030056899890605.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030055893887712.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030056899890605.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030055893887712.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030056899890605.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030055893887712.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
 
 
-Package fontspec Info: latinmodern-math scale = 1.03015890977869.
+Package fontspec Info: latinmodern-math scale = 1.030056899890605.
 
 
-Package fontspec Info: latinmodern-math scale = 1.030055893887712.
+Package fontspec Info: latinmodern-math scale = 1.030159915882193.
+
+
+Package fontspec Info: latinmodern-math scale = 1.030056899890605.
 
 
 Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
-allCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=
-latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,St
-yle=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAd
-justment={\fontdimen
-(fontspec)             8\font =0.4512pt\relax \fontdimen 9\font
-(fontspec)             =2.25603pt\relax \fontdimen 10\font =1.88379pt\relax
-(fontspec)             \fontdimen 11\font =1.25209pt\relax \fontdimen 12\font
-(fontspec)             =6.7681pt\relax \fontdimen 13\font =0pt\relax }].
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =0.41206pt\relax \fontdimen 9\font
+(fontspec)             =2.06033pt\relax \fontdimen 10\font =1.72038pt\relax
+(fontspec)             \fontdimen 11\font =1.14348pt\relax \fontdimen 12\font
+(fontspec)             =6.181pt\relax \fontdimen 13\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->s*[1.030055893887712]"[latinmodern-math.otf]/OT
-:script=math;language=dflt;"<6.57-9.3075>s*[1.030055893887712]"[latinmodern-mat
-h.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[1.030055893887712]"[lati
-nmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.030056899890605]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.030056899890605]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.030056899890605]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =0.4512pt\relax \fontdimen 9\font
-(fontspec)             =2.25603pt\relax \fontdimen 10\font =1.88379pt\relax
-(fontspec)             \fontdimen 11\font =1.25209pt\relax \fontdimen 12\font
-(fontspec)             =6.7681pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             \fontdimen 8\font =0.41206pt\relax \fontdimen 9\font
+(fontspec)             =2.06033pt\relax \fontdimen 10\font =1.72038pt\relax
+(fontspec)             \fontdimen 11\font =1.14348pt\relax \fontdimen 12\font
+(fontspec)             =6.181pt\relax \fontdimen 13\font =0pt\relax 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.030055893887712]"[latinmodern-math.otf]/OT:scrip
+(fontspec)             <->s*[1.030056899890605]"[latinmodern-math.otf]/OT:scrip
 t=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =0.4512pt\relax \fontdimen 9\font
-(fontspec)             =2.25603pt\relax \fontdimen 10\font =1.88379pt\relax
-(fontspec)             \fontdimen 11\font =1.25209pt\relax \fontdimen 12\font
-(fontspec)             =6.7681pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             \fontdimen 8\font =0.41206pt\relax \fontdimen 9\font
+(fontspec)             =2.06033pt\relax \fontdimen 10\font =1.72038pt\relax
+(fontspec)             \fontdimen 11\font =1.14348pt\relax \fontdimen 12\font
+(fontspec)             =6.181pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-59.
+61.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 159.
+t line 161.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 159
+(Font)              `largesymbols' in the math version `bold' on input line 161
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 159.
+t line 161.
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 159.
+ on input line 161.
 
 (./claseIntro_practico11.nav) [1
 
@@ -1351,116 +1367,98 @@ File: ../../imgs/analytic_process.png Graphic file (type bmp)
 ]
 File: ../../imgs/analytic_process_R.png Graphic file (type bmp)
 <../../imgs/analytic_process_R.png>
-
-Package hyperref Warning: Suppressing link with empty target on input line 183.
-
-
-
-Overfull \vbox (13.69237pt too high) detected at line 183
- []
-
 [4
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.8961pt on input line 201.
+(Font)              scaled to size 7.21117pt on input line 202.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.64008pt on input line 201.
+(Font)              scaled to size 5.15083pt on input line 202.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-01.
+02.
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.28131pt on input line 201.
+(Font)              scaled to size 10.30258pt on input line 202.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.89691pt on input line 201.
+(Font)              scaled to size 7.2118pt on input line 202.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.64066pt on input line 201.
+(Font)              scaled to size 5.15129pt on input line 202.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.27914pt on input line 201.
+(Font)              scaled to size 10.3006pt on input line 202.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.8954pt on input line 201.
+(Font)              scaled to size 7.21042pt on input line 202.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.63957pt on input line 201.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 201
+(Font)              scaled to size 5.1503pt on input line 202.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 202
 .
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 201
+LaTeX Font Info:    Trying to load font information for U+msb on input line 202
 .
 (/home/mauricio/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 201.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 202.
 
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 201.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 202.
 [5
 
 ]
-File: ../../imgs/gradiente_reproducibilidad.png Graphic file (type bmp)
-<../../imgs/gradiente_reproducibilidad.png>
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.2715pt on input line 231.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.181pt on input line 231.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.27232pt on input line 231.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.18155pt on input line 231.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.27054pt on input line 231.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.18036pt on input line 231.
 [6
 
-]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.30151pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.21106pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.15076pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.30258pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.2118pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.15129pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.3006pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.21042pt on input line 246.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.1503pt on input line 246.
-[7
-
-] [8
+] [7
 
 ]
 File: ../../imgs/r_tipos_datos.png Graphic file (type bmp)
 <../../imgs/r_tipos_datos.png>
-[9
+[8
 
 ]
 File: ../../imgs/control_structures+in+R.png Graphic file (type bmp)
 <../../imgs/control_structures+in+R.png>
-
-Overfull \vbox (29.4099pt too high) detected at line 265
- []
-
-[10
-
-]
-File: ../../imgs/bioconductor_logo_rgb.jpg Graphic file (type bmp)
-<../../imgs/bioconductor_logo_rgb.jpg>
-[11
+[9
 
 ]
 File: ../../imgs/r_base_graphs.png Graphic file (type bmp)
 <../../imgs/r_base_graphs.png>
 
-Overfull \vbox (28.12936pt too high) detected at line 278
+Overfull \vbox (32.30408pt too high) detected at line 259
  []
 
-[12
+[10
 
-] [13
+] [11
+
+] [12
+
+]
+\openout4 = `claseIntro_practico11.vrb'.
+
+(./claseIntro_practico11.vrb) [13
 
 ] [14
 
-] [15
+]
+\openout4 = `claseIntro_practico11.vrb'.
+
+(./claseIntro_practico11.vrb) [15
 
 ]
 \openout4 = `claseIntro_practico11.vrb'.
@@ -1470,31 +1468,20 @@ Overfull \vbox (28.12936pt too high) detected at line 278
 ]
 \openout4 = `claseIntro_practico11.vrb'.
 
-(./claseIntro_practico11.vrb)
-Overfull \vbox (0.62242pt too high) detected at line 390
- []
-
-[17
+(./claseIntro_practico11.vrb) [17
 
 ]
 \openout4 = `claseIntro_practico11.vrb'.
 
-(./claseIntro_practico11.vrb) [18
+(./claseIntro_practico11.vrb
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 8.
+) [18
 
 ]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.27136pt on input line 438.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.18091pt on input line 438.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.27232pt on input line 438.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.18155pt on input line 438.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.27054pt on input line 438.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.18036pt on input line 438.
-[19
+\openout4 = `claseIntro_practico11.vrb'.
+
+(./claseIntro_practico11.vrb) [19
 
 ]
 \openout4 = `claseIntro_practico11.vrb'.
@@ -1510,8 +1497,11 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 \openout4 = `claseIntro_practico11.vrb'.
 
 (./claseIntro_practico11.vrb
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
+Overfull \hbox (81.21013pt too wide) in paragraph at lines 19--19
+[]\TU/lmtt/m/n/10 ## Error in eleva_y_resta(y = 2): argument "x" is missing, wi
+th no default[] 
+ []
+
 ) [22
 
 ]
@@ -1524,69 +1514,75 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 
 (./claseIntro_practico11.vrb) [24
 
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb) [25
+] [25
 
 ]
 \openout4 = `claseIntro_practico11.vrb'.
 
-(./claseIntro_practico11.vrb
-Overfull \hbox (118.11754pt too wide) in paragraph at lines 16--16
-[]\TU/lmtt/m/n/10.95 ## Error in eleva_y_resta(y = 2): argument "x" is missing,
- with no default[] 
+(./claseIntro_practico11.vrb) [26
+
+]
+File: images/explicando_forloops_en_r_0a.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_0a.png>
+
+Overfull \vbox (8.04509pt too high) detected at line 630
  []
 
-) [26
+[27
 
 ]
-\openout4 = `claseIntro_practico11.vrb'.
+File: images/explicando_forloops_en_r_0b.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_0b.png>
 
-(./claseIntro_practico11.vrb) [27
-
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb) [28
-
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 14.
-
-Overfull \hbox (165.21013pt too wide) in paragraph at lines 30--30
-[]\TU/lmtt/m/n/10 ## Error in eleva_y_resta(x = 2, y = "2"): Alguno de los argu
-mentos dados no es un numero.[] 
+Overfull \vbox (8.04509pt too high) detected at line 635
  []
 
-)
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 671.
+[28
+
+]
+File: images/explicando_forloops_en_r_0c.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_0c.png>
+
+Overfull \vbox (8.04509pt too high) detected at line 640
+ []
+
 [29
 
 ]
-\openout4 = `claseIntro_practico11.vrb'.
+File: images/explicando_forloops_en_r_0d.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_0d.png>
 
-(./claseIntro_practico11.vrb) [30
+Overfull \vbox (8.04509pt too high) detected at line 645
+ []
+
+[30
 
 ]
-\openout4 = `claseIntro_practico11.vrb'.
+File: images/explicando_forloops_en_r_1.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_1.png>
 
-(./claseIntro_practico11.vrb)
-Overfull \vbox (0.80855pt too high) detected at line 717
+Overfull \vbox (8.04509pt too high) detected at line 650
  []
 
 [31
 
-] [32
+]
+File: images/explicando_forloops_en_r_2.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_2.png>
+
+Overfull \vbox (8.04509pt too high) detected at line 655
+ []
+
+[32
 
 ]
-\openout4 = `claseIntro_practico11.vrb'.
+File: images/explicando_forloops_en_r_3.png Graphic file (type bmp)
+<images/explicando_forloops_en_r_3.png>
 
-(./claseIntro_practico11.vrb) [33
+Overfull \vbox (8.04509pt too high) detected at line 660
+ []
+
+[33
 
 ]
 \openout4 = `claseIntro_practico11.vrb'.
@@ -1596,44 +1592,17 @@ Overfull \vbox (0.80855pt too high) detected at line 717
 ]
 \openout4 = `claseIntro_practico11.vrb'.
 
-(./claseIntro_practico11.vrb) [35
+(./claseIntro_practico11.vrb
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 14.
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 705.
+[35
 
 ] [36
 
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb) [37
-
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb) [38
-
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb) [39
-
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb)
-Overfull \vbox (0.929pt too high) detected at line 872
- []
-
-[40
-
-]
-\openout4 = `claseIntro_practico11.vrb'.
-
-(./claseIntro_practico11.vrb) [41
-
-] [42
-
-] [43
-
-] [44
+] [37
 
 ]
 \tf@nav=\write7
@@ -1650,12 +1619,12 @@ Package rerunfilecheck Info: File `claseIntro_practico11.out' has not changed.
 (rerunfilecheck)             Checksum: B35A724913307D4653C2F86A663E614F;711.
  ) 
 Here is how much of TeX's memory you used:
- 40509 strings out of 478475
- 954101 string characters out of 5858857
- 1543095 words of memory out of 5000000
- 60018 multiletter control sequences out of 15000+600000
- 411869 words of font info for 98 fonts, out of 8000000 for 9000
+ 40602 strings out of 478475
+ 957568 string characters out of 5858857
+ 1531913 words of memory out of 5000000
+ 60130 multiletter control sequences out of 15000+600000
+ 408961 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,19n,120p,737b,793s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on claseIntro_practico11.pdf (44 pages).
+Output written on claseIntro_practico11.pdf (37 pages).
