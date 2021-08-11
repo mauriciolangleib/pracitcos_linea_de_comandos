@@ -1,7 +1,8 @@
 ---
 title: "Practico 12"
 output:
-  html_document
+  prettydoc::html_pretty:
+    theme: cayman
 ---
 
 

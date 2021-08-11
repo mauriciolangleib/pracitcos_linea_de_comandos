@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/797813/34b7066df67e426f93527a0d13c56e64
+bundleId: https://api.rpubs.com/api/v1/document/797813/34b7066df67e426f93527a0d13c56e64
+url: http://rpubs.com/mlangleib/797813
+when: 1628592679.06318
+lastSyncTime: 1628592679.06319

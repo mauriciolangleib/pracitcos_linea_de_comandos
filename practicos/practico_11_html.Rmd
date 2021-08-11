@@ -68,7 +68,7 @@ knitr::opts_chunk$set(error = TRUE)
 ```
 
 
-> *a)* Tome como argumento a un nombre e imprima a pantalla un saludo
+> *a)* Tome como argumento a un nombre e imprima a pantalla un saludo. La funcion paste() le puede ser util.
 
 ```{r, echo = F, eval = F, message=FALSE}
 saluda  = function(nombre){
@@ -154,7 +154,7 @@ guia_telefonica(personas = c('Jorge', 'Maria'), telefonos = '222222')
 guia_telefonica(personas = nombres, telefonos = tel)
 ```
 
-Considere, ademas, que se realice la operacion si poseen igual largo los vectores.
+Considere, ademas, que se realice la operacion si poseen igual largo los vectores. En caso de que esto no suceda, devuelva al usuario un mensaje con la funcion stop().
 
 ## Ejercicio 2
 
