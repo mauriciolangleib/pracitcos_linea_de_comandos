@@ -2,7 +2,8 @@
 title: "Práctico 11"
 author: "Funciones y Loops en R - Soluciones"
 output:
-  pdf_document
+  prettydoc::html_pretty:
+    theme: cayman
 ---
 
 
@@ -268,8 +269,8 @@ La variable *i* toma, entonces, los valores desde 1 a length(numeros) (el largo 
 ```{r, echo = T, eval = T, message=FALSE}
 numeros = c(1,5,4,3,8,6)
 
-for (i in seq_along(numeros)) {
-  raiz_cuadrada(numeros)
+for (i in 1:length(numeros)) {
+  raiz_cuadrada(numeros[i])
 }
 ```
 
@@ -278,7 +279,7 @@ for (i in seq_along(numeros)) {
 ```{r, echo = T, eval = T, message=FALSE}
 numeros = c(1,5,4,3,8,6)
 resultado = c()
-for (i in seq_along(numeros)) {
+for (i in 1:length(numeros)) {
   resultado[i] = raiz_cuadrada(numeros[i])
 }
 ```
